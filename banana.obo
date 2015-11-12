@@ -1,0 +1,1590 @@
+format-version: 1.2
+auto-generated-by: java
+default-namespace: cco
+
+[Term]
+id: CO_325:0000000
+name: Time from planting/harvesting to shooting
+namespace: BananaTrait
+def: "The number of days from planting/harvesting to shooting." []
+synonym: "Time from planting to flowering, time from harvesting of the motherplant to flowering of the ratoon plant, time from planting to bunch emergence, time from harvesting of the motherplant to bunch emergence of the ratoon plant" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000001
+name: Time from planting/harvesting to shooting - method
+namespace: BananaMethod
+def: "Record the date of planting the corm or sucker of the motherplant and the date of the shooting of the motherplant and calculate the number of days between the two. Record the date of harvesting the motherplant and the date of the shooting of the ratoon plant and calculate the number of days between the two." []
+relationship: method_of CO_325:0000000 ! Time from planting/harvesting to shooting
+
+[Term]
+id: CO_325:0000002
+name: Day
+namespace: BananaScale
+relationship: scale_of CO_325:0000001 ! Time from planting/harvesting to shooting - method
+relationship: scale_of CO_325:0000004 ! Time from shooting to harvest - method
+relationship: scale_of CO_325:0000007 ! Crop cycle - method
+relationship: scale_of CO_325:0000058 ! Disease incubation time - method
+relationship: scale_of CO_325:0000061 ! Disease evolution time - method
+relationship: scale_of CO_325:0000064 ! Disease development time - method
+relationship: scale_of CO_325:0000085 ! Time from planting/harvest to external disease symptoms - method
+
+[Term]
+id: CO_325:0000003
+name: Time from shooting to harvest
+namespace: BananaTrait
+def: "The time elapsed from shooting to harvest." []
+synonym: "Time from flowering to harvest, time from bunch emergence to harvest" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000004
+name: Time from shooting to harvest - method
+namespace: BananaMethod
+def: "Record the date of shooting and the date of harvest and calculate the number of days between the two." []
+relationship: method_of CO_325:0000003 ! Time from shooting to harvest
+
+[Term]
+id: CO_325:0000006
+name: Crop cycle
+namespace: BananaTrait
+def: "Duration of the crop cycle i.e., the time elapsed either between the planting of the corm and the harvest of the bunch or between the harvest of the bunch on the mother plant and the harvest of the bunch on the ratoon plant that has emerged from the mother plant" []
+synonym: "Time from planting/harvesting to harvest, time from planting to harvest, time from harvest of the motherplant to harvest of the ratoon plant." EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000007
+name: Crop cycle - method
+namespace: BananaMethod
+def: "Record the date of planting the corm or sucker of the motherplant and the date of the harvest of the motherplant and calculate the number of days between the two. Record the date of harvesting the motherplant and the date of harvesting the ratoon plant and calculate the number of days between the two." []
+relationship: method_of CO_325:0000006 ! Crop cycle
+
+[Term]
+id: CO_325:0000009
+name: Height of pseudostem
+namespace: BananaTrait
+def: "The height of the pseudostem from the ground to the angle made between the bunch stalk and the bunch cover leaf." []
+synonym: "Plant height" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000010
+name: Height of pseudostem - method
+namespace: BananaMethod
+def: "Measure the distance from the ground to the angle made between the bunch stalk and the bunch cover leaf." []
+relationship: method_of CO_325:0000009 ! Height of pseudostem
+
+[Term]
+id: CO_325:0000011
+name: cm
+namespace: BananaScale
+relationship: scale_of CO_325:0000010 ! Height of pseudostem - method
+relationship: scale_of CO_325:0000013 ! Girth of pseudostem - method
+relationship: scale_of CO_325:0000028 ! Height of following sucker - method
+relationship: scale_of CO_325:0000031 ! Girth of following sucker - method
+relationship: scale_of CO_325:0000052 ! Length of fruit - method
+relationship: scale_of CO_325:0000055 ! Girth of fruit - method
+relationship: scale_of CO_325:0000076 ! Extent of internal discolouration in pseudostem - method
+
+[Term]
+id: CO_325:0000012
+name: Girth of pseudostem
+namespace: BananaTrait
+def: "The girth of the pseudostem measured at 1m above ground level" []
+synonym: "Pseudostem circumference" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000013
+name: Girth of pseudostem - method
+namespace: BananaMethod
+def: "Measure the girth of the pseudostem of the plant at 1m from the base of the pseudostem (1m from ground level)." []
+relationship: method_of CO_325:0000012 ! Girth of pseudostem
+
+[Term]
+id: CO_325:0000015
+name: Number of total leaves
+namespace: BananaTrait
+def: "The total number of leaves attached to the plant. All leaves should be counted, including leaves that are dead, non-functional, functional, standing." []
+synonym: "Total leaves" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000016
+name: Total leaf count
+namespace: BananaMethod
+def: "Count the total number of leaves attached to the plant. All leaves should be counted, including leaves that are dead, non-functional, functional, standing." []
+relationship: method_of CO_325:0000015 ! Number of total leaves
+
+[Term]
+id: CO_325:0000017
+name: Leaf
+namespace: BananaScale
+relationship: scale_of CO_325:0000016 ! Total leaf count
+relationship: scale_of CO_325:0000016 ! Total leaf count
+relationship: scale_of CO_325:0000019 ! Emitted leaves cumulative count
+relationship: scale_of CO_325:0000019 ! Emitted leaves cumulative count
+relationship: scale_of CO_325:0000067 ! Number of functional leaves - method
+relationship: scale_of CO_325:0000070 ! Number of standing leaves - method
+relationship: scale_of CO_325:0000100 ! Youngest leaf spotted - method
+
+[Term]
+id: CO_325:0000018
+name: Number of emitted leaves
+namespace: BananaTrait
+def: "The total number of leaves emitted by the plant over the course of its lifecycle." []
+synonym: "Emitted leaves" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000019
+name: Emitted leaves cumulative count
+namespace: BananaMethod
+def: "Record the number of new leaves emitted on a weekly basis, over the course of the plant lifecycle, and sum them." []
+relationship: method_of CO_325:0000018 ! Number of emitted leaves
+
+[Term]
+id: CO_325:0000021
+name: Leaf emission rate
+namespace: BananaTrait
+def: "The number of new leaves emitted over a period of time" []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000022
+name: Leaf emission rate - method
+namespace: BananaMethod
+def: "Record the number of new leaves emitted on a weekly basis, over the course of the plant lifecycle, and divide by the number of weeks the recording took place over." []
+relationship: method_of CO_325:0000021 ! Leaf emission rate
+
+[Term]
+id: CO_325:0000023
+name: Leaf/week
+namespace: BananaScale
+relationship: scale_of CO_325:0000022 ! Leaf emission rate - method
+
+[Term]
+id: CO_325:0000024
+name: Number of suckers
+namespace: BananaTrait
+def: "The number of following sucker plants in the mat." []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000025
+name: Number of suckers - method
+namespace: BananaMethod
+def: "Count the number of sucker plants coming from the same rhizome as the mother plant, at the time of recording." []
+relationship: method_of CO_325:0000024 ! Number of suckers
+
+[Term]
+id: CO_325:0000026
+name: Sucker
+namespace: BananaScale
+relationship: scale_of CO_325:0000025 ! Number of suckers - method
+
+[Term]
+id: CO_325:0000027
+name: Height of following sucker
+namespace: BananaTrait
+def: "The height of the pseudostem of the following sucker." []
+synonym: "Height of sucker" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000028
+name: Height of following sucker - method
+namespace: BananaMethod
+def: "Measure the distance from the ground to the junction between the youngest and the next youngest leaf of the following sucker" []
+relationship: method_of CO_325:0000027 ! Height of following sucker
+
+[Term]
+id: CO_325:0000030
+name: Girth of following sucker
+namespace: BananaTrait
+def: "The girth of the pseudostem measured at 1m above ground level of the following sucker." []
+synonym: "Girth of sucker" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000031
+name: Girth of following sucker - method
+namespace: BananaMethod
+def: "Measure the girth of the pseudostem of the following sucker at 1m from the base of the pseudostem (1m from ground level)." []
+relationship: method_of CO_325:0000030 ! Girth of following sucker
+
+[Term]
+id: CO_325:0000033
+name: Bunch weight
+namespace: BananaTrait
+def: "The weight of the bunch." []
+synonym: "Weight of bunch" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000034
+name: Bunch weight - method
+namespace: BananaMethod
+def: "Cut the bunch stalk (peduncle) above the first hand at the level of the last scar and immediately below the last hand, and weigh the bunch" []
+relationship: method_of CO_325:0000033 ! Bunch weight
+
+[Term]
+id: CO_325:0000035
+name: kg
+namespace: BananaScale
+relationship: scale_of CO_325:0000034 ! Bunch weight - method
+relationship: scale_of CO_325:0000046 ! Weight of hand - method
+
+[Term]
+id: CO_325:0000036
+name: Number of hands in bunch
+namespace: BananaTrait
+def: "The number of hands in the bunch." []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000037
+name: Number of hands in bunch - method
+namespace: BananaMethod
+def: "Count the number of hands in a bunch." []
+relationship: method_of CO_325:0000036 ! Number of hands in bunch
+
+[Term]
+id: CO_325:0000038
+name: Hand
+namespace: BananaScale
+relationship: scale_of CO_325:0000037 ! Number of hands in bunch - method
+
+[Term]
+id: CO_325:0000039
+name: Number of fruits in bunch
+namespace: BananaTrait
+def: "The total number of fruits in the bunch." []
+synonym: "Number of fingers in bunch" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000040
+name: Number of fruits in bunch - method
+namespace: BananaMethod
+def: "Count the total number of fruits in the bunch" []
+relationship: method_of CO_325:0000039 ! Number of fruits in bunch
+
+[Term]
+id: CO_325:0000041
+name: Fruit
+namespace: BananaScale
+relationship: scale_of CO_325:0000040 ! Number of fruits in bunch - method
+relationship: scale_of CO_325:0000043 ! Number of fruits in hand - method
+
+[Term]
+id: CO_325:0000042
+name: Number of fruits in hand
+namespace: BananaTrait
+def: "The number of fruits in a hand." []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000043
+name: Number of fruits in hand - method
+namespace: BananaMethod
+def: "Count the number of fruits in a hand. Select either the third and seventh hands, or the second oldest and second youngest hands." []
+relationship: method_of CO_325:0000042 ! Number of fruits in hand
+
+[Term]
+id: CO_325:0000045
+name: Weight of hand
+namespace: BananaTrait
+def: "The weight of a hand." []
+synonym: "Hand weight" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000046
+name: Weight of hand - method
+namespace: BananaMethod
+def: "Cut a hand from the bunch and weight it. Select either the third and seventh hands, or the second oldest and second youngest hands." []
+relationship: method_of CO_325:0000045 ! Weight of hand
+
+[Term]
+id: CO_325:0000048
+name: Weight of fruit
+namespace: BananaTrait
+def: "The weight of a fruit." []
+synonym: "Fruit weight, finger weight" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000049
+name: Weight of fruit - method
+namespace: BananaMethod
+def: "Weigh individual fruit on a balance. Select the fruits for measurement from either the third and seventh hands, or from the second oldest and second youngest hands." []
+relationship: method_of CO_325:0000048 ! Weight of fruit
+
+[Term]
+id: CO_325:0000050
+name: g
+namespace: BananaScale
+relationship: scale_of CO_325:0000049 ! Weight of fruit - method
+
+[Term]
+id: CO_325:0000051
+name: Length of fruit
+namespace: BananaTrait
+def: "The length of a fruit." []
+synonym: "Fruit length, finger length, length of finger" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000052
+name: Length of fruit - method
+namespace: BananaMethod
+def: "Measure the dorsal/external curve of individual fruit with a tape measure from the distal end to the point at the proximal end where the pulp is judged to terminate. Select the fruits for measurement from either the third and seventh hands, or from the second oldest and second youngest hands." []
+relationship: method_of CO_325:0000051 ! Length of fruit
+
+[Term]
+id: CO_325:0000054
+name: Girth of fruit
+namespace: BananaTrait
+def: "The girth of the widest part of a fruit." []
+synonym: "Finger girth, fruit girth, finger circumference, fruit circumference" EXACT []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000055
+name: Girth of fruit - method
+namespace: BananaMethod
+def: "Measure the girth of the widest part of individual fruits from either the third and seventh hands, or from the second oldest and second youngest hands." []
+relationship: method_of CO_325:0000054 ! Girth of fruit
+
+[Term]
+id: CO_325:0000057
+name: Disease incubation time
+namespace: BananaTrait
+def: "Time elapsed between a new leaf unfurling (stage B of the cigar leaf) and the appearance of initial fleck symptoms (Foure's stage 1) on that leaf." []
+synonym: "dit" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000058
+name: Disease incubation time - method
+namespace: BananaMethod
+def: "Record the date of the unfurling of a new leaf (the cigar leaf at stage B) and the date when it has the appearance of initial fleck symptoms and calculate the number of days between the two." []
+relationship: method_of CO_325:0000057 ! Disease incubation time
+
+[Term]
+id: CO_325:0000060
+name: Disease evolution time
+namespace: BananaTrait
+def: "Time elapsed between the appearance of initial fleck symptoms and mature lesions (Foure's stage 6) on a leaf." []
+synonym: "det" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000061
+name: Disease evolution time - method
+namespace: BananaMethod
+def: "Record the date of the appearance of initial fleck symptoms on a leaf and the date when it has at least 10 necrotic lesions and calculate the number of days between the two." []
+relationship: method_of CO_325:0000060 ! Disease evolution time
+
+[Term]
+id: CO_325:0000063
+name: Disease development time
+namespace: BananaTrait
+def: "Time elapsed between a new leaf unfurling (stage B of the cigar leaf) and the development of at least 10 necrotic lesions at stage 6 of that leaf." []
+synonym: "ddt" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000064
+name: Disease development time - method
+namespace: BananaMethod
+def: "Record the date of the unfurling of a new leaf (the cigar leaf at stage B) and the date when it has at least 10 necrotic lesions and calculate the number of days between the two." []
+relationship: method_of CO_325:0000063 ! Disease development time
+
+[Term]
+id: CO_325:0000066
+name: Number of functional leaves
+namespace: BananaTrait
+def: "The number of leaves with more than 50% of green area (to perform photosynthesis)." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000067
+name: Number of functional leaves - method
+namespace: BananaMethod
+def: "Count the number of leaves that have more than 50% of green area." []
+relationship: method_of CO_325:0000066 ! Number of functional leaves
+
+[Term]
+id: CO_325:0000069
+name: Number of standing leaves
+namespace: BananaTrait
+def: "The number of leaves attached to the plant that are erect, not including leaves that have a petiole that is bent backwards." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000070
+name: Number of standing leaves - method
+namespace: BananaMethod
+def: "Beginning at the top of the plant with the newest leaf (the highest and unrolled leaf), count all the leaves that are attached to the plant and erect. Do not include leaves that have a petiole that is bent backwards." []
+relationship: method_of CO_325:0000069 ! Number of standing leaves
+
+[Term]
+id: CO_325:0000072
+name: Extent of internal discolouration in corm
+namespace: BananaTrait
+def: "The extent of internal discolouration in the corm caused by Fusarium oxysporum f. sp. cubense" []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000073
+name: Extent of internal discolouration in corm - method
+namespace: BananaMethod
+def: "For the first sucker, the complete corm should be removed from the soil, the roots cut off and excess soil removed. Transverse sections of the corm should be cut (using a guillotine or other suitable device) to obtain five slices of equal thickness. The upper surface of each cut section should be examined and visually evaluate the extent of the vascular discolouration." []
+relationship: method_of CO_325:0000072 ! Extent of internal discolouration in corm
+
+[Term]
+id: CO_325:0000074
+name: Discoloration scale
+namespace: BananaScale
+relationship: scale_of CO_325:0000073 ! Extent of internal discolouration in corm - method
+
+[Term]
+id: CO_325:0000074:1 
+name: Corm completely clean, no vascular discolouration
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0000074 ! Discoloration scale
+
+[Term]
+id: CO_325:0000074:2 
+name: Isolated points of discolouration in vascular tissue
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0000074 ! Discoloration scale
+
+[Term]
+id: CO_325:0000074:3 
+name: Discolouration in up to one-third of vascular tissue
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0000074 ! Discoloration scale
+
+[Term]
+id: CO_325:0000074:4 
+name: Discolouration of between one-third and two-thirds of vascular tissue
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0000074 ! Discoloration scale
+
+[Term]
+id: CO_325:0000074:5 
+name: Discolouration of greater than two-thirds of vascular tissue
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0000074 ! Discoloration scale
+
+[Term]
+id: CO_325:0000075
+name: Extent of internal discolouration in pseudostem
+namespace: BananaTrait
+def: "The extent of internal discolouration in the pseudostem caused by Fusarium oxysporum f. sp. cubense" []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000076
+name: Extent of internal discolouration in pseudostem - method
+namespace: BananaMethod
+def: "For the motherplant, at harvest the plant should be cut at the base of the pseudostem. The extent to which vascular discolouration extends up the pseudostem should be determined by making transverse cuts, from the base of the pseudostem upwards, and examining the internal tissues following each cut. The point at which discolouration is no longer visible should be noted and the distance from this point to the pseudostem base recorded." []
+relationship: method_of CO_325:0000075 ! Extent of internal discolouration in pseudostem
+
+[Term]
+id: CO_325:0000078
+name: Proportion of plants with external disease symptoms
+namespace: BananaTrait
+def: "The proportion of plants with external disease symptoms (yellowing of foliage, splitting of pseudostem base, changes in new leaves, petiole collapse) caused by Fusarium oxysporum f. sp. cubense" []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000079
+name: Percentage of plants with external disease symptoms - method
+namespace: BananaMethod
+def: "The percentage of plants with external disease symptoms caused by Fusarium oxysporum f. sp. cubense is calculated using the following formula: the number of plants (per cultivar ) with external disease symptoms / the total number of plants in the trial * 100." []
+relationship: method_of CO_325:0000078 ! Proportion of plants with external disease symptoms
+
+[Term]
+id: CO_325:0000080
+name: %
+namespace: BananaScale
+relationship: scale_of CO_325:0000079 ! Percentage of plants with external disease symptoms - method
+relationship: scale_of CO_325:0000082 ! Percentage of plants with internal disease symptoms - method
+relationship: scale_of CO_325:0000118 ! Percentage of functional roots - method
+relationship: scale_of CO_325:0000121 ! Percentage of non-functional roots - method
+relationship: scale_of CO_325:0000124 ! Percentage of root necrosis - method
+
+[Term]
+id: CO_325:0000081
+name: Proportion of plants with internal disease symptoms
+namespace: BananaTrait
+def: "The proportion of plants with internal disease symptoms (internal discolouration in corm and/or pseudostem) caused by Fusarium oxysporum f. sp. cubense" []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000082
+name: Percentage of plants with internal disease symptoms - method
+namespace: BananaMethod
+def: "The percentage of plants with internal disease symptoms caused by Fusarium oxysporum f. sp. cubense is calculated using the following formula: the number of plants (per cultivar ) with internal disease symptoms / the total number of plants in the trial * 100." []
+relationship: method_of CO_325:0000081 ! Proportion of plants with internal disease symptoms
+
+[Term]
+id: CO_325:0000084
+name: Time from planting/harvest to external disease symptoms
+namespace: BananaTrait
+def: "The time elapsed between planting of the motherplant and external disease symptoms on the motherplant, or between harvesting of the motherplant and external disease symptoms on the ratoon plant, caused by Fusarium oxysporum f. sp. cubense." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000085
+name: Time from planting/harvest to external disease symptoms - method
+namespace: BananaMethod
+def: "Record the date of planting the corm or sucker of the motherplant and the date of the presence of external disease symptoms on the motherplant and calculate the number of days between the two. Record the date of harvesting the motherplant and the date of external disease symptoms on the ratoon plant and calculate the number of days between the two." []
+relationship: method_of CO_325:0000084 ! Time from planting/harvest to external disease symptoms
+
+[Term]
+id: CO_325:0000087
+name: Yellowing of foliage
+namespace: BananaTrait
+def: "The presence/absence of yellowing of the foliage caused by Fusarium oxysporum f. sp. cubense" []
+synonym: "yf" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000088
+name: Yellowing of foliage - method
+namespace: BananaMethod
+def: "Visual assessment of the presence/absence of yellowing of the foliage caused by Fusarium oxysporum f. sp. cubense." []
+relationship: method_of CO_325:0000087 ! Yellowing of foliage
+
+[Term]
+id: CO_325:0000089
+name: Presence/absence scale
+namespace: BananaScale
+relationship: scale_of CO_325:0000088 ! Yellowing of foliage - method
+
+[Term]
+id: CO_325:0000089:1 
+name: absent
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0000089 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000089:2 
+name: present
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0000089 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000090
+name: Splitting of pseudostem base
+namespace: BananaTrait
+def: "The presence/absence of splitting of the pseudostem base caused by Fusarium oxysporum f. sp. cubense" []
+synonym: "sp" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000091
+name: Splitting of pseudostem base - method
+namespace: BananaMethod
+def: "Visual assessment of the presence/absence of splitting of the pseudostem base caused by Fusarium oxysporum f. sp. cubense." []
+relationship: method_of CO_325:0000090 ! Splitting of pseudostem base
+
+[Term]
+id: CO_325:0000092
+name: Presence/absence scale
+namespace: BananaScale
+relationship: scale_of CO_325:0000091 ! Splitting of pseudostem base - method
+
+[Term]
+id: CO_325:0000092:1 
+name: absent
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0000092 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000092:2 
+name: present
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0000092 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000093
+name: Changes in new leaves
+namespace: BananaTrait
+def: "The presence/absence of changes in new leaves caused by Fusarium oxysporum f. sp. cubense. The possible changes in new leaves are: irregular pale margins, narrowing of lamina, burning plus ripping of lamina, lamina becoming more erect." []
+synonym: "chn" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000094
+name: Changes in new leaves - method
+namespace: BananaMethod
+def: "Visual assessment of the presence/absence of changes in new leaves caused by Fusarium oxysporum f. sp. cubense." []
+relationship: method_of CO_325:0000093 ! Changes in new leaves
+
+[Term]
+id: CO_325:0000095
+name: Presence/absence scale
+namespace: BananaScale
+relationship: scale_of CO_325:0000094 ! Changes in new leaves - method
+
+[Term]
+id: CO_325:0000095:1 
+name: absent
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0000095 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000095:2 
+name: present
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0000095 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000096
+name: Petiole collapse
+namespace: BananaTrait
+def: "The presence/absence of petiole collapse caused by Fusarium oxysporum f. sp. cubense" []
+synonym: "pc" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000097
+name: Petiole collapse - method
+namespace: BananaMethod
+def: "Visual assessment of the presence/absence of petiole collapse caused by Fusarium oxysporum f. sp. cubense." []
+relationship: method_of CO_325:0000096 ! Petiole collapse
+
+[Term]
+id: CO_325:0000098
+name: Presence/absence scale
+namespace: BananaScale
+relationship: scale_of CO_325:0000097 ! Petiole collapse - method
+
+[Term]
+id: CO_325:0000098:1 
+name: absent
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0000098 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000098:2 
+name: present
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0000098 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000099
+name: Youngest leaf spotted
+namespace: BananaTrait
+def: "The number of the first fully unfurled leaf with at least 10 discrete, mature, necrotic lesions or one large necrotic area with 10 light-coloured dry centres." []
+synonym: "yls" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000100
+name: Youngest leaf spotted - method
+namespace: BananaMethod
+def: "Beginning at the top of the plant with the newest leaf (the highest and unrolled leaf), count down to the first fully unfurled leaf with at least 10 discrete, mature, necrotic lesions or one large necrotic area with 10 light-coloured dry centres." []
+relationship: method_of CO_325:0000099 ! Youngest leaf spotted
+
+[Term]
+id: CO_325:0000102
+name: Index of non-spotted leaves
+namespace: BananaTrait
+def: "The proportion of standing leaves without the typical late-stage symptoms (a black spot with a necrotic centre) caused by Mycosphaerella fijiensis." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000103
+name: Index of non-spotted leaves - method
+namespace: BananaMethod
+def: "The index of non-spotted leaves is calculated using the following formula: 100 * (youngest leaf spotted - 1) / number of standing leaves." []
+relationship: method_of CO_325:0000102 ! Index of non-spotted leaves
+
+[Term]
+id: CO_325:0000104
+name: Index
+namespace: BananaScale
+relationship: scale_of CO_325:0000103 ! Index of non-spotted leaves - method
+relationship: scale_of CO_325:0000106 ! Infection index - method
+
+[Term]
+id: CO_325:0000105
+name: Infection index
+namespace: BananaTrait
+def: "An index to understand the amount of leaf area of standing leaves affected by Mycosphaerella fijiensis." []
+synonym: "Disease index" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000106
+name: Infection index - method
+namespace: BananaMethod
+def: "The infection index is calculated using the following formula: ((∑nb)/(N-1)T) x 100. Where n = the number of leaves in each disease severity grade (0-6, based on Gauhl's modification of Stover's severity scoring system), b = grade, N = number of grades in the scale (7), T = total number of leaves scored." []
+relationship: method_of CO_325:0000105 ! Infection index
+
+[Term]
+id: CO_325:0000108
+name: Number of dead roots
+namespace: BananaTrait
+def: "The number of dead roots extending outwards from the corm of the plant by 20 cm, caused by nematode damage." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000109
+name: Number of dead roots - method
+namespace: BananaMethod
+def: "Collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Divide the collected roots into two categories: dead roots, functional roots. Count the number of dead roots." []
+relationship: method_of CO_325:0000108 ! Number of dead roots
+
+[Term]
+id: CO_325:0000110
+name: Root
+namespace: BananaScale
+relationship: scale_of CO_325:0000109 ! Number of dead roots - method
+relationship: scale_of CO_325:0000112 ! Number of functional roots - method
+relationship: scale_of CO_325:0000115 ! Number of total roots - method
+
+[Term]
+id: CO_325:0000111
+name: Number of functional roots
+namespace: BananaTrait
+def: "The number of functional roots extending outwards from the corm of the plant by 20 cm." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000112
+name: Number of functional roots - method
+namespace: BananaMethod
+def: "Collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Divide the collected roots into two categories: dead roots, functional roots. Count the number of functional roots." []
+relationship: method_of CO_325:0000111 ! Number of functional roots
+
+[Term]
+id: CO_325:0000114
+name: Number of total roots
+namespace: BananaTrait
+def: "The total number of roots (dead and functional) extending outwards from the corm of the plant by 20 cm." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000115
+name: Number of total roots - method
+namespace: BananaMethod
+def: "Collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Divide the collected roots into two categories: dead roots, functional roots. Count the number of total roots." []
+relationship: method_of CO_325:0000114 ! Number of total roots
+
+[Term]
+id: CO_325:0000117
+name: Percentage of functional roots
+namespace: BananaTrait
+def: "The percentage of functional roots from the total number of roots." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000118
+name: Percentage of functional roots - method
+namespace: BananaMethod
+def: "Calculated as: the number of functional roots / the number of total roots * 100." []
+relationship: method_of CO_325:0000117 ! Percentage of functional roots
+
+[Term]
+id: CO_325:0000120
+name: Percentage of non-functional roots
+namespace: BananaTrait
+def: "The percentage of non-functional (dead) roots from the total number of roots." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000121
+name: Percentage of non-functional roots - method
+namespace: BananaMethod
+def: "Calculated as: the number of dead roots / the number of total roots * 100." []
+relationship: method_of CO_325:0000120 ! Percentage of non-functional roots
+
+[Term]
+id: CO_325:0000123
+name: Percentage of root necrosis
+namespace: BananaTrait
+def: "The percentage of five functional roots at least 10cm long that is necrotic due to nematode damage." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000124
+name: Percentage of root necrosis - method
+namespace: BananaMethod
+def: "Select at random five functional primary roots, at least 10 cm long. Reduce the length of the five selected roots to 10cm and slice through the roots length-wise. Evaluate one half of each of the five roots for the % of root cortex showing necrosis. The maximum root necrosis per root half can be 20%, giving a maximum root necrosis of 100% for the five halves together. Record the necrosis of the individual roots (1 to 5). The sum os the total root necrosis of the sample." []
+relationship: method_of CO_325:0000123 ! Percentage of root necrosis
+
+[Term]
+id: CO_325:0000126
+name: Root knot galling
+namespace: BananaTrait
+def: "Extent of presence of root knot nematodes, observed externally as galls on the roots." []
+synonym: "rkg" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000127
+name: Root knot galling - method
+namespace: BananaMethod
+def: "Collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Determine the presence/absence of root knot nematodes, observed externally as galls on the roots." []
+relationship: method_of CO_325:0000126 ! Root knot galling
+
+[Term]
+id: CO_325:0000128
+name: 0 to 5 gall presence scale
+namespace: BananaScale
+relationship: scale_of CO_325:0000127 ! Root knot galling - method
+
+[Term]
+id: CO_325:0000128:0 
+name: absent
+namespace: BananaScale
+synonym: "0" EXACT []
+is_a: CO_325:0000128 ! 0 to 5 gall presence scale
+
+[Term]
+id: CO_325:0000128:1 
+name: trace infections with a few small galls
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0000128 ! 0 to 5 gall presence scale
+
+[Term]
+id: CO_325:0000128:2 
+name: <25% roots galled
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0000128 ! 0 to 5 gall presence scale
+
+[Term]
+id: CO_325:0000128:3 
+name: 25-50% roots galled
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0000128 ! 0 to 5 gall presence scale
+
+[Term]
+id: CO_325:0000128:4 
+name: 50-75% roots galled
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0000128 ! 0 to 5 gall presence scale
+
+[Term]
+id: CO_325:0000129
+name: Egg-laying females
+namespace: BananaTrait
+def: "Extent of presence of root knot nematodes, observed internally as pit-like structures on the roots." []
+synonym: "elf" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000130
+name: Egg-laying females - method
+namespace: BananaMethod
+def: "Collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 5 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Stain the egg masses by immersing the roots in 0.15 g/L phloxine B for 15 mins. Count the number of egg-laying females (stereo microscope)." []
+relationship: method_of CO_325:0000129 ! Egg-laying females
+
+[Term]
+id: CO_325:0000131
+name: 0 to 5 egg presence scale
+namespace: BananaScale
+relationship: scale_of CO_325:0000130 ! Egg-laying females - method
+
+[Term]
+id: CO_325:0000131:0 
+name: no egg masses
+namespace: BananaScale
+synonym: "0" EXACT []
+is_a: CO_325:0000131 ! 0 to 5 egg presence scale
+
+[Term]
+id: CO_325:0000131:1 
+name: 1-2 egg masses
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0000131 ! 0 to 5 egg presence scale
+
+[Term]
+id: CO_325:0000131:2 
+name: 3-10 egg masses
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0000131 ! 0 to 5 egg presence scale
+
+[Term]
+id: CO_325:0000131:3 
+name: 11-30 egg masses
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0000131 ! 0 to 5 egg presence scale
+
+[Term]
+id: CO_325:0000131:4 
+name: 31-100 egg masses
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0000131 ! 0 to 5 egg presence scale
+
+[Term]
+id: CO_325:0000132
+name: Number of Radopholus similis per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of burrowing nematodes Radopholus similis per mass unit of fresh root." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000133
+name: Number of Radopholus similis per n g of fresh root - method
+namespace: BananaMethod
+def: "For migratory endoparasitic nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000132 ! Number of Radopholus similis per mass unit of fresh root
+
+[Term]
+id: CO_325:0000134
+name: Nematode
+namespace: BananaScale
+relationship: scale_of CO_325:0000133 ! Number of Radopholus similis per n g of fresh root - method
+relationship: scale_of CO_325:0000136 ! Number of Helicotylenchus multicinctus per n g of fresh root - method
+relationship: scale_of CO_325:0000139 ! Number of Meloidogyne spp. per n g of fresh root - method
+relationship: scale_of CO_325:0000142 ! Number of Pratylenchus spp. per n g of fresh root - method
+relationship: scale_of CO_325:0000145 ! Number of Hoplolaimus spp. per n g of fresh root - method
+relationship: scale_of CO_325:0000148 ! Number of Pratylenchus goodeyi per n g of fresh root - method
+relationship: scale_of CO_325:0000151 ! Number of Pratylenchus coffeae per n g of fresh root - method
+relationship: scale_of CO_325:0000154 ! Number of nematodes (unclassified spp.) per n g of fresh root - method
+
+[Term]
+id: CO_325:0000135
+name: Number of Helicotylenchus multicinctus per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of spiral nematodes Helicotylenchus multicinctus per mass unit of fresh root." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000136
+name: Number of Helicotylenchus multicinctus per n g of fresh root - method
+namespace: BananaMethod
+def: "For migratory endoparasitic nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000135 ! Number of Helicotylenchus multicinctus per mass unit of fresh root
+
+[Term]
+id: CO_325:0000138
+name: Number of Meloidogyne spp. per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of root-knot nematodes Meloidogyne spp. per mass unit of fresh root." []
+synonym: "Number of Meloidogyne spp. per n g of fresh root" EXACT []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000139
+name: Number of Meloidogyne spp. per n g of fresh root - method
+namespace: BananaMethod
+def: "For root-knot nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000138 ! Number of Meloidogyne spp. per mass unit of fresh root
+
+[Term]
+id: CO_325:0000141
+name: Number of Pratylenchus spp. per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of root-lesion nematodes Pratylenchus spp. per mass unit of fresh root." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000142
+name: Number of Pratylenchus spp. per n g of fresh root - method
+namespace: BananaMethod
+def: "For migratory endoparasitic nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000141 ! Number of Pratylenchus spp. per mass unit of fresh root
+
+[Term]
+id: CO_325:0000144
+name: Number of Hoplolaimus spp. per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of nematodes Hoplolaimus spp. per mass unit of fresh root." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000145
+name: Number of Hoplolaimus spp. per n g of fresh root - method
+namespace: BananaMethod
+def: "For migratory endoparasitic nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000144 ! Number of Hoplolaimus spp. per mass unit of fresh root
+
+[Term]
+id: CO_325:0000147
+name: Number of Pratylenchus goodeyi per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of root-lesion nematodes Pratylenchus goodeyi per mass unit of fresh root." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000148
+name: Number of Pratylenchus goodeyi per n g of fresh root - method
+namespace: BananaMethod
+def: "For migratory endoparasitic nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000147 ! Number of Pratylenchus goodeyi per mass unit of fresh root
+
+[Term]
+id: CO_325:0000150
+name: Number of Pratylenchus coffeae per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of root-lesion nematodes Pratylenchus coffeae per mass unit of fresh root." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000151
+name: Number of Pratylenchus coffeae per n g of fresh root - method
+namespace: BananaMethod
+def: "For migratory endoparasitic nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000150 ! Number of Pratylenchus coffeae per mass unit of fresh root
+
+[Term]
+id: CO_325:0000153
+name: Number of nematodes (unclassified spp.) per mass unit of fresh root
+namespace: BananaTrait
+def: "The number of nematodes of unclassified spp. per mass unit of fresh root." []
+is_a: CO_325:Biotic_stress_traits ! Biotic_stress_traits
+created_by: Inge Van den Bergh
+
+[Term]
+id: CO_325:0000154
+name: Number of nematodes (unclassified spp.) per n g of fresh root - method
+namespace: BananaMethod
+def: "For migratory endoparasitic nematodes: collect all roots from a standard size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Determine the total root fresh weight and cut the roots into 1 cm pieces. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a blender and macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Collect the nematodes from the 40 micro-metre sieve into a beaker. Using distilled water, dilute the nematode suspension to 200 ml in a graduated cylinder. Blow air through the nematode suspension with a pipette, take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Count the final nematode population per root unit and per root system. Indicate whether or not you included males, females, juveniles and eggs in your count." []
+relationship: method_of CO_325:0000153 ! Number of nematodes (unclassified spp.) per mass unit of fresh root
+
+[Term]
+id: CO_325:0000156
+namespace: BananaVariable
+relationship: variable_of CO_325:0000000 ! Time from planting/harvesting to shooting
+relationship: variable_of CO_325:0000001 ! Time from planting/harvesting to shooting - method
+relationship: variable_of CO_325:0000002 ! Day
+
+[Term]
+id: CO_325:0000157
+name: ShtHvstTime_Comp_d
+namespace: BananaVariable
+relationship: variable_of CO_325:0000002 ! Day
+relationship: variable_of CO_325:0000003 ! Time from shooting to harvest
+relationship: variable_of CO_325:0000004 ! Time from shooting to harvest - method
+
+[Term]
+id: CO_325:0000158
+name: CropCyc_comp_d
+namespace: BananaVariable
+relationship: variable_of CO_325:0000002 ! Day
+relationship: variable_of CO_325:0000006 ! Crop cycle
+relationship: variable_of CO_325:0000007 ! Crop cycle - method
+
+[Term]
+id: CO_325:0000159
+name: PseudHt_Meas_cm
+namespace: BananaVariable
+relationship: variable_of CO_325:0000009 ! Height of pseudostem
+relationship: variable_of CO_325:0000010 ! Height of pseudostem - method
+relationship: variable_of CO_325:0000011 ! cm
+
+[Term]
+id: CO_325:0000160
+name: PseudGrth_Meas_cm
+namespace: BananaVariable
+relationship: variable_of CO_325:0000011 ! cm
+relationship: variable_of CO_325:0000012 ! Girth of pseudostem
+relationship: variable_of CO_325:0000013 ! Girth of pseudostem - method
+
+[Term]
+id: CO_325:0000161
+namespace: BananaVariable
+relationship: variable_of CO_325:0000015 ! Number of total leaves
+relationship: variable_of CO_325:0000016 ! Total leaf count
+relationship: variable_of CO_325:0000017 ! Leaf
+
+[Term]
+id: CO_325:0000162
+namespace: BananaVariable
+relationship: variable_of CO_325:0000017 ! Leaf
+relationship: variable_of CO_325:0000018 ! Number of emitted leaves
+relationship: variable_of CO_325:0000019 ! Emitted leaves cumulative count
+
+[Term]
+id: CO_325:0000163
+name: LfNum_TotCount_Lf
+namespace: BananaVariable
+relationship: variable_of CO_325:0000016 ! Total leaf count
+relationship: variable_of CO_325:0000017 ! Leaf
+
+[Term]
+id: CO_325:0000164
+name: LfNum_CumCount_Lf
+namespace: BananaVariable
+relationship: variable_of CO_325:0000017 ! Leaf
+relationship: variable_of CO_325:0000019 ! Emitted leaves cumulative count
+
+[Term]
+id: CO_325:0000165
+name: LfEmRate_Comp_LfWk
+namespace: BananaVariable
+relationship: variable_of CO_325:0000021 ! Leaf emission rate
+relationship: variable_of CO_325:0000022 ! Leaf emission rate - method
+relationship: variable_of CO_325:0000023 ! Leaf/week
+
+[Term]
+id: CO_325:0000166
+name: SuckNum_Count_Suck
+namespace: BananaVariable
+relationship: variable_of CO_325:0000024 ! Number of suckers
+relationship: variable_of CO_325:0000025 ! Number of suckers - method
+relationship: variable_of CO_325:0000026 ! Sucker
+
+[Term]
+id: CO_325:0000167
+name: SuckHt_Meas_cm
+namespace: BananaVariable
+relationship: variable_of CO_325:0000011 ! cm
+relationship: variable_of CO_325:0000027 ! Height of following sucker
+relationship: variable_of CO_325:0000028 ! Height of following sucker - method
+
+[Term]
+id: CO_325:0000168
+name: SucPseudGrth_Meas_cm
+namespace: BananaVariable
+relationship: variable_of CO_325:0000011 ! cm
+relationship: variable_of CO_325:0000030 ! Girth of following sucker
+relationship: variable_of CO_325:0000031 ! Girth of following sucker - method
+
+[Term]
+id: CO_325:0000169
+name: BnchWt_Meas_kg
+namespace: BananaVariable
+relationship: variable_of CO_325:0000033 ! Bunch weight
+relationship: variable_of CO_325:0000034 ! Bunch weight - method
+relationship: variable_of CO_325:0000035 ! kg
+
+[Term]
+id: CO_325:0000170
+name: BnchHndNum_Count_Hnd
+namespace: BananaVariable
+relationship: variable_of CO_325:0000036 ! Number of hands in bunch
+relationship: variable_of CO_325:0000037 ! Number of hands in bunch - method
+relationship: variable_of CO_325:0000038 ! Hand
+
+[Term]
+id: CO_325:0000171
+name: BnchFrtNum_Counr_Frt
+namespace: BananaVariable
+relationship: variable_of CO_325:0000039 ! Number of fruits in bunch
+relationship: variable_of CO_325:0000040 ! Number of fruits in bunch - method
+relationship: variable_of CO_325:0000041 ! Fruit
+
+[Term]
+id: CO_325:0000172
+name: HndFrtNum_Counr_Frt
+namespace: BananaVariable
+relationship: variable_of CO_325:0000041 ! Fruit
+relationship: variable_of CO_325:0000042 ! Number of fruits in hand
+relationship: variable_of CO_325:0000043 ! Number of fruits in hand - method
+
+[Term]
+id: CO_325:0000173
+name: HndWt_Meas_kg
+namespace: BananaVariable
+relationship: variable_of CO_325:0000035 ! kg
+relationship: variable_of CO_325:0000045 ! Weight of hand
+relationship: variable_of CO_325:0000046 ! Weight of hand - method
+
+[Term]
+id: CO_325:0000174
+name: FrtWt_Meas_g
+namespace: BananaVariable
+relationship: variable_of CO_325:0000048 ! Weight of fruit
+relationship: variable_of CO_325:0000049 ! Weight of fruit - method
+relationship: variable_of CO_325:0000050 ! g
+
+[Term]
+id: CO_325:0000175
+name: FrtLng_Meas_cm
+namespace: BananaVariable
+relationship: variable_of CO_325:0000011 ! cm
+relationship: variable_of CO_325:0000051 ! Length of fruit
+relationship: variable_of CO_325:0000052 ! Length of fruit - method
+
+[Term]
+id: CO_325:0000176
+name: FrtGrth_Meas_cm
+namespace: BananaVariable
+relationship: variable_of CO_325:0000011 ! cm
+relationship: variable_of CO_325:0000054 ! Girth of fruit
+relationship: variable_of CO_325:0000055 ! Girth of fruit - method
+
+[Term]
+id: CO_325:0000177
+name: DIT_Comp_d
+namespace: BananaVariable
+relationship: variable_of CO_325:0000002 ! Day
+relationship: variable_of CO_325:0000057 ! Disease incubation time
+relationship: variable_of CO_325:0000058 ! Disease incubation time - method
+
+[Term]
+id: CO_325:0000178
+name: DET_Comp_d
+namespace: BananaVariable
+relationship: variable_of CO_325:0000002 ! Day
+relationship: variable_of CO_325:0000060 ! Disease evolution time
+relationship: variable_of CO_325:0000061 ! Disease evolution time - method
+
+[Term]
+id: CO_325:0000179
+name: DDT_Comp_d
+namespace: BananaVariable
+relationship: variable_of CO_325:0000002 ! Day
+relationship: variable_of CO_325:0000063 ! Disease development time
+relationship: variable_of CO_325:0000064 ! Disease development time - method
+
+[Term]
+id: CO_325:0000180
+name: FuncLf_Count_Lf
+namespace: BananaVariable
+relationship: variable_of CO_325:0000017 ! Leaf
+relationship: variable_of CO_325:0000066 ! Number of functional leaves
+relationship: variable_of CO_325:0000067 ! Number of functional leaves - method
+
+[Term]
+id: CO_325:0000181
+name: StdLf_Count_Lf
+namespace: BananaVariable
+relationship: variable_of CO_325:0000017 ! Leaf
+relationship: variable_of CO_325:0000069 ! Number of standing leaves
+relationship: variable_of CO_325:0000070 ! Number of standing leaves - method
+
+[Term]
+id: CO_325:0000182
+name: CormDiscol_Est_1to6
+namespace: BananaVariable
+relationship: variable_of CO_325:0000072 ! Extent of internal discolouration in corm
+relationship: variable_of CO_325:0000073 ! Extent of internal discolouration in corm - method
+relationship: variable_of CO_325:0000074 ! Discoloration scale
+
+[Term]
+id: CO_325:0000183
+name: PseudDiscol_Est_cm
+namespace: BananaVariable
+relationship: variable_of CO_325:0000011 ! cm
+relationship: variable_of CO_325:0000075 ! Extent of internal discolouration in pseudostem
+relationship: variable_of CO_325:0000076 ! Extent of internal discolouration in pseudostem - method
+
+[Term]
+id: CO_325:0000184
+name: ExtDisProp_Comp_pct
+namespace: BananaVariable
+relationship: variable_of CO_325:0000078 ! Proportion of plants with external disease symptoms
+relationship: variable_of CO_325:0000079 ! Percentage of plants with external disease symptoms - method
+relationship: variable_of CO_325:0000080 ! %
+
+[Term]
+id: CO_325:0000185
+name: IntDisProp_Comp_pct
+namespace: BananaVariable
+relationship: variable_of CO_325:0000080 ! %
+relationship: variable_of CO_325:0000081 ! Proportion of plants with internal disease symptoms
+relationship: variable_of CO_325:0000082 ! Percentage of plants with internal disease symptoms - method
+
+[Term]
+id: CO_325:0000186
+name: PlntgDisTim_Comp_d
+namespace: BananaVariable
+relationship: variable_of CO_325:0000002 ! Day
+relationship: variable_of CO_325:0000084 ! Time from planting/harvest to external disease symptoms
+relationship: variable_of CO_325:0000085 ! Time from planting/harvest to external disease symptoms - method
+
+[Term]
+id: CO_325:0000187
+name: YellowPres_Est_1or2
+namespace: BananaVariable
+relationship: variable_of CO_325:0000087 ! Yellowing of foliage
+relationship: variable_of CO_325:0000088 ! Yellowing of foliage - method
+relationship: variable_of CO_325:0000089 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000188
+name: PseudSplitPres_Est_1or2
+namespace: BananaVariable
+relationship: variable_of CO_325:0000090 ! Splitting of pseudostem base
+relationship: variable_of CO_325:0000091 ! Splitting of pseudostem base - method
+relationship: variable_of CO_325:0000092 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000189
+name: LfChgPres_Est_1or2
+namespace: BananaVariable
+relationship: variable_of CO_325:0000093 ! Changes in new leaves
+relationship: variable_of CO_325:0000094 ! Changes in new leaves - method
+relationship: variable_of CO_325:0000095 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000190
+name: PetColpPres_Est_1or2
+namespace: BananaVariable
+relationship: variable_of CO_325:0000096 ! Petiole collapse
+relationship: variable_of CO_325:0000097 ! Petiole collapse - method
+relationship: variable_of CO_325:0000098 ! Presence/absence scale
+
+[Term]
+id: CO_325:0000191
+name: SpotLfNum_Count_Lf
+namespace: BananaVariable
+relationship: variable_of CO_325:0000017 ! Leaf
+relationship: variable_of CO_325:0000099 ! Youngest leaf spotted
+relationship: variable_of CO_325:0000100 ! Youngest leaf spotted - method
+
+[Term]
+id: CO_325:0000192
+name: NSpotLfProp_Comp_idx
+namespace: BananaVariable
+relationship: variable_of CO_325:0000102 ! Index of non-spotted leaves
+relationship: variable_of CO_325:0000103 ! Index of non-spotted leaves - method
+relationship: variable_of CO_325:0000104 ! Index
+
+[Term]
+id: CO_325:0000193
+name: InfIndex_Comp_Idx
+namespace: BananaVariable
+relationship: variable_of CO_325:0000104 ! Index
+relationship: variable_of CO_325:0000105 ! Infection index
+relationship: variable_of CO_325:0000106 ! Infection index - method
+
+[Term]
+id: CO_325:0000194
+name: DeadRtNum_Count_Rt
+namespace: BananaVariable
+relationship: variable_of CO_325:0000108 ! Number of dead roots
+relationship: variable_of CO_325:0000109 ! Number of dead roots - method
+relationship: variable_of CO_325:0000110 ! Root
+
+[Term]
+id: CO_325:0000195
+name: FuncRtNum_Count_Rt
+namespace: BananaVariable
+relationship: variable_of CO_325:0000110 ! Root
+relationship: variable_of CO_325:0000111 ! Number of functional roots
+relationship: variable_of CO_325:0000112 ! Number of functional roots - method
+
+[Term]
+id: CO_325:0000196
+name: RtNum_Count_Rt
+namespace: BananaVariable
+relationship: variable_of CO_325:0000110 ! Root
+relationship: variable_of CO_325:0000114 ! Number of total roots
+relationship: variable_of CO_325:0000115 ! Number of total roots - method
+
+[Term]
+id: CO_325:0000197
+name: FuncRtProp_Comp_pct
+namespace: BananaVariable
+relationship: variable_of CO_325:0000080 ! %
+relationship: variable_of CO_325:0000117 ! Percentage of functional roots
+relationship: variable_of CO_325:0000118 ! Percentage of functional roots - method
+
+[Term]
+id: CO_325:0000198
+name: NFuncRtProp_Comp_pct
+namespace: BananaVariable
+relationship: variable_of CO_325:0000080 ! %
+relationship: variable_of CO_325:0000120 ! Percentage of non-functional roots
+relationship: variable_of CO_325:0000121 ! Percentage of non-functional roots - method
+
+[Term]
+id: CO_325:0000199
+name: RtCtxNecrProp_Comp_pct
+namespace: BananaVariable
+relationship: variable_of CO_325:0000080 ! %
+relationship: variable_of CO_325:0000123 ! Percentage of root necrosis
+relationship: variable_of CO_325:0000124 ! Percentage of root necrosis - method
+
+[Term]
+id: CO_325:0000200
+name: RtNemaGall_Est_0to5
+namespace: BananaVariable
+relationship: variable_of CO_325:0000126 ! Root knot galling
+relationship: variable_of CO_325:0000127 ! Root knot galling - method
+relationship: variable_of CO_325:0000128 ! 0 to 5 gall presence scale
+
+[Term]
+id: CO_325:0000201
+name: RtNemaEgg_Est_0to5
+namespace: BananaVariable
+relationship: variable_of CO_325:0000129 ! Egg-laying females
+relationship: variable_of CO_325:0000130 ! Egg-laying females - method
+relationship: variable_of CO_325:0000131 ! 0 to 5 egg presence scale
+
+[Term]
+id: CO_325:0000202
+name: RadoNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000132 ! Number of Radopholus similis per mass unit of fresh root
+relationship: variable_of CO_325:0000133 ! Number of Radopholus similis per n g of fresh root - method
+relationship: variable_of CO_325:0000134 ! Nematode
+
+[Term]
+id: CO_325:0000203
+name: HelicoNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000134 ! Nematode
+relationship: variable_of CO_325:0000135 ! Number of Helicotylenchus multicinctus per mass unit of fresh root
+relationship: variable_of CO_325:0000136 ! Number of Helicotylenchus multicinctus per n g of fresh root - method
+
+[Term]
+id: CO_325:0000204
+name: MeloiNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000134 ! Nematode
+relationship: variable_of CO_325:0000138 ! Number of Meloidogyne spp. per mass unit of fresh root
+relationship: variable_of CO_325:0000139 ! Number of Meloidogyne spp. per n g of fresh root - method
+
+[Term]
+id: CO_325:0000205
+name: PratyNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000134 ! Nematode
+relationship: variable_of CO_325:0000141 ! Number of Pratylenchus spp. per mass unit of fresh root
+relationship: variable_of CO_325:0000142 ! Number of Pratylenchus spp. per n g of fresh root - method
+
+[Term]
+id: CO_325:0000206
+name: HoploNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000134 ! Nematode
+relationship: variable_of CO_325:0000144 ! Number of Hoplolaimus spp. per mass unit of fresh root
+relationship: variable_of CO_325:0000145 ! Number of Hoplolaimus spp. per n g of fresh root - method
+
+[Term]
+id: CO_325:0000207
+name: PratyGooNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000134 ! Nematode
+relationship: variable_of CO_325:0000147 ! Number of Pratylenchus goodeyi per mass unit of fresh root
+relationship: variable_of CO_325:0000148 ! Number of Pratylenchus goodeyi per n g of fresh root - method
+
+[Term]
+id: CO_325:0000208
+name: PratyCofNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000134 ! Nematode
+relationship: variable_of CO_325:0000150 ! Number of Pratylenchus coffeae per mass unit of fresh root
+relationship: variable_of CO_325:0000151 ! Number of Pratylenchus coffeae per n g of fresh root - method
+
+[Term]
+id: CO_325:0000209
+name: NemaNumRtWt_Comp_Nema
+namespace: BananaVariable
+relationship: variable_of CO_325:0000134 ! Nematode
+relationship: variable_of CO_325:0000153 ! Number of nematodes (unclassified spp.) per mass unit of fresh root
+relationship: variable_of CO_325:0000154 ! Number of nematodes (unclassified spp.) per n g of fresh root - method
+
+[Term]
+id: CO_325:Agronomical_traits
+name: Agronomical_traits
+namespace: BananaTrait
+is_a: CO_325:Trait ! Trait
+
+[Term]
+id: CO_325:Biotic_stress_traits
+name: Biotic_stress_traits
+namespace: BananaTrait
+is_a: CO_325:Trait ! Trait
+
+[Term]
+id: CO_325:Trait
+name: Trait
+namespace: BananaTrait
+
+[Term]
+id: NEWorreplaceCO_325:0000015orCO_325:0000018
+name: Leaf number
+namespace: BananaTrait
+def: "The number of leaves emitted by the plant" []
+is_a: CO_325:Agronomical_traits ! Agronomical_traits
+created_by: Inge Van den Bergh
+
+[Typedef]
+id: method_of
+name: method_of
+
+[Typedef]
+id: scale_of
+name: scale_of
+
+[Typedef]
+id: variable_of
+name: variable_of
+
