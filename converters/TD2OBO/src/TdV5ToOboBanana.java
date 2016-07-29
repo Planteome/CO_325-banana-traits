@@ -12,15 +12,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.net.ZeroConfSupport;
-import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.obolibrary.oboformat.model.Frame;
 
 
@@ -489,7 +485,7 @@ public class TdV5ToOboBanana {
 									    				
 									    	}else{
 									    		//Frame Scale = m.setConceptScale(idMeasure, crop, unit, idMethod, scaleClass);
-									    		Frame Scale = m.setConceptScale(idMeasure, crop, unit, idMethod, cropID+":"+scaleClass);
+									    		Frame Scale = m.setConceptScale(idMeasure, crop, unit.toLowerCase(), idMethod, cropID+":"+scaleClass);
 									    		scaleMap.put(unit, idMeasure);
 									    	}
 										}
