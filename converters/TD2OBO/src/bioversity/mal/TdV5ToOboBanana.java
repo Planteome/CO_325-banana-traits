@@ -1,3 +1,7 @@
+package bioversity.mal;
+
+import bioversity.mal.coModelTdToOBO;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,8 +22,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.obolibrary.oboformat.model.Frame;
-
-
 
 public class TdV5ToOboBanana {
 

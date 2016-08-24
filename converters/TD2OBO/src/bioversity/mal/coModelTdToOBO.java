@@ -1,3 +1,5 @@
+package bioversity.mal;
+
 import java.io.IOException;
 
 import org.obolibrary.oboformat.model.Clause;
