@@ -142,7 +142,7 @@ public class TdV5ToOboBanana {
 					String category = rowInfo.get(rowStruct.indexOf("Trait class"));
 					String categoryM = rowInfo.get(rowStruct.indexOf("Method class"));
 					String categoryS = rowInfo.get(rowStruct.indexOf("Scale class"));
-					String categoryV = rowInfo.get(rowStruct.indexOf("variable group"));
+					//String categoryV = rowInfo.get(rowStruct.indexOf("variable group"));
 	
 					//String lang = rowInfo.get(rowStruct.indexOf("Language of submission"));
 					String lang = rowInfo.get(rowStruct.indexOf("Language"));
