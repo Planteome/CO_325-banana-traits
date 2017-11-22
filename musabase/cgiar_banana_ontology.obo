@@ -1174,7 +1174,7 @@ namespace: BananaTrait
 def: "Record the apparent cause of death of the plant, e.g. strong winds, Fusarium wilt, etc." []
 synonym: "DeathCause_Est, causedeath" EXACT []
 
-relationship: variable_of CO_325:0000282 ! cause of death
+relationship: variable_of CO_325:0000282 ! cause of death text
 relationship: variable_of CO_325:0010006 ! cause of death - estimation
 relationship: variable_of CO_325:0100002 ! open answer
 
@@ -1296,7 +1296,7 @@ namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting and the Date of death, e.g. 24/05/2014 - 24/01/2014 = 120 days." []
 synonym: "PltDth_Comp_d, plant2death" EXACT []
 
-relationship: variable_of CO_325:0000294 ! time from planting to death
+relationship: variable_of CO_325:0000294 ! time from planting to death in days
 relationship: variable_of CO_325:0010015 ! time from planting to death - computation
 relationship: variable_of CO_325:0100003 ! day
 
@@ -1316,7 +1316,7 @@ namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of harvest of the bunch of the plant from the preceeding crop cycle and the Date of death of the current plant, e.g. 24/03/2015 - 24/12/2014 = 90 days." []
 synonym: "HvstDth_Comp_d, harvest2death" EXACT []
 
-relationship: variable_of CO_325:0000296 ! time from harvest to death
+relationship: variable_of CO_325:0000296 ! time from harvest to death in days
 relationship: variable_of CO_325:0010016 ! time from harvest to death - computation
 relationship: variable_of CO_325:0100003 ! day
 
@@ -1336,7 +1336,7 @@ namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of harvest of the bunch of the plant from the preceeding crop cycle and the Date of harvest of the bunch of the plant from the current crop cycle, e.g. 24/11/2015 - 24/12/2014 = 335 days." []
 synonym: "RtnCrpCyc_Comp_d, harvest2harvest" EXACT []
 
-relationship: variable_of CO_325:0000298 ! ratoon crop cycle
+relationship: variable_of CO_325:0000298 ! ratoon crop cycle in days
 relationship: variable_of CO_325:0010017 ! ratoon crop cycle - computation
 relationship: variable_of CO_325:0100003 ! day
 
@@ -3758,13 +3758,13 @@ namespace: BananaTrait
 def: "Mark the youngest completely unrolled leaf and record its rank, which is always 1. Associate the data with the Date of data collection. In leaf rank format" []
 synonym: "RkYgstLf_Comp_leafrank, rankyoungleaf" EXACT []
 
-relationship: variable_of CO_325:0000564 ! rank of marked youngest leaf
+relationship: variable_of CO_325:0000564 ! rank of marked youngest leaf value1
 relationship: variable_of CO_325:0010018 ! rank of marked youngest leaf - counting
 relationship: variable_of CO_325:0100004 ! leaf rank
 
 [Term]
 id: CO_325:0000566
-name: rank of previously marked leaf
+name: Rank of previously marked leaf
 namespace: BananaTrait
 def: "The current rank (position) of the leaf that was previously marked as the youngest leaf at the time of the last data collection event." []
 synonym: "rankprevleaf" EXACT []
@@ -3777,7 +3777,7 @@ namespace: BananaTrait
 def: "Record the rank of the previously marked leaf (the leaf that was marked in the Rank of marked youngest leaf during the last data collection), counting the leaf rank by starting with the newest completely unrolled leaf as 1 and moving downwards. Associate the data with the Date of data collection." []
 synonym: "RkPvsMktLf_Comp_leafrank, rankprevleaf" EXACT []
 
-relationship: variable_of CO_325:0000566 ! rank of previously marked leaf
+relationship: variable_of CO_325:0000566 ! rank of previously marked leaf 1 to 30
 relationship: variable_of CO_325:0010019 ! rank of previously marked leaf - counting
 relationship: variable_of CO_325:0100004 ! leaf rank
 
