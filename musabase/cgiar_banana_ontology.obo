@@ -317,7 +317,7 @@ namespace: BananaTrait
 def: "Measure the distance from the collar, or from the pseudostem base at the ground if the collar is not visible, to the intersection of the petioles of the two youngest leaves (leaf ranks 1 and 2), using a measuring pole or sliding ruler. In cm" []
 synonym: "PStmHt_M1_cm, PHTSHT, plantheightpetioles" EXACT []
 
-relationship: variable_of CO_325:0000009 ! plant height
+relationship: variable_of CO_325:0000009 ! plant height in cm
 relationship: variable_of CO_325:0010023 ! plant height - petiole of two youngest leaves - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -339,7 +339,7 @@ namespace: BananaTrait
 def: "Calculate as: the Rank of previously marked leaf at one point in time, minus 1 (equivalent to the Rank of marked youngest leaf), divided by the time elapsed between the two Date of data collection events when the marked leaf was recorded as 1) the Rank of marked youngest leaf and 2) the Rank of previously marked leaf, e.g. (2 - 1) / 1 week = LER of 1 leaves/week during a particular time period." []
 synonym: "LfEmRate_Comp_LfWk, LER_week" EXACT []
 
-relationship: variable_of CO_325:0000726 ! weekly leaf emission rate
+relationship: variable_of CO_325:0000726 ! weekly leaf emission rate in leaves/week
 relationship: variable_of CO_325:0010021 ! weekly leaf emission rate - computation
 relationship: variable_of CO_325:0100006 ! leaves/week
 
@@ -350,7 +350,7 @@ namespace: BananaTrait
 def: "Count how many of all types of suckers are in the mat." []
 synonym: "SuckNum_Ct_Suck, NUMSUC, numsuckers" EXACT []
 
-relationship: variable_of CO_325:0000024 ! number of suckers
+relationship: variable_of CO_325:0000024 ! number of suckers count
 relationship: variable_of CO_325:0010031 ! number of suckers - counting
 relationship: variable_of CO_325:0100013 ! sucker
 
@@ -361,7 +361,7 @@ namespace: BananaTrait
 def: "On the tallest sucker, measure the distance from the pseudostem base at the ground to the intersection of the petioles of the two youngest leaves (leaf ranks 1 and 2), using a measuring pole or sliding ruler. In cm" []
 synonym: "SuckHtShtStg_M_cm, HTSF, suckerheight" EXACT []
 
-relationship: variable_of CO_325:0000027 ! tallest sucker height
+relationship: variable_of CO_325:0000027 ! tallest sucker height in cm
 relationship: variable_of CO_325:0010026 ! tallest sucker height - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -372,7 +372,7 @@ namespace: BananaTrait
 def: "Harvest the bunch by cutting the peduncle 10 cm above the first ridge above the most proximal, hand and immediately below the most distal hand and weigh the bunch (including the rachis), using scales. In kg" []
 synonym: "BnchWt_M_kg, BWT, bunchweight" EXACT []
 
-relationship: variable_of CO_325:0000033 ! bunch weight
+relationship: variable_of CO_325:0000033 ! bunch weight in kg
 relationship: variable_of CO_325:0010033 ! bunch weight - measurement
 relationship: variable_of CO_325:0100015 ! kg
 
@@ -383,7 +383,7 @@ namespace: BananaTrait
 def: "Count how many hands are in the bunch." []
 synonym: "BnchHndNum_Ct_Hnd, numhands" EXACT []
 
-relationship: variable_of CO_325:0000036 ! number of hands in bunch
+relationship: variable_of CO_325:0000036 ! number of hands in bunch count
 relationship: variable_of CO_325:0010038 ! number of hands in bunch - counting
 relationship: variable_of CO_325:0100016 ! hand
 
@@ -394,7 +394,7 @@ namespace: BananaTrait
 def: "Count how many fingers are in the bunch." []
 synonym: "BnchFrtNum_Ct_Frt, NUMFING, numfingersbunch" EXACT []
 
-relationship: variable_of CO_325:0000039 ! number of fingers in bunch
+relationship: variable_of CO_325:0000039 ! number of fingers in bunch count
 relationship: variable_of CO_325:0010039 ! number of fingers in bunch - counting
 relationship: variable_of CO_325:0100017 ! finger
 
@@ -405,7 +405,7 @@ namespace: BananaTrait
 def: "Count how many fingers are in a hand. Associate the data with the Hand rank. The recommendation is to collect this data from the second and second-most distal hands." []
 synonym: "HndFrtNum_Ct_Frt, NUMFIN3, numfingershand" EXACT []
 
-relationship: variable_of CO_325:0000042 ! number of fingers in hand
+relationship: variable_of CO_325:0000042 ! number of fingers in hand count
 relationship: variable_of CO_325:0010046 ! number of fingers in third hand - counting
 relationship: variable_of CO_325:0100017 ! finger
 
@@ -482,7 +482,7 @@ namespace: BananaTrait
 def: "Count how many of the leaves are standing leaves (without a bent or broken petiole)" []
 synonym: "StdLf_Ct_leaf, NSLF" EXACT []
 
-relationship: variable_of CO_325:0000069 ! number of standing leaves
+relationship: variable_of CO_325:0000069 ! number of standing leaves count
 relationship: variable_of CO_325:0010106 ! number of standing leaves - counting
 relationship: variable_of CO_325:0100007 ! leaf
 
@@ -625,7 +625,7 @@ namespace: BananaTrait
 def: "Collect all roots from a standard-size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Divide the collected roots into two categories: dead roots, functional roots. Dead roots are completely rotten or shrivelled whereas functional roots show at least some healthy tissue. Count the number of dead roots." []
 synonym: "DeadRtNum2_Ct_Rt," EXACT []
 
-relationship: variable_of CO_325:0000108 ! number of dead roots
+relationship: variable_of CO_325:0000108 ! number of dead roots count
 relationship: variable_of CO_325:0010156 ! number of dead roots - counting
 relationship: variable_of CO_325:0100059 ! dead roots
 
@@ -636,7 +636,7 @@ namespace: BananaTrait
 def: "Collect all roots from a standard-size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Divide the collected roots into two categories: dead roots, functional roots. Dead roots are completely rotten or shrivelled whereas functional roots show at least some healthy tissue. Count the number of functional roots." []
 synonym: "FuncRtNum2_Ct_Rt," EXACT []
 
-relationship: variable_of CO_325:0000111 ! number of functional roots
+relationship: variable_of CO_325:0000111 ! number of functional roots count
 relationship: variable_of CO_325:0010157 ! number of functional roots - counting
 relationship: variable_of CO_325:0100060 ! functional roots
 
@@ -775,7 +775,7 @@ namespace: BananaTrait
 def: "Count how many maiden suckers are in the mat." []
 synonym: "MSuckN_Ct_MSuck, MAIDSUC, nummaidensuckers" EXACT []
 
-relationship: variable_of CO_325:0000221 ! number of maiden suckers
+relationship: variable_of CO_325:0000221 ! number of maiden suckers count
 relationship: variable_of CO_325:0010027 ! number of maiden suckers - counting
 relationship: variable_of CO_325:0100009 ! maiden sucker
 
@@ -794,7 +794,7 @@ namespace: BananaTrait
 def: "Count how many sword suckers are in the mat." []
 synonym: "SSuckN_Ct_SSuck, SWDSUC, numswordsuckers" EXACT []
 
-relationship: variable_of CO_325:0000225 ! number of sword suckers
+relationship: variable_of CO_325:0000225 ! number of sword suckers count
 relationship: variable_of CO_325:0010028 ! number of sword suckers - counting
 relationship: variable_of CO_325:0100010 ! sword sucker
 
@@ -813,7 +813,7 @@ namespace: BananaTrait
 def: "Count how many peeper suckers are in the mat." []
 synonym: "PSuckN_Ct_PSuck, PEPSUC, numpeepersuckers" EXACT []
 
-relationship: variable_of CO_325:0000229 ! number of peeper suckers
+relationship: variable_of CO_325:0000229 ! number of peeper suckers count
 relationship: variable_of CO_325:0010029 ! number of peeper suckers - counting
 relationship: variable_of CO_325:0100011 ! peeper sucker
 
@@ -1375,7 +1375,7 @@ namespace: BananaTrait
 def: "Count how many water suckers are in the mat." []
 synonym: "WSuckN_Ct_WSuck, numwatersuckers" EXACT []
 
-relationship: variable_of CO_325:0000310 ! number of water suckers
+relationship: variable_of CO_325:0000310 ! number of water suckers count
 relationship: variable_of CO_325:0010030 ! number of water suckers - counting
 relationship: variable_of CO_325:0100012 ! water suckers
 
@@ -3788,7 +3788,7 @@ namespace: BananaTrait
 def: "Calculate as: the Rank of previously marked leaf at one point in time, minus 1 (equivalent to the Rank of marked youngest leaf), divided by the time elapsed between the two Date of data collection events when the marked leaf was recorded as 1) the Rank of marked youngest leaf and 2) the Rank of previously marked leaf, e.g. (4 - 1) / 1 month = LER of 3 leaves/month during a particular time period." []
 synonym: "LfEmRate_Comp_LfMth, LER_month" EXACT []
 
-relationship: variable_of CO_325:0000021 ! monthly leaf emission rate
+relationship: variable_of CO_325:0000021 ! monthly leaf emission rate in leaves/month
 relationship: variable_of CO_325:0010020 ! monthly leaf emission rate - computation
 relationship: variable_of CO_325:0100005 ! leaves/month
 
@@ -3799,7 +3799,7 @@ namespace: BananaTrait
 def: "Count how many functional leaves (leaves that have 50% or more of their surface as green, healthy, photosynthetic tissue) are on the plant." []
 synonym: "FnctLeav_Ct_Leaf, NUMFFH, functleaves" EXACT []
 
-relationship: variable_of CO_325:0000066 ! number of functional leaves
+relationship: variable_of CO_325:0000066 ! number of functional leaves count
 relationship: variable_of CO_325:0010022 ! number of functional leaves - counting
 relationship: variable_of CO_325:0100007 ! leaf
 
@@ -4670,7 +4670,7 @@ namespace: BananaTrait
 def: "circumference taken as width of widest part, length taken from first hand attachment to peduncle upto last hand attachement to peduncle In cm" []
 synonym: "BnchHght_M_cm, BHT, bunchheight" EXACT []
 
-relationship: variable_of CO_325:0000793 ! bunch height
+relationship: variable_of CO_325:0000793 ! bunch height in cm
 relationship: variable_of CO_325:0010034 ! bunch height - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -4689,7 +4689,7 @@ namespace: BananaTrait
 def: "circumference taken as width of widest part In cm" []
 synonym: "BnchCirc_M_cm, BCI, bunchcircumference" EXACT []
 
-relationship: variable_of CO_325:0000795 ! bunch circumference
+relationship: variable_of CO_325:0000795 ! bunch circumference in cm
 relationship: variable_of CO_325:0010035 ! bunch circumference - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
