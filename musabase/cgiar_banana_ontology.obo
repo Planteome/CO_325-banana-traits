@@ -736,7 +736,6 @@ def: "Record the date of event. In yyyy/mm/dd format" []
 synonym: "Shoot_Date_ymd, dateshoot_ymd" EXACT []
 
 relationship: variable_of CO_325:0000211 ! date of shooting
-relationship: variable_of CO_325:0010007 ! date of shooting - estimation
 relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
 
 [Term]
@@ -756,7 +755,6 @@ def: "Record the date of event. In yyyy/mm/dd format" []
 synonym: "FlwT_Date_ymd, FLWDT, dateflower_ymd" EXACT []
 
 relationship: variable_of CO_325:0000218 ! date of flowering
-relationship: variable_of CO_325:0010008 ! date of flowering - estimation
 relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
 
 [Term]
@@ -5661,97 +5659,6 @@ is_a: CO_325:1000011 ! Estimation
 relationship: method_of CO_325:0000397 ! dwarfism
 
 [Term]
-id: CO_325:0010089
-name: trial group id - metadata
-namespace: BananaMethod
-def: "Assign the trial group a unique identifier, e.g. IMTP 3" []
-relationship: method_of CO_325:0000399 ! trial group id
-
-[Term]
-id: CO_325:0010090
-name: trial id - metadata
-namespace: BananaMethod
-def: "Assign the field trial a unique identifier, e.g. IMTP 3 - Cameroon BLS" []
-relationship: method_of CO_325:0000401 ! trial id
-
-[Term]
-id: CO_325:0010091
-name: block id - metadata
-namespace: BananaMethod
-def: "Assign each experimental block within the field trial a unique identifier, e.g. 1, 2, 3, 4, or A, B, C, D, etc." []
-relationship: method_of CO_325:0000403 ! block id
-
-[Term]
-id: CO_325:0010092
-name: row id - metadata
-namespace: BananaMethod
-def: "Assign each row (latitudinally) within the field trial a unique identifier, e.g. 1, 2, 3, 4, or A, B, C, D, etc." []
-relationship: method_of CO_325:0000405 ! row id
-
-[Term]
-id: CO_325:0010093
-name: column id - metadata
-namespace: BananaMethod
-def: "Assign each column (longitudinally) within the field trial a unique identifier, e.g. 1, 2, 3, 4, or A, B, C, D, etc." []
-relationship: method_of CO_325:0000407 ! column id
-
-[Term]
-id: CO_325:0010094
-name: spatial position id - metadata
-namespace: BananaMethod
-def: "Calculate as: the concatenation of Block ID, Row ID, and Column ID, e.g. 1_A_26" []
-relationship: method_of CO_325:0000409 ! spatial position id
-
-[Term]
-id: CO_325:0010095
-name: accession id - metadata
-namespace: BananaMethod
-def: "Record the genebank accession code of the genotype of the plant, if the planting material was sourced from a genebank either directly or secondarily through a tissue-culture provider." []
-relationship: method_of CO_325:0000411 ! accession id
-
-[Term]
-id: CO_325:0010096
-name: genotype id - metadata
-namespace: BananaMethod
-def: "Assign the genotype a unique identifier." []
-relationship: method_of CO_325:0000413 ! genotype id
-
-[Term]
-id: CO_325:0010097
-name: genotype purpose - metadata
-namespace: BananaMethod
-def: "Record the reason for including the genotype in the field trial, using the options in the scale." []
-relationship: method_of CO_325:0000415 ! genotype purpose
-
-[Term]
-id: CO_325:0010098
-name: mat id - metadata
-namespace: BananaMethod
-def: "Assign the mat a unique identifier, using the options in the scale." []
-relationship: method_of CO_325:0000417 ! mat id
-
-[Term]
-id: CO_325:0010099
-name: crop cycle id - metadata
-namespace: BananaMethod
-def: "Assign the crop cycle of the plant a unique identifier, using the options in the scale." []
-relationship: method_of CO_325:0000419 ! crop cycle id
-
-[Term]
-id: CO_325:0010100
-name: plant id - metadata
-namespace: BananaMethod
-def: "Assign the plant the data is being collected from a unique identifier, calculated as: the concatenation of Trial ID, Spatial ID, Genotype ID, and Mat ID, e.g. Kawanda_1A26_3_1." []
-relationship: method_of CO_325:0000421 ! plant id
-
-[Term]
-id: CO_325:0010101
-name: plant id qr code - metadata
-namespace: BananaMethod
-def: "Scan the QR code of the plant to associate the data collected with the Plant ID." []
-relationship: method_of CO_325:0000423 ! plant id qr code
-
-[Term]
 id: CO_325:0010102
 name: youngest leaf spotted - counting
 namespace: BananaMethod
@@ -6894,14 +6801,6 @@ id: CO_325:0100000
 name: dd/mm/yyyy
 namespace: BananaScale
 is_a: CO_325:1000018 ! Time
-relationship: scale_of CO_325:0010000 ! date of planting - estimation
-relationship: scale_of CO_325:0010001 ! date of recognising off-type - estimation
-relationship: scale_of CO_325:0010002 ! date of damage - estimation
-relationship: scale_of CO_325:0010005 ! date of death - estimation
-relationship: scale_of CO_325:0010007 ! date of shooting - estimation
-relationship: scale_of CO_325:0010008 ! date of flowering - estimation
-relationship: scale_of CO_325:0010009 ! date of harvest - estimation
-relationship: scale_of CO_325:0010010 ! date of data collection - estimation
 relationship: scale_of CO_325:0010103 ! date of first youngest leaf spotted - estimation
 relationship: scale_of CO_325:0010119 ! date of tagged cigar leaf unrolling at brun's stage b - estimation
 relationship: scale_of CO_325:0010120 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1 - estimation
@@ -6913,14 +6812,6 @@ id: CO_325:0100001
 name: yyyy/mm/dd
 namespace: BananaScale
 is_a: CO_325:1000018 ! Time
-relationship: scale_of CO_325:0010000 ! date of planting - estimation
-relationship: scale_of CO_325:0010001 ! date of recognising off-type - estimation
-relationship: scale_of CO_325:0010002 ! date of damage - estimation
-relationship: scale_of CO_325:0010005 ! date of death - estimation
-relationship: scale_of CO_325:0010007 ! date of shooting - estimation
-relationship: scale_of CO_325:0010008 ! date of flowering - estimation
-relationship: scale_of CO_325:0010009 ! date of harvest - estimation
-relationship: scale_of CO_325:0010010 ! date of data collection - estimation
 relationship: scale_of CO_325:0010103 ! date of first youngest leaf spotted - estimation
 relationship: scale_of CO_325:0010119 ! date of tagged cigar leaf unrolling at brun's stage b - estimation
 relationship: scale_of CO_325:0010120 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1 - estimation
@@ -6932,9 +6823,6 @@ id: CO_325:0100002
 name: open answer
 namespace: BananaScale
 is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010003 ! damage description - estimation
-relationship: scale_of CO_325:0010004 ! cause of damage - estimation
-relationship: scale_of CO_325:0010006 ! cause of death - estimation
 
 [Term]
 id: CO_325:0100003
@@ -7215,7 +7103,6 @@ name: crop cycle duration/year
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010080 ! annual crop cycle proportion - computation
-relationship: scale_of CO_325:0010099 ! crop cycle id - metadata
 
 [Term]
 id: CO_325:0100028
@@ -7296,174 +7183,6 @@ name: not dwarf
 namespace: BananaScale
 synonym: "2" EXACT []
 is_a: CO_325:0100032 ! dwarfism
-
-[Term]
-id: CO_325:0100033
-name: trial group
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010089 ! trial group id - metadata
-
-[Term]
-id: CO_325:0100034
-name: trial
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010090 ! trial id - metadata
-
-[Term]
-id: CO_325:0100035
-name: block
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010091 ! block id - metadata
-
-[Term]
-id: CO_325:0100036
-name: row
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010092 ! row id - metadata
-
-[Term]
-id: CO_325:0100037
-name: column
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010093 ! column id - metadata
-
-[Term]
-id: CO_325:0100038
-name: spatial position
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010094 ! spatial position id - metadata
-
-[Term]
-id: CO_325:0100039
-name: accession
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010095 ! accession id - metadata
-
-[Term]
-id: CO_325:0100040
-name: genotype id
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010096 ! genotype id - metadata
-
-[Term]
-id: CO_325:0100041
-name: genotype purpose
-namespace: BananaScale
-is_a: CO_325:1000015 ! Nominal
-relationship: scale_of CO_325:0010097 ! genotype purpose - metadata
-
-[Term]
-id: CO_325:0100041:1 
-name: test accession
-namespace: BananaScale
-synonym: "1" EXACT []
-is_a: CO_325:0100041 ! genotype purpose
-
-[Term]
-id: CO_325:0100041:2 
-name: universal local check
-namespace: BananaScale
-synonym: "2" EXACT []
-is_a: CO_325:0100041 ! genotype purpose
-
-[Term]
-id: CO_325:0100041:3 
-name: site-specific local check
-namespace: BananaScale
-synonym: "3" EXACT []
-is_a: CO_325:0100041 ! genotype purpose
-
-[Term]
-id: CO_325:0100041:4 
-name: resistant/tolerant check
-namespace: BananaScale
-synonym: "4" EXACT []
-is_a: CO_325:0100041 ! genotype purpose
-
-[Term]
-id: CO_325:0100041:5 
-name: susceptible check
-namespace: BananaScale
-synonym: "5" EXACT []
-is_a: CO_325:0100041 ! genotype purpose
-
-[Term]
-id: CO_325:0100041:6 
-name: border row
-namespace: BananaScale
-synonym: "6" EXACT []
-is_a: CO_325:0100041 ! genotype purpose
-
-[Term]
-id: CO_325:0100041:7 
-name: gap-filling
-namespace: BananaScale
-synonym: "7" EXACT []
-is_a: CO_325:0100041 ! genotype purpose
-
-[Term]
-id: CO_325:0100042
-name: mat id
-namespace: BananaScale
-is_a: CO_325:1000012 ! Ordinal
-relationship: scale_of CO_325:0010098 ! mat id - metadata
-
-[Term]
-id: CO_325:0100042:1 
-name: first plant planted
-namespace: BananaScale
-synonym: "1" EXACT []
-is_a: CO_325:0100042 ! mat id
-
-[Term]
-id: CO_325:0100042:2 
-name: second plant planted
-namespace: BananaScale
-synonym: "2" EXACT []
-is_a: CO_325:0100042 ! mat id
-
-[Term]
-id: CO_325:0100042:3 
-name: third plant planted
-namespace: BananaScale
-synonym: "3" EXACT []
-is_a: CO_325:0100042 ! mat id
-
-[Term]
-id: CO_325:0100042:4 
-name: fourth plant planted
-namespace: BananaScale
-synonym: "4" EXACT []
-is_a: CO_325:0100042 ! mat id
-
-[Term]
-id: CO_325:0100042:5 
-name: fifth plant planted
-namespace: BananaScale
-synonym: "5" EXACT []
-is_a: CO_325:0100042 ! mat id
-
-[Term]
-id: CO_325:0100043
-name: plant id
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010100 ! plant id - metadata
-
-[Term]
-id: CO_325:0100044
-name: plant id qr code
-namespace: BananaScale
-is_a: CO_325:1000014 ! Text
-relationship: scale_of CO_325:0010101 ! plant id qr code - metadata
 
 [Term]
 id: CO_325:0100045
