@@ -687,42 +687,6 @@ relationship: variable_of CO_325:0010229 ! number of nematodes (pratylenchus cof
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
 
 [Term]
-id: CO_325:0000210
-name: Date of shooting y/m/d
-namespace: BananaTrait
-def: "Record the date of event. In yyyy/mm/dd format" []
-synonym: "Shoot_Date_ymd, dateshoot_ymd" EXACT []
-relationship: variable_of CO_325:0000211 ! date of shooting
-relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
-
-[Term]
-id: CO_325:0000211
-name: date of shooting
-namespace: BananaTrait
-def: "The date the inflorescence emerges from the pseudostem and is still in an erect position." []
-synonym: "Date of bunch emergence, Date of bunching, Shooting time, Shooting date, Date of flowering (incorrect usage)" EXACT []
-synonym: "dateshoot" EXACT []
-is_a: CO_325:1000004
-
-[Term]
-id: CO_325:0000217
-name: Date of flowering y/m/d
-namespace: BananaTrait
-def: "Record the date of event. In yyyy/mm/dd format" []
-synonym: "FlwT_Date_ymd, FLWDT, dateflower_ymd" EXACT []
-relationship: variable_of CO_325:0000218 ! date of flowering
-relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
-
-[Term]
-id: CO_325:0000218
-name: date of flowering
-namespace: BananaTrait
-def: "The date the last bracts fall from the most distal hand (closest to the male bud) to display the female flowers." []
-synonym: "Date of bract fall, Flowering date" EXACT []
-synonym: "dateflower" EXACT []
-is_a: CO_325:1000004
-
-[Term]
 id: CO_325:0000220
 name: Number of maiden suckers: count
 namespace: BananaTrait
@@ -2878,33 +2842,6 @@ relationship: variable_of CO_325:0010235 ! number of nematodes (pratylenchus cof
 relationship: variable_of CO_325:0100110 ! no. per 10g
 
 [Term]
-id: CO_325:0000545
-name: date of first youngest leaf spotted
-namespace: BananaTrait
-def: "The date a youngest leaf spotted is first observed on the plant, caused by black leaf streak disease." []
-is_a: CO_325:1000002
-
-[Term]
-id: CO_325:0000546
-name: Date of first youngest leaf spotted d/m/y
-namespace: BananaTrait
-def: "Record the date of event. In dd/mm/yyyy" []
-synonym: "FstYngLfsptd_Est_dmy," EXACT []
-relationship: variable_of CO_325:0000545 ! date of first youngest leaf spotted
-relationship: variable_of CO_325:0010103 ! date of first youngest leaf spotted - estimation
-relationship: variable_of CO_325:0100000 ! dd/mm/yyyy
-
-[Term]
-id: CO_325:0000547
-name: Date of first youngest leaf spotted y/m/d
-namespace: BananaTrait
-def: "Record the date of event. In yyyy/mm/dd" []
-synonym: "FstYngLfsptd_Est_ymd," EXACT []
-relationship: variable_of CO_325:0000545 ! date of first youngest leaf spotted
-relationship: variable_of CO_325:0010103 ! date of first youngest leaf spotted - estimation
-relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
-
-[Term]
 id: CO_325:0000548
 name: rank of oldest standing leaf
 namespace: BananaTrait
@@ -2922,89 +2859,6 @@ relationship: variable_of CO_325:0010108 ! rank of oldest standing leaf - counti
 relationship: variable_of CO_325:0100004 ! leaf rank
 
 [Term]
-id: CO_325:0000550
-name: date of tagged cigar leaf unrolling at brun's stage b
-namespace: BananaTrait
-def: "The date a tagged cigar leaf is at Brun's stage B of unrolling." []
-is_a: CO_325:1000002
-
-[Term]
-id: CO_325:0000551
-name: Date of tagged cigar leaf unrolling at Brun's stage B d/m/y
-namespace: BananaTrait
-def: "Record the date of event. In dd/mm/yyyy format" []
-synonym: "CigLfUnrBrnStgB_Date_dmy," EXACT []
-relationship: variable_of CO_325:0000550 ! date of tagged cigar leaf unrolling at brun's stage b
-relationship: variable_of CO_325:0010119 ! date of tagged cigar leaf unrolling at brun's stage b - estimation
-relationship: variable_of CO_325:0100000 ! dd/mm/yyyy
-
-[Term]
-id: CO_325:0000552
-name: Date of tagged cigar leaf unrolling at Brun's stage B y/m/d
-namespace: BananaTrait
-def: "Record the date of event. In yyyy/mm/dd format" []
-synonym: "CigLfUnrBrnStgB_Date_ymd," EXACT []
-relationship: variable_of CO_325:0000550 ! date of tagged cigar leaf unrolling at brun's stage b
-relationship: variable_of CO_325:0010119 ! date of tagged cigar leaf unrolling at brun's stage b - estimation
-relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
-
-[Term]
-id: CO_325:0000553
-name: date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1
-namespace: BananaTrait
-def: "The date a tagged leaf presents black leaf streak disease symptoms at Foure's black leaf streak disease severity grade 1." []
-synonym: "Date of tagged leaf presenting black Sigatoka symptoms at Foure's stage 1" EXACT []
-is_a: CO_325:1000002
-
-[Term]
-id: CO_325:0000554
-name: Date of tagged leaf presenting black Sigatoka disease symptoms at Foure's stage 1 d/m/y
-namespace: BananaTrait
-def: "Record the date of event. In dd/mm/yyyy format" []
-synonym: "BlkLfStrkLfFrStg1_Date_dmy," EXACT []
-relationship: variable_of CO_325:0000553 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1
-relationship: variable_of CO_325:0010120 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1 - estimation
-relationship: variable_of CO_325:0100000 ! dd/mm/yyyy
-
-[Term]
-id: CO_325:0000555
-name: Date of tagged leaf presenting black Sigatoka disease symptoms at Foure's stage 1 y/m/d
-namespace: BananaTrait
-def: "Record the date of event. In yyyy/mm/dd format" []
-synonym: "BlkLfStrkLfFrStg1_Date_ymd," EXACT []
-relationship: variable_of CO_325:0000553 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1
-relationship: variable_of CO_325:0010120 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1 - estimation
-relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
-
-[Term]
-id: CO_325:0000556
-name: date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6
-namespace: BananaTrait
-def: "The date a tagged leaf presents black leaf streak disease symptoms at Foure's black leaf streak disease severity grade 6." []
-synonym: "Date of tagged leaf presenting black Sigatoka symptoms at Foure's stage 6" EXACT []
-is_a: CO_325:1000002
-
-[Term]
-id: CO_325:0000557
-name: Date of tagged leaf presenting black Sigatoka disease symptoms at Foure's stage 6 d/m/y
-namespace: BananaTrait
-def: "Record the date of event. In dd/mm/yyyy format" []
-synonym: "BlkLfStrkLfFrStg6_Date_dmy," EXACT []
-relationship: variable_of CO_325:0000556 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6
-relationship: variable_of CO_325:0010121 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6 - estimation
-relationship: variable_of CO_325:0100000 ! dd/mm/yyyy
-
-[Term]
-id: CO_325:0000558
-name: Date of tagged leaf presenting black Sigatoka disease symptoms at Foure's stage 6 y/m/d
-namespace: BananaTrait
-def: "Record the date of event. In yyyy/mm/dd format" []
-synonym: "BlkLfStrkLfFrStg6_Date_ymd," EXACT []
-relationship: variable_of CO_325:0000556 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6
-relationship: variable_of CO_325:0010121 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6 - estimation
-relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
-
-[Term]
 id: CO_325:0000559
 name: extent of internal discolouration in corm of plant caused by fusarium wilt
 namespace: BananaTrait
@@ -3020,33 +2874,6 @@ synonym: "CrmIntDiscFW_Est_1to5," EXACT []
 relationship: variable_of CO_325:0000559 ! extent of internal discolouration in corm of plant caused by fusarium wilt
 relationship: variable_of CO_325:0010124 ! extent of internal discolouration in corm of plant caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100008 ! cm
-
-[Term]
-id: CO_325:0000561
-name: date of first external disease symptoms caused by fusarium wilt
-namespace: BananaTrait
-def: "The date of the appearance on the plant of any of the external disease symptoms - yellowing leaves, splitting pseudostem base, changes in new leaves, petiole collapse, caused by Fusarium wilt." []
-is_a: CO_325:1000002
-
-[Term]
-id: CO_325:0000562
-name: Date of first external Fusarium wilt symptoms d/m/y
-namespace: BananaTrait
-def: "Record the date of event. In dd/mm/yyyy format" []
-synonym: "FstExtDiSmptFW_Date_dmy," EXACT []
-relationship: variable_of CO_325:0000561 ! date of first external disease symptoms caused by fusarium wilt
-relationship: variable_of CO_325:0010132 ! date of first external disease symptoms caused by fusarium wilt - estimation
-relationship: variable_of CO_325:0100000 ! dd/mm/yyyy
-
-[Term]
-id: CO_325:0000563
-name: Date of first external Fusarium wilt symptoms y/m/d
-namespace: BananaTrait
-def: "Record the date of event. In yyyy/mm/dd format" []
-synonym: "FstExtDiSmptFW_Date_ymd," EXACT []
-relationship: variable_of CO_325:0000561 ! date of first external disease symptoms caused by fusarium wilt
-relationship: variable_of CO_325:0010132 ! date of first external disease symptoms caused by fusarium wilt - estimation
-relationship: variable_of CO_325:0100001 ! yyyy/mm/dd
 
 [Term]
 id: CO_325:0000564
@@ -5381,15 +5208,6 @@ is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0000099 ! youngest leaf spotted
 
 [Term]
-id: CO_325:0010103
-name: date of first youngest leaf spotted - estimation
-namespace: BananaMethod
-def: "Record the date of event." []
-is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000545 ! date of first youngest leaf spotted
-relationship: method_of CO_325:0000545 ! date of first youngest leaf spotted
-
-[Term]
 id: CO_325:0010104
 name: time from planting to first youngest spotted leaf - computation
 namespace: BananaMethod
@@ -5514,33 +5332,6 @@ is_a: CO_325:1000010 ! Computation
 relationship: method_of CO_325:0000105 ! black leaf streak disease severity index
 
 [Term]
-id: CO_325:0010119
-name: date of tagged cigar leaf unrolling at brun's stage b - estimation
-namespace: BananaMethod
-def: "Record the date of event." []
-is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000550 ! date of tagged cigar leaf unrolling at brun's stage b
-relationship: method_of CO_325:0000550 ! date of tagged cigar leaf unrolling at brun's stage b
-
-[Term]
-id: CO_325:0010120
-name: date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1 - estimation
-namespace: BananaMethod
-def: "Record the date of event." []
-is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000553 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1
-relationship: method_of CO_325:0000553 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1
-
-[Term]
-id: CO_325:0010121
-name: date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6 - estimation
-namespace: BananaMethod
-def: "Record the date of event." []
-is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000556 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6
-relationship: method_of CO_325:0000556 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6
-
-[Term]
 id: CO_325:0010122
 name: black leaf streak disease incubation time - computation
 namespace: BananaMethod
@@ -5623,15 +5414,6 @@ def: "Visual assessment." []
 is_a: CO_325:1000011 ! Estimation
 relationship: method_of CO_325:0000096 ! presence of petiole collapse caused by fusarium wilt
 relationship: method_of CO_325:0000096 ! presence of petiole collapse caused by fusarium wilt
-
-[Term]
-id: CO_325:0010132
-name: date of first external disease symptoms caused by fusarium wilt - estimation
-namespace: BananaMethod
-def: "Record the date of event." []
-is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000561 ! date of first external disease symptoms caused by fusarium wilt
-relationship: method_of CO_325:0000561 ! date of first external disease symptoms caused by fusarium wilt
 
 [Term]
 id: CO_325:0010133
@@ -6509,28 +6291,6 @@ namespace: BananaMethod
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0000543 ! number of pratylenchus coffeae per fresh root weight
-
-[Term]
-id: CO_325:0100000
-name: dd/mm/yyyy
-namespace: BananaScale
-is_a: CO_325:1000018 ! Time
-relationship: scale_of CO_325:0010103 ! date of first youngest leaf spotted - estimation
-relationship: scale_of CO_325:0010119 ! date of tagged cigar leaf unrolling at brun's stage b - estimation
-relationship: scale_of CO_325:0010120 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1 - estimation
-relationship: scale_of CO_325:0010121 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6 - estimation
-relationship: scale_of CO_325:0010132 ! date of first external disease symptoms caused by fusarium wilt - estimation
-
-[Term]
-id: CO_325:0100001
-name: yyyy/mm/dd
-namespace: BananaScale
-is_a: CO_325:1000018 ! Time
-relationship: scale_of CO_325:0010103 ! date of first youngest leaf spotted - estimation
-relationship: scale_of CO_325:0010119 ! date of tagged cigar leaf unrolling at brun's stage b - estimation
-relationship: scale_of CO_325:0010120 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 1 - estimation
-relationship: scale_of CO_325:0010121 ! date of tagged leaf presenting black leaf streak disease symptoms at foure's stage 6 - estimation
-relationship: scale_of CO_325:0010132 ! date of first external disease symptoms caused by fusarium wilt - estimation
 
 [Term]
 id: CO_325:0100002
