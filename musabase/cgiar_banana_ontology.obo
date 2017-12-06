@@ -283,7 +283,6 @@ name: Days from planting to shooting in days
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting and the Date of shooting, e.g. 24/09/2014 - 24/01/2014 = 243 days." []
 synonym: "PlntShtTime_Comp_d, plant2shoot" EXACT []
-
 relationship: variable_of CO_325:0000958 ! time from planting to shooting
 relationship: variable_of CO_325:0010011 ! time from planting to shooting - computation
 relationship: variable_of CO_325:0100003 ! day
