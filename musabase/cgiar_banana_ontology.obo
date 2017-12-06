@@ -3,7 +3,6 @@ auto-generated-by: java
 default-namespace: BananaTrait
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-test
 
 [Term]
 id: CO_325:0000003
