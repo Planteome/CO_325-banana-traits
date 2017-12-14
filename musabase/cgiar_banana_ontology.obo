@@ -3887,33 +3887,33 @@ is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
 id: CO_325:0000882
-name: Projected top area in cm?
+name: Projected top area in cm2
 namespace: BananaTrait
-def: "Measure top view image in cm?" []
+def: "Measure top view image in cm2" []
 synonym: "topLeafArea_Meas_cm2, area_topView, areaPlantTop" EXACT []
 relationship: variable_of CO_325:0000921 ! projected top area
 relationship: variable_of CO_325:0010204 ! leaf area - measurement
-relationship: variable_of CO_325:0100101 ! cm?
+relationship: variable_of CO_325:0100101 ! cm2
 
 [Term]
 id: CO_325:0000883
-name: All leaves area in cm?
+name: All leaves area in cm2
 namespace: BananaTrait
-def: "Measure top view image of loose leaves in cm?" []
+def: "Measure top view image of loose leaves in cm2" []
 synonym: "totLeafArea_Meas_cm2, areaLeaves, areaTotLeaves" EXACT []
 relationship: variable_of CO_325:0000922 ! leaf area
 relationship: variable_of CO_325:0010204 ! leaf area - measurement
-relationship: variable_of CO_325:0100101 ! cm?
+relationship: variable_of CO_325:0100101 ! cm2
 
 [Term]
 id: CO_325:0000884
-name: Leaf area in cm?
+name: Leaf area in cm2
 namespace: BananaTrait
-def: "Measure top view image of a single leave in cm?" []
+def: "Measure top view image of a single leave in cm2" []
 synonym: "singleLeafArea_Meas_cm2, areaPerLeaf, areaSingleLeaf" EXACT []
 relationship: variable_of CO_325:0000922 ! leaf area
 relationship: variable_of CO_325:0010204 ! leaf area - measurement
-relationship: variable_of CO_325:0100101 ! cm?
+relationship: variable_of CO_325:0100101 ! cm2
 
 [Term]
 id: CO_325:0000885
@@ -4197,13 +4197,13 @@ relationship: variable_of CO_325:0100103 ! ml
 
 [Term]
 id: CO_325:0000913
-name: System water loss per leaf area in mL/cm?
+name: System water loss per leaf area in mL/cm2
 namespace: BananaTrait
-def: "Measure weight of water loss though system normalized by leaf area in mL / cm?" []
+def: "Measure weight of water loss though system normalized by leaf area in mL / cm2" []
 synonym: "waterLossSystPerLeafArea_Meas_mlcm2, waterLossSystem_per_Area" EXACT []
 relationship: variable_of CO_325:0000951 ! system water loss per leaf area
 relationship: variable_of CO_325:0010214 ! water loss - measurement
-relationship: variable_of CO_325:0100105 ! ml / cm?
+relationship: variable_of CO_325:0100105 ! ml / cm2
 
 [Term]
 id: CO_325:0000914
@@ -4227,23 +4227,23 @@ relationship: variable_of CO_325:0100019 ! g
 
 [Term]
 id: CO_325:0000916
-name: Increase of leaf area in cm?
+name: Increase of leaf area in cm2
 namespace: BananaTrait
-def: "Compute leaf area difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in cm?" []
+def: "Compute leaf area difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in cm2" []
 synonym: "leafAreaIncrease_Comp_cm2, leafAreaIncrease" EXACT []
 relationship: variable_of CO_325:0000954 ! increase of leaf area
 relationship: variable_of CO_325:0010218 ! growth - computation
-relationship: variable_of CO_325:0100101 ! cm?
+relationship: variable_of CO_325:0100101 ! cm2
 
 [Term]
 id: CO_325:0000917
-name: Height increase of pseudostem in cm?
+name: Height increase of pseudostem in cm2
 namespace: BananaTrait
-def: "Compute pseudostem height difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in cm?" []
+def: "Compute pseudostem height difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in cm2" []
 synonym: "pseudostemHeightIncrease_Comp_cm2, pseudostemHeightIncrease" EXACT []
 relationship: variable_of CO_325:0000955 ! height increase of pseudostem
 relationship: variable_of CO_325:0010218 ! growth - computation
-relationship: variable_of CO_325:0100101 ! cm?
+relationship: variable_of CO_325:0100101 ! cm2
 
 [Term]
 id: CO_325:0000918
@@ -8598,7 +8598,7 @@ is_a: CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0100101
-name: cm?
+name: cm2
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010204 ! leaf area - measurement
@@ -8643,7 +8643,7 @@ relationship: scale_of CO_325:0010215 ! transpiration efficiency - computation
 
 [Term]
 id: CO_325:0100105
-name: ml / cm?
+name: ml / cm2
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010214 ! water loss - measurement
