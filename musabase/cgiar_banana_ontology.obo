@@ -1937,7 +1937,7 @@ is_a: CO_325:1000003
 id: CO_325:0000441
 name: Bunch shape 1-5
 namespace: BananaTrait
-def: "Visually observe the shape of the mature bunch on a fully developed plant that is not experiencing environmental stress and choose the option that is most similar, from the 4 photos of descriptor 6.4.7. in the reference material., 1 = cylindrical; 2 = truncate =cone shaped; 3 = asymmetrical; 4 = spiral (all fruit are attached to a unique crown coiled around the stalk); 5 = other" []
+def: Based on 2016 Illustrated minimum set of descriptors for bananas by the Taxonomy Advisory Group: "Visually observe the shape of the mature bunch on a fully developed plant that is not experiencing environmental stress and choose the option that is most similar, from the 4 photos of descriptor 6.4.7. in the reference material. 1 = cylindrical; 2 = truncate =cone shaped; 3 = asymmetrical; 4 = spiral (all fruit are attached to a unique crown coiled around the stalk); 5 = other" []
 synonym: "BnchShp_Estm_1to5, BNSHP" EXACT []
 relationship: variable_of CO_325:0000440 ! bunch shape
 relationship: variable_of CO_325:0010170 ! bunch shape - estimation
