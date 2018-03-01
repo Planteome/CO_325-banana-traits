@@ -560,7 +560,7 @@ relationship: variable_of CO_325:0100054 ! presence absence 1
 id: CO_325:0000191
 name: Youngest leaf spotted rank
 namespace: BananaTrait
-def: "Record the rank (order) of the youngest leaf spotted (the first fully unfurled leaf with at least 10 discrete, mature, necrotic lesions or one large necrotic area with 10 light-coloured dry centres), counting the rank by starting with the youngest completely unrolled leaf as 1 and moving downwards, associating the data with the Date of data collection." []
+def: "Record the rank (order) of the youngest leaf spotted (the first fully unfurled leaf (or 50 pc unfurled for pathology trials) with at least 10 discrete, mature, necrotic lesions or one large necrotic area with 10 light-coloured dry centres), counting the rank by starting with the youngest completely unrolled leaf as 1 and moving downwards, associating the data with the Date of data collection." []
 synonym: "SpotLfNum_Ct_Lf, YLSF" EXACT []
 relationship: variable_of CO_325:0000099 ! youngest leaf spotted
 relationship: variable_of CO_325:0010102 ! youngest leaf spotted - counting
