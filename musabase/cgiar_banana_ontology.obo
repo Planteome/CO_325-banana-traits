@@ -2979,7 +2979,7 @@ is_a: CO_325:1000002
 id: CO_325:0000575
 name: Black Sigatoka disease severity Pct
 namespace: BananaTrait
-def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease. In %" []
+def: "Visually observe and record the amount of the surface area of a standing leaf (if measured in the field) or a leaf sample (if measured in the lab) that is affected by black leaf streak disease. In %" []
 synonym: "BlkLfStrkSvrt_Est_pct, BLS_pct" EXACT []
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
@@ -2987,23 +2987,23 @@ relationship: variable_of CO_325:0100046 ! %
 
 [Term]
 id: CO_325:0000576
-name: Black Sigatoka disease severity Gauhl
+name: Black Sigatoka disease stage Gauhl
 namespace: BananaTrait
 def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease., 0 = no symptoms; 1 = less than 1% of lamina with symptoms, only streaks and/or up to 10 spots; 2 = 1-5% of lamina with symptoms; 3 = 6-15% of lamina with symptoms; 4 = 16-33% of lamina with symptoms; 5 = 34-50% of lamina with symptoms; 6 = 51-100% of lamina with symptoms" []
-synonym: "BlkLfStrkSvrt_Est_Gauhl, BLS_Gaulh" EXACT []
+synonym: "BlkLfStrkStg_Est_Gauhl, BLS_Gaulh" EXACT []
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
 relationship: variable_of CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
 
 [Term]
 id: CO_325:0000577
-name: Black Sigatoka disease severity Faure
+name: Black Sigatoka disease stage Foure
 namespace: BananaTrait
 def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease., 1 = Stage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf.; 2 = Stage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the underside.; 3 = Stage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm.; 4 = Stage 4 appears on the underside as a brown spot and on the upper side as a black spot.; 5 = Stage 5 is when the elliptical spot is totally black and has spread to the underside of the limb. It is surrounded by a yellow halo with the centre beginning to flatten out.; 6 = Stage 6 is when the centre of the spot dries out, turns clear gray and is surrounded by a well-defined black ring, which is, in turn, surrounded by a bright yellow halo. These spots remain visible after the leaf has dried out because the ring persists." []
-synonym: "BlkLfStrkSvrt_Est_Faure, BLS_Faure" EXACT []
+synonym: "BlkLfStrkStg_Est_Foure, BLS_Foure" EXACT []
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
-relationship: variable_of CO_325:0100048 ! faure's stages of development of bls disease scale (1987)
+relationship: variable_of CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
 
 [Term]
 id: CO_325:0000578
@@ -6742,7 +6742,7 @@ is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system 
 
 [Term]
 id: CO_325:0100048
-name: faure's stages of development of bls disease scale (1987)
+name: Foure's stages of development of bls disease scale (1987)
 namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
 relationship: scale_of CO_325:0010110 ! black leaf streak disease severity - estimation
@@ -6752,42 +6752,42 @@ id: CO_325:0100048:1
 name: Stage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf.
 namespace: BananaScale
 synonym: "1" EXACT []
-is_a: CO_325:0100048 ! faure's stages of development of bls disease scale (1987)
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
 
 [Term]
 id: CO_325:0100048:2 
 name: Stage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the underside.
 namespace: BananaScale
 synonym: "2" EXACT []
-is_a: CO_325:0100048 ! faure's stages of development of bls disease scale (1987)
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
 
 [Term]
 id: CO_325:0100048:3 
 name: Stage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm.
 namespace: BananaScale
 synonym: "3" EXACT []
-is_a: CO_325:0100048 ! faure's stages of development of bls disease scale (1987)
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
 
 [Term]
 id: CO_325:0100048:4 
 name: Stage 4 appears on the underside as a brown spot and on the upper side as a black spot.
 namespace: BananaScale
 synonym: "4" EXACT []
-is_a: CO_325:0100048 ! faure's stages of development of bls disease scale (1987)
+is_a: CO_325:0100048 ! foure's stages of development of bls disease scale (1987)
 
 [Term]
 id: CO_325:0100048:5 
 name: Stage 5 is when the elliptical spot is totally black and has spread to the underside of the limb. It is surrounded by a yellow halo with the centre beginning to flatten out.
 namespace: BananaScale
 synonym: "5" EXACT []
-is_a: CO_325:0100048 ! faure's stages of development of bls disease scale (1987)
+is_a: CO_325:0100048 ! foure's stages of development of bls disease scale (1987)
 
 [Term]
 id: CO_325:0100048:6 
 name: Stage 6 is when the centre of the spot dries out, turns clear gray and is surrounded by a well-defined black ring, which is, in turn, surrounded by a bright yellow halo. These spots remain visible after the leaf has dried out because the ring persists.
 namespace: BananaScale
 synonym: "6" EXACT []
-is_a: CO_325:0100048 ! faure's stages of development of bls disease scale (1987)
+is_a: CO_325:0100048 ! foure's stages of development of bls disease scale (1987)
 
 [Term]
 id: CO_325:0100049
