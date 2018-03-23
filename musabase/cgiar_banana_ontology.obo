@@ -1,6 +1,6 @@
 format-version: 1.2
 auto-generated-by: java
-default-namespace: BananaTrait
+default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
 
