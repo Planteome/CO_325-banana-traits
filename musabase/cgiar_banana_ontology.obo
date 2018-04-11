@@ -3,7 +3,7 @@ date: 11:04:2018 11:49
 saved-by: guillaume
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
-namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)
+namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
 
 [Term]
