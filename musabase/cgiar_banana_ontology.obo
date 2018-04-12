@@ -14,6 +14,7 @@ namespace: BananaTrait
 [Term]
 id: CO_325:0000001
 name: flowering
+namespace: BananaTrait
 def: "Developmental stage where bloom or blossom on a banana plant." []
 synonym: "FLW" RELATED []
 is_a: CO_325:1000005 ! Physiological
@@ -23,6 +24,7 @@ creation_date: 2018-04-11T01:02:17Z
 [Term]
 id: CO_325:0000002
 name: fruit maturity-harvest
+namespace: BananaTrait
 def: "Physiological stage at which the fruit is mature and can be  harvested." []
 synonym: "HVST" RELATED []
 is_a: CO_325:1000005 ! Physiological
@@ -41,6 +43,7 @@ is_a: CO_325:1000004 ! Phenological
 [Term]
 id: CO_325:0000004
 name: flowering of the plant
+namespace: BananaTrait
 relationship: variable_of CO_325:0000001 ! flowering
 created_by: guillaume
 creation_date: 2018-04-11T11:01:27Z
@@ -48,6 +51,7 @@ creation_date: 2018-04-11T11:01:27Z
 [Term]
 id: CO_325:0000005
 name: fruit maturity of the plant
+namespace: BananaTrait
 relationship: variable_of CO_325:0000002 ! fruit maturity-harvest
 created_by: guillaume
 creation_date: 2018-04-11T11:32:48Z
