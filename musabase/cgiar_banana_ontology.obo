@@ -7129,6 +7129,1555 @@ relationship: scale_of CO_325:0010234 ! number of nematodes (pratylenchus goodey
 relationship: scale_of CO_325:0010235 ! number of nematodes (pratylenchus coffeae) per unit fresh root weight -method
 
 [Term]
+id: CO_325:0100111
+name: fully green
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100014 ! bunch maturity
+
+[Term]
+id: CO_325:0100112
+name: one yellow finger
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100014 ! bunch maturity
+
+[Term]
+id: CO_325:0100113
+name: bad
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100030 ! bad good
+
+[Term]
+id: CO_325:0100114
+name: good
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100030 ! bad good
+
+[Term]
+id: CO_325:0100115
+name: parthenocarpic
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100031 ! parthenocarpy
+
+[Term]
+id: CO_325:0100116
+name: not parthenocarpic
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100031 ! parthenocarpy
+
+[Term]
+id: CO_325:0100117
+name: dwarf
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100032 ! dwarfism
+
+[Term]
+id: CO_325:0100118
+name: not dwarf
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100032 ! dwarfism
+
+[Term]
+id: CO_325:0100119
+name: no symptoms
+namespace: BananaScale
+synonym: "0" EXACT []
+is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
+
+[Term]
+id: CO_325:0100120
+name: less than 1% of lamina with symptoms, only streaks and/or up to 10 spots
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
+
+[Term]
+id: CO_325:0100121
+name: 1-5% of lamina with symptoms
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
+
+[Term]
+id: CO_325:0100122
+name: 6-15% of lamina with symptoms
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
+
+[Term]
+id: CO_325:0100123
+name: 16-33% of lamina with symptoms
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
+
+[Term]
+id: CO_325:0100124
+name: 34-50% of lamina with symptoms
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
+
+[Term]
+id: CO_325:0100125
+name: 51-100% of lamina with symptoms
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
+
+[Term]
+id: CO_325:0100126
+name: Stage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf.
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
+
+[Term]
+id: CO_325:0100127
+name: Stage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the underside.
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
+
+[Term]
+id: CO_325:0100128
+name: Stage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm.
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
+
+[Term]
+id: CO_325:0100129
+name: Stage 4 appears on the underside as a brown spot and on the upper side as a black spot.
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
+
+[Term]
+id: CO_325:0100130
+name: Stage 5 is when the elliptical spot is totally black and has spread to the underside of the limb. It is surrounded by a yellow halo with the centre beginning to flatten out.
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
+
+[Term]
+id: CO_325:0100131
+name: Stage 6 is when the centre of the spot dries out, turns clear gray and is surrounded by a well-defined black ring, which is, in turn, surrounded by a bright yellow halo. These spots remain visible after the leaf has dried out because the ring persists.
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
+
+[Term]
+id: CO_325:0100132
+name: Initial speck stage: symptoms are first visible to the naked eye as faint, minute (less than 0.25 mm diam), reddish brown specks on the lower surface of the leaf. Specks are often most abundant near the margin of the left side of the leaf, particularly towards the tip. Where leaf spot is severe, specks have been observed on the second leaf of plants that have not yet produced a bunch. Elsewhere they usually appear on the third, fourth, or older leaves.
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100049 ! meredith & lawrence (1969) - complete
+
+[Term]
+id: CO_325:0100133
+name: First streak stage: the initial speck elongates, becoming slightly wider, to form a characteristic narrow, reddish brown streak up to 20 mm long and 2.0 mm wide, with the long axis parallel to the leaf venation. At this stage, streaks are more clearly visible on the lower surface of the leaf than on the upper one. The distribution of streaks is variable. Sometimes they are most numerous near the edge of the left side of the leaf. At other times they are equally numerous on both sides of the leaf, and more or less evenly distributed. Frequently they are densely aggregated in a band several cm wide on one side or both sides of the mid-rib, becoming less numerous towards the edge of the leaf. Streaks may be so numerous that every cm2 of leaf surface bears one or more. There is considerable variation in the length of individual streaks on a given leaf, and they frequently overlap to form larger, compound streaks.
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100049 ! meredith & lawrence (1969) - complete
+
+[Term]
+id: CO_325:0100134
+name: Second-streak stage: the streaks may elongate slightly, but the most notable change is that in colour from reddish brown to dark brown or almost black, sometimes with a purplish tinge. The streak is now clearly visible on the upper surface of the leaf. The distribution of streaks at this stage of development varies in the same way as mentioned above. When streaks are very numerous, and more or less evenly distributed, the entire leaf blackens.
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100049 ! meredith & lawrence (1969) - complete
+
+[Term]
+id: CO_325:0100135
+name: First-spot stage: the streak broadens and becomes more or less fusiform and elliptical in outline and similar to the 'first-spot stage' of Sigatoka (Leach 1946). The transition from streak to spot is further characterised by the development of a light brown, water-soaked border around the spot. This water-soaked effect is especially clear in the early morning, when dew is still present on the leaf, or after rain.
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100049 ! meredith & lawrence (1969) - complete
+
+[Term]
+id: CO_325:0100136
+name: Second-spot stage: the dark brown or black central area of the spot becomes slightly depressed and the water-soaked border becomes more pronounced due to darkening. At this stage, a slight yellowing of the leaf tissue immediately surrounding the water-soaked border may occur.
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100049 ! meredith & lawrence (1969) - complete
+
+[Term]
+id: CO_325:0100137
+name: Third or mature spot stage: the centre of the spot dries out, becoming light grey or buff-coloured, and further depressed. The spot is surrounded by a narrow, well-defined, dark brown or black border. between the latter and the normal green colour of the leaf, there is often a bright yellow transitional zone. After the leaf has collapsed and withered, spots remain clearly visible because of the light-coloured centre and dark border.
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100049 ! meredith & lawrence (1969) - complete
+
+[Term]
+id: CO_325:0100138
+name: Initial speck stage: faint, minute, reddish-brown specks on the lower surface of the leaf.
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100050 ! meredith & lawrence (1969) - condensed
+
+[Term]
+id: CO_325:0100139
+name: First streak stage: specks elongate, becoming slightly wider to form narrow reddish-brown streaks.
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100050 ! meredith & lawrence (1969) - condensed
+
+[Term]
+id: CO_325:0100140
+name: Second-streak stage: streaks change colour from reddish brown to dark brown or black, sometimes with a purplish tinge, clearly visible at the upper surface of the leaf.
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100050 ! meredith & lawrence (1969) - condensed
+
+[Term]
+id: CO_325:0100141
+name: First-spot stage: the streaks broaden and become more or less fusiform or elliptical in outline and a water soaked border appears around each lesion.
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100050 ! meredith & lawrence (1969) - condensed
+
+[Term]
+id: CO_325:0100142
+name: Second-spot stage: the dark brown or black centre of each lesion becomes slightly depressed and water soaked border becomes more pronounced.
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100050 ! meredith & lawrence (1969) - condensed
+
+[Term]
+id: CO_325:0100143
+name: Third or mature spot stage: the centres of the lesions dry out becoming light grey or buff coloured and a bright yellow transitional zone appears between them and the normal green colour of the leaf. The lesions remain clearly visible after the leaf has collapsed or withered because of their light coloured centre and dark border.
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100050 ! meredith & lawrence (1969) - condensed
+
+[Term]
+id: CO_325:0100144
+name: corm completely clean, no vascular discolouration
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100052 ! 5 pt corm discolouration scale
+
+[Term]
+id: CO_325:0100145
+name: isolated points of discolouration in vascular tissue
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100052 ! 5 pt corm discolouration scale
+
+[Term]
+id: CO_325:0100146
+name: discolouration of up to one-third of vascular tissue
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100052 ! 5 pt corm discolouration scale
+
+[Term]
+id: CO_325:0100147
+name: discolouration of between one-third and two-thirds of vascular tissue
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100052 ! 5 pt corm discolouration scale
+
+[Term]
+id: CO_325:0100148
+name: discolouration greater than two-thirds of vascular tissue
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100052 ! 5 pt corm discolouration scale
+
+[Term]
+id: CO_325:0100149
+name: total discolouration of vascular tissue
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100052 ! 5 pt corm discolouration scale
+
+[Term]
+id: CO_325:0100150
+name: absent
+namespace: BananaScale
+synonym: "0" EXACT []
+is_a: CO_325:0100053 ! presence absence 0
+
+[Term]
+id: CO_325:0100151
+name: present
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100053 ! presence absence 0
+
+[Term]
+id: CO_325:0100152
+name: absent
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100054 ! presence absence 1
+
+[Term]
+id: CO_325:0100153
+name: present
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100054 ! presence absence 1
+
+[Term]
+id: CO_325:0100154
+name: no weevil damage
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100058 ! weevil damage
+
+[Term]
+id: CO_325:0100155
+name: partial damage
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100058 ! weevil damage
+
+[Term]
+id: CO_325:0100156
+name: severe damage
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100058 ! weevil damage
+
+[Term]
+id: CO_325:0100157
+name: less than or equal to 2 m
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100062 ! height score (1 to 3)
+
+[Term]
+id: CO_325:0100158
+name: 2.1-2.9 m
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100062 ! height score (1 to 3)
+
+[Term]
+id: CO_325:0100159
+name: equal to or more than 3 m
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100062 ! height score (1 to 3)
+
+[Term]
+id: CO_325:0100160
+name: cream
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100161
+name: orange red
+namespace: BananaScale
+synonym: "10" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100162
+name: red
+namespace: BananaScale
+synonym: "11" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100163
+name: pink-purple
+namespace: BananaScale
+synonym: "12" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100164
+name: purple-brown
+namespace: BananaScale
+synonym: "13" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100165
+name: red-purple
+namespace: BananaScale
+synonym: "14" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100166
+name: purple
+namespace: BananaScale
+synonym: "15" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100167
+name: yellow
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100168
+name: watery green
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100169
+name: green yellow
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100170
+name: light green
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100171
+name: medium green
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100172
+name: green
+namespace: BananaScale
+synonym: "7" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100173
+name: dark green
+namespace: BananaScale
+synonym: "8" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100174
+name: whitish
+namespace: BananaScale
+synonym: "9" EXACT []
+is_a: CO_325:0100063 ! bd colour chart a - 2016
+
+[Term]
+id: CO_325:0100175
+name: no pigmentation
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100064 ! blotch pigmentation scale (1 to 4)
+
+[Term]
+id: CO_325:0100176
+name: sparse blotching (<20%)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100064 ! blotch pigmentation scale (1 to 4)
+
+[Term]
+id: CO_325:0100177
+name: moderate blotching (20-50%)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100064 ! blotch pigmentation scale (1 to 4)
+
+[Term]
+id: CO_325:0100178
+name: extensive pigmentation (>50%)
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100064 ! blotch pigmentation scale (1 to 4)
+
+[Term]
+id: CO_325:0100179
+name: sparse blotching
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100065 ! blotch pigmentation scale (1 to 5)
+
+[Term]
+id: CO_325:0100180
+name: small blotches
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100065 ! blotch pigmentation scale (1 to 5)
+
+[Term]
+id: CO_325:0100181
+name: large blotches
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100065 ! blotch pigmentation scale (1 to 5)
+
+[Term]
+id: CO_325:0100182
+name: extensive pigmentation
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100065 ! blotch pigmentation scale (1 to 5)
+
+[Term]
+id: CO_325:0100183
+name: without pigmentation
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100065 ! blotch pigmentation scale (1 to 5)
+
+[Term]
+id: CO_325:0100184
+name: orange-brown (mahogany, like in Pisang Mas)
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100066 ! blotch color scale (1 to 4)
+
+[Term]
+id: CO_325:0100185
+name: brown
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100066 ! blotch color scale (1 to 4)
+
+[Term]
+id: CO_325:0100186
+name: black-purple
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100066 ! blotch color scale (1 to 4)
+
+[Term]
+id: CO_325:0100187
+name: other
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100066 ! blotch color scale (1 to 4)
+
+[Term]
+id: CO_325:0100188
+name: brown
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100067 ! blotch color scale (1 to 5)
+
+[Term]
+id: CO_325:0100189
+name: dark brown
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100067 ! blotch color scale (1 to 5)
+
+[Term]
+id: CO_325:0100190
+name: brown-black
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100067 ! blotch color scale (1 to 5)
+
+[Term]
+id: CO_325:0100191
+name: black-purple
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100067 ! blotch color scale (1 to 5)
+
+[Term]
+id: CO_325:0100192
+name: other
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100067 ! blotch color scale (1 to 5)
+
+[Term]
+id: CO_325:0100193
+name: margins spreading
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100068 ! margin behaviour scale (1 to 4)
+
+[Term]
+id: CO_325:0100194
+name: margins erect
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100068 ! margin behaviour scale (1 to 4)
+
+[Term]
+id: CO_325:0100195
+name: margins curved inward
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100068 ! margin behaviour scale (1 to 4)
+
+[Term]
+id: CO_325:0100196
+name: margins overlapping
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100068 ! margin behaviour scale (1 to 4)
+
+[Term]
+id: CO_325:0100197
+name: open with margins spreading
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100069 ! margin behaviour scale (1 to 5)
+
+[Term]
+id: CO_325:0100198
+name: wide with erect margins
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100069 ! margin behaviour scale (1 to 5)
+
+[Term]
+id: CO_325:0100199
+name: straight with erect margins
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100069 ! margin behaviour scale (1 to 5)
+
+[Term]
+id: CO_325:0100200
+name: margins curved inward
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100069 ! margin behaviour scale (1 to 5)
+
+[Term]
+id: CO_325:0100201
+name: margins overlapping
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100069 ! margin behaviour scale (1 to 5)
+
+[Term]
+id: CO_325:0100202
+name: winged
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100070 ! wing presence/absence
+
+[Term]
+id: CO_325:0100203
+name: not winged
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100070 ! wing presence/absence
+
+[Term]
+id: CO_325:0100204
+name: winged and undulating
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100071 ! wing presence/absence and clasping presence/absence scale 1 to 5
+
+[Term]
+id: CO_325:0100205
+name: winged and not clasping the pseudostem
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100071 ! wing presence/absence and clasping presence/absence scale 1 to 5
+
+[Term]
+id: CO_325:0100206
+name: winged and clasping the pseudostem
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100071 ! wing presence/absence and clasping presence/absence scale 1 to 5
+
+[Term]
+id: CO_325:0100207
+name: not winged and clasping the pseudostem
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100071 ! wing presence/absence and clasping presence/absence scale 1 to 5
+
+[Term]
+id: CO_325:0100208
+name: not winged and not clasping the pseudostem
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100071 ! wing presence/absence and clasping presence/absence scale 1 to 5
+
+[Term]
+id: CO_325:0100209
+name: clasping
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100072 ! clasping or not clasping
+
+[Term]
+id: CO_325:0100210
+name: not clasping
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100072 ! clasping or not clasping
+
+[Term]
+id: CO_325:0100211
+name: green
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100073 ! bd colour chart a - 1996
+
+[Term]
+id: CO_325:0100212
+name: pink-purple to red
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100073 ! bd colour chart a - 1996
+
+[Term]
+id: CO_325:0100213
+name: purple to blue
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100073 ! bd colour chart a - 1996
+
+[Term]
+id: CO_325:0100214
+name: other
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100073 ! bd colour chart a - 1996
+
+[Term]
+id: CO_325:0100215
+name: no contrast between margin and petiole (without a colour line along)
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100074 ! petiole-margin contrast
+
+[Term]
+id: CO_325:0100216
+name: contrast between margin and petiole (with a contrasting colour line along)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100074 ! petiole-margin contrast
+
+[Term]
+id: CO_325:0100217
+name: hanging vertically
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+
+[Term]
+id: CO_325:0100218
+name: slightly angled
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+
+[Term]
+id: CO_325:0100219
+name: hanging at a 45 degree angle
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+
+[Term]
+id: CO_325:0100220
+name: horizontal
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+
+[Term]
+id: CO_325:0100221
+name: erect
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+
+[Term]
+id: CO_325:0100222
+name: cylindrical
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100076 ! bunch shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100223
+name: cone shaped
+namespace: BananaScale
+synonym: "2" EXACT []
+synonym: "truncate (" EXACT []
+is_a: CO_325:0100076 ! bunch shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100224
+name: asymmetrical
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100076 ! bunch shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100225
+name: spiral (all fruit are attached to a unique crown coiled around the stalk)
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100076 ! bunch shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100226
+name: other
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100076 ! bunch shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100227
+name: truncated
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100077 ! rachis type scale (1 to 2)
+
+[Term]
+id: CO_325:0100228
+name: present
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100077 ! rachis type scale (1 to 2)
+
+[Term]
+id: CO_325:0100229
+name: falling vertically
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100078 ! rachis angle scale (1 to 2)
+
+[Term]
+id: CO_325:0100230
+name: at an angle
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100078 ! rachis angle scale (1 to 2)
+
+[Term]
+id: CO_325:0100231
+name: with a curve
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100078 ! rachis angle scale (1 to 2)
+
+[Term]
+id: CO_325:0100232
+name: horizontal or supra-horizontal
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100078 ! rachis angle scale (1 to 2)
+
+[Term]
+id: CO_325:0100233
+name: erect
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100078 ! rachis angle scale (1 to 2)
+
+[Term]
+id: CO_325:0100234
+name: bare
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100079 ! rachis appearance scale (1 to 5)
+
+[Term]
+id: CO_325:0100235
+name: neutral flowers on one to few hands only near the bunch (rest of stalk is bare)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100079 ! rachis appearance scale (1 to 5)
+
+[Term]
+id: CO_325:0100236
+name: male flowers/bracts above the male bud (rest of stalk is bare)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100079 ! rachis appearance scale (1 to 5)
+
+[Term]
+id: CO_325:0100237
+name: neutral/male flowers and presence of withered bracts on the entire stalk
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100079 ! rachis appearance scale (1 to 5)
+
+[Term]
+id: CO_325:0100238
+name: neutral/male flowers on the whole stalk without persistent bracts (still firmly attached to the rachis)
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100079 ! rachis appearance scale (1 to 5)
+
+[Term]
+id: CO_325:0100239
+name: small bunch from neutral/hermaphrodite flowers just above the male bud
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100079 ! rachis appearance scale (1 to 5)
+
+[Term]
+id: CO_325:0100240
+name: other
+namespace: BananaScale
+synonym: "7" EXACT []
+is_a: CO_325:0100079 ! rachis appearance scale (1 to 5)
+
+[Term]
+id: CO_325:0100241
+name: skinny (w/y less than or equal to 0.45)
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100080 ! bud shape scale (1 to 3)
+
+[Term]
+id: CO_325:0100242
+name: medium (0.45 < w/y < 0.55)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100080 ! bud shape scale (1 to 3)
+
+[Term]
+id: CO_325:0100243
+name: fat (w/y equal to or more than 0.55)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100080 ! bud shape scale (1 to 3)
+
+[Term]
+id: CO_325:0100244
+name: like a top
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100081 ! bud shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100245
+name: lanceolate
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100081 ! bud shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100246
+name: intermediate
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100081 ! bud shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100247
+name: ovoid
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100081 ! bud shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100248
+name: rounded
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100081 ! bud shape scale (1 to 5)
+
+[Term]
+id: CO_325:0100249
+name: short (y less than or equal to 20 cm)
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100082 ! bud length scale (1 to 3)
+
+[Term]
+id: CO_325:0100250
+name: medium (20 cm < y < 30 cm)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100082 ! bud length scale (1 to 3)
+
+[Term]
+id: CO_325:0100251
+name: long (equal to or more than 30 cm)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100082 ! bud length scale (1 to 3)
+
+[Term]
+id: CO_325:0100252
+name: less than or equal to 20 cm
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100083 ! bud size scale (1 to 3)
+
+[Term]
+id: CO_325:0100253
+name: 21-30 cm
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100083 ! bud size scale (1 to 3)
+
+[Term]
+id: CO_325:0100254
+name: equal to or more than 31 cm
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100083 ! bud size scale (1 to 3)
+
+[Term]
+id: CO_325:0100255
+name: High shouldered (x/y less than or equal to 0.28)
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100084 ! bud shoulder scale (1 to 3)
+
+[Term]
+id: CO_325:0100256
+name: medium shouldered (0.28 < x/y < 0.30)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100084 ! bud shoulder scale (1 to 3)
+
+[Term]
+id: CO_325:0100257
+name: low shouldered (x/y more than or equal to 0.30)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100084 ! bud shoulder scale (1 to 3)
+
+[Term]
+id: CO_325:0100258
+name: pointed
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100085 ! bract apex scale (1 to 4)
+
+[Term]
+id: CO_325:0100259
+name: intermeditae
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100085 ! bract apex scale (1 to 4)
+
+[Term]
+id: CO_325:0100260
+name: obtuse
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100085 ! bract apex scale (1 to 4)
+
+[Term]
+id: CO_325:0100261
+name: obtuse and split
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100085 ! bract apex scale (1 to 4)
+
+[Term]
+id: CO_325:0100262
+name: pointed
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100086 ! bract apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100263
+name: slightly pointed
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100086 ! bract apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100264
+name: intermediate
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100086 ! bract apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100265
+name: obtuse
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100086 ! bract apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100266
+name: obtuse and split
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100086 ! bract apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100267
+name: convolute
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100087 ! bract imbrication scale (1 to 3)
+
+[Term]
+id: CO_325:0100268
+name: moderately imbricate
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100087 ! bract imbrication scale (1 to 3)
+
+[Term]
+id: CO_325:0100269
+name: highly imbricate
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100087 ! bract imbrication scale (1 to 3)
+
+[Term]
+id: CO_325:0100270
+name: revolute (rolling)
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100088 ! bract behaviour scale (1 to 2)
+
+[Term]
+id: CO_325:0100271
+name: not revolute (not rolling)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100088 ! bract behaviour scale (1 to 2)
+
+[Term]
+id: CO_325:0100272
+name: white
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100273
+name: pink/pink-purple
+namespace: BananaScale
+synonym: "10" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100274
+name: brown/rusty-brown
+namespace: BananaScale
+synonym: "11" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100275
+name: beige-pink
+namespace: BananaScale
+synonym: "12" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100276
+name: silvery
+namespace: BananaScale
+synonym: "13" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100277
+name: light green
+namespace: BananaScale
+synonym: "14" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100278
+name: green
+namespace: BananaScale
+synonym: "15" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100279
+name: cream
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100280
+name: ivory
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100281
+name: yellow
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100282
+name: bright yellow
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100283
+name: orange
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100284
+name: orange red
+namespace: BananaScale
+synonym: "7" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100285
+name: red
+namespace: BananaScale
+synonym: "8" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100286
+name: red-purple
+namespace: BananaScale
+synonym: "9" EXACT []
+is_a: CO_325:0100089 ! bd colour chart b - 2016
+
+[Term]
+id: CO_325:0100287
+name: white
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100090 ! bd colour chart b - 1996
+
+[Term]
+id: CO_325:0100288
+name: cream
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100090 ! bd colour chart b - 1996
+
+[Term]
+id: CO_325:0100289
+name: yellow
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100090 ! bd colour chart b - 1996
+
+[Term]
+id: CO_325:0100290
+name: orange
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100090 ! bd colour chart b - 1996
+
+[Term]
+id: CO_325:0100291
+name: pink/pink-purple
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100090 ! bd colour chart b - 1996
+
+[Term]
+id: CO_325:0100292
+name: other
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100090 ! bd colour chart b - 1996
+
+[Term]
+id: CO_325:0100293
+name: less than or equal to 15 cm
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100092 ! fruit length scale (1 to 5)
+
+[Term]
+id: CO_325:0100294
+name: 16-20 cm
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100092 ! fruit length scale (1 to 5)
+
+[Term]
+id: CO_325:0100295
+name: 21-25 cm
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100092 ! fruit length scale (1 to 5)
+
+[Term]
+id: CO_325:0100296
+name: 26-30 cm
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100092 ! fruit length scale (1 to 5)
+
+[Term]
+id: CO_325:0100297
+name: equal to or more than 31 cm
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100092 ! fruit length scale (1 to 5)
+
+[Term]
+id: CO_325:0100298
+name: straight
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100093 ! fruit curve shape (scale 1 to 6)
+
+[Term]
+id: CO_325:0100299
+name: slightly curved
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100093 ! fruit curve shape (scale 1 to 6)
+
+[Term]
+id: CO_325:0100300
+name: straight in the distal part
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100093 ! fruit curve shape (scale 1 to 6)
+
+[Term]
+id: CO_325:0100301
+name: curved (sharp curve)
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100093 ! fruit curve shape (scale 1 to 6)
+
+[Term]
+id: CO_325:0100302
+name: curved in slight 'S' shape (double curvature)
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100093 ! fruit curve shape (scale 1 to 6)
+
+[Term]
+id: CO_325:0100303
+name: other
+namespace: BananaScale
+synonym: "6" EXACT []
+is_a: CO_325:0100093 ! fruit curve shape (scale 1 to 6)
+
+[Term]
+id: CO_325:0100304
+name: straight (or slightly curved)
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100094 ! fruit curve shape (scale 1 to 5)
+
+[Term]
+id: CO_325:0100305
+name: straight in the distal part
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100094 ! fruit curve shape (scale 1 to 5)
+
+[Term]
+id: CO_325:0100306
+name: curved (sharp curve)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100094 ! fruit curve shape (scale 1 to 5)
+
+[Term]
+id: CO_325:0100307
+name: curved in 'S' shape (double curvature)
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100094 ! fruit curve shape (scale 1 to 5)
+
+[Term]
+id: CO_325:0100308
+name: other
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100094 ! fruit curve shape (scale 1 to 5)
+
+[Term]
+id: CO_325:0100309
+name: pointed
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100095 ! fruit apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100310
+name: lengthily pointed (like plantain)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100095 ! fruit apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100311
+name: blunt-tipped (plateau at tip)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100095 ! fruit apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100312
+name: strongly bottle-necked (wider under tip than number 2)
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100095 ! fruit apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100313
+name: rounded
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100095 ! fruit apex scale (1 to 5)
+
+[Term]
+id: CO_325:0100314
+name: without flower relicts
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100096 ! fruit relicts scale (1 to 4)
+
+[Term]
+id: CO_325:0100315
+name: few flower relicts (< 20% of the fruits with relicts)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100096 ! fruit relicts scale (1 to 4)
+
+[Term]
+id: CO_325:0100316
+name: persistent flower relicts (> 20% of the fruits with relicts)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100096 ! fruit relicts scale (1 to 4)
+
+[Term]
+id: CO_325:0100317
+name: only base of the style persists
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100096 ! fruit relicts scale (1 to 4)
+
+[Term]
+id: CO_325:0100318
+name: without any floral relicts
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100097 ! fruit relicts scale (1 to 3)
+
+[Term]
+id: CO_325:0100319
+name: persistent style
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100097 ! fruit relicts scale (1 to 3)
+
+[Term]
+id: CO_325:0100320
+name: base of the style prominent
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100097 ! fruit relicts scale (1 to 3)
+
+[Term]
+id: CO_325:0100321
+name: less than or equal to 10 mm
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100098 ! fruit pedicel scale (1 to 3)
+
+[Term]
+id: CO_325:0100322
+name: 11-20 mm
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100098 ! fruit pedicel scale (1 to 3)
+
+[Term]
+id: CO_325:0100323
+name: equal to or more than 21 mm
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100098 ! fruit pedicel scale (1 to 3)
+
+[Term]
+id: CO_325:0100324
+name: no visible sign of fusion
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100099 ! fusion of pedicel scale (1 to 2)
+
+[Term]
+id: CO_325:0100325
+name: partially fused (up to 50% of the length of the pedicel)
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100099 ! fusion of pedicel scale (1 to 2)
+
+[Term]
+id: CO_325:0100326
+name: totally fused (more than 50% of the length of the pedicel)
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100099 ! fusion of pedicel scale (1 to 2)
+
+[Term]
+id: CO_325:0100327
+name: dislike very much
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100100 ! 1 to 5 acceptability score
+
+[Term]
+id: CO_325:0100328
+name: dislike
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100100 ! 1 to 5 acceptability score
+
+[Term]
+id: CO_325:0100329
+name: like fairly
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100100 ! 1 to 5 acceptability score
+
+[Term]
+id: CO_325:0100330
+name: like very much
+namespace: BananaScale
+synonym: "4" EXACT []
+is_a: CO_325:0100100 ! 1 to 5 acceptability score
+
+[Term]
+id: CO_325:0100331
+name: like extremely
+namespace: BananaScale
+synonym: "5" EXACT []
+is_a: CO_325:0100100 ! 1 to 5 acceptability score
+
+
+[Term]
 id: CO_325:1000001
 name: Agronomical
 namespace: BananaTrait
