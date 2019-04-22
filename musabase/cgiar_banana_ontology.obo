@@ -4622,6 +4622,16 @@ synonym: "pollenGerm" EXACT []
 is_a: CO_325:1000005 ! Physiological
 
 [Term]
+id: CO_325:0000969
+name: Pollen germination proportion
+namespace: BananaTrait
+def: "Under microscope, count germinated pollen grains. Calculate pollen germination percentage measured as number of pollen germinated divided by total number of pollen mulitplied by 100" []
+synonym: "pollenGermProp" EXACT []
+relationship: variable_of CO_325:0000967 ! pollen germination
+relationship: variable_of CO_325:0010237 ! percentage of germinating pollen - computation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
