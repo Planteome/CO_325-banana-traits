@@ -6316,6 +6316,14 @@ is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0000543 ! number of pratylenchus coffeae per fresh root weight
 
 [Term]
+id: CO_325:0010237
+name: percentage of germinating pollen - computation
+namespace: BananaMethod
+def: "Calculate as: number of germinated pollen grain divided by total number of pollen grain times 100" []
+is_a: CO_325:1000010 ! Computation
+relationship: method_of CO_325:0000967 ! pollen germination
+
+[Term]
 id: CO_325:0100002
 name: open answer
 namespace: BananaScale
