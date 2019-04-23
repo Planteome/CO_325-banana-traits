@@ -4632,6 +4632,22 @@ relationship: variable_of CO_325:0010237 ! percentage of germinating pollen - co
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
+id: CO_325:0000970
+name: pollen viability
+namespace: BananaTrait
+def: "The amount of pollen grains which germinate and generate viable plantlets" []
+synonym: "pollenVia" EXACT []
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0000971
+name: Pollen per anther
+namespace: BananaTrait
+def: "pollen grains per one anther of a male flower" []
+synonym: "pollenPerAnth" EXACT []
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
