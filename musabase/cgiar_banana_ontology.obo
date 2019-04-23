@@ -42,7 +42,7 @@ is_a: CO_325:1000004 ! Phenological
 
 [Term]
 id: CO_325:0000004
-name: flowering of the plant
+name: Flowering of the plant
 namespace: BananaTrait
 relationship: variable_of CO_325:0000001 ! flowering
 created_by: guillaume
@@ -3453,7 +3453,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlAdltHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000624 ! banana weevil adult head capsule width
 relationship: variable_of CO_325:0010148 ! adult weevil head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000626
@@ -3470,7 +3470,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlAdltHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000626 ! banana weevil adult average head capsule width
 relationship: variable_of CO_325:0010148 ! adult weevil head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000628
@@ -3487,7 +3487,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlAdltBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000628 ! banana weevil adult body length
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000630
@@ -3504,7 +3504,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlAdltBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000630 ! banana weevil adult average body length
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000632
@@ -3555,7 +3555,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlLvHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000636 ! banana weevil larvae head capsule width
 relationship: variable_of CO_325:0010150 ! weevil larvae head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000638
@@ -3572,7 +3572,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlLvHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000638 ! banana weevil larvae average head capsule width
 relationship: variable_of CO_325:0010150 ! weevil larvae head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000640
@@ -3589,7 +3589,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlLvBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000640 ! banana weevil larvae body length
 relationship: variable_of CO_325:0010151 ! weevil larvae body length - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000642
@@ -3606,7 +3606,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlLvBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000642 ! banana weevil larvae average body length
 relationship: variable_of CO_325:0010151 ! weevil larvae body length - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000644
@@ -4622,13 +4622,21 @@ synonym: "pollenGerm" EXACT []
 is_a: CO_325:1000005 ! Physiological
 
 [Term]
+id: CO_325:0000968
+name: Pollen viability
+def: "Pollen viability percentage calculated as (number of viable pollen/total number of pollen)*100" []
+relationship: variable_of CO_325:0000970 ! pollen viability
+relationship: variable_of CO_325:0010238 ! percentage of pollen grain viable- computation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
 id: CO_325:0000969
 name: Pollen germination proportion
 namespace: BananaTrait
 def: "Under microscope, count germinated pollen grains. Calculate pollen germination percentage measured as number of pollen germinated divided by total number of pollen mulitplied by 100" []
 synonym: "pollenGermProp" EXACT []
 relationship: variable_of CO_325:0000967 ! pollen germination
-relationship: variable_of CO_325:0010237 ! percentage of germinating pollen - computation
+relationship: variable_of CO_325:0010237 ! percentage of pollen grain germinating - computation
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
@@ -4641,11 +4649,19 @@ is_a: CO_325:1000005 ! Physiological
 
 [Term]
 id: CO_325:0000971
-name: Pollen per anther
+name: pollen per anther
 namespace: BananaTrait
 def: "pollen grains per one anther of a male flower" []
 synonym: "pollenPerAnth" EXACT []
 is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0000972
+name: Number of pollen grain per anther: count
+namespace: BananaTrait
+def: "the Number of grain pollen counted from an anther" []
+relationship: variable_of CO_325:0010239 ! number of pollen grain per anther - counting
+relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0010011
@@ -6343,11 +6359,24 @@ relationship: method_of CO_325:0000543 ! number of pratylenchus coffeae per fres
 
 [Term]
 id: CO_325:0010237
-name: percentage of germinating pollen - computation
+name: percentage of pollen grain germinating - computation
 namespace: BananaMethod
 def: "Calculate as: number of germinated pollen grain divided by total number of pollen grain times 100" []
 is_a: CO_325:1000010 ! Computation
 relationship: method_of CO_325:0000967 ! pollen germination
+
+[Term]
+id: CO_325:0010238
+name: percentage of pollen grain viable- computation
+namespace: CO_325:0010238
+is_a: CO_325:1000010 ! Computation
+
+[Term]
+id: CO_325:0010239
+name: number of pollen grain per anther - counting
+namespace: BananaMethod
+def: "count under microscope number of pollen grain per anther" []
+is_a: CO_325:1000009 ! Counting
 
 [Term]
 id: CO_325:0100002
@@ -6751,7 +6780,7 @@ relationship: scale_of CO_325:0010147 ! number of adult larvae - counting
 
 [Term]
 id: CO_325:0100056
-name: ?m
+name: m
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010148 ! adult weevil head capsule - measurement
