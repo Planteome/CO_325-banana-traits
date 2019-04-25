@@ -4623,7 +4623,7 @@ is_a: CO_325:1000005 ! Physiological
 
 [Term]
 id: CO_325:0000968
-name: Pollen viability
+name: Percentage of pollen viability
 def: "Pollen viability percentage calculated as (number of viable pollen/total number of pollen)*100" []
 relationship: variable_of CO_325:0000970 ! pollen viability
 relationship: variable_of CO_325:0010238 ! percentage of pollen grain viable- computation
@@ -4631,7 +4631,7 @@ relationship: variable_of CO_325:0100046 ! %
 
 [Term]
 id: CO_325:0000969
-name: Pollen germination proportion
+name: Percentage pollen germination
 namespace: BananaTrait
 def: "Under microscope, count germinated pollen grains. Calculate pollen germination percentage measured as number of pollen germinated divided by total number of pollen mulitplied by 100" []
 synonym: "pollenGermProp" EXACT []
@@ -4667,8 +4667,55 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0000973
 name: black sigatoka leaf necrosis
 namespace: BananaTrait
-def: "Black sigatoka leaf symptoms" []
+def: "Black sigatoka leaf symptoms evaluation" []
+synonym: "BSLN" EXACT []
 is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000974
+name: yellow sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Yellow sigatoka leaf symptoms evaluation" []
+synonym: "YSLN" EXACT []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000975
+name: emusacea leaf spot necrosis
+namespace: BananaTrait
+def: "Eumusacea leaf spot symptom evaluation" []
+synonym: "ELSN" EXACT []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000979
+name: Percentage of black sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Evaluate resistance to black sigatoka, using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
+synonym: "BlksgtkLfNc_LfDsk_Est" EXACT []
+relationship: variable_of CO_325:0000973 ! black sigatoka leaf necrosis
+relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000980
+name: Percentage of yellow sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Evaluate resistance to yellow sigatoka, using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
+synonym: "YlsgtkLfNc_LfDsk_Est" EXACT []
+relationship: variable_of CO_325:0000974 ! yellow sigatoka leaf necrosis
+relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000981
+name: Percentage of eumusae leaf necrosis
+namespace: BananaTrait
+namespace: EumuLfSpt_LfDisk_Est
+def: "Evaluate resistance to eumusae leaf spot (Mycosphaerella eumusae), using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
+relationship: variable_of CO_325:0000975 ! emusacea leaf spot necrosis
+relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
+relationship: variable_of CO_325:0100046 ! %
 
 [Term]
 id: CO_325:0010011
@@ -6384,6 +6431,20 @@ name: number of pollen grain per anther - counting
 namespace: BananaMethod
 def: "count under microscope number of pollen grain per anther" []
 is_a: CO_325:1000009 ! Counting
+
+[Term]
+id: CO_325:0010240
+name: percentage of leaf chlorosis - estimation
+namespace: BananaMethod
+def: "ated score, in percentage, of the amount of leaf chlorosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010241
+name: percentage of leaf necrosis - estimation
+namespace: BananaMethod
+def: "Estimated score, in percentage, of the amount of leaf necrosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
+is_a: CO_325:1000011 ! Estimation
 
 [Term]
 id: CO_325:0100002
