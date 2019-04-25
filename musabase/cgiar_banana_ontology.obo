@@ -6448,7 +6448,7 @@ relationship: method_of CO_325:0000967 ! pollen germination
 [Term]
 id: CO_325:0010238
 name: percentage of pollen grain viable- computation
-namespace: CO_325:0010238
+namespace: BananaMethod
 is_a: CO_325:1000010 ! Computation
 
 [Term]
