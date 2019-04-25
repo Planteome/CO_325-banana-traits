@@ -4718,6 +4718,16 @@ relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimat
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
+id: CO_325:0000983
+name: Leaf chlorosis: estimation
+namespace: BananaTrait
+def: "Estimated, in percentage, of the amount of leaf chlorosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
+synonym: "LfChlr_LfDisk_Est" EXACT []
+relationship: variable_of CO_325:0000927 ! leaf chlorosis
+relationship: variable_of CO_325:0010240 ! percentage of leaf chlorosis - estimation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -6436,7 +6446,7 @@ is_a: CO_325:1000009 ! Counting
 id: CO_325:0010240
 name: percentage of leaf chlorosis - estimation
 namespace: BananaMethod
-def: "ated score, in percentage, of the amount of leaf chlorosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
+def: "Estimated score, in percentage, of the amount of leaf chlorosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
 is_a: CO_325:1000011 ! Estimation
 
 [Term]
