@@ -4664,6 +4664,13 @@ relationship: variable_of CO_325:0010239 ! number of pollen grain per anther - c
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
+id: CO_325:0000973
+name: black sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Black sigatoka leaf symptoms" []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
