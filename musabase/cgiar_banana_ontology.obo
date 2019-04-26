@@ -42,7 +42,7 @@ is_a: CO_325:1000004 ! Phenological
 
 [Term]
 id: CO_325:0000004
-name: flowering of the plant
+name: Flowering of the plant
 namespace: BananaTrait
 relationship: variable_of CO_325:0000001 ! flowering
 created_by: guillaume
@@ -3453,7 +3453,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlAdltHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000624 ! banana weevil adult head capsule width
 relationship: variable_of CO_325:0010148 ! adult weevil head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000626
@@ -3470,7 +3470,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlAdltHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000626 ! banana weevil adult average head capsule width
 relationship: variable_of CO_325:0010148 ! adult weevil head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000628
@@ -3487,7 +3487,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlAdltBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000628 ! banana weevil adult body length
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000630
@@ -3504,7 +3504,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlAdltBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000630 ! banana weevil adult average body length
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000632
@@ -3555,7 +3555,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlLvHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000636 ! banana weevil larvae head capsule width
 relationship: variable_of CO_325:0010150 ! weevil larvae head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000638
@@ -3572,7 +3572,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlLvHdCps_M_?M," EXACT []
 relationship: variable_of CO_325:0000638 ! banana weevil larvae average head capsule width
 relationship: variable_of CO_325:0010150 ! weevil larvae head capsule - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000640
@@ -3589,7 +3589,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "WvlLvBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000640 ! banana weevil larvae body length
 relationship: variable_of CO_325:0010151 ! weevil larvae body length - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000642
@@ -3606,7 +3606,7 @@ def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlLvBdLgt_M_?M," EXACT []
 relationship: variable_of CO_325:0000642 ! banana weevil larvae average body length
 relationship: variable_of CO_325:0010151 ! weevil larvae body length - measurement
-relationship: variable_of CO_325:0100056 ! ?m
+relationship: variable_of CO_325:0100056 ! m
 
 [Term]
 id: CO_325:0000644
@@ -4612,6 +4612,144 @@ def: "The time elapsed from planting to shooting (when the inflorescence emerges
 synonym: "Length of vegetative stage" EXACT []
 synonym: "plant2shoot" EXACT []
 is_a: CO_325:1000004 ! Phenological
+
+[Term]
+id: CO_325:0000967
+name: pollen germination
+namespace: BananaTrait
+def: "The rate of pollen grain germinating" []
+synonym: "pollenGerm" EXACT []
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0000968
+name: Percentage of pollen viability
+def: "Pollen viability percentage calculated as (number of viable pollen/total number of pollen)*100" []
+relationship: variable_of CO_325:0000970 ! pollen viability
+relationship: variable_of CO_325:0010238 ! percentage of pollen grain viable- computation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000969
+name: Percentage pollen germination
+namespace: BananaTrait
+def: "Under microscope, count germinated pollen grains. Calculate pollen germination percentage measured as number of pollen germinated divided by total number of pollen mulitplied by 100" []
+synonym: "pollenGermProp" EXACT []
+relationship: variable_of CO_325:0000967 ! pollen germination
+relationship: variable_of CO_325:0010237 ! percentage of pollen grain germinating - computation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000970
+name: pollen viability
+namespace: BananaTrait
+def: "The amount of pollen grains which germinate and generate viable plantlets" []
+synonym: "pollenVia" EXACT []
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0000971
+name: pollen per anther
+namespace: BananaTrait
+def: "pollen grains per one anther of a male flower" []
+synonym: "pollenPerAnth" EXACT []
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0000972
+name: Number of pollen grain per anther: count
+namespace: BananaTrait
+def: "the Number of grain pollen counted from an anther" []
+relationship: variable_of CO_325:0000971 ! pollen per anther
+relationship: variable_of CO_325:0010239 ! number of pollen grain per anther - counting
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0000973
+name: black sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Black sigatoka leaf symptoms evaluation" []
+synonym: "BSLN" EXACT []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000974
+name: yellow sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Yellow sigatoka leaf symptoms evaluation" []
+synonym: "YSLN" EXACT []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000975
+name: emusacea leaf spot necrosis
+namespace: BananaTrait
+def: "Eumusacea leaf spot symptom evaluation" []
+synonym: "ELSN" EXACT []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000979
+name: Percentage of black sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Evaluate resistance to black sigatoka, using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
+synonym: "BlksgtkLfNc_LfDsk_Est" EXACT []
+relationship: variable_of CO_325:0000973 ! black sigatoka leaf necrosis
+relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000980
+name: Percentage of yellow sigatoka leaf necrosis
+namespace: BananaTrait
+def: "Evaluate resistance to yellow sigatoka, using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
+synonym: "YlsgtkLfNc_LfDsk_Est" EXACT []
+relationship: variable_of CO_325:0000974 ! yellow sigatoka leaf necrosis
+relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000981
+name: Percentage of eumusae leaf necrosis
+namespace: BananaTrait
+def: "Evaluate resistance to eumusae leaf spot (Mycosphaerella eumusae), using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
+synonym: "EumuLfSpt_LfDisk_Est" EXACT []
+relationship: variable_of CO_325:0000975 ! emusacea leaf spot necrosis
+relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000983
+name: Leaf chlorosis: estimation
+namespace: BananaTrait
+def: "Estimated, in percentage, of the amount of leaf chlorosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
+synonym: "LfChlr_LfDisk_Est" EXACT []
+relationship: variable_of CO_325:0000927 ! leaf chlorosis
+relationship: variable_of CO_325:0010240 ! percentage of leaf chlorosis - estimation
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0000984
+name: youngest leaf with streak disease
+namespace: BananaTrait
+def: "first leaf with first streak disease development stage counted from the first 50% or more of unfurl leaf." []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000985
+name: pollen grain per anther
+namespace: BananaTrait
+def: "number of pollen grains per anther" []
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0000986
+name: Youngest leaf black streak
+namespace: BananaTrait
+def: "Youngest leaf with streak is a leaf with first disease development stage counted from the first 50% or more of unfurl leaf.Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease.\nStage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf.;\nStage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the underside\nStage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm.;" []
+synonym: "YgStkLf_1-3_Est" EXACT []
+relationship: variable_of CO_325:0000984 ! youngest leaf with streak disease
+relationship: variable_of CO_325:0010242 ! youngest leaf with black streak disease development stage  - estimation
 
 [Term]
 id: CO_325:0010011
@@ -6308,6 +6446,48 @@ is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0000543 ! number of pratylenchus coffeae per fresh root weight
 
 [Term]
+id: CO_325:0010237
+name: percentage of pollen grain germinating - computation
+namespace: BananaMethod
+def: "Calculate as: number of germinated pollen grain divided by total number of pollen grain times 100" []
+is_a: CO_325:1000010 ! Computation
+relationship: method_of CO_325:0000967 ! pollen germination
+
+[Term]
+id: CO_325:0010238
+name: percentage of pollen grain viable- computation
+namespace: BananaMethod
+is_a: CO_325:1000010 ! Computation
+
+[Term]
+id: CO_325:0010239
+name: number of pollen grain per anther - counting
+namespace: BananaMethod
+def: "count under microscope number of pollen grain per anther" []
+is_a: CO_325:1000009 ! Counting
+
+[Term]
+id: CO_325:0010240
+name: percentage of leaf chlorosis - estimation
+namespace: BananaMethod
+def: "visual assement, in percentage, of the amount of leaf chlorosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010241
+name: percentage of leaf necrosis - estimation
+namespace: BananaMethod
+def: "visual assessment, in percentage, of the amount of leaf necrosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010242
+name: youngest leaf with black streak disease development stage  - estimation
+namespace: BananaMethod
+def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease." []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
 id: CO_325:0100002
 name: open answer
 namespace: BananaScale
@@ -6709,7 +6889,7 @@ relationship: scale_of CO_325:0010147 ! number of adult larvae - counting
 
 [Term]
 id: CO_325:0100056
-name: ?m
+name: m
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010148 ! adult weevil head capsule - measurement
@@ -8676,6 +8856,10 @@ namespace: BananaScale
 synonym: "5" EXACT []
 is_a: CO_325:0100100 ! 1 to 5 acceptability score
 
+[Term]
+id: CO_325:0101100
+name: black streak scale (1 to 3)
+is_a: CO_325:1000015 ! Nominal
 
 [Term]
 id: CO_325:1000001
