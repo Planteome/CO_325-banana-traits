@@ -4660,6 +4660,7 @@ id: CO_325:0000972
 name: Number of pollen grain per anther: count
 namespace: BananaTrait
 def: "the Number of grain pollen counted from an anther" []
+relationship: variable_of CO_325:0000971 ! pollen per anther
 relationship: variable_of CO_325:0010239 ! number of pollen grain per anther - counting
 relationship: variable_of CO_325:0100102 ! unitless
 
@@ -4733,6 +4734,13 @@ name: youngest leaf with streak disease
 namespace: BananaTrait
 def: "first leaf with first streak disease development stage counted from the first 50% or more of unfurl leaf." []
 is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000985
+name: pollen grain per anther
+namespace: BananaTrait
+def: "number of pollen grains per anther" []
+is_a: CO_325:1000005 ! Physiological
 
 [Term]
 id: CO_325:0000986
