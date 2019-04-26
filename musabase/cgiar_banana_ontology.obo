@@ -4711,8 +4711,8 @@ relationship: variable_of CO_325:0100046 ! %
 id: CO_325:0000981
 name: Percentage of eumusae leaf necrosis
 namespace: BananaTrait
-namespace: EumuLfSpt_LfDisk_Est
 def: "Evaluate resistance to eumusae leaf spot (Mycosphaerella eumusae), using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
+synonym: "EumuLfSpt_LfDisk_Est" EXACT []
 relationship: variable_of CO_325:0000975 ! emusacea leaf spot necrosis
 relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
 relationship: variable_of CO_325:0100046 ! %
