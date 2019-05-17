@@ -6488,6 +6488,13 @@ def: "Visually observe and record the amount of the surface area of a standing l
 is_a: CO_325:1000011 ! Estimation
 
 [Term]
+id: CO_325:0010243
+name: PCR assay
+namespace: BananaMethod
+def: "polymerase chain reaction assay based estimation" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
 id: CO_325:0100002
 name: open answer
 namespace: BananaScale
