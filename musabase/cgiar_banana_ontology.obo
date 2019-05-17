@@ -1778,21 +1778,21 @@ relationship: variable_of CO_325:0100030 ! bad good
 
 [Term]
 id: CO_325:0000393
-name: parthenocarpy
+name: fruitfill
 namespace: BananaTrait
-def: "The overall estimation of fruit parthenocarpy level on a bunch" []
+def: "The overall estimation of fruitfilling level on a bunch" []
 synonym: "goodfruitfill" EXACT []
 is_a: CO_325:1000001 ! Agronomical
 
 [Term]
 id: CO_325:0000394
-name: Partenocarpy 1-2
+name: Fruitfill 1-2
 namespace: BananaTrait
-def: "Visual estimation of a fruit fill, (or parthenocarpic) for Early Evaluation Trial stage only., 1 = parthenocarpic; 2 = not parthenocarpic" []
+def: "Visual estimation of a fruit filling for Early Evaluation Trial stage only., 1 = filled; 2 = not filled" []
 synonym: "GdFrtFll_Est_1to2, goodfruitfill" EXACT []
-relationship: variable_of CO_325:0000393 ! parthenocarpy
-relationship: variable_of CO_325:0010086 ! fruit parthenocarpy - estimation
-relationship: variable_of CO_325:0100031 ! parthenocarpy
+relationship: variable_of CO_325:0000393 ! fruitfill
+relationship: variable_of CO_325:0010086 ! fruitfill - estimation
+relationship: variable_of CO_325:0100031 ! fruitfill
 
 [Term]
 id: CO_325:0000395
@@ -5353,11 +5353,11 @@ relationship: method_of CO_325:0000391 ! overall bunch quality
 
 [Term]
 id: CO_325:0010086
-name: fruit parthenocarpy - estimation
+name: fruitfill - estimation
 namespace: BananaMethod
-def: "Visual estimation of a fruit fill, (or parthenocarpic) for Early Evaluation Trial stage only." []
+def: "Visual estimation of a fruit filling for Early Evaluation Trial stage only." []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000393 ! parthenocarpy
+relationship: method_of CO_325:0000393 ! fruitfill
 
 [Term]
 id: CO_325:0010087
@@ -6783,10 +6783,10 @@ relationship: scale_of CO_325:0010087 ! sucker quality - estimation
 
 [Term]
 id: CO_325:0100031
-name: parthenocarpy
+name: fruitfill
 namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
-relationship: scale_of CO_325:0010086 ! fruit parthenocarpy - estimation
+relationship: scale_of CO_325:0010086 ! fruitfill - estimation
 
 [Term]
 id: CO_325:0100032
@@ -7345,17 +7345,17 @@ is_a: CO_325:0100030 ! bad good
 
 [Term]
 id: CO_325:0100115
-name: parthenocarpic
+name: fruitfilled
 namespace: BananaScale
 synonym: "1" EXACT []
-is_a: CO_325:0100031 ! parthenocarpy
+is_a: CO_325:0100031 ! fruitfill
 
 [Term]
 id: CO_325:0100116
-name: not parthenocarpic
+name: not fruitfilled
 namespace: BananaScale
 synonym: "2" EXACT []
-is_a: CO_325:0100031 ! parthenocarpy
+is_a: CO_325:0100031 ! fruitfill
 
 [Term]
 id: CO_325:0100117
