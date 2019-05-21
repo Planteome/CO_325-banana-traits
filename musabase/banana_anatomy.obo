@@ -1,0 +1,1052 @@
+format-version: 1.2
+date: 13:07:2009 16:29
+saved-by: schanneliere
+auto-generated-by: OBO-Edit 2.0
+default-namespace: Musa_anatomy
+
+[Term]
+id: CO_125:0000000
+name: CGIAR_Musa_anatomy
+
+[Term]
+id: CO_125:0000001
+name: plant part
+is_a: CO_125:0000000 ! CGIAR_Musa_anatomy
+
+[Term]
+id: CO_125:0000002
+name: leaf
+def: "Lateral appendage of the stem (corm) consisting in a mature state of sheath, petiole and blade. It is the main photosynthetic organ." [BotanicGardensEdinburgh:GA]
+xref: PO:0009025
+is_a: CO_125:0000001 ! plant part
+
+[Term]
+id: CO_125:0000003
+name: leaf blade
+def: "The broad flat normally green distal portion of the leaf comprising the lamina and the veins." [BotanicGardensEdinburgh:GA]
+synonym: "leaf lamina" NARROW []
+xref: PO:0020039
+relationship: part_of CO_125:0000002 ! leaf
+
+[Term]
+id: CO_125:0000004
+name: leaf lamina adaxial epidermis
+def: "Epidermal layer of the ventral (upper) surface of the lamina." [CO:SC]
+comment: The epidermal layer of the adaxial/upper surface of the leaf blade.
+synonym: "leaf upper surface" RELATED []
+xref: PO:0000050
+is_a: CO_125:0000130 ! leaf lamina epidermis
+
+[Term]
+id: CO_125:0000005
+name: petiole wing
+def: "Thin extension to the petiole margin." [BotanicGardensEdinburgh:GA]
+relationship: part_of CO_125:0000057 ! petiole
+
+[Term]
+id: CO_125:0000006
+name: petiole margins
+def: "In section, the narrowing margins of the petiole canal." [BotanicGardensEdinburgh:GA, CO:SC]
+comment: Observations on the margins and petiole wings should be made where the petiole and pseudostem meet.
+relationship: part_of CO_125:0000057 ! petiole
+
+[Term]
+id: CO_125:0000007
+name: midrib ventral surface
+def: "Internal (adaxial) surface of the leaf midrib." [CO:SC]
+xref: PO:0020139
+relationship: part_of CO_125:0000018 ! midrib
+
+[Term]
+id: CO_125:0000008
+name: cigar leaf
+def: "Youngest visible leaf, still rolled as a cylinder." [CO:SC]
+synonym: "candle leaf" EXACT []
+is_a: CO_125:0000002 ! leaf
+
+[Term]
+id: CO_125:0000009
+name: midrib dorsal surface
+def: "External (abaxial) surface of the leaf midrib." [CO:SC]
+xref: PO:0020139
+relationship: part_of CO_125:0000018 ! midrib
+
+[Term]
+id: CO_125:0000010
+name: leaf lamina abaxial epidermis
+def: "Epidermal layer of the dorsal (lower) surface of the lamina." [CO:SC]
+comment: The epidermal layer of the abaxial/lower surface of the leaf blade.
+synonym: "leaf lower surface" RELATED []
+xref: PO:0000049
+is_a: CO_125:0000130 ! leaf lamina epidermis
+
+[Term]
+id: CO_125:0000011
+name: leaf lamina
+def: "The flattened (normally green) part of the leaf, on each side of the midrib." [BotanicGardensEdinburgh:GA, CO:SC]
+comment: See synonyms.
+synonym: "leaf blade" BROAD []
+xref: PO:0020039
+relationship: part_of CO_125:0000003 ! leaf blade
+
+[Term]
+id: CO_125:0000012
+name: petiole canal
+def: "The upper (adaxial) canal along the petiole." [BotanicGardenEdinburgh:GA, ISBN:92-9043-307-8 "IPGRI-INIBAP/CIRAD. 1996. Descriptors for Banana (Musa spp.)"]
+relationship: part_of CO_125:0000057 ! petiole
+
+[Term]
+id: CO_125:0000013
+name: rachis
+def: "Stalk of the inflorescence from the first fruit to the male bud. It elongates with age. Its part between the last fruit and the male bud can be bare (when bracts have fallen) or covered with the persistent bracts." [:EDL, BotanicGardenEdinburgh:GA, CO:SC]
+comment: Inflorescence axis.
+synonym: "inflorescence axis" RELATED []
+synonym: "rhachis" EXACT []
+xref: PO:0020122
+relationship: part_of CO_125:0000048 ! inflorescence
+
+[Term]
+id: CO_125:0000014
+name: bunch
+def: "The descriptive term for all the fruits along the rachis." [BotanicGardensEdinburgh:GA]
+synonym: "infructescence" BROAD []
+relationship: part_of CO_125:0000048 ! inflorescence
+
+[Term]
+id: CO_125:0000015
+name: leaf lamina base
+def: "Proximal end of the lamina, close to the attachment to the petiole." [CO:SC]
+comment: The region of the leaf lamina proximal to the petiole.
+synonym: "leaf blade base" RELATED []
+xref: PO:0008019
+relationship: part_of CO_125:0000011 ! leaf lamina
+
+[Term]
+id: CO_125:0000016
+name: petiole margin edge
+def: "Line running along the edge of the petiole margins." [ISBN:92-9043-307-8 "IPGRI-INIBAP/CIRAD. 1996. Descriptors for Banana (Musa spp.)"]
+is_a: CO_125:0000006 ! petiole margins
+
+[Term]
+id: CO_125:0000017
+name: cigar leaf dorsal surface
+def: "External (abaxial) face of the leaf (partly visible)." [BotanicGardensEdinburgh:GA, CO:SC]
+relationship: part_of CO_125:0000008 ! cigar leaf
+
+[Term]
+id: CO_125:0000018
+name: midrib
+def: "The central, most prominent, vein of the leaf. It is the main structural element of the blade." [BotanicGardensEdinburgh:GA, http://www.plantontology.org/ "Plant Ontology Consortium"]
+synonym: "Midvein. " RELATED []
+xref: PO:0020139
+is_a: CO_125:0000131 ! leaf vein
+
+[Term]
+id: CO_125:0000019
+name: basal flower
+def: "First flowers emerging on the inflorescence with the potential to give rise to fruits." [BotanicGardensEdinburgh:GA]
+relationship: part_of CO_125:0000136 ! basal bud
+
+[Term]
+id: CO_125:0000020
+name: free tepal
+def: "The inner tepal which is free." [BotanicGardensEdinburgh:GA, CO:SC]
+is_a: CO_125:0000129 ! tepals
+
+[Term]
+id: CO_125:0000021
+name: compound tepal
+def: "The outer perianth sheath of 5 fused tepals - the 3 outer tepals and 2 inner - with corresponding 3 major lobes and 2 minor ones." [:EDL, BotanicGardensEdinburgh:GA, CO:SC]
+is_a: CO_125:0000129 ! tepals
+
+[Term]
+id: CO_125:0000022
+name: anther
+def: "The pollen-bearing part of a stamen." [http://www.mobot.org/mobot/research/apweb/welcome.html "Angiosperm Phylogeny Website Glossary"]
+xref: PO:0009066
+relationship: part_of CO_125:0000128 ! stamen
+
+[Term]
+id: CO_125:0000023
+name: crown
+def: "The raised ridge of tissue to which the pedicels are attached." [BotanicGardensEdinburgh:GA]
+relationship: part_of CO_125:0000014 ! bunch
+
+[Term]
+id: CO_125:0000024
+name: pollen sac
+def: "Part of the anther containing the pollen grains." [BotanicGardensEdinburgh:GA, CO:SC]
+synonym: "microsporangium" RELATED []
+xref: PO:0009070
+relationship: part_of CO_125:0000022 ! anther
+
+[Term]
+id: CO_125:0000025
+name: free tepal apex
+def: "Distal end of the free tepal that is often wrinkled." [BotanicGardensEdinburgh:GA, CO:SC]
+relationship: part_of CO_125:0000020 ! free tepal
+
+[Term]
+id: CO_125:0000026
+name: stigma
+def: "The apical expanded part of the style on which the pollen germinates." [BotanicGardensEdinburgh:GA, CO:SC]
+xref: PO:0009073
+relationship: part_of CO_125:0000032 ! style
+
+[Term]
+id: CO_125:0000027
+name: ovule
+def: "The organ which if fertilized could develop into a seed." [BotanicGardensEdinburgh:GA, http://www.mobot.org/mobot/research/apweb/welcome.html "Angiosperm Phylogeny Website Glossary"]
+xref: PO:0020003
+relationship: part_of CO_125:0000029 ! ovary
+
+[Term]
+id: CO_125:0000028
+name: hermaphrodite flower
+def: "Flower that contains both functional male and female parts." [BotanicGardensEdinburgh:GA, CO:SC]
+is_a: CO_125:0000019 ! basal flower
+
+[Term]
+id: CO_125:0000029
+name: ovary
+def: "Part of the flower containing the 3 fused carpels that enclose the ovules. In Musa, this part is inferior (basal) relative to the tepals." [BotanicGardensEdinburgh:GA, http://www.mobot.org/mobot/research/apweb/welcome.html "Angiosperm Phylogeny Website Glossary"]
+xref: PO:0009072
+relationship: part_of CO_125:0000019 ! basal flower
+
+[Term]
+id: CO_125:0000030
+name: filament
+def: "The stalk of a stamen." [http://www.mobot.org/mobot/research/apweb/welcome.html "Angiosperm Phylogeny Website Glossary"]
+xref: PO:0009067
+relationship: part_of CO_125:0000128 ! stamen
+
+[Term]
+id: CO_125:0000031
+name: compound tepal lobe
+def: "One of the 5 free apical portions of the compound tepal." [BotanicGardensEdinburgh:GA, CO:SC]
+relationship: part_of CO_125:0000021 ! compound tepal
+
+[Term]
+id: CO_125:0000032
+name: style
+def: "The elongated part linking the ovary with the stigma." [http://www.mobot.org/mobot/research/apweb/welcome.html "Angiosperm Phylogeny Website Glossary"]
+xref: PO:0009074
+relationship: part_of CO_125:0000019 ! basal flower
+
+[Term]
+id: CO_125:0000033
+name: fruit
+def: "Fleshy organ derived from the ovary of a female flower which may contain the seeds." [BotanicGardensEdinburgh:GA, CO:SC]
+synonym: "banana" RELATED []
+synonym: "berry" RELATED []
+synonym: "finger" RELATED []
+xref: PO:0009001
+relationship: part_of CO_125:0000037 ! hand of fruits
+
+[Term]
+id: CO_125:0000034
+name: pericarp
+def: "External protective part (skin) of the fruit." [BotanicGardensEdinburgh:GA]
+comment: Fruit peel (synonym).
+synonym: "fruit peel" EXACT []
+synonym: "skin" RELATED []
+xref: PO:0009084
+relationship: part_of CO_125:0000033 ! fruit
+
+[Term]
+id: CO_125:0000035
+name: endocarp
+def: "Internal, fleshy part of the fruit that may be eaten, usually with a cream or yellow colour." [CO:SC]
+comment: See synonyms.
+synonym: "flesh" RELATED []
+synonym: "pulp" RELATED []
+xref: PO:0009086
+relationship: part_of CO_125:0000033 ! fruit
+
+[Term]
+id: CO_125:0000036
+name: peduncle surface
+def: "Outer more or less hairy covering of the peduncle." [:EDL, CO:SC]
+relationship: part_of CO_125:0000039 ! peduncle
+
+[Term]
+id: CO_125:0000037
+name: hand of fruits
+def: "All the fruits that develop in the axil of a single bract." [BotanicGardenEdinburgh:GA]
+relationship: part_of CO_125:0000014 ! bunch
+
+[Term]
+id: CO_125:0000038
+name: seed
+def: "A reproductive unit formed from a fertilized ovule. They are not usually present in parthenocarpic bananas." [BotanicGardensEdinburgh:GA, http://www.plantontology.org "Plant ontology consortium"]
+xref: PO:0009010
+relationship: part_of CO_125:0000033 ! fruit
+
+[Term]
+id: CO_125:0000039
+name: peduncle
+def: "Stalk by which the rachis, bunch and flowers are attached to the corm, the proximal part inclosed within the pseudostem." [BotanicGardensEdinburgh:GA, CO:SC]
+xref: PO:0009053
+relationship: part_of CO_125:0000048 ! inflorescence
+
+[Term]
+id: CO_125:0000040
+name: seed coat
+def: "The outer protective covering of the seed. It is sometimes distinctively ornamented." [BotanicGardensEdinburgh:GA, http://www.plantontology.org/ "Plant Ontology consortium"]
+comment: See synonyms.
+synonym: "seed surface" RELATED []
+synonym: "testa" RELATED []
+xref: PO:0009088
+relationship: part_of CO_125:0000038 ! seed
+
+[Term]
+id: CO_125:0000041
+name: fruit apex
+def: "The distal end of the fruit (opposite to the pedicel end)." [BotanicGardenEdinburgh:GA, CO:SC]
+synonym: "fruit distal end" RELATED []
+xref: PO:0008001
+relationship: part_of CO_125:0000033 ! fruit
+
+[Term]
+id: CO_125:0000042
+name: sucker
+def: "Lateral shoot that develops from the corm and usually emerges close to the parent plant." [BotanicGardensEdinburgh:GA, ISBN:978-0582463554 "Simmonds, N.W. 1966. Bananas."]
+is_a: CO_125:0000001 ! plant part
+
+[Term]
+id: CO_125:0000043
+name: pedicel
+def: "Stalk with which the flowers or fruits are attached to the rachis." [BotanicGardenEdinburgh:GA, CO:SC]
+xref: PO:0009001
+relationship: part_of CO_125:0000033 ! fruit
+
+[Term]
+id: CO_125:0000044
+name: transverse section of fruit
+comment: should it rather go in trait ontology?
+is_obsolete: true
+
+[Term]
+id: CO_125:0000045
+name: flower relicts
+def: "Remains of a female flower when it persists on the fruit." [CO:SC]
+relationship: part_of CO_125:0000033 ! fruit
+
+[Term]
+id: CO_125:0000046
+name: pseudostem
+def: "'False stem' of cylinders formed by the concentric leaf sheaths through which the peduncle later grows." [BotanicGardensEdinburgh:GA, ISBN:978-2-7592-0046-7 "Lassoudière, A. 2007.  Le bananier et sa culture"]
+synonym: "trunk" BROAD []
+is_a: CO_125:0000001 ! plant part
+
+[Term]
+id: CO_125:0000047
+name: pseudostem underlayers
+def: "Abaxial side of the inner sheath which is not visible until the outermost sheath has been removed." [BotanicGardensEdinburgh:GA, CO:SC]
+relationship: part_of CO_125:0000046 ! pseudostem
+
+[Term]
+id: CO_125:0000048
+name: inflorescence
+def: "A group of flowers borne on the same rachis. In Musa, part of the plant emerging from the pseudostem and comprising the peduncle, the rachis, the basal flowers and the terminal bud." [:EDL, BotanicGardensEdinburgh:GA, CO:SC]
+xref: PO:0009049
+is_a: CO_125:0000001 ! plant part
+
+[Term]
+id: CO_125:0000049
+name: male bud
+def: "The usually persistent bud when it is only composed of bracts with male flowers." [BotanicGardensEdinburgh:GA, CO:SC]
+is_a: CO_125:0000146 ! bud
+relationship: develop_from CO_125:0000136 ! basal bud
+
+[Term]
+id: CO_125:0000050
+name: female flower
+def: "Flower containing functional female parts and non-functional male parts." [BotanicGardensEdinburgh:GA, CO:SC]
+is_a: CO_125:0000019 ! basal flower
+
+[Term]
+id: CO_125:0000051
+name: peduncle hairs
+def: "Hairs growing on the peduncle surface." [CO:SC]
+comment: (present or absent).
+relationship: part_of CO_125:0000036 ! peduncle surface
+
+[Term]
+id: CO_125:0000052
+name: male bract
+def: "Leaf-like organ covering the male bud with male flowers in its axils. The male flowers are exposed as the bracts lift." [BotanicGardensEdinburgh:GA, CO:SC]
+comment: Or should we call it Inflorescence bract PO:0009054.
+xref: PO:0009055
+relationship: part_of CO_125:0000049 ! male bud
+
+[Term]
+id: CO_125:0000053
+name: bract apex
+def: "Distal end of the bract." [CO:SC]
+relationship: part_of CO_125:0000052 ! male bract
+
+[Term]
+id: CO_125:0000054
+name: bract external face
+def: "External (abaxial) face of the bract." [CO:SC]
+relationship: part_of CO_125:0000052 ! male bract
+
+[Term]
+id: CO_125:0000055
+name: bract internal face
+def: "Internal (adaxial) face of the bract." [CO:SC]
+relationship: part_of CO_125:0000052 ! male bract
+
+[Term]
+id: CO_125:0000056
+name: bract base
+def: "Proximal end of the bract." [CO:SC]
+relationship: part_of CO_125:0000052 ! male bract
+
+[Term]
+id: CO_125:0000057
+name: petiole
+def: "The stalk, the narrowest portion of the leaf between the sheath and the blade." [BotanicGardensEdinburgh:GA, http://www.plantontology.org/ "Plant Ontology Consortium"]
+xref: PO:0020038
+relationship: part_of CO_125:0000002 ! leaf
+
+[Term]
+id: CO_125:0000058
+name: CGIAR_Musa_development
+namespace: Musa_development
+
+[Term]
+id: CO_125:0000059
+name: Stage 1: Leaf development
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000060
+name: Stage 2: Sucker formation
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000061
+name: Stage 3: Pseudostem elongation
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000062
+name: Stage 4: Leaf development of the sucker (sword sucker)
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000063
+name: sword sucker
+def: "Sucker that has a conical shape with small, narrow leaf blades. It has a strong attachment to the parent plant." [BotanicGardensEdinburgh:GA, http://www2.dpi.qld.gov.au/horticulture/5086.html "Jeff Daniells & Pat O'Farrell"]
+is_a: CO_125:0000042 ! sucker
+
+[Term]
+id: CO_125:0000064
+name: Stage 5: Emergence of inflorescence
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000065
+name: Stage 6: Flowering
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000066
+name: Stage 7: Development of the fruit
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000067
+name: Stage 8: Ripening of the fruit
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000068
+name: Stage 9: Senescence and death
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000069
+name: Stage 0: Sprouting
+namespace: Musa_development
+is_a: CO_125:0000058 ! CGIAR_Musa_development
+
+[Term]
+id: CO_125:0000070
+name: 0005-first leaf emergence
+namespace: Musa_development
+comment: Emergence of the first new leaf in plants from tissue cultures or of the foliar shoot of the corm.
+is_a: CO_125:0000069 ! Stage 0: Sprouting
+
+[Term]
+id: CO_125:0000071
+name: 100-Development of leaf 1
+namespace: Musa_development
+comment: Formation of the 1rst leaf of the planted corn or the candela leaf tissue in tissue culture plants (candela stage 0, 2, 4, 6 and 8).
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000072
+name: 101-Development of leaf 2
+namespace: Musa_development
+comment: One leaf completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000073
+name: 102-Development of leaf 3
+namespace: Musa_development
+comment: Two leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000074
+name: 103-Development of leaf 4
+namespace: Musa_development
+comment: Three leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000075
+name: 104-Development of leaf 5
+namespace: Musa_development
+comment: Four leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000076
+name: 105-Development of leaf 6
+namespace: Musa_development
+comment: Five leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000077
+name: 106-Development of leaf 7
+namespace: Musa_development
+comment: Six leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000078
+name: 107-Development of leaf 8
+namespace: Musa_development
+comment: Seven leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000079
+name: 108-Development of leaf 9
+namespace: Musa_development
+comment: Eight leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000080
+name: 109-Development of leaf 10
+namespace: Musa_development
+comment: Nine leaves completely open and development of youngest leaf at candela stages 0, 2, 4, 6 and 8.
+is_a: CO_125:0000059 ! Stage 1: Leaf development
+
+[Term]
+id: CO_125:0000081
+name: 201-Sucker 1 development
+namespace: Musa_development
+comment: First sucker with visible leaf.
+is_a: CO_125:0000060 ! Stage 2: Sucker formation
+
+[Term]
+id: CO_125:0000082
+name: 202-Sucker 2 development
+namespace: Musa_development
+comment: Second sucker with visible leaf.
+is_a: CO_125:0000060 ! Stage 2: Sucker formation
+
+[Term]
+id: CO_125:0000083
+name: 203-Sucker 3 development
+namespace: Musa_development
+comment: Third sucker with visible leaf.
+is_a: CO_125:0000060 ! Stage 2: Sucker formation
+
+[Term]
+id: CO_125:0000084
+name: 305-50% growth of pseudostem
+namespace: Musa_development
+comment: The pseudostem reaches 50 % of its typical thickness and length according to the genome or clone.
+is_a: CO_125:0000061 ! Stage 3: Pseudostem elongation
+
+[Term]
+id: CO_125:0000085
+name: 309-100% growth of pseudostem
+namespace: Musa_development
+comment: The maximum length and thickness of the pseudostem are reached according to the genome or clone and the formation of new leaves of normal size has been terminated.
+is_a: CO_125:0000061 ! Stage 3: Pseudostem elongation
+
+[Term]
+id: CO_125:0000086
+name: 400-Sub-phase of dependent growth
+namespace: Musa_development
+comment: The sucker becomes visible and develops the leaf shoot.
+is_a: CO_125:0000062 ! Stage 4: Leaf development of the sucker (sword sucker)
+
+[Term]
+id: CO_125:0000087
+name: 401-Development of lanceolate leaves
+namespace: Musa_development
+comment: Development of the first to the ninth or more lanceolate leaves.
+is_a: CO_125:0000062 ! Stage 4: Leaf development of the sucker (sword sucker)
+
+[Term]
+id: CO_125:0000088
+name: 405-Sub-phase of independent growth
+namespace: Musa_development
+comment: Leaves of approximatively 10 cm width are developed (original leaf / zero leaf / F10).
+is_a: CO_125:0000062 ! Stage 4: Leaf development of the sucker (sword sucker)
+
+[Term]
+id: CO_125:0000089
+name: 409-Synchronised development of 'normal' leaves (FM)
+namespace: Musa_development
+comment: End of this phase is reached with the development of the first leaf with characteristics of the genome or clone (length width ratio, leaf surface index).
+is_a: CO_125:0000062 ! Stage 4: Leaf development of the sucker (sword sucker)
+
+[Term]
+id: CO_125:0000090
+name: 500-Flower bract emergence
+namespace: Musa_development
+comment: The development of new leaves has been terminated and the flower bract emergence.
+is_a: CO_125:0000064 ! Stage 5: Emergence of inflorescence
+
+[Term]
+id: CO_125:0000091
+name: 501-Development of flower bract
+namespace: Musa_development
+comment: Flower bract at candela satges 2, 4, 6 and 8.
+is_a: CO_125:0000064 ! Stage 5: Emergence of inflorescence
+
+[Term]
+id: CO_125:0000092
+name: 505-Flower bract completely open
+namespace: Musa_development
+is_a: CO_125:0000064 ! Stage 5: Emergence of inflorescence
+
+[Term]
+id: CO_125:0000093
+name: 509-Emergence of last bract leaf
+namespace: Musa_development
+comment: Emergence of the last bract leaf or first sterile bract protecting the flower.
+is_a: CO_125:0000064 ! Stage 5: Emergence of inflorescence
+
+[Term]
+id: CO_125:0000094
+name: 600-Emergence of flower (first sterile bract)
+namespace: Musa_development
+comment: The stage begins with the emergence of the flower protected by the last bract leaf (first sterile bract).
+is_a: CO_125:0000065 ! Stage 6: Flowering
+
+[Term]
+id: CO_125:0000095
+name: 601-Second sterile bract
+namespace: Musa_development
+comment: A bract which does not protect any hand of flowers rises (second sterile bract).
+is_a: CO_125:0000065 ! Stage 6: Flowering
+
+[Term]
+id: CO_125:0000096
+name: 602-Bract of first hand of flowers
+namespace: Musa_development
+comment: The bract rises which protects the first hand of female or pistillate flowers.
+is_a: CO_125:0000065 ! Stage 6: Flowering
+
+[Term]
+id: CO_125:0000097
+name: 603-Bract of second hand of flowers
+namespace: Musa_development
+comment: The bract rises which protects the second hand of female or pistillate flowers.
+is_a: CO_125:0000065 ! Stage 6: Flowering
+
+[Term]
+id: CO_125:0000098
+name: Bract of third hand of flowers
+namespace: Musa_development
+comment: The bract rises which protects the third hand of female or pistillate flowers.
+is_a: CO_125:0000065 ! Stage 6: Flowering
+
+[Term]
+id: CO_125:0000099
+name: 605-Full bloom
+namespace: Musa_development
+comment: At least 50 % of the hands of females flowers are developed.
+is_a: CO_125:0000065 ! Stage 6: Flowering
+
+[Term]
+id: CO_125:0000100
+name: 609-Bracts fall off
+namespace: Musa_development
+comment: The bracts which protect the hands wither and fall off and the fingers are bent into a direction perpendicular to the rachis.
+is_a: CO_125:0000065 ! Stage 6: Flowering
+
+[Term]
+id: CO_125:0000101
+name: 700-Upwards curvature of 50 % of the fingers
+namespace: Musa_development
+comment: At least 50 % of the fingers show an upwards curvature and the fruits (fingers) begin to fill.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000102
+name: 701-Total exposure of fingers or female flowers
+namespace: Musa_development
+comment: 701-Total exposure of the fingers or female flowers (protective bracts fallen off or bent and withered above the hands).
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000103
+name: 702-All fingers curved
+namespace: Musa_development
+comment: The fingers of the hands show the characteristic curvature of the fruit (upwards and almost parallel to the axis or rachis).
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000104
+name: 703-30% hands have fruits of maximum thickness
+namespace: Musa_development
+comment: From the first two hands, up to 30 % of the hands have reached the maximum thickness of the fruit.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000105
+name: 704-40 % hands have fruits of maximum thickness
+namespace: Musa_development
+comment: Up to 40 % of the hands have reached the maximum thickness of the fruit.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000106
+name: 705-50 % hands have fruits of maximum thickness
+namespace: Musa_development
+comment: Up to 50 % of the hands have reached the maximum thickness of the fruit.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000107
+name: 706-60 % hands have fruits of maximum thickness
+namespace: Musa_development
+comment: Up to 60 % of the hands have reached the maximum thickness of the fruit.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000108
+name: 707-70 % hands have fruits of maximum thickness
+namespace: Musa_development
+comment: Up to 70 % of the hands have reached the maximum thickness of the fruit.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000109
+name: 708-80 % hands have fruits of maximum thickness
+namespace: Musa_development
+comment: Up to 80 % of the hands have reached the maximum thickness of the fruit.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000110
+name: 709-100% hands have fruits of maximum thickness
+namespace: Musa_development
+comment: All hands have reached the maximum thickness of the fruit and no hand show a loss of weight.
+is_a: CO_125:0000066 ! Stage 7: Development of the fruit
+
+[Term]
+id: CO_125:0000111
+name: 800-Start of ripening
+namespace: Musa_development
+comment: Ripening starts when the fruit has reached the maximum thickness, begins to lose weight and shows changes of the colour by which the degrees of maturity are defined.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000112
+name: 801-Degree of maturity 1
+namespace: Musa_development
+comment: Green. Normal colour of the fresh fruit.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000113
+name: 802-Degree of maturity 2
+namespace: Musa_development
+comment: Tinge of yellow. First modification of colour during the ripening cycle.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000114
+name: 803-Degree of maturity 3
+namespace: Musa_development
+comment: More green than yellow.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000115
+name: 804-Degree of maturity 4
+namespace: Musa_development
+comment: More yellow than green.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000116
+name: 805-Degree of maturity 5
+namespace: Musa_development
+comment: Tinge of green.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000117
+name: 806-Degree of maturity 6
+namespace: Musa_development
+comment: All yellow.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000118
+name: 807-Degree of maturity 7
+namespace: Musa_development
+comment: Yellow with brown specks. Fruit is completely ripe, has the best flavor and a high nutritious value.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000119
+name: 808-Degree of maturity 8
+namespace: Musa_development
+comment: 20-50% of surface discoloured brown or spoiled.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000120
+name: 809-Degree of maturity 9
+namespace: Musa_development
+comment: More than 50% of the surface of the fruits is discoloured brown and spoiled.
+is_a: CO_125:0000067 ! Stage 8: Ripening of the fruit
+
+[Term]
+id: CO_125:0000121
+name: 900-Fruits discoloured brown
+namespace: Musa_development
+comment: More than 50% of the fruits are discoloured brown.
+is_a: CO_125:0000068 ! Stage 9: Senescence and death
+
+[Term]
+id: CO_125:0000122
+name: 901-Leaves died off and male flowers necrotic
+namespace: Musa_development
+comment: The leaves the plant shows have died off acropetally and the male flowers have withered, are necrotic and / or have fallen off.
+is_a: CO_125:0000068 ! Stage 9: Senescence and death
+
+[Term]
+id: CO_125:0000123
+name: 903-Necrosis of fruits
+namespace: Musa_development
+comment: Total rot and necrosis of the fruits.
+is_a: CO_125:0000068 ! Stage 9: Senescence and death
+
+[Term]
+id: CO_125:0000124
+name: 905-Degeneration of flower
+namespace: Musa_development
+comment: Necrosis of the flower.
+is_a: CO_125:0000068 ! Stage 9: Senescence and death
+
+[Term]
+id: CO_125:0000125
+name: 907-Necrosis of pseudostem
+namespace: Musa_development
+comment: The sheaths enclosed in the pseudostem become brittle which indicates the beginning of necrosis of the pseudostem. The pseudostem turns to be brown.
+is_a: CO_125:0000068 ! Stage 9: Senescence and death
+
+[Term]
+id: CO_125:0000126
+name: 908-Decomposition of tissues
+namespace: Musa_development
+comment: Total decomposition of the tissues and fall down of the pseudostem.
+is_a: CO_125:0000068 ! Stage 9: Senescence and death
+
+[Term]
+id: CO_125:0000127
+name: node
+def: "Scar on the rachis left at the attachment point of the bract that has fallen down." [CO:SC]
+comment: Bract scars?
+relationship: part_of CO_125:0000013 ! rachis
+
+[Term]
+id: CO_125:0000128
+name: stamen
+def: "Male organ of the flowers. There are 5 in Musa. They consist of a stalk (filament) and a pollen-bearing portion (anther). The stamens are reduced to staminodes in the female flowers." [BotanicGardensEdinburgh:GA, http://en.wikipedia.org/wiki/Glossary_of_botanical_terms "Glossary of botanical terms"]
+xref: PO:0009029
+relationship: part_of CO_125:0000028 ! hermaphrodite flower
+relationship: part_of CO_125:0000137 ! male flower
+
+[Term]
+id: CO_125:0000129
+name: tepals
+def: "The basic unit of the perianth. There are 5 fused tepals and a free tepal in Musa flowers." [BotanicGardensEdinburgh:GA, CO:SC]
+xref: PO:0009033
+relationship: part_of CO_125:0000019 ! basal flower
+relationship: part_of CO_125:0000137 ! male flower
+
+[Term]
+id: CO_125:0000130
+name: leaf lamina epidermis
+def: "The outer layer (skin) of the lamina." [CO:SC]
+xref: PO:0000047
+relationship: part_of CO_125:0000011 ! leaf lamina
+
+[Term]
+id: CO_125:0000131
+name: leaf vein
+def: "A strand of conducting and/or structural tissue in the leaf blade." [BotanicGardenEdinburgh:GA, http://www.plantontology.org/ "Plant ontology consortium"]
+comment: A strand of vascular tissue in the leaf blade.
+xref: PO:0020138
+relationship: part_of CO_125:0000003 ! leaf blade
+
+[Term]
+id: CO_125:0000132
+name: leaf III
+def: "Third (fully expanded) leaf counted back from the last leaf produced before basal bud emergence." [BotanicGardensEdinburgh:GA, ISBN:92-9043-307-8 "IPGRI-INIBAP/CIRAD. 1996. Descriptors for banana (Musa spp.)"]
+is_a: CO_125:0000002 ! leaf
+
+[Term]
+id: CO_125:0000133
+name: water sucker
+def: "Sucker with a cylindrical shape and broad leaf blades. It is often only weakly attached to the parent plant." [BotanicGardensEdinburgh:GA, http://www2.dpi.qld.gov.au/horticulture/5086.html "Jeff Daniells & Pat O'Farrell"]
+is_a: CO_125:0000042 ! sucker
+
+[Term]
+id: CO_125:0000134
+name: adventitious root
+def: "Root originating directly from the corm." [BotanicGardenEdinburgh:GA]
+is_a: CO_125:0000144 ! root
+
+[Term]
+id: CO_125:0000135
+name: corm
+def: "Very short conical or spherical stem which stays mostly underground during vegetative development." [BotanicGardensEdinburgh:GA]
+synonym: "underground stem" RELATED []
+xref: PO:0004542
+is_a: CO_125:0000001 ! plant part
+
+[Term]
+id: CO_125:0000136
+name: basal bud
+def: "Young bud that emerges through the pseudostem, attached by a peduncle. It is composed of the developing bracts and flowers." [BotanicGardensEdinburgh:GA, CO:SC]
+is_a: CO_125:0000146 ! bud
+
+[Term]
+id: CO_125:0000137
+name: male flower
+def: "Flower containing functional male parts and non- functional female parts." [BotanicGardensEdinburgh:GA, CO:SC]
+relationship: part_of CO_125:0000049 ! male bud
+
+[Term]
+id: CO_125:0000138
+name: female bract
+def: "Leaf-like organ covering the basal bud with basal flowers in its axils. Female or hermaphrodite flowers are exposed as a bract lifts." [BotanicGardensEdinburgh:GA]
+relationship: part_of CO_125:0000136 ! basal bud
+
+[Term]
+id: CO_125:0000139
+name: pistillode
+def: "Reduced and non-functional female parts." [BotanicGardensEdinburgh:GA]
+xref: PO:0009078
+relationship: part_of CO_125:0000137 ! male flower
+
+[Term]
+id: CO_125:0000140
+name: lateral vein
+def: "The parallel conducting strands in the lamina, perpendicular to the midrib." [BotanicGardensEdinburgh:GA]
+is_a: CO_125:0000131 ! leaf vein
+
+[Term]
+id: CO_125:0000141
+name: shoulder
+def: "Portion of the petiole clasping the pseudostem." [BotanicGardensEdinburgh:GA]
+synonym: "basal petiole part" RELATED []
+relationship: part_of CO_125:0000057 ! petiole
+
+[Term]
+id: CO_125:0000142
+name: leaf sheath
+def: "The basal sheathing part of the leaf, surrounding and forming the pseudostem of the plant." [:EDL, BotanicGardensEdinburgh:GA]
+xref: PO:0020104
+relationship: part_of CO_125:0000002 ! leaf
+
+[Term]
+id: CO_125:0000143
+name: primary root
+def: "The first root that develops from a germinating seed. It dies early." [ISBN:978-0582463554 "Simmonds, N.W. 1966. Bananas."]
+synonym: "radical" RELATED []
+xref: PO:0020127
+is_a: CO_125:0000144 ! root
+
+[Term]
+id: CO_125:0000144
+name: root
+def: "Organ part of the axial system originating from the corm and spreading underground." [CO:SC, http://www.mobot.org/mobot/research/apweb/welcome.html "Angiosperm Phylogeny Website Glossary"]
+xref: PO:0009005
+is_a: CO_125:0000001 ! plant part
+
+[Term]
+id: CO_125:0000145
+name: peeper sucker
+def: "A very young sucker bearing scale leaves only just appearing above the soil surface." [BotanicGardensEdinburgh:GA, ISBN:978-0582463554 "Simmonds, N.W. 1966. Bananas."]
+is_a: CO_125:0000042 ! sucker
+
+[Term]
+id: CO_125:0000146
+name: bud
+def: "Reproductive organ shooting through the pseudostem and attached to the corm with the peduncle. It contains the flowers (female, hermaphrodite and male) in the axil of each bract. The arrangement of the flowers and the bracts form a pointed cone." [CO:SC]
+relationship: part_of CO_125:0000048 ! inflorescence
+
+[Term]
+id: CO_125:0000147
+name: pollen grain
+def: "The granular microspores containing the male gametes." [BotanicGardensEdinburgh:GA]
+synonym: "microgametophyte" RELATED []
+xref: PO:0020091
+relationship: part_of CO_125:0000024 ! pollen sac
+
+[Term]
+id: CO_125:0000148
+name: staminode
+def: "Sterile stamen usually reduced in size." [BotanicGardensEdinburgh:GA]
+xref: PO:0009077
+relationship: part_of CO_125:0000050 ! female flower
+
+[Term]
+id: ID:0000001
+name: bud
+is_obsolete: true
+created_by: schanneliere
+creation_date: 2009-05-15T03:16:51Z
+
+[Typedef]
+id: develops_from
+name: develops from
+is_transitive: true
+created_by: schanneliere
+creation_date: 2009-06-12T04:31:06Z
+
+[Typedef]
+id: part_of
+name: part of
+is_transitive: true
+
