@@ -4752,6 +4752,21 @@ relationship: variable_of CO_325:0000984 ! youngest leaf with streak disease
 relationship: variable_of CO_325:0010242 ! youngest leaf with black streak disease development stage  - estimation
 
 [Term]
+id: CO_325:0000994
+name: Fruit parthenocarpy
+namespace: BananaTrait
+def: "Visual evaluation of parthenocarpy on mature fruit: absence (0) or presence (1) of seeds" []
+relationship: variable_of CO_325:0000995 ! fruit parthenocarpy
+relationship: variable_of CO_325:0010245 ! fruit parthenocarpy - estimation
+relationship: variable_of CO_325:0100053 ! presence absence 0
+
+[Term]
+id: CO_325:0000995
+name: fruit parthenocarpy
+is_a: CO_325:1000005 ! Physiological
+default-namespace: BananaTrait
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -6492,6 +6507,13 @@ id: CO_325:0010243
 name: PCR assay
 namespace: BananaMethod
 def: "polymerase chain reaction assay based estimation" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010245
+name: fruit parthenocarpy - estimation
+namespace: BananaMethod
+def: "visual observation of seed presence in mature fruits" []
 is_a: CO_325:1000011 ! Estimation
 
 [Term]
