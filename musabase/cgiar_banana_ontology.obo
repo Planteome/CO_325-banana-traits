@@ -9283,7 +9283,7 @@ namespace: BananaScale
 [Term]
 id: CO_325:1000024
 name: Variable
-namespace: Banana
+namespace: BananaTrait
 
 [Typedef]
 id: method_of
