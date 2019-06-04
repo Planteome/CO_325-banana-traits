@@ -5051,6 +5051,25 @@ namespace: BananaTrait
 is_a: CO_325:1000005 ! Physiological
 
 [Term]
+id: CO_325:0000998
+name: presence of fusarium wilt tropical race 4
+namespace: BananaTrait
+namespace: CO_325:0000998
+def: "The presence of symptoms of fusarium tropical race 4 (foc TR4) on a banana plant" []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000999
+name: Presence of Fusarium Tropical Race 4 by PCR assay 0-1
+namespace: BananaTrait
+def: "Diagnose absence (0) or presence (1) of fusarium wilt tropical race 4 (foc TR4) by PCR assay on banana plant tissue sample" []
+synonym: "focTR4_PCRassay_0-1" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000998 ! presence of fusarium wilt tropical race 4
+relationship: variable_of CO_325:0010243 ! PCR assay
+relationship: variable_of CO_325:0100053 ! presence absence 0
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
