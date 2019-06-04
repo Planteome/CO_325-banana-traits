@@ -5071,12 +5071,28 @@ relationship: variable_of CO_325:0100053 ! presence absence 0
 
 [Term]
 id: CO_325:0001000
-name: Plant height 1-3 categories
+name: Plant height 1-3
 namespace: BananaTrait
+synonym: "PltHght_1-3" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000307 ! plant height to neck of peduncle
 relationship: variable_of CO_325:0010024 ! plant height - neck of peduncle - measurement
 relationship: variable_of CO_325:0100062 ! height score (1 to 3)
+
+[Term]
+id: CO_325:0001001
+name: suckering behavior of the plant
+namespace: BananaTrait
+def: "Banana plant sucker apical dominance type" []
+is_a: CO_325:1000001 ! Agronomical
+
+[Term]
+id: CO_325:0001002
+name: Suckering behavior 1-3
+namespace: BananaTrait
+def: "Banana plant sucker apical dominance type: (1) High apical dominance; (2) Medium apical dominance; (3) Low apical dominance" []
+synonym: "SuckerBhv1-3" EXACT []
+is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0010011
@@ -6826,6 +6842,13 @@ id: CO_325:0010245
 name: fruit parthenocarpy - estimation
 namespace: BananaMethod
 def: "visual observation of seed presence in mature fruits" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010246
+name: sucker behavior - estimation
+namespace: BananaMethod
+def: "On a banana plant evaluate the level of apical dominance of the sucker" []
 is_a: CO_325:1000011 ! Estimation
 
 [Term]
@@ -9196,6 +9219,31 @@ name: like extremely
 namespace: BananaScale
 synonym: "5" EXACT []
 is_a: CO_325:0100100 ! 1 to 5 acceptability score
+
+[Term]
+id: CO_325:0100332
+name: suckering behavior (1 to 3)
+namespace: BananaScale
+namespace: CO_325:0100332
+is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0100333
+name: high apical dominance
+namespace: BananaScale
+is_a: CO_325:0100332 ! suckering behavior (1 to 3)
+
+[Term]
+id: CO_325:0100334
+name: medium apical dominance
+namespace: BananaScale
+is_a: CO_325:0100332 ! suckering behavior (1 to 3)
+
+[Term]
+id: CO_325:0100335
+name: low apical dominance
+namespace: BananaScale
+is_a: CO_325:0100332 ! suckering behavior (1 to 3)
 
 [Term]
 id: CO_325:0101100
