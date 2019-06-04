@@ -4763,8 +4763,8 @@ relationship: variable_of CO_325:0100053 ! presence absence 0
 [Term]
 id: CO_325:0000995
 name: fruit parthenocarpy
-is_a: CO_325:1000005 ! Physiological
 namespace: BananaTrait
+is_a: CO_325:1000005 ! Physiological
 
 [Term]
 id: CO_325:0010011
