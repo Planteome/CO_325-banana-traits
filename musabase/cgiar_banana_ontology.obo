@@ -373,7 +373,7 @@ def: "Measure the circumference of the pseudostem of the plant at 1 m from the c
 synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000012 ! plant circumference 100 cm from the collar
-relationship: variable_of CO_325:0010025 ! plant circumference 100 cm - measurement
+relationship: variable_of CO_325:0010025 ! plant circumference - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
@@ -5226,9 +5226,9 @@ relationship: method_of CO_325:0000307 ! plant height to neck of peduncle
 
 [Term]
 id: CO_325:0010025
-name: plant circumference 100 cm - measurement
+name: plant circumference - measurement
 namespace: BananaMethod
-def: "Measure the circumference of the pseudostem of the plant at 1 m from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+def: "Measure the circumference of the pseudostem of the plant at selected distance from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
 is_a: CO_325:1000008 ! Measurement
 relationship: method_of CO_325:0000012 ! plant circumference 100 cm from the collar
 
@@ -6877,6 +6877,27 @@ def: "Visually observe the size of the mature green bunch and score its overall 
 is_a: CO_325:1000011 ! Estimation
 
 [Term]
+id: CO_325:0010248
+name: plant circumference at 100 cm - measurement
+namespace: BananaMethod
+def: "Measure the circumference of the pseudostem of the plant at 100 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+is_a: CO_325:0010025 ! plant circumference - measurement
+
+[Term]
+id: CO_325:0010249
+name: plant circumference at 75 cm - measurement
+namespace: BananaMethod
+def: "Measure the circumference of the pseudostem of the plant at 75 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+is_a: CO_325:0010025 ! plant circumference - measurement
+
+[Term]
+id: CO_325:0010250
+name: plant circumference at 20 cm - measurement
+namespace: BananaMethod
+def: "Measure the circumference of the pseudostem of the plant at 20 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+is_a: CO_325:0010025 ! plant circumference - measurement
+
+[Term]
 id: CO_325:0100002
 name: open answer
 namespace: BananaScale
@@ -6947,7 +6968,7 @@ namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010023 ! plant height - petiole of two youngest leaves - measurement
 relationship: scale_of CO_325:0010024 ! plant height - neck of peduncle - measurement
-relationship: scale_of CO_325:0010025 ! plant circumference 100 cm - measurement
+relationship: scale_of CO_325:0010025 ! plant circumference - measurement
 relationship: scale_of CO_325:0010026 ! tallest sucker height - measurement
 relationship: scale_of CO_325:0010034 ! bunch height - measurement
 relationship: scale_of CO_325:0010035 ! bunch circumference - measurement
