@@ -44,6 +44,7 @@ is_a: CO_325:1000004 ! Phenological
 id: CO_325:0000004
 name: Flowering of the plant
 namespace: BananaTrait
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000001 ! flowering
 created_by: guillaume
 creation_date: 2018-04-11T11:01:27Z
@@ -52,6 +53,7 @@ creation_date: 2018-04-11T11:01:27Z
 id: CO_325:0000005
 name: fruit maturity of the plant
 namespace: BananaTrait
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000002 ! fruit maturity-harvest
 created_by: guillaume
 creation_date: 2018-04-11T11:32:48Z
@@ -76,7 +78,7 @@ is_a: CO_325:1000001 ! Agronomical
 
 [Term]
 id: CO_325:0000012
-name: plant circumference 100 cm from the collar
+name: plant circumference from the collar
 namespace: BananaTrait
 def: "The circumference of the pseudostem of the plant at 100 cm from the collar." []
 synonym: "plantcircumf100cm" EXACT []
@@ -325,6 +327,7 @@ name: Days from planting to shooting in days
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting and the Date of shooting, e.g. 24/09/2014 - 24/01/2014 = 243 days." []
 synonym: "PlntShtTime_Comp_d, plant2shoot" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000958 ! time from planting to shooting
 relationship: variable_of CO_325:0010011 ! time from planting to shooting - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -335,6 +338,7 @@ name: Days from shooting to harvest
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of shooting to the Date of harvest, e.g. 24/12/2014 - 24/09/2014 = 91 days." []
 synonym: "ShtHvstTime_Comp_d, DAYMAT" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000003 ! time from shooting to harvest
 relationship: variable_of CO_325:0010013 ! time from shooting to harvest - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -345,6 +349,7 @@ name: Plant crop cycle in days
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting to the Date of harvest, e.g. 24/12/2014 - 24/01/2014 = 334 days." []
 synonym: "CropCyc_Comp_d, FLWHAV" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000006 ! plant crop cycle
 relationship: variable_of CO_325:0010012 ! plant crop cycle - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -355,18 +360,19 @@ name: Plant height in cm
 namespace: BananaTrait
 def: "Measure the distance from the collar, or from the pseudostem base at the ground if the collar is not visible, to the intersection of the petioles of the two youngest leaves (leaf ranks 1 and 2), using a measuring pole or sliding ruler. In cm" []
 synonym: "PStmHt_M1_cm, PHTSHT, plantheightpetioles" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000009 ! plant height
 relationship: variable_of CO_325:0010023 ! plant height - petiole of two youngest leaves - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
 id: CO_325:0000160
-name: Plant circumference
+name: Plant circumference at 100 cm from the collar
 namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 1 m from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
-relationship: variable_of CO_325:0000012 ! plant circumference 100 cm from the collar
-relationship: variable_of CO_325:0010025 ! plant circumference 100 cm - measurement
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0010248 ! plant circumference at 100 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
@@ -375,6 +381,7 @@ name: Weekly Leaf emission rate in leaves/week
 namespace: BananaTrait
 def: "Calculate as: the Rank of previously marked leaf at one point in time, minus 1 (equivalent to the Rank of marked youngest leaf), divided by the time elapsed between the two Date of data collection events when the marked leaf was recorded as 1) the Rank of marked youngest leaf and 2) the Rank of previously marked leaf, e.g. (2 - 1) / 1 week = LER of 1 leaves/week during a particular time period." []
 synonym: "LfEmRate_Comp_LfWk, LER_week" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000726 ! weekly leaf emission rate
 relationship: variable_of CO_325:0010021 ! weekly leaf emission rate - computation
 relationship: variable_of CO_325:0100006 ! leaves/week
@@ -385,6 +392,7 @@ name: Number of suckers: count
 namespace: BananaTrait
 def: "Count how many of all types of suckers are in the mat." []
 synonym: "SuckNum_Ct_Suck, NUMSUC, numsuckers" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000024 ! number of suckers
 relationship: variable_of CO_325:0010031 ! number of suckers - counting
 relationship: variable_of CO_325:0100013 ! sucker
@@ -395,6 +403,7 @@ name: Tallest sucker height in cm
 namespace: BananaTrait
 def: "On the tallest sucker, measure the distance from the pseudostem base at the ground to the intersection of the petioles of the two youngest leaves (leaf ranks 1 and 2), using a measuring pole or sliding ruler. In cm" []
 synonym: "SuckHtShtStg_M_cm, HTSF, suckerheight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000027 ! tallest sucker height
 relationship: variable_of CO_325:0010026 ! tallest sucker height - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -405,6 +414,7 @@ name: Bunch weight in kg
 namespace: BananaTrait
 def: "Harvest the bunch by cutting the peduncle 10 cm above the first ridge above the most proximal, hand and immediately below the most distal hand and weigh the bunch (including the rachis), using scales. In kg" []
 synonym: "BnchWt_M_kg, BWT, bunchweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000033 ! bunch weight
 relationship: variable_of CO_325:0010033 ! bunch weight - measurement
 relationship: variable_of CO_325:0100015 ! kg
@@ -415,6 +425,7 @@ name: Number of hands in bunch: count
 namespace: BananaTrait
 def: "Count how many hands are in the bunch." []
 synonym: "BnchHndNum_Ct_Hnd, numhands" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000036 ! number of hands in bunch
 relationship: variable_of CO_325:0010038 ! number of hands in bunch - counting
 relationship: variable_of CO_325:0100016 ! hand
@@ -425,6 +436,7 @@ name: Number of fingers in bunch: count
 namespace: BananaTrait
 def: "Count how many fingers are in the bunch." []
 synonym: "BnchFrtNum_Ct_Frt, NUMFING, numfingersbunch" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000039 ! number of fingers in bunch
 relationship: variable_of CO_325:0010039 ! number of fingers in bunch - counting
 relationship: variable_of CO_325:0100017 ! finger
@@ -435,6 +447,7 @@ name: Number of fingers in hand: count
 namespace: BananaTrait
 def: "Count how many fingers are in a hand. Associate the data with the Hand rank. The recommendation is to collect this data from the second and second-most distal hands." []
 synonym: "HndFrtNum_Ct_Frt, NUMFIN3, numfingershand" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000042 ! number of fingers in hand: count
 relationship: variable_of CO_325:0010046 ! number of fingers in third hand - counting
 relationship: variable_of CO_325:0100017 ! finger
@@ -445,6 +458,7 @@ name: Hand weight in kg
 namespace: BananaTrait
 def: "Cut a hand from the rachis and weigh the hand, using scales. Associate the data with the Hand rank. In kg" []
 synonym: "HandWt_M_kgPlnt, handweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000045 ! hand weight
 relationship: variable_of CO_325:0010042 ! hand weight - measurement
 relationship: variable_of CO_325:0100015 ! kg
@@ -455,6 +469,7 @@ name: Finger weight in g
 namespace: BananaTrait
 def: "Weigh a finger, using scales. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In g" []
 synonym: "FrtWt_M_gFruit, fingerweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000048 ! finger weight
 relationship: variable_of CO_325:0010052 ! finger weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -465,6 +480,7 @@ name: Finger external length in mm
 namespace: BananaTrait
 def: "Measure the length of a finger that is at the 'ready to eat' stage, along the external (dorsal) arc, excluding the pedicel and the fruit tip, using a tape measure. Associate the data with the Hand rank and the Number of fingers measured. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In mm" []
 synonym: "FrtExtLng_M_mm, FINCUM, fingerextlength" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000051 ! finger external length
 relationship: variable_of CO_325:0010056 ! finger external length - measurement
 relationship: variable_of CO_325:0100020 ! mm
@@ -475,6 +491,7 @@ name: Finger circumference in cm
 namespace: BananaTrait
 def: "Measure the circumference of a finger at its widest point, using a tape measure. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In cm" []
 synonym: "FrtGrth_M_cm, fingercircumf_cm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000054 ! finger circumference
 relationship: variable_of CO_325:0010060 ! finger circumference - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -485,6 +502,7 @@ name: Black Sigatoka incubation time
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of tagged leaf presenting black leaf streak disease symptoms at Foure's stage 1 and the Date of tagged cigar leaf unrolling at stage B, e.g. 24/04/2014 - 24/03/2014 = 31 days." []
 synonym: "DIT_Comp_d, DIT" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000057 ! black leaf streak disease incubation time
 relationship: variable_of CO_325:0010122 ! black leaf streak disease incubation time - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -495,6 +513,7 @@ name: Black Sigatoka disease evolution time
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of tagged leaf presenting black leaf streak disease symptoms at Foure's stage 6 and the Date of tagged leaf presenting black leaf streak disease symptoms at Foure's stage 1, e.g. 24/06/2014 - 24/04/2014 = 61 days." []
 synonym: "DET_Comp_d, DET" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000060 ! black leaf streak disease evolution time
 relationship: variable_of CO_325:0010123 ! black leaf streak disease evolution time - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -505,6 +524,7 @@ name: Number of standing leaves: count
 namespace: BananaTrait
 def: "Count how many of the leaves are standing leaves (without a bent or broken petiole)" []
 synonym: "StdLf_Ct_leaf, NSLF" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000069 ! number of standing leaves
 relationship: variable_of CO_325:0010106 ! number of standing leaves - counting
 relationship: variable_of CO_325:0100007 ! leaf
@@ -515,6 +535,7 @@ name: Extent of internal discolouration in corm of tallest sucker caused by Fusa
 namespace: BananaTrait
 def: "The extent to which vascular discolouration extends up the pseudostem of the tallest sucker should be determined by making cross-section cuts, from the base of the pseudostem upwards, and examining the internal tissues following each cut. The point at which discolouration is no longer visible should be noted and the distance from this point to the pseudostem base recorded. In cm" []
 synonym: "CormDiscol_Est_1to6," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000072 ! extent of internal discolouration in corm of tallest sucker caused by fusarium wilt
 relationship: variable_of CO_325:0010126 ! extent of internal discolouration in corm of tallest sucker caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100008 ! cm
@@ -525,6 +546,7 @@ name: Fusarium wilt internal discolouration of pseudostem 1-6
 namespace: BananaTrait
 def: "For the plant, the complete corm should be removed from the soil, the roots cut off and excess soil removed. Cross-sections of the corm should be cut (using a guillotine or other suitable device) to obtain five slices of equal thickness. The upper surface of each cut section should be examined and visually evaluate the extent of the vascular discolouration., 1 = corm completely clean, no vascular discolouration; 2 = isolated points of discolouration in vascular tissue; 3 = discolouration of up to one-third of vascular tissue; 4 = discolouration of between one-third and two-thirds of vascular tissue; 5 = discolouration greater than two-thirds of vascular tissue; 6 = total discolouration of vascular tissue" []
 synonym: "PStmDiscol_Est_cm," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000075 ! distance of internal discolouration in pseudostem of plant caused by fusarium wilt
 relationship: variable_of CO_325:0010125 ! distance of internal discolouration in pseudostem of plant caused by fusarium wilt
 relationship: variable_of CO_325:0100052 ! 5 pt corm discolouration scale
@@ -535,6 +557,7 @@ name: Percentage of plants with external disease symptoms caused by Fusarium wil
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of plants with any or multiple of the external disease symptoms caused by Fusarium wilt - yellowing leaves, splitting of pseudostem base, changes in new leaves, petiole collapse - divided by the Number of plants planted * 100, e.g. 112 / 300 * 100 = 37%. In %" []
 synonym: "ExtDisProp_Comp_pct," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000078 ! percentage of plants with external disease symptoms caused by fusarium wilt
 relationship: variable_of CO_325:0010138 ! percentage of plants with external disease symptoms caused by fusarium wilt - computation
 relationship: variable_of CO_325:0100046 ! %
@@ -545,6 +568,7 @@ name: Percentage of plants with internal disease symptoms caused by Fusarium wil
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of plants with any or multiple of the internal disease symptoms caused by Fusarium wilt - discolouration in the corm, and/or discolouration in the pseudostem - divided by the Number of plants planted * 100, e.g. 108 / 300 * 100 = 36%. In %" []
 synonym: "IntDisProp_Comp_pct," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000081 ! percentage of plants with internal disease symptoms caused by fusarium wilt
 relationship: variable_of CO_325:0010139 ! percentage of plants with internal disease symptoms caused by fusarium wilt - computation
 relationship: variable_of CO_325:0100046 ! %
@@ -555,6 +579,7 @@ name: Days from crop cycle start to first external Fusarium wilt symptoms
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting or the Date of harvest of the bunch from the plant of the previous crop cycle and the Date of first external disease symptoms caused by Fusarium wilt. In day" []
 synonym: "PlntgDisTim_Comp_d," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000084 ! time from start of crop cycle to first external disease symptoms caused by fusarium wilt
 relationship: variable_of CO_325:0010133 ! time from start of crop cycle to first external disease symptoms caused by fusarium wilt - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -565,6 +590,7 @@ name: Presence of yellowing leaves caused by Fusarium wilt 1-2
 namespace: BananaTrait
 def: "Visual assessment., 1 = absent; 2 = present" []
 synonym: "YellowPres_Est_1or2, YL_1-2" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000087 ! presence of yellowing leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010128 ! presence of yellowing leaves caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100054 ! presence absence 1
@@ -575,6 +601,7 @@ name: Presence of splitting pseudostem base caused by Fusarium wilt 1-2
 namespace: BananaTrait
 def: "Visual assessment., 1 = absent; 2 = present" []
 synonym: "PStmSplitPres_Est_1or2, SP_1-2" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000090 ! presence of splitting pseudostem base caused by fusarium wilt
 relationship: variable_of CO_325:0010129 ! presence of splitting pseudostem base caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100054 ! presence absence 1
@@ -585,6 +612,7 @@ name: Presence of changes in new leaves caused by Fusarium wilt 1-2
 namespace: BananaTrait
 def: "Visual assessment., 1 = absent; 2 = present" []
 synonym: "LfChgPres_Est_1or2, CNL_1-2" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000093 ! presence of changes in new leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010130 ! presence of changes in new leaves caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100054 ! presence absence 1
@@ -595,6 +623,7 @@ name: Presence of petiole collapse caused by Fusarium wilt 1-2
 namespace: BananaTrait
 def: "Visual assessment., 1 = absent; 2 = present" []
 synonym: "PetColpPres_Est_1or2, PC_1-2" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000096 ! presence of petiole collapse caused by fusarium wilt
 relationship: variable_of CO_325:0010131 ! presence of petiole collapse caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100054 ! presence absence 1
@@ -605,6 +634,7 @@ name: Youngest leaf spotted rank
 namespace: BananaTrait
 def: "Record the rank (order) of the youngest leaf spotted (the first fully unfurled leaf (or 50 pc unfurled for pathology trials) with at least 10 discrete, mature, necrotic lesions or one large necrotic area with 10 light-coloured dry centres), counting the rank by starting with the youngest completely unrolled leaf as 1 and moving downwards, associating the data with the Date of data collection." []
 synonym: "SpotLfNum_Ct_Lf, YLSF" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000099 ! youngest leaf spotted
 relationship: variable_of CO_325:0010102 ! youngest leaf spotted - counting
 relationship: variable_of CO_325:0100004 ! leaf rank
@@ -615,6 +645,7 @@ name: Index of non-spotted leaves: calculation
 namespace: BananaTrait
 def: "Calculate as: 100 multiplied by (Youngest leaf spotted, minus 1), divided by Number of standing leaves, e.g. 100 * (6 - 1) / 12 = 42." []
 synonym: "NSpotLfProp_Comp_idx, INSL" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000102 ! index of non-spotted leaves
 relationship: variable_of CO_325:0010109 ! index of non-spotted leaves - computation
 relationship: variable_of CO_325:0100045 ! index of non-spotted leaves
@@ -625,6 +656,7 @@ name: Black Sigatoka disease infection index
 namespace: BananaTrait
 def: "Calculate as: ((((Number of leaves with black leaf streak disease severity grade 0, multiplied by 0), plus (Number of leaves with black leaf streak disease severity grade 1, multiplied by 1), plus (Number of leaves with black leaf streak disease severity grade 2, multiplied by 2), plus (Number of leaves with black leaf streak disease severity grade 3, multiplied by 3), plus (Number of leaves with black leaf streak disease severity grade 4, multiplied by 4), plus (Number of leaves with black leaf streak disease severity grade 5, multiplied by 5), plus (Number of leaves with black leaf streak disease severity grade 6, multiplied by 6)), divided by the number of grades in the scale minus 1 (i.e. 7-1)), divided by the Number of standing leaves), multiplied by 100. For example, ((((3 * 0) + (1 * 1) + (1 * 2) + (3 * 3) + (5 * 4) + (0 * 5) + (0 * 6)) / 6) / 13) * 100 = ((32 / 6) / 13) * 100 = 41." []
 synonym: "BlkLfStrkInfIndex_Comp_Idx," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000105 ! black leaf streak disease severity index
 relationship: variable_of CO_325:0010118 ! black leaf streak disease severity index - computation
 relationship: variable_of CO_325:0100051 ! index of black leaf streak disease severity
@@ -635,6 +667,7 @@ name: Number of dead roots: count
 namespace: BananaTrait
 def: "Collect all roots from a standard-size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Divide the collected roots into two categories: dead roots, functional roots. Dead roots are completely rotten or shrivelled whereas functional roots show at least some healthy tissue. Count the number of dead roots." []
 synonym: "DeadRtNum2_Ct_Rt," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000108 ! number of dead roots
 relationship: variable_of CO_325:0010156 ! number of dead roots - counting
 relationship: variable_of CO_325:0100059 ! dead roots
@@ -645,6 +678,7 @@ name: Number of functional roots: count
 namespace: BananaTrait
 def: "Collect all roots from a standard-size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant. Divide the collected roots into two categories: dead roots, functional roots. Dead roots are completely rotten or shrivelled whereas functional roots show at least some healthy tissue. Count the number of functional roots." []
 synonym: "FuncRtNum2_Ct_Rt," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000111 ! number of functional roots
 relationship: variable_of CO_325:0010157 ! number of functional roots - counting
 relationship: variable_of CO_325:0100060 ! functional roots
@@ -655,6 +689,7 @@ name: Root necrosis caused by nematodes in percent
 namespace: BananaTrait
 def: "Select at random five functional primary roots, at least 10 cm long. Reduce the length of the five selected roots to 10 cm and slice through the roots length-wise. Evaluate one half of each of the five roots for the percentage of root cortex showing necrosis. The maximum root necrosis per root half can be 20%, giving a maximum root necrosis of 100% for the five halves together. Mentally determine the necrosis of the individual roots (1 to 5) and sum these together to get the total root necrosis of the sample. In %" []
 synonym: "rtNcr_M_%, RTNCRS" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000123 ! root necrosis caused by nematodes
 relationship: variable_of CO_325:0010219 ! root necrosis caused by nematodes - estimation
 relationship: variable_of CO_325:0100046 ! %
@@ -665,6 +700,7 @@ name: Number of Radopholus similis per soil sample per 100 ml: count
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "RadoNumSlWt_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000522 ! number of radopholus similis per soil sample
 relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -675,6 +711,7 @@ name: Number of Helicotylenchus multicinctus per soil sample per 100 ml: count
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "HelicoNumSlWt_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000523 ! number of helicotylenchus multicinctus per soil sample
 relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -685,6 +722,7 @@ name: Number of Meloidogyne spp. per soil sample per 100 ml: count
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "MeloiNumSlWt_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000526 ! number of meloidogyne spp. per soil sample
 relationship: variable_of CO_325:0010225 ! number of nematodes (meloidogyne spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -695,6 +733,7 @@ name: Number of Pratylenchus spp. per soil sample per 100 ml: count
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "PratyNumSlWt_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000527 ! number of pratylenchus spp. per soil sample
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -705,6 +744,7 @@ name: Number of Hoplolaimus spp. per soil sample per 100 ml: count
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "HoploNumSlWt_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000528 ! number of hoplolaimus spp. per soil sample
 relationship: variable_of CO_325:0010227 ! number of nematodes (hoplolaimus spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -715,6 +755,7 @@ name: Number of Pratylenchus goodeyi per soil sample per 100 ml: count
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "PratyGooNumSlWt_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000529 ! number of pratylenchus goodeyi per soil sample
 relationship: variable_of CO_325:0010228 ! number of nematodes (pratylenchus goodeyi) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -725,6 +766,7 @@ name: Number of Pratylenchus coffeae per soil sample per 100 ml: count
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "PratyCofNumSlWt_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000530 ! number of pratylenchus coffeae per soil sample
 relationship: variable_of CO_325:0010229 ! number of nematodes (pratylenchus coffeae) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -735,6 +777,7 @@ name: Number of maiden suckers: count
 namespace: BananaTrait
 def: "Count how many maiden suckers are in the mat." []
 synonym: "MSuckN_Ct_MSuck, MAIDSUC, nummaidensuckers" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000221 ! number of maiden suckers
 relationship: variable_of CO_325:0010027 ! number of maiden suckers - counting
 relationship: variable_of CO_325:0100009 ! maiden sucker
@@ -753,6 +796,7 @@ name: Number of sword suckers: count
 namespace: BananaTrait
 def: "Count how many sword suckers are in the mat." []
 synonym: "SSuckN_Ct_SSuck, SWDSUC, numswordsuckers" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000225 ! Number of sword suckers
 relationship: variable_of CO_325:0010028 ! number of sword suckers - counting
 relationship: variable_of CO_325:0100010 ! sword sucker
@@ -771,6 +815,7 @@ name: Number of peeper suckers: count
 namespace: BananaTrait
 def: "Count how many peeper suckers are in the mat." []
 synonym: "PSuckN_Ct_PSuck, PEPSUC, numpeepersuckers" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000229 ! number of peeper suckers
 relationship: variable_of CO_325:0010029 ! number of peeper suckers - counting
 relationship: variable_of CO_325:0100011 ! peeper sucker
@@ -789,6 +834,7 @@ name: Finger lateral diameter in cm
 namespace: BananaTrait
 def: "Measure the lateral diameter of a finger from the left to the right side (not from the ventral to the dorsal side), at the widest point, using calipers. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In cm" []
 synonym: "FrtDiam_M_cm, FLDIA, fingerlatdiam" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000233 ! finger lateral diameter
 relationship: variable_of CO_325:0010062 ! finger lateral diameter - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -808,6 +854,7 @@ name: Finger peel thickness in mm
 namespace: BananaTrait
 def: "Cut a finger in half, crosswise at its widest point, and on the cross-section measure the width of the peel, using calipers. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In mm" []
 synonym: "PeelThck_M_mm, FPEELT, peelthickness" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000236 ! finger peel thickness
 relationship: variable_of CO_325:0010066 ! finger peel thickness - measurement
 relationship: variable_of CO_325:0100020 ! mm
@@ -827,6 +874,7 @@ name: Fruit pulp lateral diameter in cm
 namespace: BananaTrait
 def: "Cut a finger in half, crosswise at its widest point, and on the cross-section measure the lateral diameter of the fruit pulp, from the left to the right side (not from the ventral to the dorsal side), using calipers. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In cm" []
 synonym: "PulpDiam_M_cm, FPULPD" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000240 ! fruit pulp lateral diameter
 relationship: variable_of CO_325:0010064 ! fruit pulp lateral diameter - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -846,6 +894,7 @@ name: Pseudostem main color 1-16
 namespace: BananaTrait
 def: "Detach the outermost sheath from the pseudostem (the sheath should not be too dry). Record the overall impression of colour of the exposed surface of the underlying pseudostem. Note that this 'main colour' should cover more than 75% of the underlying pseudostem surface. Use colour chart A and observe out of direct sunlight., 1 = cream; 2 = yellow; 3 = watery green; 4 = green yellow; 5 = light green; 6 = medium green; 7 = green; 8 = dark green; 9 = whitish; 10 = orange red; 11 = red; 12 = pink-purple; 13 = purple-brown; 14 = red-purple; 15 = purple; 16 = blue" []
 synonym: "PStmCol_Est_1to16, COLSTE" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000243 ! main underlying colour of pseudostem
 relationship: variable_of CO_325:0010160 ! pseudostem colour - estimation
 relationship: variable_of CO_325:0100063 ! bd colour chart a - 2016
@@ -864,6 +913,7 @@ name: Edge of petiole margin color 1-2
 namespace: BananaTrait
 def: "Observations on the margins and petiole wings should be made where the petiole and pseudostem meet at shooting. Record on the last developed leaf at [x flowering stage] [shooting]., 1 = no contrast between margin and petiole (without a colour line along); 2 = contrast between margin and petiole (with a contrasting colour line along)" []
 synonym: "PMargColL_Est_1or2, PETMG" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000248 ! colour line along edge of petiole margin
 relationship: variable_of CO_325:0010167 ! colour line along edge of petiole margin - estimation
 relationship: variable_of CO_325:0100074 ! petiole-margin contrast
@@ -882,6 +932,7 @@ name: Pigmentation of outer surface of cigar leaf on sucker 1-3
 namespace: BananaTrait
 def: "Visually observe the pigmentation of the outer surface of the cigar leaf of a developed sucker or on another plant of the same accession. [x Observation should be made before shooting, on a developed sucker or on another plant of the same accession.], 1 = green; 2 = red-purple; 3 = other (specify on answer sheet)" []
 synonym: "CigLfPigm_Est_1to3, CGLFCO" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000252 ! pigmentation of outer surface of cigar leaf on sucker
 relationship: variable_of CO_325:0010168 ! pigmentation of outer surface of cigar leaf - estimation
 relationship: variable_of CO_325:0100063 ! bd colour chart a - 2016
@@ -900,6 +951,7 @@ name: Petiole margins winged 1-2
 namespace: BananaTrait
 def: "Observations on the margins and petiole wings should be made where the petiole and pseudostem meet at shooting. Margin is the part of the petiole that can be bent outwards/inwards. [x Observe at flowering time.], 1 = winged; 2 = not winged" []
 synonym: "PMargWing_Est_1or2," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000256 ! petiole margins winged
 relationship: variable_of CO_325:0010164 ! winged petiole margin - estimation
 relationship: variable_of CO_325:0100070 ! wing presence/absence
@@ -918,6 +970,7 @@ name: Petiole margins clasping 1-2
 namespace: BananaTrait
 def: "Observations on the margins and petiole wings should be made where the petiole and pseudostem meet at shooting. Observation should be made at shooting on the neck, where the petiole and pseudostem meet. Margin is the part of the petiole that can be bent outwards/inwards. [x Observe at flowering time.], 1 = clasping; 2 = not clasping" []
 synonym: "PMargClasp_Est_1or2," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000260 ! petiole margins clasping
 relationship: variable_of CO_325:0010165 ! petiole margin clasping - estimation
 relationship: variable_of CO_325:0100072 ! clasping or not clasping
@@ -936,6 +989,7 @@ name: Petiole margin colour 1-16
 namespace: BananaTrait
 def: "Observations on the margins and petiole wings should be made where the petiole and pseudostem meet at shooting. Use colour chart A and observe out of direct sunlight. Record the colour of the margin (general colour is below the rim). [x Observe at flowering time.], 1 = cream; 2 = yellow; 3 = watery green; 4 = green yellow; 5 = light green; 6 = medium green; 7 = green; 8 = dark green; 9 = whitish; 10 = orange red; 11 = red; 12 = pink-purple; 13 = purple-brown; 14 = red-purple; 15 = purple; 16 = blue" []
 synonym: "PMargCol_Esr_1to16, PETMCO_1-16" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000264 ! petiole margin colour
 relationship: variable_of CO_325:0010166 ! petiole margin colour - estimation
 relationship: variable_of CO_325:0100063 ! bd colour chart a - 2016
@@ -961,6 +1015,7 @@ name: Days from flowering to harvest
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of flowering to the Date of harvest, e.g. 24/12/2014 - 24/10/2014 = 61 days. In day format" []
 synonym: "FlwHvstTime_Comp_d, flower2harvest" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000292 ! time from flowering to harvest
 relationship: variable_of CO_325:0010014 ! time from flowering to harvest - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -980,6 +1035,7 @@ name: Time from planting to death in days
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting and the Date of death, e.g. 24/05/2014 - 24/01/2014 = 120 days." []
 synonym: "PltDth_Comp_d, plant2death" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000294 ! time from planting to death
 relationship: variable_of CO_325:0010015 ! time from planting to death - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -999,6 +1055,7 @@ name: Time from harvest to death in days
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of harvest of the bunch of the plant from the preceeding crop cycle and the Date of death of the current plant, e.g. 24/03/2015 - 24/12/2014 = 90 days." []
 synonym: "HvstDth_Comp_d, harvest2death" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000296 ! time from harvest to death
 relationship: variable_of CO_325:0010016 ! time from harvest to death - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -1018,6 +1075,7 @@ name: Ratoon crop cycle in days
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of harvest of the bunch of the plant from the preceeding crop cycle and the Date of harvest of the bunch of the plant from the current crop cycle, e.g. 24/11/2015 - 24/12/2014 = 335 days." []
 synonym: "RtnCrpCyc_Comp_d, harvest2harvest" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000298 ! ratoon crop cycle
 relationship: variable_of CO_325:0010017 ! ratoon crop cycle - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -1037,6 +1095,7 @@ name: Plant height to peduncle neck
 namespace: BananaTrait
 def: "Measure the distance from the collar, or from the pseudostem base at the ground if the collar is not visible, to under the 'neck' of the curved peduncle, using a measuring pole or sliding ruler. In cm" []
 synonym: "PStmHt_M2_cm, plantheightneck" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000307 ! plant height to neck of peduncle
 relationship: variable_of CO_325:0010024 ! plant height - neck of peduncle - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -1055,6 +1114,7 @@ name: Number of water suckers
 namespace: BananaTrait
 def: "Count how many water suckers are in the mat." []
 synonym: "WSuckN_Ct_WSuck, numwatersuckers" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000310 ! number of water suckers
 relationship: variable_of CO_325:0010030 ! number of water suckers - counting
 relationship: variable_of CO_325:0100012 ! water suckers
@@ -1074,6 +1134,7 @@ name: Bunch maturity stage
 namespace: BananaTrait
 def: "Estimate maturity stage of the bunch., 1 = fully green; 2 = one yellow finger;" []
 synonym: "BnchMatStg_Est_1to2, bunchmaturity" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000312 ! bunch maturity stage at harvest
 relationship: variable_of CO_325:0010032 ! bunch maturity stage - estimation
 relationship: variable_of CO_325:0100014 ! bunch maturity
@@ -1092,6 +1153,7 @@ name: Rachis weight
 namespace: BananaTrait
 def: "Cut the hands off the rachis and weigh the rachis, using scales. In kg" []
 synonym: "RchsWt_M_kg, rachisweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000314 ! rachis weight
 relationship: variable_of CO_325:0010036 ! rachis weight - measurement
 relationship: variable_of CO_325:0100015 ! kg
@@ -1111,6 +1173,7 @@ name: Total finger weight
 namespace: BananaTrait
 def: "Calculate as: the Bunch weight, minus the Rachis weight, e.g. 50 - 10 = 40. In kg" []
 synonym: "FngWtTtl_Comp_kg, totalfingerweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000316 ! total finger weight
 relationship: variable_of CO_325:0010037 ! total finger weight - computation
 relationship: variable_of CO_325:0100015 ! kg
@@ -1129,6 +1192,7 @@ name: Hand rank 1 to 3
 namespace: BananaTrait
 def: "Record the rank (order) of a hand in the bunch, starting with the hand at the proximal end (closest to the pseudostem) of the bunch as 1 and continuing to the hand at the most distal end (closest to the male bud)." []
 synonym: "HndRnk_Ct_HndRnk, handid" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000318 ! hand rank
 relationship: variable_of CO_325:0010041 ! hand rank - counting
 relationship: variable_of CO_325:0100018 ! hand rank
@@ -1147,6 +1211,7 @@ name: Multiple number of fingers in hand: count
 namespace: BananaTrait
 def: "Count how many fingers are in multiple hands. Associate the data with the Hand rank and the Number of hands measured. The recommendation is to collect this data from the second and second-most distal hands." []
 synonym: "HndMltpFrtNum_Ct_Frt, multnumfingshand" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000320 ! multiple number of fingers in hand
 relationship: variable_of CO_325:0010047 ! multiple number of fingers in hand - counting
 relationship: variable_of CO_325:0100017 ! finger
@@ -1165,6 +1230,7 @@ name: Number of hands measured: count
 namespace: BananaTrait
 def: "Count how many hands are used to obtain a measurement." []
 synonym: "HndNumMsrd_Ct_Hnd, numhandsmeas" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000322 ! number of hands measured
 relationship: variable_of CO_325:0010048 ! number of hands measured - counting
 relationship: variable_of CO_325:0100016 ! hand
@@ -1183,6 +1249,7 @@ name: Average number of fingers in hand: calculation
 namespace: BananaTrait
 def: "Calculate as: the Multiple number of fingers in hand, divided by the Number of hands measured, e.g. 40 / 2 = 20." []
 synonym: "HndFrtAvgNum_Ct_Frt, avenumfingshand_rltv" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000324 ! average number of fingers in hand
 relationship: variable_of CO_325:0010049 ! average number of fingers in hand - computation
 relationship: variable_of CO_325:0100017 ! finger
@@ -1193,6 +1260,7 @@ name: Estimated number of fingers in bunch
 namespace: BananaTrait
 def: "Calculate as: the sum of the Number of fingers in 3rd hand and the Number of fingers in 2nd-most distal hand, divided by 2, and multiplied by the Number of hands in bunch, e.g. (16 + 12) / 2 * 8 = 112." []
 synonym: "BnchFrtNum_Comp_Frt, estnumfingers" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000039 ! number of fingers in bunch
 relationship: variable_of CO_325:0010040 ! number of fingers in bunch - estimation
 relationship: variable_of CO_325:0100017 ! finger
@@ -1211,6 +1279,7 @@ name: Multiple hand weight in kg
 namespace: BananaTrait
 def: "Cut multiple hands from the rachis and weigh them together, using scales. Associate the data with the Hank rank and the Number of hands measured. In kg" []
 synonym: "MltHandWt_M_kgPlnt, multhandweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000327 ! multiple hand weight
 relationship: variable_of CO_325:0010043 ! multiple hand weight - measurement
 relationship: variable_of CO_325:0100015 ! kg
@@ -1229,6 +1298,7 @@ name: Average hand weight in kg
 namespace: BananaTrait
 def: "Calculate as: the Multiple hand weight, divided by the Number of hands measured, e.g. 5.6 / 2 = 2.8. In kg" []
 synonym: "HandAvgWt_M_kgPlnt, avehandweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000329 ! average hand weight
 relationship: variable_of CO_325:0010044 ! average hand weight - computation
 relationship: variable_of CO_325:0100015 ! kg
@@ -1247,6 +1317,7 @@ name: Multiple finger weight in g
 namespace: BananaTrait
 def: "Weigh multiple fingers together, using scales. Associate the data with the Hank rank and the Number of fingers measured. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In g" []
 synonym: "MltFrtWt_M_gFruit, multfingerweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000331 ! multiple finger weight
 relationship: variable_of CO_325:0010053 ! multiple finger weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -1265,6 +1336,7 @@ name: Number of fingers measured
 namespace: BananaTrait
 def: "Count how many fingers are used to obtain a measurement." []
 synonym: "FrtNb_Ct_gFruit, numfingersmeas" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000333 ! number of fingers measured
 relationship: variable_of CO_325:0010054 ! number of fingers measured - counting
 relationship: variable_of CO_325:0100017 ! finger
@@ -1283,6 +1355,7 @@ name: Average finger weight in g
 namespace: BananaTrait
 def: "Calculate as: the sum of the the Finger weight measurements, divided by the number of those measurements, e.g. (150 + 146 + 147 + 152 + 140 + 146) / 6 = 147. In g" []
 synonym: "FrtWtAvg_M_g, WGTFRU, avefingerweight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000335 ! average finger weight
 relationship: variable_of CO_325:0010055 ! average finger weight - computation
 relationship: variable_of CO_325:0100019 ! g
@@ -1302,6 +1375,7 @@ name: Average finger external length in cm
 namespace: BananaTrait
 def: "Calculate as: the sum of the Finger external length measurements, divided by the number of those measurements, e.g. (30 + 34 + 32 + 33 + 33 + 31) / 6 = 32.1. In cm" []
 synonym: "AvgFrtExtLng_M_cm, avefingerextlength" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000337 ! average finger external length
 relationship: variable_of CO_325:0010057 ! average finger external length - computation
 relationship: variable_of CO_325:0100008 ! cm
@@ -1321,6 +1395,7 @@ name: Finger internal length in mm
 namespace: BananaTrait
 def: "Measure the length of a finger, along the internal (ventral) arc, excluding the pedicel and the fruit tip, using a tape measure. Associate the data with the Hand rank and the Number of fingers measured. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In mm" []
 synonym: "FrtIntLng_M_cm, fingerintlength_cm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000339 ! finger internal length
 relationship: variable_of CO_325:0010058 ! finger internal length - measurement
 relationship: variable_of CO_325:0100020 ! mm
@@ -1340,6 +1415,7 @@ name: Average finger internal length in cm
 namespace: BananaTrait
 def: "Calculate as: the sum of the Finger internal length measurements, divided by the number of those measurements, e.g. (27 + 31 + 29 + 30 + 30 + 28) / 6 = 29.2. In cm" []
 synonym: "AvgFrtIntLng_M_cm, avefingerintlength" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000341 ! average finger internal length
 relationship: variable_of CO_325:0010059 ! average finger internal length - computation
 relationship: variable_of CO_325:0100008 ! cm
@@ -1350,6 +1426,7 @@ name: Finger circumference in mm
 namespace: BananaTrait
 def: "Measure the circumference of a finger at its widest point, using a tape measure. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In mm" []
 synonym: "FrtGrth_M_mm, fingercircumf_mm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000054 ! finger circumference
 relationship: variable_of CO_325:0010060 ! finger circumference - measurement
 relationship: variable_of CO_325:0100020 ! mm
@@ -1369,6 +1446,7 @@ name: Average finger circumference in mm
 namespace: BananaTrait
 def: "Calculate as: the sum of the Finger circumference measurements, divided by the number of those measurements, e.g. (7.0 + 8.0 + 9.0 + 10.0 + 7.0 + 9.5) / 6 = 8.4. In cm" []
 synonym: "AvgFrtGrth_M_mm, avefingercircumf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000344 ! average finger circumference
 relationship: variable_of CO_325:0010061 ! average finger circumference - computation
 relationship: variable_of CO_325:0100008 ! cm
@@ -1379,6 +1457,7 @@ name: Finger lateral diameter in mm
 namespace: BananaTrait
 def: "Measure the lateral diameter of a finger from the left to the right side (not from the ventral to the dorsal side), at the widest point, using calipers. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In mm" []
 synonym: "FrtDiam_M_mm, fingerlatdiam" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000233 ! finger lateral diameter
 relationship: variable_of CO_325:0010062 ! finger lateral diameter - measurement
 relationship: variable_of CO_325:0100020 ! mm
@@ -1398,6 +1477,7 @@ name: Average finger lateral diameter in mm
 namespace: BananaTrait
 def: "Calculate as: the sum of the Finger lateral diameter measurements, divided by the number of those measurements, e.g. (3.5 + 5.2 + 4.1 + 5 + 6 + 6.8) / 6 = 5.1. In cm" []
 synonym: "AvgFrtDiam_M_mm, avefingerlatdiam" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000348 ! average finger lateral diameter
 relationship: variable_of CO_325:0010063 ! average finger lateral diameter - computation
 relationship: variable_of CO_325:0100008 ! cm
@@ -1408,6 +1488,7 @@ name: Fruit pulp lateral diameter in mm
 namespace: BananaTrait
 def: "Cut a finger in half, crosswise at its widest point, and on the cross-section measure the lateral diameter of the fruit pulp, from the left to the right side (not from the ventral to the dorsal side), using calipers. Associate the data with the Hand rank. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In mm" []
 synonym: "PulpDiam_M_mm, pulpdiam" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000240 ! fruit pulp lateral diameter
 relationship: variable_of CO_325:0010064 ! fruit pulp lateral diameter - measurement
 relationship: variable_of CO_325:0100020 ! mm
@@ -1427,6 +1508,7 @@ name: Average fruit pulp lateral diameter in cm
 namespace: BananaTrait
 def: "Calculate as: the sum of the Fruit pulp lateral diameter measurements, divided by the number of those measurements, e.g. (3.1 + 4.8 + 3.7 + 4.6 + 5.6 + 6.4) / 6 = 4.7. In cm" []
 synonym: "AvgPulpDiam_M_mm, avepulpdiam" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000352 ! average fruit pulp lateral diameter
 relationship: variable_of CO_325:0010065 ! average fruit pulp lateral diameter - computation
 relationship: variable_of CO_325:0100008 ! cm
@@ -1446,6 +1528,7 @@ name: Average finger peel thickness in mm
 namespace: BananaTrait
 def: "Calculate as: the sum of the Finger peel thickness measurements, divided by the number of those measurements, e.g. (2 + 2 + 2 + 3 + 2 + 3 + 3) / 6 = 2. In mm" []
 synonym: "AvgPeelThck_M_mm, avepeelthickness" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000355 ! average finger peel thickness
 relationship: variable_of CO_325:0010067 ! average finger peel thickness - computation
 relationship: variable_of CO_325:0100020 ! mm
@@ -1464,6 +1547,7 @@ name: Number of plants planted: count
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of values for Date of planting." []
 synonym: "PltPltd_Ct_Plnt, numplanted" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000357 ! number of plants planted
 relationship: variable_of CO_325:0010068 ! number of plants planted - computation
 relationship: variable_of CO_325:0100021 ! plant
@@ -1482,6 +1566,7 @@ name: Plant spacing in m2
 namespace: BananaTrait
 def: "Calculate as: multiply the distance of the spacing between the plants, both latitudinally and longitudinally, e.g. 2 m x 3 m = 6 m2. In m2" []
 synonym: "PltSpcg_Comp_m2, plantspacing" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000359 ! plant spacing
 relationship: variable_of CO_325:0010069 ! plant spacing - computation
 relationship: variable_of CO_325:0100022 ! m2
@@ -1500,6 +1585,7 @@ name: Plant density: calculation
 namespace: BananaTrait
 def: "Calculate as: number of square metres in the area unit of choice, divided by the Plant spacing, e.g. 10,000 square metres in 1 hectare / 6 = 1,667 plants/ha." []
 synonym: "PltDnsty_Comp_PlntHa, plantdens" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000361 ! plant density
 relationship: variable_of CO_325:0010070 ! plant density - computation
 relationship: variable_of CO_325:0100023 ! plants/unit of area
@@ -1518,6 +1604,7 @@ name: Number of plants dead: count
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of values for Date of death." []
 synonym: "PltDead_Ct_Plnt, numdead" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000363 ! number of plants dead
 relationship: variable_of CO_325:0010071 ! number of plants dead - computation
 relationship: variable_of CO_325:0100021 ! plant
@@ -1536,6 +1623,7 @@ name: Number of plants harvested: count
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of values for Date of harvest." []
 synonym: "PltHvstd_Ct_Plnt, numharv" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000365 ! number of plants harvested
 relationship: variable_of CO_325:0010072 ! number of plants harvested - computation
 relationship: variable_of CO_325:0100021 ! plant
@@ -1554,6 +1642,7 @@ name: Number of plants not harvested: count
 namespace: BananaTrait
 def: "Calculate as: the Number of plants planted, minus the Number of plants dead, minus the Number of plants harvested, e.g. 24 - 4 - 18 = 2." []
 synonym: "PltNtHvstd_Ct_Plnt, numnotharv" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000367 ! number of plants not harvested
 relationship: variable_of CO_325:0010073 ! number of plants not harvested - computation
 relationship: variable_of CO_325:0100021 ! plant
@@ -1572,6 +1661,7 @@ name: Death proportion: calculation
 namespace: BananaTrait
 def: "Calculate as: the Number of plants dead, divided by the Number of plants planted, e.g. 4 / 24 = 0.17. In plants dead/plants planted" []
 synonym: "DthPrp_Comp_DdPltRt, deathprop" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000369 ! death proportion
 relationship: variable_of CO_325:0010074 ! death proportion - computation
 relationship: variable_of CO_325:0100024 ! plants dead/plants planted
@@ -1590,6 +1680,7 @@ name: Death density
 namespace: BananaTrait
 def: "Calculate as: the Plant density multiplied by the Death proportion, e.g. 1,667 * 0.17 = 283. In plants/unit of area" []
 synonym: "DthDnst_Comp_PlntHa, deathdens" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000371 ! death density
 relationship: variable_of CO_325:0010075 ! death density - computation
 relationship: variable_of CO_325:0100023 ! plants/unit of area
@@ -1608,6 +1699,7 @@ name: Harvest proportion: calculation
 namespace: BananaTrait
 def: "Calculate as: the Number of plants harvested, divided by the Number of plants planted, e.g. 18 / 24 = 0.75. In plants harvested/plants planted" []
 synonym: "HvstPrp_Comp_PlntNb, harvprop" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000373 ! harvest proportion
 relationship: variable_of CO_325:0010076 ! harvest proportion - computation
 relationship: variable_of CO_325:0100025 ! plants harvested/plants planted
@@ -1626,6 +1718,7 @@ name: Harvest density: calculation
 namespace: BananaTrait
 def: "Calculate as: the Plant density multiplied by the Harvest proportion, e.g. 1,667 * 0.75 = 1,250. In plants/unit of area" []
 synonym: "HvstDst_Comp_PlntHa, harvdens" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000375 ! harvest density
 relationship: variable_of CO_325:0010077 ! harvest density - computation
 relationship: variable_of CO_325:0100023 ! plants/unit of area
@@ -1644,6 +1737,7 @@ name: Non-harvest proportion: calculation
 namespace: BananaTrait
 def: "Calculate as: the Number of plants not harvested, divided by the Number of plants planted, e.g. 2 / 24 = 0.08. In plants not harvested/plants planted" []
 synonym: "NtHvstPrp_Comp_PlntNb, nonharvprop" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000377 ! non-harvest proportion
 relationship: variable_of CO_325:0010078 ! non-harvest proportion - computation
 relationship: variable_of CO_325:0100026 ! plants not harvested/plants planted
@@ -1662,6 +1756,7 @@ name: Non-harvest density: calculation
 namespace: BananaTrait
 def: "Calculate as: the Plant density multiplied by the Non-harvest proportion, e.g. 1,667 * 0.08 = 133. In plants/unit of area" []
 synonym: "NtHvstDst_Comp_PlntHa, nonharvdens" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000379 ! non-harvest density
 relationship: variable_of CO_325:0010079 ! non-harvest density - computation
 relationship: variable_of CO_325:0100023 ! plants/unit of area
@@ -1680,6 +1775,7 @@ name: Annual crop cycle proportion: calculation
 namespace: BananaTrait
 def: "Calculate as: the length of a year (e.g. 365 days) divided by the Plant crop cycle or the Ratoon crop cycle, e.g. 365 / 334 = 1.09. In crop cycle duration/year." []
 synonym: "AnCrpCyclPrp_Comp_CrpCclY, anncropcycprop" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000381 ! annual crop cycle proportion
 relationship: variable_of CO_325:0010080 ! annual crop cycle proportion - computation
 relationship: variable_of CO_325:0100027 ! crop cycle duration/year
@@ -1698,6 +1794,7 @@ name: Plant annual yield in kg/plant/y
 namespace: BananaTrait
 def: "Calculate as: the Bunch weight multiplied by the Annual crop cycle proportion, e.g. 48 * 1.09 = 52.32. In kg/plant/y" []
 synonym: "AnPltPrp_Comp_KgHaY, plantannyield" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000383 ! plant annual yield
 relationship: variable_of CO_325:0010081 ! annual plant productivity - computation
 relationship: variable_of CO_325:0100028 ! kg/plant/y
@@ -1717,6 +1814,7 @@ name: Average actual annual yield in t/unit of area/y
 namespace: BananaTrait
 def: "Calculate as: the Bunch weight divided by 1,000, multiplied by the Annual crop cycle proportion, multiplied by the Harvest density, e.g. (50 / 1,000) * 1.09 * 1,250 = 68.13. In t/unit of area/y" []
 synonym: "AcAnYd_Comp_TnHaY, actualannyield" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000385 ! average actual annual yield
 relationship: variable_of CO_325:0010082 ! actual annual yield - computation
 relationship: variable_of CO_325:0100029 ! t/unit of area/y
@@ -1736,6 +1834,7 @@ name: Average potential annual yield in t/unit of area/y
 namespace: BananaTrait
 def: "Calculate as: the Bunch weight divided by 1,000, multiplied by the Annual crop cycle proportion, multiplied by the Plant density, e.g. (50 / 1,000) * 1.09 * 1,667 = 90.85. In t/unit of area/y" []
 synonym: "PtYd_Comp_TnHaY, potannyield" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000387 ! average potential annual yield
 relationship: variable_of CO_325:0010083 ! potential annual yield - computation
 relationship: variable_of CO_325:0100029 ! t/unit of area/y
@@ -1754,6 +1853,7 @@ name: Overall fruit pendulance 1-2
 namespace: BananaTrait
 def: "Visual estimation of fruit pendulance on a bunch, for Early Evaluation Trial stage only., 1 = bad; 2 = good" []
 synonym: "PdltFrt_Est_1to2, pendulantfruit" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000389 ! overall fruit pendulance quality
 relationship: variable_of CO_325:0010084 ! fruit pendulance - estimation
 relationship: variable_of CO_325:0100030 ! bad good
@@ -1772,27 +1872,29 @@ name: Overall bunch quality 1-2
 namespace: BananaTrait
 def: "Visual estimation of bunch quality, for Early Evaluation Trial stage only., 1 = bad; 2 = good" []
 synonym: "GdBnch_Est_1to2, goodbunch" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000391 ! overall bunch quality
 relationship: variable_of CO_325:0010085 ! bunch quality - estimation
 relationship: variable_of CO_325:0100030 ! bad good
 
 [Term]
 id: CO_325:0000393
-name: parthenocarpy
+name: fruitfill
 namespace: BananaTrait
-def: "The overall estimation of fruit parthenocarpy level on a bunch" []
+def: "The overall estimation of fruitfilling level on a bunch" []
 synonym: "goodfruitfill" EXACT []
 is_a: CO_325:1000001 ! Agronomical
 
 [Term]
 id: CO_325:0000394
-name: Partenocarpy 1-2
+name: Fruitfill 1-2
 namespace: BananaTrait
-def: "Visual estimation of a fruit fill, (or parthenocarpic) for Early Evaluation Trial stage only., 1 = parthenocarpic; 2 = not parthenocarpic" []
+def: "Visual estimation of a fruit filling for Early Evaluation Trial stage only., 1 = filled; 2 = not filled" []
 synonym: "GdFrtFll_Est_1to2, goodfruitfill" EXACT []
-relationship: variable_of CO_325:0000393 ! parthenocarpy
-relationship: variable_of CO_325:0010086 ! fruit parthenocarpy - estimation
-relationship: variable_of CO_325:0100031 ! parthenocarpy
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000393 ! fruitfill
+relationship: variable_of CO_325:0010086 ! fruitfill - estimation
+relationship: variable_of CO_325:0100031 ! fruitfill
 
 [Term]
 id: CO_325:0000395
@@ -1808,6 +1910,7 @@ name: Overall suckering quality 1-2
 namespace: BananaTrait
 def: "Visual estimation of suckering, for Early Evaluation Trial stage only., 1 = bad; 2 = good" []
 synonym: "Sckr_Est_1to2, suckering" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000395 ! overall suckering quality
 relationship: variable_of CO_325:0010087 ! sucker quality - estimation
 relationship: variable_of CO_325:0100030 ! bad good
@@ -1826,6 +1929,7 @@ name: Dwarfism 1-2
 namespace: BananaTrait
 def: "Visual estimation of dwarfism, for Early Evaluation Trial stage only., 1 = dwarf; 2 = not dwarf" []
 synonym: "Dwfsm_Est_1to2, dwarfism" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000397 ! dwarfism
 relationship: variable_of CO_325:0010088 ! dwarfism - estimation
 relationship: variable_of CO_325:0100032 ! dwarfism
@@ -1844,6 +1948,7 @@ name: Pseudostem height 1-3
 namespace: BananaTrait
 def: "Recorded from the base of the pseudostem to the emerging point of the peduncle., 1 = yes; 2 = no; 3 = equal to or more than 3 m" []
 synonym: "PsdHght_E, PSEHT" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000425 ! pseudostem height
 relationship: variable_of CO_325:0010159 ! pseudostem height - estimation
 relationship: variable_of CO_325:0100062 ! height score (1 to 3)
@@ -1862,6 +1967,7 @@ name: Blotches relative area at petiole base 1-4
 namespace: BananaTrait
 def: "Record the relative surface area coverage by blotches. [x Look at several plants if possible to get an overall idea. Observe at flowering time]., 1 = no pigmentation; 2 = sparse blotching (<20%); 3 = moderate blotching (20-50%); 4 = extensive pigmentation (>50%)" []
 synonym: "BlotchA_Est_1to4," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000427 ! blotches relative area at petiole base
 relationship: variable_of CO_325:0010161 ! blotches area - estimation
 relationship: variable_of CO_325:0100064 ! blotch pigmentation scale (1 to 4)
@@ -1872,6 +1978,7 @@ name: Blotches relative area at petiole base 1-5
 namespace: BananaTrait
 def: "Record the relative surface area coverage by blotches. [x Look at several plants if possible to get an overall idea. Observe at flowering time]., 1 = sparse blotching; 2 = small blotches; 3 = large blotches; 4 = extensive pigmentation; 5 = without pigmentation" []
 synonym: "BlotchA_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000427 ! blotches relative area at petiole base
 relationship: variable_of CO_325:0010161 ! blotches area - estimation
 relationship: variable_of CO_325:0100065 ! blotch pigmentation scale (1 to 5)
@@ -1890,6 +1997,7 @@ name: Blotches colour at the petiole base 1-4
 namespace: BananaTrait
 def: "Observe visually the colour of the blotches on the upper leaf sheath., 1 = orange-brown (mahogany, like in Pisang Mas); 2 = brown; 3 = black-purple; 4 = other" []
 synonym: "BlotchCol_Est_1to4," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000430 ! blotches colour at the petiole base
 relationship: variable_of CO_325:0010162 ! blotches colour - estimation
 relationship: variable_of CO_325:0100066 ! blotch color scale (1 to 4)
@@ -1900,6 +2008,7 @@ name: Blotches colour at the petiole base 1-5
 namespace: BananaTrait
 def: "Observe visually the colour of the blotches on the upper leaf sheath., 1 = brown; 2 = dark brown; 3 = brown-black; 4 = black-purple; 5 = other" []
 synonym: "BlotchCol_Est_1to5, BLOPB" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000430 ! blotches colour at the petiole base
 relationship: variable_of CO_325:0010162 ! blotches colour - estimation
 relationship: variable_of CO_325:0100067 ! blotch color scale (1 to 5)
@@ -1918,6 +2027,7 @@ name: Margin behaviour on petiole canal of third leaf 1-4
 namespace: BananaTrait
 def: "The third leaf (Leaf III) is counted from the last leaf produced before [x bunch emergence] [shooting]. Cut the petiole halfway between the pseudostem and the leaf blade and examine the cross section. [x Observe at flowering time]., 1 = margins spreading; 2 = margins erect; 3 = margins curved inward; 4 = margins overlapping" []
 synonym: "MgnBhvPtCnlThrdLf_Est_1to4, PENCL4" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000433 ! margin behaviour on petiole canal of third leaf
 relationship: variable_of CO_325:0010163 ! margin behaviour on petiole canal of third leaf - estimation
 relationship: variable_of CO_325:0100068 ! margin behaviour scale (1 to 4)
@@ -1928,6 +2038,7 @@ name: Margin behaviour on petiole canal of third leaf 1-5
 namespace: BananaTrait
 def: "The third leaf (Leaf III) is counted from the last leaf produced before [x bunch emergence] [shooting]. Cut the petiole halfway between the pseudostem and the leaf blade and examine the cross section. [x Observe at flowering time]., 1 = open with margins spreading; 2 = wide with erect margins; 3 = straight with erect margins; 4 = margins curved inward; 5 = margins overlapping" []
 synonym: "MgnBhvPtCnlThrdLf_Est_1to5, PENCL5" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000433 ! margin behaviour on petiole canal of third leaf
 relationship: variable_of CO_325:0010163 ! margin behaviour on petiole canal of third leaf - estimation
 relationship: variable_of CO_325:0100069 ! margin behaviour scale (1 to 5)
@@ -1938,6 +2049,7 @@ name: Petiole margins winged 1-5
 namespace: BananaTrait
 def: "Observations on the margins and petiole wings should be made where the petiole and pseudostem meet at shooting. Margin is the part of the petiole that can be bent outwards/inwards. [x Observe at flowering time.], 1 = winged and undulating; 2 = winged and not clasping the pseudostem; 3 = winged and clasping the pseudostem; 4 = not winged and clasping the pseudostem; 5 = not winged and not clasping the pseudostem" []
 synonym: "PMargWing_Est_1or5, PETMWG" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000256 ! petiole margins winged
 relationship: variable_of CO_325:0010164 ! winged petiole margin - estimation
 relationship: variable_of CO_325:0100071 ! wing presence/absence and clasping presence/absence scale 1 to 5
@@ -1948,6 +2060,7 @@ name: Petiole margin colour 1-4
 namespace: BananaTrait
 def: "Observations on the margins and petiole wings should be made where the petiole and pseudostem meet at shooting. Use colour chart A and observe out of direct sunlight. Record the colour of the margin (general colour is below the rim). [x Observe at flowering time.], 1 = green; 2 = pink-purple to red; 3 = purple to blue; 4 = other" []
 synonym: "PMargCol_Esr_1to4, PETMCO_1-4" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000264 ! petiole margin colour
 relationship: variable_of CO_325:0010166 ! petiole margin colour - estimation
 relationship: variable_of CO_325:0100073 ! bd colour chart a - 1996
@@ -1965,6 +2078,7 @@ name: Bunch position 1-5
 namespace: BananaTrait
 def: "Visually observe the angle of the bunch and choose the option that is most similar, from the 5 schematic drawings of descriptor 6.4.6 in the reference material., 1 = hanging vertically; 2 = slightly angled; 3 = hanging at a 45 degree angle; 4 = horizontal; 5 = erect" []
 synonym: "BnchPst_Estm_1to5, BNCPOS" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000438 ! bunch position
 relationship: variable_of CO_325:0010169 ! bunch position - estimation
 relationship: variable_of CO_325:0100075 ! bunch position scale(1 to 5)
@@ -1982,6 +2096,7 @@ name: Bunch shape 1-5
 namespace: BananaTrait
 def: "Visually observe the shape of the mature bunch on a fully developed plant that is not experiencing environmental stress and choose the option that is most similar, from the 4 photos of descriptor 6.4.7. in the reference material. 1 = cylindrical; 2 = truncate =cone shaped; 3 = asymmetrical; 4 = spiral (all fruit are attached to a unique crown coiled around the stalk); 5 = other" []
 synonym: "BnchShp_Estm_1to5, BNSHP" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000440 ! bunch shape
 relationship: variable_of CO_325:0010170 ! bunch shape - estimation
 relationship: variable_of CO_325:0100076 ! bunch shape scale (1 to 5)
@@ -1999,6 +2114,7 @@ name: Male rachis type 1-2
 namespace: BananaTrait
 def: "Visually observe the part of the rachis between the last hand and the male bud. Truncated means there is no bract scar below the last hand. Present means there is a degenerated or persistent male bud, 1 = truncated; 2 = present" []
 synonym: "MlRchsTp_Estm_1to2," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000442 ! male rachis type
 relationship: variable_of CO_325:0010171 ! male rachis type - estimation
 relationship: variable_of CO_325:0100077 ! rachis type scale (1 to 2)
@@ -2017,6 +2133,7 @@ name: Male rachis position 1-2
 namespace: BananaTrait
 def: "Visually observe the male rachis position (the part between the last hand and the male bud) and choose the option that is most similar, from the 5 schematic drawings of descriptor 6.4.12 in the reference material., 1 = falling vertically; 2 = at an angle; 3 = with a curve; 4 = horizontal or supra-horizontal; 5 = erect" []
 synonym: "MlRchsPst_Estm_1to5, RACPOS" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000444 ! male rachis position
 relationship: variable_of CO_325:0010172 ! male rachis position - estimation
 relationship: variable_of CO_325:0100078 ! rachis angle scale (1 to 2)
@@ -2035,6 +2152,7 @@ name: Male rachis appearance 1-5
 namespace: BananaTrait
 def: "Visually observe the male rachis appearance and choose the option that is most similar., 1 = bare; 2 = neutral flowers on one to few hands only near the bunch (rest of stalk is bare); 3 = male flowers/bracts above the male bud (rest of stalk is bare); 4 = neutral/male flowers and presence of withered bracts on the entire stalk; 5 = neutral/male flowers on the whole stalk without persistent bracts (still firmly attached to the rachis)" []
 synonym: "MlRchsApp_Estm_1to7, RACHAP" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000446 ! male rachis appearance
 relationship: variable_of CO_325:0010173 ! male rachis appearance - estimation
 relationship: variable_of CO_325:0100079 ! rachis appearance scale (1 to 5)
@@ -2052,6 +2170,7 @@ name: Male bud shape 1-3
 namespace: BananaTrait
 def: "Calculate the ratio w/y, i.e. the broadest width of the male bud to the total length of the male bud. Do not measure the dimensions along the bud but rather on a projection/outline of the bud (e.g. trace the outline of the bud on paper) and use ruler or measuring tape., 1 = skinny (w/y less than or equal to 0.45); 2 = medium (0.45 < w/y < 0.55); 3 = fat (w/y equal to or more than 0.55)" []
 synonym: "MlBdShp_Comp_1to3, BUDSHP" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000448 ! male bud shape
 relationship: variable_of CO_325:0010174 ! male bud shape - computation
 relationship: variable_of CO_325:0100080 ! bud shape scale (1 to 3)
@@ -2062,6 +2181,7 @@ name: Male bud shape 1-5
 namespace: BananaTrait
 def: "Calculate the ratio w/y, i.e. the broadest width of the male bud to the total length of the male bud. Do not measure the dimensions along the bud but rather on a projection/outline of the bud (e.g. trace the outline of the bud on paper) and use ruler or measuring tape., 1 = like a top; 2 = lanceolate; 3 = intermediate; 4 = ovoid; 5 = rounded" []
 synonym: "MlBdShp_Comp_1to5, BUDSH5" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000448 ! male bud shape
 relationship: variable_of CO_325:0010174 ! male bud shape - computation
 relationship: variable_of CO_325:0100081 ! bud shape scale (1 to 5)
@@ -2080,6 +2200,7 @@ name: Male bud length 1-3
 namespace: BananaTrait
 def: "Measure the length (y) of a projection/outline of the male bud on paper, with a measuring tape or ruler., 1 = short (y less than or equal to 20 cm); 2 = medium (20 cm < y < 30 cm); 3 = long (equal to or more than 30 cm)" []
 synonym: "MlBdLngth_M_1to3, BUDSZE" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000451 ! male bud length
 relationship: variable_of CO_325:0010175 ! male bud length - measurement
 relationship: variable_of CO_325:0100082 ! bud length scale (1 to 3)
@@ -2090,6 +2211,7 @@ name: Male bud size ratio 1-3
 namespace: BananaTrait
 def: "Length and maximum diameter of male bud at harvest. 1 = less than or equal to 20 cm; 2 = 21-30 cm; 3 = equal to or more than 31 cm" []
 synonym: "MlBdLngthRt_M_1to3," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000451 ! male bud length
 relationship: variable_of CO_325:0010176 ! male bud size - measurement
 relationship: variable_of CO_325:0100083 ! bud size scale (1 to 3)
@@ -2108,6 +2230,7 @@ name: Male bud shoulder 1-3
 namespace: BananaTrait
 def: "Calculate the ratio w/y, i.e. the broadest width of the male bud to the total length of the male bud. Do not measure the dimensions along the bud but rather on a projection/outline of the bud (e.g. trace the outline of the bud on paper) and use ruler or measuring tape, 1 = High shouldered (x/y less than or equal to 0.28); 2 = medium shouldered (0.28 < x/y < 0.30); 3 = low shouldered (x/y more than or equal to 0.30)" []
 synonym: "MlBdShd_Comp_1to3," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000454 ! male bud shoulder
 relationship: variable_of CO_325:0010179 ! male bud shoulder - computation
 relationship: variable_of CO_325:0100084 ! bud shoulder scale (1 to 3)
@@ -2125,6 +2248,7 @@ name: Bract apex shape 1-4
 namespace: BananaTrait
 def: "Refers to the first external unlifted bract. Visually observe the apex shape of flattened bracts to determine shape and choose the option that is most similar, from the 4 photos of descriptor 6.5.2. in the reference material., 1 = pointed; 2 = intermeditae; 3 = obtuse; 4 = obtuse and split" []
 synonym: "FstBrctApxShp_Est_1to4," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000456 ! bract apex shape
 relationship: variable_of CO_325:0010180 ! bract apex shape - estimation
 relationship: variable_of CO_325:0100085 ! bract apex scale (1 to 4)
@@ -2135,6 +2259,7 @@ name: Bract apex shape 1-5
 namespace: BananaTrait
 def: "Refers to the first external unlifted bract. Visually observe the apex shape of flattened bracts to determine shape and choose the option that is most similar, from the 4 photos of descriptor 6.5.2. in the reference material., 1 = pointed; 2 = slightly pointed; 3 = intermediate; 4 = obtuse; 5 = obtuse and split" []
 synonym: "BrctApxShp_Est_1to5, BTAPXS" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000456 ! bract apex shape
 relationship: variable_of CO_325:0010180 ! bract apex shape - estimation
 relationship: variable_of CO_325:0100086 ! bract apex scale (1 to 5)
@@ -2153,6 +2278,7 @@ name: Bract imbrication at apex of male bud 1-3
 namespace: BananaTrait
 def: "Visually observe the bract imbrication of the apex of the male bud and choose the option that is most similar, from the 3 photos of descriptor 6.5.3 in the reference material., 1 = convolute; 2 = moderately imbricate; 3 = highly imbricate" []
 synonym: "BrctImbrcApxMlBd_Est_1to3, BTIMBR" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000459 ! bract imbrication at apex of male bud
 relationship: variable_of CO_325:0010181 ! bract imbrication at apex of male bud - estimation
 relationship: variable_of CO_325:0100087 ! bract imbrication scale (1 to 3)
@@ -2170,6 +2296,7 @@ name: Bract behaviour before falling 1-2
 namespace: BananaTrait
 def: "Visually observe the last bract to lift from the hands, ideally when the bract has lifted to a horizontal position, and choose the option that is most similar, from the 2 photos of descriptpr 6.5.12 in the reference material., 1 = revolute (rolling); 2 = not revolute (not rolling)" []
 synonym: "BrctBhvBfFll_Est_1to2, BBBF" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000461 ! bract behaviour before falling
 relationship: variable_of CO_325:0010182 ! bract behaviour before falling - estimation
 relationship: variable_of CO_325:0100088 ! bract behaviour scale (1 to 2)
@@ -2188,6 +2315,7 @@ name: Colour of bract external face 1-16
 namespace: BananaTrait
 def: "Visually observe the colour of the external face of the first unlifted bract. Use colour chart A and observe out of direct sunlight., 1 = cream; 2 = yellow; 3 = watery green; 4 = green yellow; 5 = light green; 6 = medium green; 7 = green; 8 = dark green; 9 = whitish; 10 = orange red; 11 = red; 12 = pink-purple; 13 = purple-brown; 14 = red-purple; 15 = purple; 16 = blue" []
 synonym: "BrctClExtFc_Est_1to16, CBXF16" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000463 ! colour of bract external face
 relationship: variable_of CO_325:0010183 ! colour of bract external face - estimation
 relationship: variable_of CO_325:0100063 ! bd colour chart a - 2016
@@ -2198,6 +2326,7 @@ name: Colour of bract external face 1-10
 namespace: BananaTrait
 def: "Visually observe the colour of the external face of the first unlifted bract. Use colour chart A and observe out of direct sunlight., 1 = yellow; 2 = green; 3 = red; 4 = red-purple; 5 = purple-brown; 6 = purple; 7 = blue; 8 = pink-purple; 9 = orange-red; 10 = other" []
 synonym: "BrctClExtFc_Est_1to10, CBXF10" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000463 ! colour of bract external face
 relationship: variable_of CO_325:0010183 ! colour of bract external face - estimation
 relationship: variable_of CO_325:0100073 ! bd colour chart a - 1996
@@ -2216,6 +2345,7 @@ name: Colour of bract internal face 1-16
 namespace: BananaTrait
 def: "Visually observe the colour of the internal face of the first unlifted bract. Use colour chart A and observe out of direct sunlight., 1 = cream; 2 = yellow; 3 = watery green; 4 = green yellow; 5 = light green; 6 = medium green; 7 = green; 8 = dark green; 9 = whitish; 10 = orange red; 11 = red; 12 = pink-purple; 13 = purple-brown; 14 = red-purple; 15 = purple; 16 = blue" []
 synonym: "BrctClExtFc_Int_1to16, CBIF16" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000466 ! colour of bract internal face
 relationship: variable_of CO_325:0010184 ! colour of bract internal face - estimation
 relationship: variable_of CO_325:0100063 ! bd colour chart a - 2016
@@ -2226,6 +2356,7 @@ name: Colour of bract internal face 1-10
 namespace: BananaTrait
 def: "Visually observe the colour of the internal face of the first unlifted bract. Use colour chart A and observe out of direct sunlight., 1 = whitish; 2 = yellow or green; 3 = orange red; 4 = red; 5 = purple; 6 = purple-brown; 7 = pink-purple; 8 = other" []
 synonym: "BrctClExtFc_Int_1to8, CBIF8" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000466 ! colour of bract internal face
 relationship: variable_of CO_325:0010184 ! colour of bract internal face - estimation
 relationship: variable_of CO_325:0100073 ! bd colour chart a - 1996
@@ -2244,6 +2375,7 @@ name: Compound tepal main colour 1-16
 namespace: BananaTrait
 def: "The following flower descriptors refer to the flowers at the axil of the first external unlifted bract. Fresh material must be used (make the observation as soon as you detach the bract/flower from the rachis). Visually observe the colour of the backside middle of tepal. Use colour chart B and observe out of direct sunlight., 1 = white; 2 = cream; 3 = ivory; 4 = yellow; 5 = bright yellow; 6 = orange; 7 = orange red; 8 = red; 9 = red-purple; 10 = pink/pink-purple; 11 = brown/rusty-brown; 12 = beige-pink; 13 = silvery; 14 = light green; 15 = green; 16 = dark green" []
 synonym: "CmpdTplMnCl_Est_1to16, CTBC16" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000469 ! compound tepal main colour
 relationship: variable_of CO_325:0010185 ! compound tepal main colour - estimation
 relationship: variable_of CO_325:0100089 ! bd colour chart b - 2016
@@ -2254,6 +2386,7 @@ name: Compound tepal main colour 1-6
 namespace: BananaTrait
 def: "The following flower descriptors refer to the flowers at the axil of the first external unlifted bract. Fresh material must be used (make the observation as soon as you detach the bract/flower from the rachis). Visually observe the colour of the backside middle of tepal. Use colour chart B and observe out of direct sunlight., 1 =white; 2 = cream; 3 = yellow; 4 = orange; 5 = pink/pink-purple; 6 = other" []
 synonym: "CmpdTplMnCl_Est_1to6, CTBC6" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000469 ! compound tepal main colour
 relationship: variable_of CO_325:0010185 ! compound tepal main colour - estimation
 relationship: variable_of CO_325:0100090 ! bd colour chart b - 1996
@@ -2272,6 +2405,7 @@ name: Lobe colour of tip of compound tepal 1-16
 namespace: BananaTrait
 def: "The following flower descriptors refer to the flowers at the axil of the first external unlifted bract. Fresh material must be used (make the observation as soon as you detach the bract/flower from the rachis). Visually observe the colour of the lobe at the tip of the tepal. Use colour chart B and observe out of direct sunlight., 1 = white; 2 = cream; 3 = ivory; 4 = yellow; 5 = bright yellow; 6 = orange; 7 = orange red; 8 = red; 9 = red-purple; 10 = pink/pink-purple; 11 = brown/rusty-brown; 12 = beige-pink; 13 = silvery; 14 = light green; 15 = green; 16 = dark green" []
 synonym: "CmpdTplLbCl_Est_1to16, LBCT16" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000472 ! lobe colour of tip of compound tepal
 relationship: variable_of CO_325:0010186 ! lobe colour of tip of compound tepal - estimation
 relationship: variable_of CO_325:0100089 ! bd colour chart b - 2016
@@ -2282,6 +2416,7 @@ name: Lobe colour of tip of compound tepal 1-5
 namespace: BananaTrait
 def: "The following flower descriptors refer to the flowers at the axil of the first external unlifted bract. Fresh material must be used (make the observation as soon as you detach the bract/flower from the rachis). Visually observe the colour of the lobe at the tip of the tepal. Use colour chart B and observe out of direct sunlight., 1 = cream; 2 = yellow; 3 = orange; 4 = green; 5 = other" []
 synonym: "CmpdTplLbCl_Est_1to5, LBCOT5" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000472 ! lobe colour of tip of compound tepal
 relationship: variable_of CO_325:0010186 ! lobe colour of tip of compound tepal - estimation
 relationship: variable_of CO_325:0100090 ! bd colour chart b - 1996
@@ -2299,6 +2434,7 @@ name: Anther colour 1-16
 namespace: BananaTrait
 def: "The following flower descriptors refer to the flowers at the axil of the first external unlifted bract. Fresh material must be used (make the observation as soon as you detach the bract/flower from the rachis). Visually observe the anther colour on the face opposite to the dehiscence split of the anther. Use colour chart B and observe out of direct sunlight., 1 = white; 2 = cream; 3 = ivory; 4 = yellow; 5 = bright yellow; 6 = orange; 7 = orange red; 8 = red; 9 = red-purple; 10 = pink/pink-purple; 11 = brown/rusty-brown; 12 = beige-pink; 13 = silvery; 14 = light green; 15 = green; 16 = dark green" []
 synonym: "AnthrCl_Est_1to16, ANTC16" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000475 ! anther colour
 relationship: variable_of CO_325:0010187 ! anther colour - estimation
 relationship: variable_of CO_325:0100089 ! bd colour chart b - 2016
@@ -2309,6 +2445,7 @@ name: Anther colour 1-8
 namespace: BananaTrait
 def: "The following flower descriptors refer to the flowers at the axil of the first external unlifted bract. Fresh material must be used (make the observation as soon as you detach the bract/flower from the rachis). Visually observe the anther colour on the face opposite to the dehiscence split of the anther. Use colour chart B and observe out of direct sunlight., 1 = white; 2 = cream; 3 = yellow; 4 = grey; 5 = brown/rusty-brown; 6 = pink/pink-purple; 7 = black (anthers aborted); 8=other" []
 synonym: "AnthrCl_Est_1to8, ANTC8" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000475 ! anther colour
 relationship: variable_of CO_325:0010187 ! anther colour - estimation
 relationship: variable_of CO_325:0100090 ! bd colour chart b - 1996
@@ -2327,6 +2464,7 @@ name: Number of hands on whole bunch: count
 namespace: BananaTrait
 def: "On a bunch with mostly hands of > 10 fingers, a possible ultimate hand with 1-5 (rather smaller) fingers should not be counted." []
 synonym: "HndNbWhlBnch_Ct_hands, NUMHND" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000478 ! number of hands on whole bunch
 relationship: variable_of CO_325:0010188 ! number of hands on whole bunch - counting
 relationship: variable_of CO_325:0100091 ! hands
@@ -2345,6 +2483,7 @@ name: Number of fruits on mid-hand of the bunch: count
 namespace: BananaTrait
 def: "Count only fully developed fruit. If there is an even number of hands, there will be two middle hands. Count the middle hand that developed first., 1 = less than or equal to 12; 2 = 13-16; 3 = equal to or more than 17" []
 synonym: "FrtNbMdHndBnch_Ct_ft, NUMFMH" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000480 ! number of fruits on mid-hand of the bunch
 relationship: variable_of CO_325:0010189 ! number of fruits on mid-hand of the bunch - counting
 relationship: variable_of CO_325:0100017 ! finger
@@ -2363,6 +2502,7 @@ name: Fruit length in cm
 namespace: BananaTrait
 def: "Measure the length of the internal arc of a fruit, without pedicel. Record on the inner fruit in the middle of the mid-hand of the bunch. If there is an even number of hands, there will be two middle hands so use the upper hand that developed first. Record the exact value. In cm" []
 synonym: "FrtLngth_M_cm, FRULGT" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000482 ! fruit length
 relationship: variable_of CO_325:0010190 ! fruit length - exact value - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -2373,6 +2513,7 @@ name: Fruit length 1-5
 namespace: BananaTrait
 def: "Measure the length of the internal arc of a fruit, without pedicel. Record on the inner fruit in the middle of the mid-hand of the bunch. If there is an even number of hands, there will be two middle hands so use the upper hand that developed first. Record the range., 1 = less than or equal to 15 cm; 2 = 16-20 cm; 3 = 21-25 cm; 4 = 26-30 cm; 5 = equal to or more than 31 cm" []
 synonym: "FrtLngth_M_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000482 ! fruit length
 relationship: variable_of CO_325:0010191 ! fruit length - range - measurement
 relationship: variable_of CO_325:0100092 ! fruit length scale (1 to 5)
@@ -2391,6 +2532,7 @@ name: Fruit shape of curve 1-6
 namespace: BananaTrait
 def: "Visually observe the shape of the curve of the fruit and choose the option that is most similar, from the 5 photos of descriptor 6.7.4. in the reference material. Observe the inner fruit in the middle of the mid-hand of the bunch. In case of an asymmetric bunch that has straight and curved fruits, please indicate it in the note section and score only the fruit on the upper side of the bunch., 1 = straight; 2 = slightly curved; 3 = straight in the distal part; 4 = curved (sharp curve); 5 = curved in slight 'S' shape (double curvature)" []
 synonym: "FrtCvShp_Est_1to6," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000485 ! fruit shape of curve
 relationship: variable_of CO_325:0010192 ! fruit shape of curve - estimation
 relationship: variable_of CO_325:0100093 ! fruit curve shape (scale 1 to 6)
@@ -2401,6 +2543,7 @@ name: Fruit shape of curve 1-5
 namespace: BananaTrait
 def: "Visually observe the shape of the curve of the fruit and choose the option that is most similar, from the 5 photos of descriptor 6.7.4. in the reference material. Observe the inner fruit in the middle of the mid-hand of the bunch. In case of an asymmetric bunch that has straight and curved fruits, please indicate it in the note section and score only the fruit on the upper side of the bunch., 1 = straight (or slightly curved); 2 = straight in the distal part; 3 = curved (sharp curve); 4 = curved in 'S' shape (double curvature); 5 = other" []
 synonym: "FrtCvShp_Est_1to5, FRUSHP" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000485 ! fruit shape of curve
 relationship: variable_of CO_325:0010192 ! fruit shape of curve - estimation
 relationship: variable_of CO_325:0100094 ! fruit curve shape (scale 1 to 5)
@@ -2419,6 +2562,7 @@ name: Fruit apex point 1-5
 namespace: BananaTrait
 def: "Visually observe the fruit apex point and choose the option that is most similar, from the 5 photos of descriptor 6.7.6 in the reference material., 1 = pointed; 2 = lengthily pointed (like plantain); 3 = blunt-tipped (plateau at tip); 4 = strongly bottle-necked (wider under tip than number 2); 5 = rounded" []
 synonym: "FrtApxPt_Est_1to5, FRAPX" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000488 ! fruit apex point
 relationship: variable_of CO_325:0010193 ! fruit apex point - estimation
 relationship: variable_of CO_325:0100095 ! fruit apex scale (1 to 5)
@@ -2436,6 +2580,7 @@ name: Remains of flower relicts at fruit apex 1-4
 namespace: BananaTrait
 def: "Visually observe the remains, or not, of flower relicts at the finger apex, and choose the option that is most similar, from the 4 photos of descriptor 6.7.7 in the reference materials., 1 = without flower relicts; 2 = few flower relicts (< 20% of the fruits with relicts); 3 = persistent flower relicts (> 20% of the fruits with relicts); 4 = only base of the style persists" []
 synonym: "FrtApxFlwRlt_Est_1to4," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000490 ! remains of flower relicts at fruit apex
 relationship: variable_of CO_325:0010194 ! remains of flower relicts at fruit apex - estimation
 relationship: variable_of CO_325:0100096 ! fruit relicts scale (1 to 4)
@@ -2446,6 +2591,7 @@ name: Remains of flower relicts at fruit apex 1-3
 namespace: BananaTrait
 def: "Visually observe the remains, or not, of flower relicts at the finger apex, and choose the option that is most similar, from the 4 photos of descriptor 6.7.7 in the reference materials., 1 = without any floral relicts; 2 = persistent style; 3 = base of the style prominent" []
 synonym: "FrtApxFlwRlt_Est_1to3, FLRCTS" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000490 ! remains of flower relicts at fruit apex
 relationship: variable_of CO_325:0010194 ! remains of flower relicts at fruit apex - estimation
 relationship: variable_of CO_325:0100097 ! fruit relicts scale (1 to 3)
@@ -2463,6 +2609,7 @@ name: Fruit pedicel length in mm
 namespace: BananaTrait
 def: "Measure from the scar on the rachis until the beginning of the fruit. Record on the inner fruit in the middle of the mid-hand of the bunch. Tip: use string to measure or trace outline of fruit on paper. Record the exact value. In mm" []
 synonym: "FrtftPdclLgth_M_mm," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000493 ! fruit pedicel length
 relationship: variable_of CO_325:0010195 ! fruit pedicel length - exact value - measurement
 relationship: variable_of CO_325:0100020 ! mm
@@ -2473,6 +2620,7 @@ name: Fruit pedicel length 1-3
 namespace: BananaTrait
 def: "Measure from the scar on the rachis until the beginning of the fruit. Record on the inner fruit in the middle of the mid-hand of the bunch. Tip: use string to measure or trace outline of fruit on paper. Record the range., 1 = less than or equal to 10 mm; 2 = 11-20 mm; 3 = equal to or more than 21 mm" []
 synonym: "FrtftPdclLgth_Est_1to3, PEDLGT" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000493 ! fruit pedicel length
 relationship: variable_of CO_325:0010196 ! fruit pedical length - range - measurement
 relationship: variable_of CO_325:0100098 ! fruit pedicel scale (1 to 3)
@@ -2490,6 +2638,7 @@ name: Fusion of pedicels 1-2
 namespace: BananaTrait
 def: "Visually observe the fusion of pedicels and choose the option that is most similar, from the 3 photos of descriptor 6.7.11. in the reference materials. Observe before they join the rachis at the bract scar. Look upwards from the bottom of the bunch., 1 = no visible sign of fusion; 2 = partially fused (up to 50% of the length of the pedicel); 3 = totally fused (more than 50% of the length of the pedicel)" []
 synonym: "PdcFsn_Est_1to2, FUSHPD" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000496 ! fusion of pedicels
 relationship: variable_of CO_325:0010197 ! fusion of pedicels - estimation
 relationship: variable_of CO_325:0100099 ! fusion of pedicel scale (1 to 2)
@@ -2507,6 +2656,7 @@ name: Fruit smashed pulp colour 1-5
 namespace: BananaTrait
 def: "Subjective visual assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpCl_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000498 ! fruit smashed pulp colour
 relationship: variable_of CO_325:0010198 ! visual appearance - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2524,6 +2674,7 @@ name: Fruit unsmashed pulp colour 1-5
 namespace: BananaTrait
 def: "Subjective visual assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpCl_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000500 ! fruit unsmashed pulp colour
 relationship: variable_of CO_325:0010198 ! visual appearance - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2541,6 +2692,7 @@ name: Fruit smashed pulp taste 1-5
 namespace: BananaTrait
 def: "Subjective taste assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpTst_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000502 ! fruit smashed pulp taste
 relationship: variable_of CO_325:0010199 ! taste - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2558,6 +2710,7 @@ name: Fruit unsmashed pulp taste 1-5
 namespace: BananaTrait
 def: "Subjective taste assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpTst_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000504 ! fruit unsmashed pulp taste
 relationship: variable_of CO_325:0010199 ! taste - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2575,6 +2728,7 @@ name: Fruit smashed pulp texture 1-5
 namespace: BananaTrait
 def: "Finger feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpTxt_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000506 ! fruit smashed pulp texture
 relationship: variable_of CO_325:0010200 ! finger feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2592,6 +2746,7 @@ name: Fruit unsmashed pulp texture 1-5
 namespace: BananaTrait
 def: "Finger feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpTxt_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000508 ! fruit unsmashed pulp texture
 relationship: variable_of CO_325:0010200 ! finger feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2609,6 +2764,7 @@ name: Fruit smashed pulp smoothness-mouth feel 1-5
 namespace: BananaTrait
 def: "Mouth feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpSmth_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000510 ! fruit smashed pulp smoothness-mouth feel
 relationship: variable_of CO_325:0010201 ! smoothness-mouth feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2626,6 +2782,7 @@ name: Fruit unsmashed pulp smoothness-mouth feel 1-5
 namespace: BananaTrait
 def: "Mouth feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpSmth_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000512 ! fruit unsmashed pulp smoothness-mouth feel
 relationship: variable_of CO_325:0010201 ! smoothness-mouth feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2643,6 +2800,7 @@ name: Fruit smashed pulp aroma/smell 1-5
 namespace: BananaTrait
 def: "Nosal smell assessment of smashed and unsmashed fruit pulp aromas, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpArm_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000514 ! fruit smashed pulp aroma/smell
 relationship: variable_of CO_325:0010202 ! nosal smell - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
@@ -2661,6 +2819,7 @@ name: Weevils damage to periphery of peeled corm %
 namespace: BananaTrait
 def: "Visual observation In %" []
 synonym: "DmgPrphl_M_%," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000516 ! damage to periphery of peeled corm caused by weevils
 relationship: variable_of CO_325:0010153 ! peripheral damage - measurement
 relationship: variable_of CO_325:0100046 ! %
@@ -2678,6 +2837,7 @@ name: Nematode reproduction factor (microplot screening) multiplication factor N
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "NmRpFctr_Ct_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000518 ! nematode reproduction factor (microplot screening)
 relationship: variable_of CO_325:0010221 ! nematode multiplication from single root inoculation - computation
 relationship: variable_of CO_325:0100108 ! multiplication factor
@@ -2695,6 +2855,7 @@ name: Nematode population density by species in soil No. per 100ml
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "NmNumSlWt" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000520 ! nematode population density per soil sample
 relationship: variable_of CO_325:0010220 ! number of nematodes (unclassified spp.) per unit fresh root weight - method
 relationship: variable_of CO_325:0100107 ! no. per 100ml
@@ -2726,6 +2887,7 @@ name: Number of Rotylenchulus spp.per soil sample per 100 ml
 namespace: BananaTrait
 def: "Count from 100 ml of soil sample" []
 synonym: "RotyNumSlWt_CompNema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000524 ! number of rotylenchulus spp.per soil sample
 relationship: variable_of CO_325:0010224 ! number of nematodes (rotylenchulus spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100109 ! no. per 100 ml
@@ -2778,6 +2940,7 @@ name: Number of nematode per root weight
 namespace: BananaTrait
 def: "Collect all roots from a standard-size excavation of 20 x 20 x 20 cm extending outwards from the corm of the plant. Take only roots from the selected plant; do not include roots from adjacent plants. Carefully wash the soil from the roots with tap water. Cut the roots into 10 cm long pieces and dry with paper tissue. Take a subsample of 15 g, add 100 ml distilled water and store the roots at 4 degrees Celsius. Put the roots in 100 ml of distilled water in a kitchen blender. Macerate the roots 3 times for 10 secs (separated by 5 sec intervals). Pour the macerated suspension through 250, 106 and 40 micro-metre sieves and rinse the sieves with tap water. Using distilled water, collect in a beaker the nematodes from the 40 micro-metre sieve. Using distilled water, dilute to 200 ml the nematode suspension in a graduated cylinder. Blow air through the nematode suspension with a pipette (to homogenise the suspension). Take a subsample of 6 ml (counting dish) or 2 ml (counting slide). Count the nematodes in the counting dish (stereo microscope) or in the counting slide (light microscope). Calculate the final nematode population per unit of fresh root weight." []
 synonym: "NmNumRtWt," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000531 ! root nematode density
 relationship: variable_of CO_325:0010158 ! root nematode density - computation
 relationship: variable_of CO_325:0100061 ! nematodes/unit of fresh root weight
@@ -2795,6 +2958,7 @@ name: Number of Radopholus similis per fresh root weight per 10 g: count
 namespace: BananaTrait
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 synonym: "RadoNumRtWt2_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000533 ! number of radopholus similis per fresh root weight
 relationship: variable_of CO_325:0010230 ! number of nematodes (radopholus similis ) per unit fresh root weight -method
 relationship: variable_of CO_325:0100110 ! no. per 10g
@@ -2812,6 +2976,7 @@ name: Number of Meloidogyne spp. per fresh root weight per 10 g: count
 namespace: BananaTrait
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 synonym: "MeloiNumRtWt2_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000535 ! number of meloidogyne spp. per fresh root weight
 relationship: variable_of CO_325:0010231 ! number of nematodes (meloidogyne spp.) per unit fresh root weight -method
 relationship: variable_of CO_325:0100110 ! no. per 10g
@@ -2829,6 +2994,7 @@ name: Number of Pratylenchus spp. per fresh root weight per 10 g: count
 namespace: BananaTrait
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 synonym: "PratyNumRtWt2_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000537 ! number of pratylenchus spp. per fresh root weight
 relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp.) per unit fresh root weight -method
 relationship: variable_of CO_325:0100110 ! no. per 10g
@@ -2846,6 +3012,7 @@ name: Number of Hoplolaimus spp. per fresh root weight per 10 g: count
 namespace: BananaTrait
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 synonym: "HoploNumRtWt2_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000539 ! number of hoplolaimus spp. per fresh root weight
 relationship: variable_of CO_325:0010233 ! number of nematodes (hoplolaimus spp.) per unit fresh root weight -method
 relationship: variable_of CO_325:0100110 ! no. per 10g
@@ -2863,6 +3030,7 @@ name: Number of Pratylenchus goodeyi per fresh root weight per 10 g: count
 namespace: BananaTrait
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 synonym: "PratyGooNumRtWt2_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
 relationship: variable_of CO_325:0010234 ! number of nematodes (pratylenchus goodeyi) per unit fresh root weight -method
 relationship: variable_of CO_325:0100110 ! no. per 10g
@@ -2880,6 +3048,7 @@ name: Number of Pratylenchus coffeae per fresh root weight per 10 g: count
 namespace: BananaTrait
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 synonym: "PratyCofNumRtWt2_Comp_Nema" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000543 ! number of pratylenchus coffeae per fresh root weight
 relationship: variable_of CO_325:0010235 ! number of nematodes (pratylenchus coffeae) per unit fresh root weight -method
 relationship: variable_of CO_325:0100110 ! no. per 10g
@@ -2897,6 +3066,7 @@ name: Rank of oldest standing leaf: count
 namespace: BananaTrait
 def: "Record the rank (order) of the oldest standing leaf (with an erect petiole), counting the rank by starting with the youngest completely unrolled leaf as 1 and moving downwards, associating the data with the Date of data collection." []
 synonym: "OdStdLfRk_Ct_leaf," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000548 ! rank of oldest standing leaf
 relationship: variable_of CO_325:0010108 ! rank of oldest standing leaf - counting
 relationship: variable_of CO_325:0100004 ! leaf rank
@@ -2914,6 +3084,7 @@ name: Extent of internal discolouration in corm of plant caused by Fusarium wilt
 namespace: BananaTrait
 def: "The extent to which vascular discolouration extends up the pseudostem should be determined by making cross-section cuts, from the base of the pseudostem upwards, and examining the internal tissues following each cut. The point at which discolouration is no longer visible should be noted and the distance from this point to the pseudostem base recorded. In cm" []
 synonym: "CrmIntDiscFW_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000559 ! extent of internal discolouration in corm of plant caused by fusarium wilt
 relationship: variable_of CO_325:0010124 ! extent of internal discolouration in corm of plant caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100008 ! cm
@@ -2932,6 +3103,7 @@ name: Rank of marked youngest leaf (value1)
 namespace: BananaTrait
 def: "Mark the youngest completely unrolled leaf and record its rank, which is always 1. Associate the data with the Date of data collection. In leaf rank format" []
 synonym: "RkYgstLf_Comp_leafrank, rankyoungleaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000564 ! rank of marked youngest leaf
 relationship: variable_of CO_325:0010018 ! rank of marked youngest leaf - counting
 relationship: variable_of CO_325:0100004 ! leaf rank
@@ -2950,6 +3122,7 @@ name: Rank of previously marked leaf 1 to 30
 namespace: BananaTrait
 def: "Record the rank of the previously marked leaf (the leaf that was marked in the Rank of marked youngest leaf during the last data collection), counting the leaf rank by starting with the newest completely unrolled leaf as 1 and moving downwards. Associate the data with the Date of data collection." []
 synonym: "RkPvsMktLf_Comp_leafrank, rankprevleaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000566 ! Rank of previously marked leaf
 relationship: variable_of CO_325:0010019 ! rank of previously marked leaf - counting
 relationship: variable_of CO_325:0100004 ! leaf rank
@@ -2960,6 +3133,7 @@ name: Monthly Leaf emission rate in leaves/month
 namespace: BananaTrait
 def: "Calculate as: the Rank of previously marked leaf at one point in time, minus 1 (equivalent to the Rank of marked youngest leaf), divided by the time elapsed between the two Date of data collection events when the marked leaf was recorded as 1) the Rank of marked youngest leaf and 2) the Rank of previously marked leaf, e.g. (4 - 1) / 1 month = LER of 3 leaves/month during a particular time period." []
 synonym: "LfEmRate_Comp_LfMth, LER_month" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000021 ! monthly leaf emission rate
 relationship: variable_of CO_325:0010020 ! monthly leaf emission rate - computation
 relationship: variable_of CO_325:0100005 ! leaves/month
@@ -2970,6 +3144,7 @@ name: Number of functional leaves: count
 namespace: BananaTrait
 def: "Count how many functional leaves (leaves that have 50% or more of their surface as green, healthy, photosynthetic tissue) are on the plant." []
 synonym: "FnctLeav_Ct_Leaf, NUMFFH, functleaves" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000066 ! number of functional leaves
 relationship: variable_of CO_325:0010022 ! number of functional leaves - counting
 relationship: variable_of CO_325:0100007 ! leaf
@@ -2987,6 +3162,7 @@ name: Time from planting to first youngest leaf spotted in days
 namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting and the Date of first youngest leaf spotted, e.g. 24/06/2014 - 24/01/2014 = 151 days." []
 synonym: "PltFstLfSptd_Ct_leaf," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000570 ! time from planting to first youngest leaf spotted
 relationship: variable_of CO_325:0010104 ! time from planting to first youngest spotted leaf - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -3005,6 +3181,7 @@ name: Number of spotted leaves: count
 namespace: BananaTrait
 def: "Count how many of the standing leaves are spotted (with at least 10 discrete, mature, necrotic lesions or one large necrotic area with 10 light-coloured dry centres), considering all leaves in between and inclusive of, the youngest leaf and the oldest standing leaf." []
 synonym: "SptLfNb_Ct_leaf," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000572 ! number of spotted leaves
 relationship: variable_of CO_325:0010105 ! number of spotted leaves - counting
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3024,6 +3201,7 @@ name: Black Sigatoka disease severity Pct
 namespace: BananaTrait
 def: "Visually observe and record the amount of the surface area of a standing leaf (if measured in the field) or a leaf sample (if measured in the lab) that is affected by black leaf streak disease. In %" []
 synonym: "BlkLfStrkSvrt_Est_pct, BLS_pct" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity and stage
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
 relationship: variable_of CO_325:0100046 ! %
@@ -3034,6 +3212,7 @@ name: Black Sigatoka disease severity Gauhl
 namespace: BananaTrait
 def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease., 0 = no symptoms; 1 = less than 1% of lamina with symptoms, only streaks and/or up to 10 spots; 2 = 1-5% of lamina with symptoms; 3 = 6-15% of lamina with symptoms; 4 = 16-33% of lamina with symptoms; 5 = 34-50% of lamina with symptoms; 6 = 51-100% of lamina with symptoms" []
 synonym: "BlkLfStrkStg_Est_Gauhl, BLS_Gaulh" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity and stage
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
 relationship: variable_of CO_325:0100047 ! gauhl's modification of stover's severity scoring system (yyyy)
@@ -3044,6 +3223,7 @@ name: Black Sigatoka disease stage Foure
 namespace: BananaTrait
 def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease., 1 = Stage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf.; 2 = Stage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the underside.; 3 = Stage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm.; 4 = Stage 4 appears on the underside as a brown spot and on the upper side as a black spot.; 5 = Stage 5 is when the elliptical spot is totally black and has spread to the underside of the limb. It is surrounded by a yellow halo with the centre beginning to flatten out.; 6 = Stage 6 is when the centre of the spot dries out, turns clear gray and is surrounded by a well-defined black ring, which is, in turn, surrounded by a bright yellow halo. These spots remain visible after the leaf has dried out because the ring persists." []
 synonym: "BlkLfStrkStg_Est_Foure, BLS_Foure" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity and stage
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
 relationship: variable_of CO_325:0100048 ! Foure's stages of development of bls disease scale (1987)
@@ -3054,6 +3234,7 @@ name: Black Sigatoka disease stage MedLaw cpl
 namespace: BananaTrait
 def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease., 1 = Initial speck stage: symptoms are first visible to the naked eye as faint, minute (less than 0.25 mm diam), reddish brown specks on the lower surface of the leaf. Specks are often most abundant near the margin of the left side of the leaf, particularly towards the tip. Where leaf spot is severe, specks have been observed on the second leaf of plants that have not yet produced a bunch. Elsewhere they usually appear on the third, fourth, or older leaves.; 2 = First streak stage: the initial speck elongates, becoming slightly wider, to form a characteristic narrow, reddish brown streak up to 20 mm long and 2.0 mm wide, with the long axis parallel to the leaf venation. At this stage, streaks are more clearly visible on the lower surface of the leaf than on the upper one. The distribution of streaks is variable. Sometimes they are most numerous near the edge of the left side of the leaf. At other times they are equally numerous on both sides of the leaf, and more or less evenly distributed. Frequently they are densely aggregated in a band several cm wide on one side or both sides of the mid-rib, becoming less numerous towards the edge of the leaf. Streaks may be so numerous that every cm2 of leaf surface bears one or more. There is considerable variation in the length of individual streaks on a given leaf, and they frequently overlap to form larger, compound streaks.; 3 = Second-streak stage: the streaks may elongate slightly, but the most notable change is that in colour from reddish brown to dark brown or almost black, sometimes with a purplish tinge. The streak is now clearly visible on the upper surface of the leaf. The distribution of streaks at this stage of development varies in the same way as mentioned above. When streaks are very numerous, and more or less evenly distributed, the entire leaf blackens.; 4 = First-spot stage: the streak broadens and becomes more or less fusiform and elliptical in outline and similar to the 'first-spot stage' of Sigatoka (Leach 1946). The transition from streak to spot is further characterised by the development of a light brown, water-soaked border around the spot. This water-soaked effect is especially clear in the early morning, when dew is still present on the leaf, or after rain.; 5 = Second-spot stage: the dark brown or black central area of the spot becomes slightly depressed and the water-soaked border becomes more pronounced due to darkening. At this stage, a slight yellowing of the leaf tissue immediately surrounding the water-soaked border may occur.; 6 = Third or mature spot stage: the centre of the spot dries out, becoming light grey or buff-coloured, and further depressed. The spot is surrounded by a narrow, well-defined, dark brown or black border. between the latter and the normal green colour of the leaf, there is often a bright yellow transitional zone. After the leaf has collapsed and withered, spots remain clearly visible because of the light-coloured centre and dark border." []
 synonym: "BlkLfStrkSvrt_Est_MedLawCpt, BLS_MedLaw_cpt" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity and stage
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
 relationship: variable_of CO_325:0100049 ! meredith & lawrence (1969) - complete
@@ -3064,6 +3245,7 @@ name: Black Sigatoka disease stage MedLaw cnd
 namespace: BananaTrait
 def: "Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease., 1 = Initial speck stage: faint, minute, reddish-brown specks on the lower surface of the leaf.; 2 = First streak stage: specks elongate, becoming slightly wider to form narrow reddish-brown streaks.; 3 = Second-streak stage: streaks change colour from reddish brown to dark brown or black, sometimes with a purplish tinge, clearly visible at the upper surface of the leaf.; 4 = First-spot stage: the streaks broaden and become more or less fusiform or elliptical in outline and a water soaked border appears around each lesion.; 5 = Second-spot stage: the dark brown or black centre of each lesion becomes slightly depressed and water soaked border becomes more pronounced.; 6 = Third or mature spot stage: the centres of the lesions dry out becoming light grey or buff coloured and a bright yellow transitional zone appears between them and the normal green colour of the leaf. The lesions remain clearly visible after the leaf has collapsed or withered because of their light coloured centre and dark border." []
 synonym: "BlkLfStrkStg_Est_MedLawCdsd, BLS_MedLaw_cds" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity and stage
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
 relationship: variable_of CO_325:0100050 ! meredith & lawrence (1969) - condensed
@@ -3082,6 +3264,7 @@ name: Number of leaves with black Sigatoka disease severity grade 0
 namespace: BananaTrait
 def: "Calculate as: the sum of values with a Black leaf streak disease severity grade of 0." []
 synonym: "BlkLfStrkSvrtLfNb_Ct_grd0," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000580 ! number of leaves with black leaf streak disease severity grade 0
 relationship: variable_of CO_325:0010111 ! number of leaves with black leaf streak disease severity grade 0 - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3100,6 +3283,7 @@ name: Number of leaves with black Sigatoka disease severity grade 1
 namespace: BananaTrait
 def: "Calculate as: the sum of values with a Black leaf streak disease severity grade of 1." []
 synonym: "BlkLfStrkSvrtLfNb_Ct_grd1," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000582 ! number of leaves with black leaf streak disease severity grade 1
 relationship: variable_of CO_325:0010112 ! number of leaves with black leaf streak disease severity grade 1 - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3118,6 +3302,7 @@ name: Number of leaves with black Sigatoka disease severity grade 2
 namespace: BananaTrait
 def: "Calculate as: the sum of values with a Black leaf streak disease severity grade of 2." []
 synonym: "BlkLfStrkSvrtLfNb_Ct_grd2," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000584 ! number of leaves with black leaf streak disease severity grade 2
 relationship: variable_of CO_325:0010113 ! number of leaves with black leaf streak disease severity grade 2 - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3136,6 +3321,7 @@ name: Number of leaves with black Sigatoka disease severity grade 3
 namespace: BananaTrait
 def: "Calculate as: the sum of values with a Black leaf streak disease severity grade of 3." []
 synonym: "BlkLfStrkSvrtLfNb_Ct_grd3," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000586 ! number of leaves with black leaf streak disease severity grade 3
 relationship: variable_of CO_325:0010114 ! number of leaves with black leaf streak disease severity grade 3 - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3154,6 +3340,7 @@ name: Number of leaves with black Sigatoka disease severity grade 4
 namespace: BananaTrait
 def: "Calculate as: the sum of values with a Black leaf streak disease severity grade of 4." []
 synonym: "BlkLfStrkSvrtLfNb_Ct_grd4," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000588 ! number of leaves with black leaf streak disease severity grade 4
 relationship: variable_of CO_325:0010115 ! number of leaves with black leaf streak disease severity grade 4 - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3172,6 +3359,7 @@ name: Number of leaves with black Sigatoka disease severity grade 5
 namespace: BananaTrait
 def: "Calculate as: the sum of values with a Black leaf streak disease severity grade of 5." []
 synonym: "BlkLfStrkSvrtLfNb_Ct_grd5," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000590 ! number of leaves with black leaf streak disease severity grade 5
 relationship: variable_of CO_325:0010116 ! number of leaves with black leaf streak disease severity grade 5 - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3190,6 +3378,7 @@ name: Number of leaves with black Sigatoka disease severity grade 6
 namespace: BananaTrait
 def: "Calculate as: the sum of values with a Black leaf streak disease severity grade of 6." []
 synonym: "BlkLfStrkSvrtLfNb_Ct_grd6," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000592 ! number of leaves with black leaf streak disease severity grade 6
 relationship: variable_of CO_325:0010117 ! number of leaves with black leaf streak disease severity grade 6 - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3207,6 +3396,7 @@ name: Fusarium wilt internal discolouration of pseudostem tallest sucker 1-6
 namespace: BananaTrait
 def: "For the tallest sucker, the complete corm should be removed from the soil, the roots cut off and excess soil removed. Cross-sections of the corm should be cut (using a guillotine or other suitable device) to obtain five slices of equal thickness. The upper surface of each cut section should be examined and visually evaluate the extent of the vascular discolouration., 1 = corm completely clean, no vascular discolouration; 2 = isolated points of discolouration in vascular tissue; 3 = discolouration of up to one-third of vascular tissue; 4 = discolouration of between one-third and two-thirds of vascular tissue; 5 = discolouration greater than two-thirds of vascular tissue; 6 = total discolouration of vascular tissue" []
 synonym: "CrmDiscDistTlstSckFW_M_cm," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000594 ! distance of internal discolouration in pseudostem of tallest sucker caused by fusarium wilt
 relationship: variable_of CO_325:0010127 ! distance of internal discolouration in pseudostem of tallest sucker caused by fusarium wilt
 relationship: variable_of CO_325:0100052 ! 5 pt corm discolouration scale
@@ -3217,6 +3407,7 @@ name: Fusarium wilt yellowing leaves 0-1
 namespace: BananaTrait
 def: "Visual assessment., 0 = absent; 1 = present" []
 synonym: "YellowPres_Est_0or1, YL_0-1" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000087 ! presence of yellowing leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010128 ! presence of yellowing leaves caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100053 ! presence absence 0
@@ -3227,6 +3418,7 @@ name: Fusarium wilt splitting pseudostem 0-1
 namespace: BananaTrait
 def: "Visual assessment., 0 = absent; 1 = present" []
 synonym: "PStmSplitPres_Est_0or1, SP_0-1" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000090 ! presence of splitting pseudostem base caused by fusarium wilt
 relationship: variable_of CO_325:0010129 ! presence of splitting pseudostem base caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100053 ! presence absence 0
@@ -3237,6 +3429,7 @@ name: Presence of changes in new leaves caused by Fusarium wilt 0-1
 namespace: BananaTrait
 def: "Visual assessment., 0 = absent; 1 = present" []
 synonym: "LfChgPres_Est_0or1, CNL_0-1" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000093 ! presence of changes in new leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010130 ! presence of changes in new leaves caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100053 ! presence absence 0
@@ -3247,6 +3440,7 @@ name: Presence of petiole collapse caused by Fusarium wilt 0-1
 namespace: BananaTrait
 def: "Visual assessment., 0 = absent; 1 = present" []
 synonym: "PetColpPres_Est_0or1, PC_0-1" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000096 ! presence of petiole collapse caused by fusarium wilt
 relationship: variable_of CO_325:0010131 ! presence of petiole collapse caused by fusarium wilt - estimation
 relationship: variable_of CO_325:0100053 ! presence absence 0
@@ -3264,6 +3458,7 @@ name: Percentage of plants with yellowing leaves caused by Fusarium wilt: calcul
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of values for Presence of yellowing leaves caused by Fusarium wilt scored as Present, divided by the Number of plants planted, multiplied by 100, e.g. 78 / 300 * 100 = 26%. In %" []
 synonym: "YlLfPercFW_Comp_pct," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000600 ! percentage of plants with yellowing leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010134 ! percentage of plants with yellowing leaves caused by fusarium wilt - computation
 relationship: variable_of CO_325:0100046 ! %
@@ -3281,6 +3476,7 @@ name: Percentage of plants with a splitting pseudostem base caused by Fusarium w
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of values for Presence of splitting pseudostem base caused by Fusarium wilt scored as Present, divided by the Number of plants planted, multiplied by 100, e.g. 24 / 300 * 100 = 8%. In %" []
 synonym: "SptPsdStmPercFW_Comp_pct," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000602 ! percentage of plants with a splitting pseudostem base caused by fusarium wilt
 relationship: variable_of CO_325:0010135 ! percentage of plants with a splitting pseudostem base caused by fusarium wilt - computation
 relationship: variable_of CO_325:0100046 ! %
@@ -3298,6 +3494,7 @@ name: Percentage of plants with changes in new leaves caused by Fusarium wilt: c
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of values for Presence of changes in new leaves caused by Fusarium wilt scored as Present, divided by the Number of plants planted, multiplied by 100, e.g. 67 / 300 * 100 = 22%. In %" []
 synonym: "ChgNwLfPercFW_Comp_pct," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000604 ! percentage of plants with changes in new leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010136 ! percentage of plants with changes in new leaves caused by fusarium wilt - computation
 relationship: variable_of CO_325:0100046 ! %
@@ -3315,6 +3512,7 @@ name: Percentage of plants with petiole collapse caused by Fusarium wilt: calcul
 namespace: BananaTrait
 def: "Calculate as: the sum of the number of values for Presence of petiole collapse caused by Fusarium wilt scored as Present, divided by the Number of plants planted, multiplied by 100, e.g. 84 / 300 * 100 = 28%. In %" []
 synonym: "PtlClpFW_Comp_pct," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000606 ! percentage of plants with petiole collapse caused by fusarium wilt
 relationship: variable_of CO_325:0010137 ! percentage of plants with petiole collapse caused by fusarium wilt - computation
 relationship: variable_of CO_325:0100046 ! %
@@ -3332,6 +3530,7 @@ name: Number of adult weevils per trap
 namespace: BananaTrait
 def: "Visual counting method of Weevils per trap (the trap should be minimum 30 cm long)" []
 synonym: "WvlAdltPrTrp_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000610 ! number of banana weevil adults per trap
 relationship: variable_of CO_325:0010145 ! number of adult weevils - counting
 relationship: variable_of CO_325:0100055 ! weevil
@@ -3349,6 +3548,7 @@ name: Number of weevils traps used
 namespace: BananaTrait
 def: "Visual counting method of Weevil traps (the trap should be minimum 30 cm long)." []
 synonym: "TrpNum_Ct_weeviltrap," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000612 ! number of banana weevil traps used
 relationship: variable_of CO_325:0010144 ! number of adult weevil trap - counting
 relationship: variable_of CO_325:0100055 ! weevil
@@ -3366,6 +3566,7 @@ name: Average number of adult weevils per trap per mat
 namespace: BananaTrait
 def: "Average visual counting method of Weevils per trap (the trap should be minimum 30 cm long) on the number of traps" []
 synonym: "WvlAdlt_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000614 ! average number of banana weevil adults per trap
 relationship: variable_of CO_325:0010145 ! number of adult weevils - counting
 relationship: variable_of CO_325:0100055 ! weevil
@@ -3383,6 +3584,7 @@ name: Number of weevil larvae per trap
 namespace: BananaTrait
 def: "Visual counting method" []
 synonym: "WvlLvPrTrp_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000616 ! number of banana weevil larvae per trap
 relationship: variable_of CO_325:0010146 ! number of weevil larvae - counting
 relationship: variable_of CO_325:0100055 ! weevil
@@ -3400,6 +3602,7 @@ name: Average number of weevil larvae per mat
 namespace: BananaTrait
 def: "Visual counting method" []
 synonym: "WvlLv_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000618 ! average number of banana weevil larvae per trap
 relationship: variable_of CO_325:0010146 ! number of weevil larvae - counting
 relationship: variable_of CO_325:0100055 ! weevil
@@ -3417,6 +3620,7 @@ name: Number of adult weevils measured
 namespace: BananaTrait
 def: "Visual counting method" []
 synonym: "WvlAdltMsrd_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000620 ! number of banana weevil adults measured
 relationship: variable_of CO_325:0010147 ! number of adult larvae - counting
 relationship: variable_of CO_325:0100055 ! weevil
@@ -3434,6 +3638,7 @@ name: Number of weevil larvae measured
 namespace: BananaTrait
 def: "Visual counting method" []
 synonym: "WvlLvMsrd_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000622 ! number of banana weevil larvae measured
 relationship: variable_of CO_325:0010146 ! number of weevil larvae - counting
 relationship: variable_of CO_325:0100055 ! weevil
@@ -3451,6 +3656,7 @@ name: Adult weevil head capsule width
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "WvlAdltHdCps_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000624 ! banana weevil adult head capsule width
 relationship: variable_of CO_325:0010148 ! adult weevil head capsule - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3468,6 +3674,7 @@ name: Average adult weevil head capsule width
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlAdltHdCps_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000626 ! banana weevil adult average head capsule width
 relationship: variable_of CO_325:0010148 ! adult weevil head capsule - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3485,6 +3692,7 @@ name: Adult weevil body length
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000628 ! banana weevil adult body length
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3502,6 +3710,7 @@ name: Average adult weevil body length
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000630 ! banana weevil adult average body length
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3519,6 +3728,7 @@ name: Adult weevil body weight
 namespace: BananaTrait
 def: "Electronic weighing method In mg" []
 synonym: "WvlAdltBdWght_M_mg," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000632 ! banana weevil adult body weight
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
 relationship: variable_of CO_325:0100057 ! mg
@@ -3536,6 +3746,7 @@ name: Average adult weevil body weight
 namespace: BananaTrait
 def: "Electronic weighing method In mg" []
 synonym: "AvgWvlAdltBdWght_M_mg," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000634 ! banana weevil adult average body weight
 relationship: variable_of CO_325:0010149 ! adult weevil body - measurement
 relationship: variable_of CO_325:0100057 ! mg
@@ -3553,6 +3764,7 @@ name: Weevil larvae head capsule width
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "WvlLvHdCps_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000636 ! banana weevil larvae head capsule width
 relationship: variable_of CO_325:0010150 ! weevil larvae head capsule - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3570,6 +3782,7 @@ name: Average weevil larvae head capsule width
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlLvHdCps_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000638 ! banana weevil larvae average head capsule width
 relationship: variable_of CO_325:0010150 ! weevil larvae head capsule - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3587,6 +3800,7 @@ name: Weevil larvae body length
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "WvlLvBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000640 ! banana weevil larvae body length
 relationship: variable_of CO_325:0010151 ! weevil larvae body length - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3604,6 +3818,7 @@ name: Average weevil larvae body length
 namespace: BananaTrait
 def: "Measurement under microscope In ?M" []
 synonym: "AvgWvlLvBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000642 ! banana weevil larvae average body length
 relationship: variable_of CO_325:0010151 ! weevil larvae body length - measurement
 relationship: variable_of CO_325:0100056 ! m
@@ -3621,6 +3836,7 @@ name: Weevil larvae weight
 namespace: BananaTrait
 def: "Measurement under microscope In mg" []
 synonym: "WvlLvBdWght_M_mg," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000644 ! banana weevil larvae body weight
 relationship: variable_of CO_325:0010152 ! weevil larvae body weight - measurement
 relationship: variable_of CO_325:0100057 ! mg
@@ -3638,6 +3854,7 @@ name: Average weevil larvae weight
 namespace: BananaTrait
 def: "Measurement under microscope In mg" []
 synonym: "AvgWvlLvBdWght_M_mg," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000646 ! banana weevil larvae average body weight
 relationship: variable_of CO_325:0010152 ! weevil larvae body weight - measurement
 relationship: variable_of CO_325:0100057 ! mg
@@ -3656,6 +3873,7 @@ name: Weevils damage to corm cortex cross-section %
 namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at the collar (upper cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "DmgIdxInn_M_%, CORMDG" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000648 ! percentage damage to upper cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
@@ -3674,6 +3892,7 @@ name: Weevils damage to corm outer cylinder cross-section %
 namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at the collar (upper cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "DmgIdxOut_M_%," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000650 ! percentage damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010140 ! damage to upper inner corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
@@ -3684,6 +3903,7 @@ name: Finger external length in cm
 namespace: BananaTrait
 def: "Measure the length of a finger that is at the 'ready to eat' stage, along the external (dorsal) arc, excluding the pedicel and the fruit tip, using a tape measure. Associate the data with the Hand rank and the Number of fingers measured. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In cm" []
 synonym: "FrtExtLng_M_cm, fingerextlength" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000051 ! finger external length
 relationship: variable_of CO_325:0010056 ! finger external length - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3702,6 +3922,7 @@ name: Weevils damage to lower cross-section inner corm %
 namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at 10 cm below the collar (lower cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "InrCrmDmg_M_%," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010142 ! damage to lower inner corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
@@ -3720,6 +3941,7 @@ name: Weevils damage to lower cross-section outer corm %
 namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at 10 cm below the collar (lower cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "OutCrmDmg_M_%," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010143 ! damage to lower outer corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
@@ -3738,6 +3960,7 @@ name: Average hand weight in a bunch in kg
 namespace: BananaTrait
 def: "Calculate as: the Total finger weight, divided by the Number of hands in bunch, e.g. 46.8 / 16 = 2.9. In kg" []
 synonym: "HandAvgWtBnch_M_kgPlnt, avehandweightpbunch" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000329 ! average hand weight
 relationship: variable_of CO_325:0010045 ! average hand weight - all - computation
 relationship: variable_of CO_325:0100015 ! kg
@@ -3748,6 +3971,7 @@ name: Average number of fingers in a bunch: calculation
 namespace: BananaTrait
 def: "Calculate as: the Number of fingers in bunch, divided by the Number of hands in bunch, e.g. 172 / 16 = 10.8." []
 synonym: "AvgFrtInBch_Comp_Frt, avenumfingsbunch" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000324 ! average number of fingers in hand
 relationship: variable_of CO_325:0010050 ! average number of fingers in bunch - bunch - computation
 relationship: variable_of CO_325:0100017 ! finger
@@ -3758,6 +3982,7 @@ name: Average number of fingers in all hands of a bunch: calculation
 namespace: BananaTrait
 def: "Calculate as: the sum of the Number of fingers in hand, divided by the Number of hands in bunch, e.g. (10 + 10 + 11 + 10 + 10 + 10 + 12 + 12 + 12 + 11 +12 + 12 + 10 + 10 + 10 + 11) / 16 = 10.8." []
 synonym: "AvgFrtInHd_Comp_Frt, avenumfingshand_abs" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000324 ! average number of fingers in hand
 relationship: variable_of CO_325:0010051 ! average number of fingers in hand - hands - computation
 relationship: variable_of CO_325:0100017 ! finger
@@ -3768,6 +3993,7 @@ name: Finger internal length in cm
 namespace: BananaTrait
 def: "Measure the length of a finger, along the internal (ventral) arc, excluding the pedicel and the fruit tip, using a tape measure. Associate the data with the Hand rank and the Number of fingers measured. The recommendation is to collect this data from six fingers in total - three fingers in the middle of the outer whorl from the second hand and from the second-most distal hand. In cm" []
 synonym: "FrtIntLng_M_mm, fingerintlength_mm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000339 ! finger internal length
 relationship: variable_of CO_325:0010058 ! finger internal length - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3778,6 +4004,7 @@ name: Number of standing leaves (grades)
 namespace: BananaTrait
 def: "Calculate as: the Number of leaves with black leaf streak disease severity grade 0 + Number of leaves with black leaf streak disease severity grade 1 + Number of leaves with black leaf streak disease severity grade 2 + Number of leaves with black leaf streak disease severity grade 3 + Number of leaves with black leaf streak disease severity grade 4 + Number of leaves with black leaf streak disease severity grade 5 + Number of leaves with black leaf streak disease severity grade 6." []
 synonym: "StdLf_Comp_leaf," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000069 ! number of standing leaves
 relationship: variable_of CO_325:0010107 ! number of standing leaves - computation
 relationship: variable_of CO_325:0100007 ! leaf
@@ -3788,6 +4015,7 @@ name: Bunch height in cm
 namespace: BananaTrait
 def: "circumference taken as width of widest part, length taken from first hand attachment to peduncle upto last hand attachement to peduncle In cm" []
 synonym: "BnchHght_M_cm, BHT, bunchheight" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000793 ! bunch height
 relationship: variable_of CO_325:0010034 ! bunch height - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3806,6 +4034,7 @@ name: Bunch circumference in cm
 namespace: BananaTrait
 def: "circumference taken as width of widest part In cm" []
 synonym: "BnchCirc_M_cm, BCI, bunchcircumference" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000795 ! bunch circumference
 relationship: variable_of CO_325:0010035 ! bunch circumference - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3824,6 +4053,7 @@ name: Weevils damage to periphery of peeled corm 1-3
 namespace: BananaTrait
 def: "Visual observation (potted trials), 1=no weevil damage; 2=partial damage; 3=severe damage" []
 synonym: "DmgPrphl_M_1-3, damageperiphcorm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000516 ! damage to periphery of peeled corm caused by weevils
 relationship: variable_of CO_325:0010154 ! weevil damage -estimation
 relationship: variable_of CO_325:0100058 ! weevil damage
@@ -3834,6 +4064,7 @@ name: Weevil damage to corm of mother plant 1-3
 namespace: BananaTrait
 def: "weevil damage on the corm after cutting the pseudostem at harvest, score extend of weevil damages (field evaluation), 1=no weevil damage; 2=partial damage; 3=severe damage" []
 synonym: "DmgCrmMthPlt_M_1-3, damagemothercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000841 ! damage to the corm of the mother plant caused by weevils
 relationship: variable_of CO_325:0010154 ! weevil damage -estimation
 relationship: variable_of CO_325:0100058 ! weevil damage
@@ -3852,6 +4083,7 @@ name: Corm inner diameter after weevils introduction in cm
 namespace: BananaTrait
 def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
 synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000843 ! size of corm inner diameter after weevils introduction
 relationship: variable_of CO_325:0010155 ! corm size - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3870,6 +4102,7 @@ name: Corm outer diameter after weevils introduction in cm
 namespace: BananaTrait
 def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
 synonym: "CrmOutDiam_M_cm, sizeouttercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000845 ! size of corm outter diameter after weevils introduction
 relationship: variable_of CO_325:0010155 ! corm size - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3888,6 +4121,7 @@ name: Male bud length in cm
 namespace: BananaTrait
 def: "Length of male bud at harvest. In cm" []
 synonym: "MlBdLngth_M_cm," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000451 ! male bud length
 relationship: variable_of CO_325:0010177 ! male bud metric length - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3898,6 +4132,7 @@ name: Male bud width in cm
 namespace: BananaTrait
 def: "Width of male bud at harvest. In cm" []
 synonym: "MlBdWidth_M_cm," EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000857 ! male bud width
 relationship: variable_of CO_325:0010178 ! male bud width - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3916,6 +4151,7 @@ name: Fruit dry matter content in g
 namespace: BananaTrait
 def: "Take a standard fresh weigth in grams (i.e. 100 g.) of fruit pulp and oven dry it 24hrs at 50 centigrade (measured from the middle finger of second hand), calculate the ratio fresh weight (g.)/dry weight (g.)measured from the middle finger of second hand) In g" []
 synonym: "FrtDryMtCt_M_mg, DMC, drymattercontent" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000859 ! fruit dry matter content
 relationship: variable_of CO_325:0010203 ! dry matter content- calculation
 relationship: variable_of CO_325:0100019 ! g
@@ -3934,6 +4170,7 @@ name: Projected top area in cm2
 namespace: BananaTrait
 def: "Measure top view image in cm2" []
 synonym: "topLeafArea_Meas_cm2, area_topView, areaPlantTop" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000921 ! projected top area
 relationship: variable_of CO_325:0010204 ! leaf area - measurement
 relationship: variable_of CO_325:0100101 ! cm2
@@ -3944,6 +4181,7 @@ name: All leaves area in cm2
 namespace: BananaTrait
 def: "Measure top view image of loose leaves in cm2" []
 synonym: "totLeafArea_Meas_cm2, areaLeaves, areaTotLeaves" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000922 ! leaf area
 relationship: variable_of CO_325:0010204 ! leaf area - measurement
 relationship: variable_of CO_325:0100101 ! cm2
@@ -3954,6 +4192,7 @@ name: Leaf area in cm2
 namespace: BananaTrait
 def: "Measure top view image of a single leave in cm2" []
 synonym: "singleLeafArea_Meas_cm2, areaPerLeaf, areaSingleLeaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000922 ! leaf area
 relationship: variable_of CO_325:0010204 ! leaf area - measurement
 relationship: variable_of CO_325:0100101 ! cm2
@@ -3964,6 +4203,7 @@ name: Leaf area to plant area ratio: calculation
 namespace: BananaTrait
 def: "computation of top leaf area with total (loose) leaf area as topLeafArea/totLeafArea ratio" []
 synonym: "leafAreaRatio_Comp_unitless, areaRatio, areaPlant_per_areaTot" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000923 ! leaf area to plant area ratio
 relationship: variable_of CO_325:0010205 ! leaf area ratio - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -3974,6 +4214,7 @@ name: Total length of all leaves in cm
 namespace: BananaTrait
 def: "Measure the longest diagonal of a fitted ellips in cm" []
 synonym: "totLeafLength_Meas_cm, lengthSum" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000924 ! total length of all leaves
 relationship: variable_of CO_325:0010206 ! leaf length - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3984,6 +4225,7 @@ name: Single leaf length in cm
 namespace: BananaTrait
 def: "Measure the longest diagonal of a fitted ellips in cm" []
 synonym: "singleLeafLength_Meas_cm, lengthPerLeaf, lengthSingleLeaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000925 ! single leaf length
 relationship: variable_of CO_325:0010206 ! leaf length - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -3994,6 +4236,7 @@ name: Single leaf width in cm
 namespace: BananaTrait
 def: "Measure the shortest diagonal of a fitted ellips in cm" []
 synonym: "singleLeafWidth_Meas_cm, widthPerLeaf, widthSingleLeaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000926 ! single leaf width
 relationship: variable_of CO_325:0010207 ! leaf width - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -4004,6 +4247,7 @@ name: Leaf chlorosis: calculation
 namespace: BananaTrait
 def: "Compute ratio of non green to green plant pixels in unitless" []
 synonym: "leafChlorosis_Comp_unitless, leafChlorosis" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000927 ! leaf chlorosis
 relationship: variable_of CO_325:0010208 ! leaf chlorosis - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4014,6 +4258,7 @@ name: Leaf dry weight in g
 namespace: BananaTrait
 def: "Measure 80?C, for 14 days, or longer untill dry in g" []
 synonym: "leafDryMass_Meas_g, leaf_dry, massDryLeaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000928 ! leaf dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4024,6 +4269,7 @@ name: Pseudostem dry weight in g
 namespace: BananaTrait
 def: "Measure 80?C, for 14 days, or longer untill dry in g" []
 synonym: "pseudostemDryMass_Meas_g, ps_dry, massDryPseudostem" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000929 ! pseudostem dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4034,6 +4280,7 @@ name: Root dry weight in g
 namespace: BananaTrait
 def: "Measure 80?C, for 14 days, or longer untill dry in g" []
 synonym: "rootDryMass_Meas_g, root_dry, massDryRoot" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000930 ! root dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4044,6 +4291,7 @@ name: Plant dry weight in g
 namespace: BananaTrait
 def: "Measure 80?C, for 14 days, or longer untill dry in g" []
 synonym: "plantDryMass_Meas_g, plant_dry, massDryPlant" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000931 ! plant dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4054,6 +4302,7 @@ name: Ratio root to shoot: calculation
 namespace: BananaTrait
 def: "Compute ratio of belowground (root) to aboveground (shoot) dry mass as rootDryMass / shootDryMass ratio" []
 synonym: "rootShootDry_Comp_unitless, rootShootRatioDry, massDryRootShoot" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000932 ! ratio root to shoot
 relationship: variable_of CO_325:0010210 ! ratio - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4064,6 +4313,7 @@ name: Leaf relative water content: calculation
 namespace: BananaTrait
 def: "Compute leaf dry mass /leaf fresh mass as leaf dry mass /leaf fresh mass ratio" []
 synonym: "rwcLeaf_Comp_unitless, leaf_rwc, rwcLeaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000933 ! leaf relative water content
 relationship: variable_of CO_325:0010211 ! water content - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4074,6 +4324,7 @@ name: Pseudostem relative water content: calculation
 namespace: BananaTrait
 def: "Compute pseudostem dry mass / pseudostem fresh mass as pseudostem dry mass / pseudostem fresh mass ratio" []
 synonym: "rwcPseudostem_Comp_unitless, ps_rwc, rwcPseudostem" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000934 ! pseudostem relative water content
 relationship: variable_of CO_325:0010211 ! water content - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4084,6 +4335,7 @@ name: Root relative water content: calculation
 namespace: BananaTrait
 def: "Compute root dry mass / root fresh mass as root dry mass / root fresh mass ratio" []
 synonym: "rwcRoot_Comp_unitless, root_rwc, rwcRoot" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000935 ! root relative water content
 relationship: variable_of CO_325:0010211 ! water content - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4094,6 +4346,7 @@ name: Plant relative water content: calculation
 namespace: BananaTrait
 def: "Compute plant dry mass / plantfresh mass as plant dry mass / plantfresh mass ratio" []
 synonym: "rwcPlant_Comp_unitless, plant_rwc, rwcPlant" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000936 ! plant relative water content
 relationship: variable_of CO_325:0010211 ! water content - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4104,6 +4357,7 @@ name: Pseudostem length in cm
 namespace: BananaTrait
 def: "Measure manual height measurement in cm" []
 synonym: "lengthPseudostem_Meas_cm, heightPS, heightPseudostem" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000937 ! pseudostem length
 relationship: variable_of CO_325:0010212 ! length - measurement
 relationship: variable_of CO_325:0100008 ! cm
@@ -4114,6 +4368,7 @@ name: Leaf number: count
 namespace: BananaTrait
 def: "Count the number of leaves, unitless" []
 synonym: "numLeaves_Count_unitless, numLeaf, totalNumLeaves" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000938 ! leaf number
 relationship: variable_of CO_325:0010213 ! leaf number - counting
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4124,6 +4379,7 @@ name: Functional leaf number: count
 namespace: BananaTrait
 def: "Count the number of leaves (functional only > 50% estimated green area) in unitless" []
 synonym: "numFuncLeaves_Count_unitless, numFuncLeaf, totalNumFunctionalLeaves" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000939 ! functional leaf number
 relationship: variable_of CO_325:0010213 ! leaf number - counting
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4134,6 +4390,7 @@ name: System water loss in mL
 namespace: BananaTrait
 def: "Measure weighing of water loss though system between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) in mL" []
 synonym: "waterLossSyst_Meas_ml, waterLossSystem, transpSyst" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000940 ! system water loss
 relationship: variable_of CO_325:0010214 ! water loss - measurement
 relationship: variable_of CO_325:0100103 ! ml
@@ -4144,6 +4401,7 @@ name: Plant water loss in mL
 namespace: BananaTrait
 def: "Measure weighing of water loss though plant between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) in mL" []
 synonym: "waterLossPlant_Meas_ml, waterLossPlant, transpPlant" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000941 ! plant water loss
 relationship: variable_of CO_325:0010214 ! water loss - measurement
 relationship: variable_of CO_325:0100103 ! ml
@@ -4154,6 +4412,7 @@ name: Transpiration efficiency in g/mL
 namespace: BananaTrait
 def: "Compute gram accumulated biomass per volume water transpired with growthDry / waterLossPlan ratio in g / mL" []
 synonym: "transpirationEfficiency_Comp_gml, TE_dry, TEtotalDry" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000942 ! transpiration efficiency
 relationship: variable_of CO_325:0010215 ! transpiration efficiency - computation
 relationship: variable_of CO_325:0100104 ! g / ml
@@ -4164,6 +4423,7 @@ name: Leaf fresh weight in g
 namespace: BananaTrait
 def: "Measure leaf fresh weight in g" []
 synonym: "leafFreshMass_Meas_g, leaf_fresh, massFreshLeaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000943 ! leaf fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4174,6 +4434,7 @@ name: Pseudostem fresh weight in g
 namespace: BananaTrait
 def: "Measure pseudostem fresh weight in g" []
 synonym: "pseudostemFreshMass_Meas_g, pseudostem_fresh, massFreshPseudostem" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000944 ! pseudostem fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4184,6 +4445,7 @@ name: Root fresh weight in g
 namespace: BananaTrait
 def: "Measure root fresh weight in g" []
 synonym: "rootFreshMass_Meas_g, root_fresh, massFreshRoot" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000945 ! root fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4194,6 +4456,7 @@ name: Plant fresh weight in g
 namespace: BananaTrait
 def: "Measure plant fresh weight in g" []
 synonym: "plantFreshMass_Meas_g, plant_fresh, massFreshPlant" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000946 ! plant fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
 relationship: variable_of CO_325:0100019 ! g
@@ -4204,6 +4467,7 @@ name: Leaf to whole plant mass ratio: calculation
 namespace: BananaTrait
 def: "Compute ratio of leaf dry mass versus plant dry mass as leafDryMass / plantDryMass ratio" []
 synonym: "leafToPlantMassRatio_Comp_unitless, relativeLeaf_dry, massDryratioLeaf" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000947 ! leaf to whole plant mass ratio
 relationship: variable_of CO_325:0010210 ! ratio - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4214,6 +4478,7 @@ name: Pseudostem to whole plant mass ratio: calculation
 namespace: BananaTrait
 def: "Compute ratio of pseudostem dry mass versus plant dry mass as pseudostemDryMass / plantDryMass ratio" []
 synonym: "pseudostemToPlantMassRatio_Comp_unitless, relativePS_dry, massDryratioPseudostem" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000948 ! pseudostem to whole plant mass ratio
 relationship: variable_of CO_325:0010210 ! ratio - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4224,6 +4489,7 @@ name: Root to whole plant mass ratio: calculation
 namespace: BananaTrait
 def: "Compute ratio of root dry mass versus plant dry mass as rootDryMass / plantDryMass ratio" []
 synonym: "rootToPlantMassRatio_Comp_unitless, relativeRoot_dry, massDryratioRoot" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000949 ! root to whole plant mass ratio
 relationship: variable_of CO_325:0010210 ! ratio - computation
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4234,6 +4500,7 @@ name: Daily rate of water loss in mL
 namespace: BananaTrait
 def: "Compute measurement of system water loss between two timepoints (refer to experimental metadata) in mL" []
 synonym: "waterLossDay_Comp_ml, waterLossDaily, rateWaterLossPerDay" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000950 ! daily rate of water loss
 relationship: variable_of CO_325:0010217 ! water loss rate - computation
 relationship: variable_of CO_325:0100103 ! ml
@@ -4244,6 +4511,7 @@ name: System water loss per leaf area in mL/cm2
 namespace: BananaTrait
 def: "Measure weight of water loss though system normalized by leaf area in mL / cm2" []
 synonym: "waterLossSystPerLeafArea_Meas_mlcm2, waterLossSystem_per_Area" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000951 ! system water loss per leaf area
 relationship: variable_of CO_325:0010214 ! water loss - measurement
 relationship: variable_of CO_325:0100105 ! ml / cm2
@@ -4254,6 +4522,7 @@ name: Dry plant growth in g
 namespace: BananaTrait
 def: "Compute dry weight difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in g" []
 synonym: "growthDry_Comp_g, plantGrowth_dry, growthDry" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000952 ! dry plant growth
 relationship: variable_of CO_325:0010218 ! growth - computation
 relationship: variable_of CO_325:0100019 ! g
@@ -4264,6 +4533,7 @@ name: Fresh plant growth in g
 namespace: BananaTrait
 def: "Compute fresh weight difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in g" []
 synonym: "growthFresh_Comp_g, plantGrowth_fresh, growthFresh" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000953 ! fresh plant growth
 relationship: variable_of CO_325:0010218 ! growth - computation
 relationship: variable_of CO_325:0100019 ! g
@@ -4274,6 +4544,7 @@ name: Increase of leaf area in cm2
 namespace: BananaTrait
 def: "Compute leaf area difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in cm2" []
 synonym: "leafAreaIncrease_Comp_cm2, leafAreaIncrease" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000954 ! increase of leaf area
 relationship: variable_of CO_325:0010218 ! growth - computation
 relationship: variable_of CO_325:0100101 ! cm2
@@ -4284,6 +4555,7 @@ name: Height increase of pseudostem in cm2
 namespace: BananaTrait
 def: "Compute pseudostem height difference between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in cm2" []
 synonym: "pseudostemHeightIncrease_Comp_cm2, pseudostemHeightIncrease" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000955 ! height increase of pseudostem
 relationship: variable_of CO_325:0010218 ! growth - computation
 relationship: variable_of CO_325:0100101 ! cm2
@@ -4294,6 +4566,7 @@ name: Pseudostem height increase per leaf formed in in cm
 namespace: BananaTrait
 def: "Compute pseudostem height difference between timepoints (refer to experimental metadata) per number of new leaves formed between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in cm" []
 synonym: "pseudostemHeightIncreasePerFormedLeaf_Comp_cm, growthPS_per_leafFormed" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000956 ! pseudostem height increase per leaf formed
 relationship: variable_of CO_325:0010218 ! growth - computation
 relationship: variable_of CO_325:0100008 ! cm
@@ -4304,6 +4577,7 @@ name: Leaves formed per pseudostem height increase in leaves/cm
 namespace: BananaTrait
 def: "Compute leaf area increase between timepoints (refer to experimental metadata) per number of new leaves formed between timepoints (refer to experimental metadata) with measurements on 2 timepoints required (refer to experimental metadata) ratio in []/cm" []
 synonym: "leavesFormedPerPseudostemGrowth_Comp_percm, leaves_per_heightPS" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000957 ! leaves formed per pseudostem height increase
 relationship: variable_of CO_325:0010218 ! growth - computation
 relationship: variable_of CO_325:0100106 ! []/cm
@@ -4625,6 +4899,7 @@ is_a: CO_325:1000005 ! Physiological
 id: CO_325:0000968
 name: Percentage of pollen viability
 def: "Pollen viability percentage calculated as (number of viable pollen/total number of pollen)*100" []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000970 ! pollen viability
 relationship: variable_of CO_325:0010238 ! percentage of pollen grain viable- computation
 relationship: variable_of CO_325:0100046 ! %
@@ -4635,6 +4910,7 @@ name: Percentage pollen germination
 namespace: BananaTrait
 def: "Under microscope, count germinated pollen grains. Calculate pollen germination percentage measured as number of pollen germinated divided by total number of pollen mulitplied by 100" []
 synonym: "pollenGermProp" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000967 ! pollen germination
 relationship: variable_of CO_325:0010237 ! percentage of pollen grain germinating - computation
 relationship: variable_of CO_325:0100046 ! %
@@ -4660,6 +4936,7 @@ id: CO_325:0000972
 name: Number of pollen grain per anther: count
 namespace: BananaTrait
 def: "the Number of grain pollen counted from an anther" []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000971 ! pollen per anther
 relationship: variable_of CO_325:0010239 ! number of pollen grain per anther - counting
 relationship: variable_of CO_325:0100102 ! unitless
@@ -4694,6 +4971,7 @@ name: Percentage of black sigatoka leaf necrosis
 namespace: BananaTrait
 def: "Evaluate resistance to black sigatoka, using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
 synonym: "BlksgtkLfNc_LfDsk_Est" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000973 ! black sigatoka leaf necrosis
 relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
 relationship: variable_of CO_325:0100046 ! %
@@ -4704,6 +4982,7 @@ name: Percentage of yellow sigatoka leaf necrosis
 namespace: BananaTrait
 def: "Evaluate resistance to yellow sigatoka, using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
 synonym: "YlsgtkLfNc_LfDsk_Est" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000974 ! yellow sigatoka leaf necrosis
 relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
 relationship: variable_of CO_325:0100046 ! %
@@ -4714,6 +4993,7 @@ name: Percentage of eumusae leaf necrosis
 namespace: BananaTrait
 def: "Evaluate resistance to eumusae leaf spot (Mycosphaerella eumusae), using leaf disk in a petri dish, on a weekly basis for 50-60 days, in percentage of necrosis observed" []
 synonym: "EumuLfSpt_LfDisk_Est" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000975 ! emusacea leaf spot necrosis
 relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
 relationship: variable_of CO_325:0100046 ! %
@@ -4724,6 +5004,7 @@ name: Leaf chlorosis: estimation
 namespace: BananaTrait
 def: "Estimated, in percentage, of the amount of leaf chlorosis, on a weekly basis of a detached leaf disk (usually until 50-60 days) on a petri dish" []
 synonym: "LfChlr_LfDisk_Est" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000927 ! leaf chlorosis
 relationship: variable_of CO_325:0010240 ! percentage of leaf chlorosis - estimation
 relationship: variable_of CO_325:0100046 ! %
@@ -4748,8 +5029,105 @@ name: Youngest leaf black streak
 namespace: BananaTrait
 def: "Youngest leaf with streak is a leaf with first disease development stage counted from the first 50% or more of unfurl leaf.Visually observe and record the amount of the surface area of a standing leaf that is affected by black leaf streak disease.\nStage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf.;\nStage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the underside\nStage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm.;" []
 synonym: "YgStkLf_1-3_Est" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000984 ! youngest leaf with streak disease
 relationship: variable_of CO_325:0010242 ! youngest leaf with black streak disease development stage  - estimation
+
+[Term]
+id: CO_325:0000994
+name: Fruit parthenocarpy
+namespace: BananaTrait
+def: "Visual evaluation of parthenocarpy on mature fruit: absence (0) or presence (1) of seeds" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000995 ! fruit parthenocarpy
+relationship: variable_of CO_325:0010245 ! fruit parthenocarpy - estimation
+relationship: variable_of CO_325:0100053 ! presence absence 0
+
+[Term]
+id: CO_325:0000995
+name: fruit parthenocarpy
+namespace: BananaTrait
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0000998
+name: presence of fusarium wilt tropical race 4
+namespace: BananaTrait
+def: "The presence of symptoms of fusarium tropical race 4 (foc TR4) on a banana plant" []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0000999
+name: Presence of Fusarium Tropical Race 4 by PCR assay 0-1
+namespace: BananaTrait
+def: "Diagnose absence (0) or presence (1) of fusarium wilt tropical race 4 (foc TR4) by PCR assay on banana plant tissue sample" []
+synonym: "focTR4_PCRassay_0-1" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000998 ! presence of fusarium wilt tropical race 4
+relationship: variable_of CO_325:0010243 ! PCR assay
+relationship: variable_of CO_325:0100053 ! presence absence 0
+
+[Term]
+id: CO_325:0001000
+name: Plant height 1-3
+namespace: BananaTrait
+synonym: "PltHght_1-3" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000307 ! plant height to neck of peduncle
+relationship: variable_of CO_325:0010024 ! plant height - neck of peduncle - measurement
+relationship: variable_of CO_325:0100062 ! height score (1 to 3)
+
+[Term]
+id: CO_325:0001001
+name: suckering behavior of the plant
+namespace: BananaTrait
+def: "Banana plant sucker apical dominance type" []
+is_a: CO_325:1000001 ! Agronomical
+
+[Term]
+id: CO_325:0001002
+name: Suckering behavior 1-3
+namespace: BananaTrait
+def: "Banana plant sucker apical dominance type: (1) High apical dominance; (2) Medium apical dominance; (3) Low apical dominance" []
+synonym: "SuckerBhv1-3" EXACT []
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0001003
+name: bunch size
+namespace: BananaTrait
+def: "The overall size of a banana bunch at mature green stage" []
+synonym: "BSZ" EXACT []
+is_a: CO_325:1000001 ! Agronomical
+
+[Term]
+id: CO_325:0001004
+name: Plant circumference at 75 cm from the collar
+namespace: BananaTrait
+def: "Measure the circumference of the pseudostem of the plant at 75 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
+synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0010249 ! plant circumference at 75 cm - measurement
+relationship: variable_of CO_325:0100008 ! cm
+
+[Term]
+id: CO_325:0001005
+name: Bunch size 1-3
+def: "The overall size of a banana bunch at mature green stage: 1= small, 2 = medium, 3 = large" []
+synonym: "BSZ" RELATED []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001003 ! bunch size
+relationship: variable_of CO_325:0010247 ! bunch size - estimation
+relationship: variable_of CO_325:0100083 ! bud size scale (1 to 3)
+
+[Term]
+id: CO_325:0001007
+name: Plant circumference at 20 cm from the collar
+namespace: BananaTrait
+def: "Measure the circumference of the pseudostem of the plant at 20 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0010250 ! plant circumference at 20 cm - measurement
+relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
 id: CO_325:0010011
@@ -4865,11 +5243,11 @@ relationship: method_of CO_325:0000307 ! plant height to neck of peduncle
 
 [Term]
 id: CO_325:0010025
-name: plant circumference 100 cm - measurement
+name: plant circumference - measurement
 namespace: BananaMethod
-def: "Measure the circumference of the pseudostem of the plant at 1 m from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+def: "Measure the circumference of the pseudostem of the plant at selected distance from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
 is_a: CO_325:1000008 ! Measurement
-relationship: method_of CO_325:0000012 ! plant circumference 100 cm from the collar
+relationship: method_of CO_325:0000012 ! plant circumference from the collar
 
 [Term]
 id: CO_325:0010026
@@ -5353,11 +5731,11 @@ relationship: method_of CO_325:0000391 ! overall bunch quality
 
 [Term]
 id: CO_325:0010086
-name: fruit parthenocarpy - estimation
+name: fruitfill - estimation
 namespace: BananaMethod
-def: "Visual estimation of a fruit fill, (or parthenocarpic) for Early Evaluation Trial stage only." []
+def: "Visual estimation of a fruit filling for Early Evaluation Trial stage only." []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000393 ! parthenocarpy
+relationship: method_of CO_325:0000393 ! fruitfill
 
 [Term]
 id: CO_325:0010087
@@ -6488,6 +6866,55 @@ def: "Visually observe and record the amount of the surface area of a standing l
 is_a: CO_325:1000011 ! Estimation
 
 [Term]
+id: CO_325:0010243
+name: PCR assay
+namespace: BananaMethod
+def: "polymerase chain reaction assay based estimation" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010245
+name: fruit parthenocarpy - estimation
+namespace: BananaMethod
+def: "visual observation of seed presence in mature fruits" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010246
+name: sucker behavior - estimation
+namespace: BananaMethod
+def: "On a banana plant evaluate the level of apical dominance of the sucker" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010247
+name: bunch size - estimation
+namespace: BananaMethod
+def: "Visually observe the size of the mature green bunch and score its overall size" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0010248
+name: plant circumference at 100 cm - measurement
+namespace: BananaMethod
+def: "Measure the circumference of the pseudostem of the plant at 100 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+is_a: CO_325:0010025 ! plant circumference - measurement
+
+[Term]
+id: CO_325:0010249
+name: plant circumference at 75 cm - measurement
+namespace: BananaMethod
+def: "Measure the circumference of the pseudostem of the plant at 75 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+is_a: CO_325:0010025 ! plant circumference - measurement
+
+[Term]
+id: CO_325:0010250
+name: plant circumference at 20 cm - measurement
+namespace: BananaMethod
+def: "Measure the circumference of the pseudostem of the plant at 20 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
+is_a: CO_325:0010025 ! plant circumference - measurement
+
+[Term]
 id: CO_325:0100002
 name: open answer
 namespace: BananaScale
@@ -6558,7 +6985,7 @@ namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010023 ! plant height - petiole of two youngest leaves - measurement
 relationship: scale_of CO_325:0010024 ! plant height - neck of peduncle - measurement
-relationship: scale_of CO_325:0010025 ! plant circumference 100 cm - measurement
+relationship: scale_of CO_325:0010025 ! plant circumference - measurement
 relationship: scale_of CO_325:0010026 ! tallest sucker height - measurement
 relationship: scale_of CO_325:0010034 ! bunch height - measurement
 relationship: scale_of CO_325:0010035 ! bunch circumference - measurement
@@ -6776,10 +7203,10 @@ relationship: scale_of CO_325:0010087 ! sucker quality - estimation
 
 [Term]
 id: CO_325:0100031
-name: parthenocarpy
+name: fruitfill
 namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
-relationship: scale_of CO_325:0010086 ! fruit parthenocarpy - estimation
+relationship: scale_of CO_325:0010086 ! fruitfill - estimation
 
 [Term]
 id: CO_325:0100032
@@ -7338,17 +7765,17 @@ is_a: CO_325:0100030 ! bad good
 
 [Term]
 id: CO_325:0100115
-name: parthenocarpic
+name: fruitfilled
 namespace: BananaScale
 synonym: "1" EXACT []
-is_a: CO_325:0100031 ! parthenocarpy
+is_a: CO_325:0100031 ! fruitfill
 
 [Term]
 id: CO_325:0100116
-name: not parthenocarpic
+name: not fruitfilled
 namespace: BananaScale
 synonym: "2" EXACT []
-is_a: CO_325:0100031 ! parthenocarpy
+is_a: CO_325:0100031 ! fruitfill
 
 [Term]
 id: CO_325:0100117
@@ -8857,6 +9284,57 @@ synonym: "5" EXACT []
 is_a: CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
+id: CO_325:0100332
+name: suckering behavior (1 to 3)
+namespace: BananaScale
+is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0100333
+name: high apical dominance
+namespace: BananaScale
+is_a: CO_325:0100332 ! suckering behavior (1 to 3)
+
+[Term]
+id: CO_325:0100334
+name: medium apical dominance
+namespace: BananaScale
+is_a: CO_325:0100332 ! suckering behavior (1 to 3)
+
+[Term]
+id: CO_325:0100335
+name: low apical dominance
+namespace: BananaScale
+is_a: CO_325:0100332 ! suckering behavior (1 to 3)
+
+[Term]
+id: CO_325:0100336
+name: bunch size (scale 1 to 3)
+namespace: BananaScale
+is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0100337
+name: small
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0100336 ! bunch size (scale 1 to 3)
+
+[Term]
+id: CO_325:0100338
+name: medium
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0100336 ! bunch size (scale 1 to 3)
+
+[Term]
+id: CO_325:0100339
+name: large
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0100336 ! bunch size (scale 1 to 3)
+
+[Term]
 id: CO_325:0101100
 name: black streak scale (1 to 3)
 is_a: CO_325:1000015 ! Nominal
@@ -8970,7 +9448,7 @@ namespace: BananaScale
 [Term]
 id: CO_325:1000024
 name: Variable
-namespace: Banana
+namespace: BananaTrait
 
 [Typedef]
 id: method_of
