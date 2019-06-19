@@ -78,7 +78,7 @@ is_a: CO_325:1000001 ! Agronomical
 
 [Term]
 id: CO_325:0000012
-name: plant circumference 100 cm from the collar
+name: plant circumference from the collar
 namespace: BananaTrait
 def: "The circumference of the pseudostem of the plant at 100 cm from the collar." []
 synonym: "plantcircumf100cm" EXACT []
@@ -367,13 +367,12 @@ relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
 id: CO_325:0000160
-name: Plant circumference
+name: Plant circumference at 100 cm from the collar
 namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 1 m from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000012 ! plant circumference 100 cm from the collar
-relationship: variable_of CO_325:0010025 ! plant circumference - measurement
+relationship: variable_of CO_325:0010248 ! plant circumference at 100 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
@@ -5103,6 +5102,16 @@ synonym: "BSZ" EXACT []
 is_a: CO_325:1000001 ! Agronomical
 
 [Term]
+id: CO_325:0001004
+name: Plant circumference at 75 cm from the collar
+namespace: BananaTrait
+def: "Measure the circumference of the pseudostem of the plant at 75 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
+synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0010249 ! plant circumference at 75 cm - measurement
+relationship: variable_of CO_325:0100008 ! cm
+
+[Term]
 id: CO_325:0001005
 name: Bunch size 1-3
 def: "The overall size of a banana bunch at mature green stage: 1= small, 2 = medium, 3 = large" []
@@ -5111,6 +5120,15 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001003 ! bunch size
 relationship: variable_of CO_325:0010247 ! bunch size - estimation
 relationship: variable_of CO_325:0100083 ! bud size scale (1 to 3)
+
+[Term]
+id: CO_325:0001007
+name: Plant circumference at 20 cm from the collar
+namespace: BananaTrait
+def: "Measure the circumference of the pseudostem of the plant at 20 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0010250 ! plant circumference at 20 cm - measurement
+relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
 id: CO_325:0010011
@@ -5230,7 +5248,7 @@ name: plant circumference - measurement
 namespace: BananaMethod
 def: "Measure the circumference of the pseudostem of the plant at selected distance from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure." []
 is_a: CO_325:1000008 ! Measurement
-relationship: method_of CO_325:0000012 ! plant circumference 100 cm from the collar
+relationship: method_of CO_325:0000012 ! plant circumference from the collar
 
 [Term]
 id: CO_325:0010026
