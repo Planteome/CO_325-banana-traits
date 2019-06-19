@@ -5053,7 +5053,6 @@ is_a: CO_325:1000005 ! Physiological
 id: CO_325:0000998
 name: presence of fusarium wilt tropical race 4
 namespace: BananaTrait
-namespace: CO_325:0000998
 def: "The presence of symptoms of fusarium tropical race 4 (foc TR4) on a banana plant" []
 is_a: CO_325:1000002 ! Biotic_stress
 
@@ -9288,7 +9287,6 @@ is_a: CO_325:0100100 ! 1 to 5 acceptability score
 id: CO_325:0100332
 name: suckering behavior (1 to 3)
 namespace: BananaScale
-namespace: CO_325:0100332
 is_a: CO_325:1000015 ! Nominal
 
 [Term]
