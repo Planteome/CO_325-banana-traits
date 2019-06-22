@@ -5180,6 +5180,76 @@ namespace: BananaTrait
 is_a: CO_325:0001008 ! total carotenoids
 
 [Term]
+id: CO_325:0001022
+name: α- carotene by HPLC in μg/g
+def: "Content in α- carotene quantified by HPLC in μg/g" []
+synonym: "A-Carotene" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001009 ! α- carotene
+relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
+relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
+id: CO_325:0001023
+name: Trans-beta-carotene by HPLC in μg/g
+def: "Content in trans-beta-carotene quantified by HPLC in μg/g" []
+synonym: "TBC" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001013 ! trans-beta-carotene
+relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
+relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
+id: CO_325:0001024
+name: 9-cis-beta-carotene by HPLC in μg/g
+def: "Content in 9-cis-beta-carotene quantified by HPLC in μg/g" []
+synonym: "9-BC" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001011 ! 9-cis-beta-carotene
+relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
+relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
+id: CO_325:0001025
+name: 13-cis-beta-carotene by HPLC in μg/g
+namespace: BananaTrait
+synonym: "13-BC" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001010 ! 13-cis-beta-carotene
+relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
+relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
+id: CO_325:0001026
+name: Pro-vitamin A by HPLC in μg/g
+namespace: BananaTrait
+synonym: "PvitA" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001012 ! pro-vitamine A
+relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
+relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
+id: CO_325:0001027
+name: Lutein by HPLC in μg/g
+namespace: BananaTrait
+synonym: "Lutein" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001014 ! lutein
+relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
+relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
+id: CO_325:0001028
+name: Total carotenoid by HPLC in μg/g
+namespace: BananaTrait
+synonym: "TC" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001008 ! total carotenoids
+relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
+relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -6966,7 +7036,7 @@ is_a: CO_325:0010025 ! plant circumference - measurement
 
 [Term]
 id: CO_325:0010251
-name: High Performance Liquid Chromatography
+name: high performance liquid chromatography
 namespace: BananaMethod
 def: "Separation and quantification of individual carotenoids was carried out on a Waters Alliance e2695 High Performance Liquid Chromatography (HPLC) separation module (Waters Corporation,\nMilford, MA, USA) equipped with a polymeric YMCTM C30 5 μm column (4.6×250 mm) and a photodiode array detector (PDA). The system was operated by Empower software (Waters Corporation, Milford, MA, USA)." []
 synonym: "HPLC" EXACT []
