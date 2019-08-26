@@ -5092,6 +5092,9 @@ namespace: BananaTrait
 def: "Banana plant sucker apical dominance type: (1) High apical dominance; (2) Medium apical dominance; (3) Low apical dominance" []
 synonym: "SuckerBhv1-3" EXACT []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001001 ! suckering behavior of the plant
+relationship: variable_of CO_325:0010246 ! sucker behavior - estimation
+relationship: variable_of CO_325:0100332 ! suckering behavior (1 to 3)
 
 [Term]
 id: CO_325:0001003
