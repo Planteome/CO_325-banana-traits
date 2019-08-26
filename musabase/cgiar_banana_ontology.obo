@@ -51,7 +51,7 @@ creation_date: 2018-04-11T11:01:27Z
 
 [Term]
 id: CO_325:0000005
-name: fruit maturity of the plant
+name: Fruit maturity of the plant
 namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000002 ! fruit maturity-harvest
@@ -5250,6 +5250,76 @@ relationship: variable_of CO_325:0010251 ! high performance liquid chromatograph
 relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
+id: CO_325:0001030
+name: harvesting
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001033
+name: planting
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001034
+name: weeding
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001035
+name: fertilizing
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001036
+name: Harvesting date mm/dd/yyy
+namespace: BananaVariable
+def: "record harvest date in mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001030 ! harvesting
+relationship: variable_of CO_325:0010257 ! harvest date - measurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+
+[Term]
+id: CO_325:0001038
+name: Planting date mm/dd/yyyy
+namespace: BananaVariable
+def: "record planting date in mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001033 ! planting
+relationship: variable_of CO_325:0010258 ! planting date - measurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+
+[Term]
+id: CO_325:0001039
+name: Fertilizing date mm/dd/yyyy
+namespace: BananaVariable
+def: "record fertilizer application date mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001035 ! fertilizing
+relationship: variable_of CO_325:0010260 ! fertilizing date -mesurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+
+[Term]
+id: CO_325:0001042
+name: weeding date - measurement
+namespace: BananaMethod
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0001044
+name: Weeding date mm/dd/yyyy
+namespace: BananaVariable
+def: "record weeding date mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001034 ! weeding
+relationship: variable_of CO_325:0001042 ! weeding date - measurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -7040,6 +7110,27 @@ name: high performance liquid chromatography
 namespace: BananaMethod
 def: "Separation and quantification of individual carotenoids was carried out on a Waters Alliance e2695 High Performance Liquid Chromatography (HPLC) separation module (Waters Corporation,\nMilford, MA, USA) equipped with a polymeric YMCTM C30 5 μm column (4.6×250 mm) and a photodiode array detector (PDA). The system was operated by Empower software (Waters Corporation, Milford, MA, USA)." []
 synonym: "HPLC" EXACT []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0010257
+name: harvest date - measurement
+namespace: BananaMethod
+def: "record date of harvesting" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0010258
+name: planting date - measurement
+namespace: BananaMethod
+def: "record date of planting" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0010260
+name: fertilizing date -mesurement
+namespace: BananaMethod
+def: "record date of fertilizer application" []
 is_a: CO_325:1000008 ! Measurement
 
 [Term]
@@ -9467,6 +9558,13 @@ id: CO_325:0100340
 name: μg/g
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0100341
+name: Date mm/dd/yyyy
+namespace: BananaScale
+namespace: CO_325:0100341
+is_a: CO_325:1000018 ! Time
 
 [Term]
 id: CO_325:0101100
