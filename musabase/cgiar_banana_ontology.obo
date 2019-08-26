@@ -5071,6 +5071,7 @@ relationship: variable_of CO_325:0100053 ! presence absence 0
 id: CO_325:0001000
 name: Plant height 1-3
 namespace: BananaTrait
+def: "Measure the distance from the collar to first leaves\n1:less or equal to 1 m; 2: between 2 to 3 meters; 3: equal to or more than 3 m" []
 synonym: "PltHght_1-3" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000307 ! plant height to neck of peduncle
