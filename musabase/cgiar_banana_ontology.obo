@@ -51,7 +51,7 @@ creation_date: 2018-04-11T11:01:27Z
 
 [Term]
 id: CO_325:0000005
-name: fruit maturity of the plant
+name: Fruit maturity of the plant
 namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000002 ! fruit maturity-harvest
@@ -2067,21 +2067,21 @@ relationship: variable_of CO_325:0100073 ! bd colour chart a - 1996
 
 [Term]
 id: CO_325:0000438
-name: bunch position
+name: bunch orientation
 namespace: BananaTrait
 def: "Angle between the axis of the bunch and the vertical" []
 is_a: CO_325:1000003 ! Morphological
 
 [Term]
 id: CO_325:0000439
-name: Bunch position 1-5
+name: Bunch orientation 1-5
 namespace: BananaTrait
 def: "Visually observe the angle of the bunch and choose the option that is most similar, from the 5 schematic drawings of descriptor 6.4.6 in the reference material., 1 = hanging vertically; 2 = slightly angled; 3 = hanging at a 45 degree angle; 4 = horizontal; 5 = erect" []
 synonym: "BnchPst_Estm_1to5, BNCPOS" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000438 ! bunch position
-relationship: variable_of CO_325:0010169 ! bunch position - estimation
-relationship: variable_of CO_325:0100075 ! bunch position scale(1 to 5)
+relationship: variable_of CO_325:0000438 ! bunch orientation
+relationship: variable_of CO_325:0010169 ! bunch orientation - estimation
+relationship: variable_of CO_325:0100075 ! bunch orientation scale(1 to 5)
 
 [Term]
 id: CO_325:0000440
@@ -5071,6 +5071,7 @@ relationship: variable_of CO_325:0100053 ! presence absence 0
 id: CO_325:0001000
 name: Plant height 1-3
 namespace: BananaTrait
+def: "Measure the distance from the collar to first leaves\n1:less or equal to 1 m; 2: between 2 to 3 meters; 3: equal to or more than 3 m" []
 synonym: "PltHght_1-3" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000307 ! plant height to neck of peduncle
@@ -5091,6 +5092,9 @@ namespace: BananaTrait
 def: "Banana plant sucker apical dominance type: (1) High apical dominance; (2) Medium apical dominance; (3) Low apical dominance" []
 synonym: "SuckerBhv1-3" EXACT []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001001 ! suckering behavior of the plant
+relationship: variable_of CO_325:0010246 ! sucker behavior - estimation
+relationship: variable_of CO_325:0100332 ! suckering behavior (1 to 3)
 
 [Term]
 id: CO_325:0001003
@@ -5248,6 +5252,76 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001008 ! total carotenoids
 relationship: variable_of CO_325:0010251 ! high performance liquid chromatography
 relationship: variable_of CO_325:0100340 ! μg/g
+
+[Term]
+id: CO_325:0001030
+name: harvesting
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001033
+name: planting
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001034
+name: weeding
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001035
+name: fertilizing
+namespace: BananaTrait
+is_a: CO_325:1000026 ! Agronomy_management_traits
+
+[Term]
+id: CO_325:0001036
+name: Harvesting date mm/dd/yyy
+namespace: BananaVariable
+def: "record harvest date in mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001030 ! harvesting
+relationship: variable_of CO_325:0010257 ! harvest date - measurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+
+[Term]
+id: CO_325:0001038
+name: Planting date mm/dd/yyyy
+namespace: BananaVariable
+def: "record planting date in mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001033 ! planting
+relationship: variable_of CO_325:0010258 ! planting date - measurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+
+[Term]
+id: CO_325:0001039
+name: Fertilizing date mm/dd/yyyy
+namespace: BananaVariable
+def: "record fertilizer application date mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001035 ! fertilizing
+relationship: variable_of CO_325:0010260 ! fertilizing date -mesurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+
+[Term]
+id: CO_325:0001042
+name: weeding date - measurement
+namespace: BananaMethod
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0001044
+name: Weeding date mm/dd/yyyy
+namespace: BananaVariable
+def: "record weeding date mm/dd/yyyy format" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001034 ! weeding
+relationship: variable_of CO_325:0001042 ! weeding date - measurement
+relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
 
 [Term]
 id: CO_325:0010011
@@ -6383,11 +6457,11 @@ relationship: method_of CO_325:0000252 ! pigmentation of outer surface of cigar 
 
 [Term]
 id: CO_325:0010169
-name: bunch position - estimation
+name: bunch orientation - estimation
 namespace: BananaMethod
 def: "Visually observe the angle of the bunch and choose the option that is most similar, from the 5 schematic drawings of descriptor 6.4.6 in the reference material." []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000438 ! bunch position
+relationship: method_of CO_325:0000438 ! bunch orientation
 
 [Term]
 id: CO_325:0010170
@@ -7043,6 +7117,27 @@ synonym: "HPLC" EXACT []
 is_a: CO_325:1000008 ! Measurement
 
 [Term]
+id: CO_325:0010257
+name: harvest date - measurement
+namespace: BananaMethod
+def: "record date of harvesting" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0010258
+name: planting date - measurement
+namespace: BananaMethod
+def: "record date of planting" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0010260
+name: fertilizing date -mesurement
+namespace: BananaMethod
+def: "record date of fertilizer application" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
 id: CO_325:0100002
 name: open answer
 namespace: BananaScale
@@ -7587,10 +7682,10 @@ relationship: scale_of CO_325:0010167 ! colour line along edge of petiole margin
 
 [Term]
 id: CO_325:0100075
-name: bunch position scale(1 to 5)
+name: bunch orientation scale(1 to 5)
 namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
-relationship: scale_of CO_325:0010169 ! bunch position - estimation
+relationship: scale_of CO_325:0010169 ! bunch orientation - estimation
 
 [Term]
 id: CO_325:0100076
@@ -8610,35 +8705,35 @@ id: CO_325:0100217
 name: hanging vertically
 namespace: BananaScale
 synonym: "1" EXACT []
-is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+is_a: CO_325:0100075 ! bunch orientation scale(1 to 5)
 
 [Term]
 id: CO_325:0100218
 name: slightly angled
 namespace: BananaScale
 synonym: "2" EXACT []
-is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+is_a: CO_325:0100075 ! bunch orientation scale(1 to 5)
 
 [Term]
 id: CO_325:0100219
 name: hanging at a 45 degree angle
 namespace: BananaScale
 synonym: "3" EXACT []
-is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+is_a: CO_325:0100075 ! bunch orientation scale(1 to 5)
 
 [Term]
 id: CO_325:0100220
 name: horizontal
 namespace: BananaScale
 synonym: "4" EXACT []
-is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+is_a: CO_325:0100075 ! bunch orientation scale(1 to 5)
 
 [Term]
 id: CO_325:0100221
 name: erect
 namespace: BananaScale
 synonym: "5" EXACT []
-is_a: CO_325:0100075 ! bunch position scale(1 to 5)
+is_a: CO_325:0100075 ! bunch orientation scale(1 to 5)
 
 [Term]
 id: CO_325:0100222
@@ -9469,6 +9564,13 @@ namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 
 [Term]
+id: CO_325:0100341
+name: Date mm/dd/yyyy
+namespace: BananaScale
+namespace: CO_325:0100341
+is_a: CO_325:1000018 ! Time
+
+[Term]
 id: CO_325:0101100
 name: black streak scale (1 to 3)
 is_a: CO_325:1000015 ! Nominal
@@ -9582,6 +9684,12 @@ namespace: BananaScale
 [Term]
 id: CO_325:1000024
 name: Variable
+namespace: BananaTrait
+is_a: CO_325:0000000 ! CGIAR banana trait ontology
+
+[Term]
+id: CO_325:1000026
+name: Agronomy_management_traits
 namespace: BananaTrait
 is_a: CO_325:0000000 ! CGIAR banana trait ontology
 
