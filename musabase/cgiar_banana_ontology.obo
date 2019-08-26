@@ -9567,7 +9567,6 @@ is_a: CO_325:1000017 ! Numerical
 id: CO_325:0100341
 name: Date mm/dd/yyyy
 namespace: BananaScale
-namespace: CO_325:0100341
 is_a: CO_325:1000018 ! Time
 
 [Term]
