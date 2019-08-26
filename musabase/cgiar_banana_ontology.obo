@@ -9568,6 +9568,10 @@ id: CO_325:0100341
 name: Date mm/dd/yyyy
 namespace: BananaScale
 is_a: CO_325:1000018 ! Time
+relationship: scale_of CO_325:0001036 ! Harvesting date mm/dd/yyy
+relationship: scale_of CO_325:0001038 ! Planting date mm/dd/yyyy
+relationship: scale_of CO_325:0001039 ! Fertilizing date mm/dd/yyyy
+relationship: scale_of CO_325:0001044 ! Weeding date mm/dd/yyyy
 
 [Term]
 id: CO_325:0101100
