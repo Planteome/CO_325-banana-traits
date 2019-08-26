@@ -5285,7 +5285,7 @@ def: "record harvest date in mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001030 ! harvesting
 relationship: variable_of CO_325:0010257 ! harvest date - measurement
-relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
 
 [Term]
 id: CO_325:0001038
@@ -5295,7 +5295,7 @@ def: "record planting date in mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001033 ! planting
 relationship: variable_of CO_325:0010258 ! planting date - measurement
-relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
 
 [Term]
 id: CO_325:0001039
@@ -5305,7 +5305,7 @@ def: "record fertilizer application date mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001035 ! fertilizing
 relationship: variable_of CO_325:0010260 ! fertilizing date -mesurement
-relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
 
 [Term]
 id: CO_325:0001042
@@ -5321,7 +5321,7 @@ def: "record weeding date mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001034 ! weeding
 relationship: variable_of CO_325:0001042 ! weeding date - measurement
-relationship: variable_of CO_325:0100341 ! Date mm/dd/yyyy
+relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
 
 [Term]
 id: CO_325:0010011
@@ -9565,7 +9565,7 @@ is_a: CO_325:1000017 ! Numerical
 
 [Term]
 id: CO_325:0100341
-name: Date mm/dd/yyyy
+name: date mm/dd/yyyy
 namespace: BananaScale
 is_a: CO_325:1000018 ! Time
 relationship: scale_of CO_325:0001036 ! Harvesting date mm/dd/yyy
