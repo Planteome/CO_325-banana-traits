@@ -372,6 +372,7 @@ namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 1 m from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
 relationship: variable_of CO_325:0010248 ! plant circumference at 100 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -5032,6 +5033,7 @@ synonym: "YgStkLf_1-3_Est" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000984 ! youngest leaf with streak disease
 relationship: variable_of CO_325:0010242 ! youngest leaf with black streak disease development stage  - estimation
+relationship: variable_of CO_325:0100342 ! black streak leaf scale (1 to 3)
 
 [Term]
 id: CO_325:0000994
@@ -5111,6 +5113,7 @@ namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 75 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
 relationship: variable_of CO_325:0010249 ! plant circumference at 75 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -5130,6 +5133,7 @@ name: Plant circumference at 20 cm from the collar
 namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 20 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
 relationship: variable_of CO_325:0010250 ! plant circumference at 20 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -5145,12 +5149,14 @@ is_a: CO_325:1000006 ! Quality_traits
 id: CO_325:0001009
 name: α- carotene
 namespace: BananaTrait
+def: "Content in alpha - carotene quantified by HPLC in ug/g" []
 is_a: CO_325:0001012 ! pro-vitamine A
 
 [Term]
 id: CO_325:0001010
 name: 13-cis-beta-carotene
 namespace: BananaTrait
+def: "Content in 13-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "13-cis-BC" EXACT []
 is_a: CO_325:0001012 ! pro-vitamine A
 
@@ -5158,6 +5164,7 @@ is_a: CO_325:0001012 ! pro-vitamine A
 id: CO_325:0001011
 name: 9-cis-beta-carotene
 namespace: BananaTrait
+def: "Content in 9-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "9-cis-BC" EXACT []
 is_a: CO_325:0001012 ! pro-vitamine A
 
@@ -5174,6 +5181,7 @@ is_a: CO_325:0001008 ! total carotenoids
 id: CO_325:0001013
 name: trans-beta-carotene
 namespace: BananaTrait
+def: "Content in trans beta- carotene quantified by HPLC in ug/g" []
 synonym: "trans-BC" EXACT []
 is_a: CO_325:0001012 ! pro-vitamine A
 
@@ -5181,12 +5189,13 @@ is_a: CO_325:0001012 ! pro-vitamine A
 id: CO_325:0001014
 name: lutein
 namespace: BananaTrait
+def: "Content in lutein quantified by HPLC in ug/g" []
 is_a: CO_325:0001008 ! total carotenoids
 
 [Term]
 id: CO_325:0001022
-name: α- carotene by HPLC in μg/g
-def: "Content in α- carotene quantified by HPLC in μg/g" []
+name: alpha - carotene by HPLC in ug/g
+def: "Content in alpha - carotene quantified by HPLC in ug/g" []
 synonym: "A-Carotene" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001009 ! α- carotene
@@ -5195,8 +5204,8 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001023
-name: Trans-beta-carotene by HPLC in μg/g
-def: "Content in trans-beta-carotene quantified by HPLC in μg/g" []
+name: Trans-beta-carotene by HPLC in ug/g
+def: "Content in trans-beta-carotene quantified by HPLC in ug/g" []
 synonym: "TBC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001013 ! trans-beta-carotene
@@ -5205,8 +5214,8 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001024
-name: 9-cis-beta-carotene by HPLC in μg/g
-def: "Content in 9-cis-beta-carotene quantified by HPLC in μg/g" []
+name: 9-cis-beta-carotene by HPLC in ug/g
+def: "Content in 9-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "9-BC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001011 ! 9-cis-beta-carotene
@@ -5215,8 +5224,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001025
-name: 13-cis-beta-carotene by HPLC in μg/g
+name: 13-cis-beta-carotene by HPLC in ug/g
 namespace: BananaTrait
+def: "Content in 13-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "13-BC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001010 ! 13-cis-beta-carotene
@@ -5225,8 +5235,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001026
-name: Pro-vitamin A by HPLC in μg/g
+name: Pro-vitamin A by HPLC in ug/g
 namespace: BananaTrait
+def: "pVACs (ug/g)=alpha-carotene+13-cis-BC+9-cis-BC+trans-BC" []
 synonym: "PvitA" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001012 ! pro-vitamine A
@@ -5235,8 +5246,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001027
-name: Lutein by HPLC in μg/g
+name: Lutein by HPLC in ug/g
 namespace: BananaTrait
+def: "Content in lutein  quantified by HPLC in ug/g" []
 synonym: "Lutein" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001014 ! lutein
@@ -5245,8 +5257,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001028
-name: Total carotenoid by HPLC in μg/g
+name: Total carotenoid by HPLC in ug/g
 namespace: BananaTrait
+def: "Total caroteinoids with provitamin A activity: pVACs (ug/g)=α-\ncarotene+13-cis-BC+9-cis-BC+trans-BC and TC computed as TC\n(ug/g)=Total pVACs+lutein" []
 synonym: "TC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001008 ! total carotenoids
@@ -9574,9 +9587,31 @@ relationship: scale_of CO_325:0001039 ! Fertilizing date mm/dd/yyyy
 relationship: scale_of CO_325:0001044 ! Weeding date mm/dd/yyyy
 
 [Term]
-id: CO_325:0101100
-name: black streak scale (1 to 3)
+id: CO_325:0100342
+name: black streak leaf scale (1 to 3)
+namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0100343
+name: black streak leaf 1
+def: "Stage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf" []
+synonym: "1" EXACT []
+is_a: CO_325:0100342 ! black streak leaf scale (1 to 3)
+
+[Term]
+id: CO_325:0100344
+name: black streak leaf 2
+def: "Stage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the undersiden" []
+synonym: "2" EXACT []
+is_a: CO_325:0100342 ! black streak leaf scale (1 to 3)
+
+[Term]
+id: CO_325:0100345
+name: black streak leaf 3
+def: "Stage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm" []
+synonym: "3" EXACT []
+is_a: CO_325:0100342 ! black streak leaf scale (1 to 3)
 
 [Term]
 id: CO_325:1000001
