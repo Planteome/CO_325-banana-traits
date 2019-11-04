@@ -372,6 +372,7 @@ namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 1 m from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
 relationship: variable_of CO_325:0010248 ! plant circumference at 100 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -5111,6 +5112,7 @@ namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 75 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 synonym: "PStmGrth_M_cm, PGFL, plantcircumf100cm" EXACT []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
 relationship: variable_of CO_325:0010249 ! plant circumference at 75 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
@@ -5130,6 +5132,7 @@ name: Plant circumference at 20 cm from the collar
 namespace: BananaTrait
 def: "Measure the circumference of the pseudostem of the plant at 20 cm from the collar, or from the pseudostem base at the ground if the collar is not visible, using a tape measure. In cm" []
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
 relationship: variable_of CO_325:0010250 ! plant circumference at 20 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
