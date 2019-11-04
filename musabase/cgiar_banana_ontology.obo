@@ -5033,6 +5033,7 @@ synonym: "YgStkLf_1-3_Est" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000984 ! youngest leaf with streak disease
 relationship: variable_of CO_325:0010242 ! youngest leaf with black streak disease development stage  - estimation
+relationship: variable_of CO_325:0100342 ! black streak leaf scale (1 to 3)
 
 [Term]
 id: CO_325:0000994
@@ -9577,9 +9578,31 @@ relationship: scale_of CO_325:0001039 ! Fertilizing date mm/dd/yyyy
 relationship: scale_of CO_325:0001044 ! Weeding date mm/dd/yyyy
 
 [Term]
-id: CO_325:0101100
-name: black streak scale (1 to 3)
+id: CO_325:0100342
+name: black streak leaf scale (1 to 3)
+namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0100343
+name: black streak leaf 1
+def: "Stage 1 appears as a small depigmentation spot whose whitish or yellow colour resembles stage 1 of Yellow Sigatoka disease. These symptoms are not visible in transmitted light and can be observed only on the underside of the leaf" []
+synonym: "1" EXACT []
+is_a: CO_325:0100342 ! black streak leaf scale (1 to 3)
+
+[Term]
+id: CO_325:0100344
+name: black streak leaf 2
+def: "Stage 2 appears as a stripe, generally brown in colour and visible on the underside of the leaf; later the symptom also appears on the upper part of the limb as a stripe, the yellow colour of which resembles the stripe at stage 1 of Yellow Sigatoka. The colour of this stripe will change progressively from brown and later to black on the upper side of the limb, but will retain the brown colour on the undersiden" []
+synonym: "2" EXACT []
+is_a: CO_325:0100342 ! black streak leaf scale (1 to 3)
+
+[Term]
+id: CO_325:0100345
+name: black streak leaf 3
+def: "Stage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm" []
+synonym: "3" EXACT []
+is_a: CO_325:0100342 ! black streak leaf scale (1 to 3)
 
 [Term]
 id: CO_325:1000001
