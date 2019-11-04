@@ -5149,12 +5149,14 @@ is_a: CO_325:1000006 ! Quality_traits
 id: CO_325:0001009
 name: α- carotene
 namespace: BananaTrait
+def: "Content in alpha - carotene quantified by HPLC in ug/g" []
 is_a: CO_325:0001012 ! pro-vitamine A
 
 [Term]
 id: CO_325:0001010
 name: 13-cis-beta-carotene
 namespace: BananaTrait
+def: "Content in 13-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "13-cis-BC" EXACT []
 is_a: CO_325:0001012 ! pro-vitamine A
 
@@ -5162,6 +5164,7 @@ is_a: CO_325:0001012 ! pro-vitamine A
 id: CO_325:0001011
 name: 9-cis-beta-carotene
 namespace: BananaTrait
+def: "Content in 9-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "9-cis-BC" EXACT []
 is_a: CO_325:0001012 ! pro-vitamine A
 
@@ -5178,6 +5181,7 @@ is_a: CO_325:0001008 ! total carotenoids
 id: CO_325:0001013
 name: trans-beta-carotene
 namespace: BananaTrait
+def: "Content in trans beta- carotene quantified by HPLC in ug/g" []
 synonym: "trans-BC" EXACT []
 is_a: CO_325:0001012 ! pro-vitamine A
 
@@ -5185,12 +5189,13 @@ is_a: CO_325:0001012 ! pro-vitamine A
 id: CO_325:0001014
 name: lutein
 namespace: BananaTrait
+def: "Content in lutein quantified by HPLC in ug/g" []
 is_a: CO_325:0001008 ! total carotenoids
 
 [Term]
 id: CO_325:0001022
-name: α- carotene by HPLC in μg/g
-def: "Content in α- carotene quantified by HPLC in μg/g" []
+name: alpha - carotene by HPLC in ug/g
+def: "Content in alpha - carotene quantified by HPLC in ug/g" []
 synonym: "A-Carotene" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001009 ! α- carotene
@@ -5199,8 +5204,8 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001023
-name: Trans-beta-carotene by HPLC in μg/g
-def: "Content in trans-beta-carotene quantified by HPLC in μg/g" []
+name: Trans-beta-carotene by HPLC in ug/g
+def: "Content in trans-beta-carotene quantified by HPLC in ug/g" []
 synonym: "TBC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001013 ! trans-beta-carotene
@@ -5209,8 +5214,8 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001024
-name: 9-cis-beta-carotene by HPLC in μg/g
-def: "Content in 9-cis-beta-carotene quantified by HPLC in μg/g" []
+name: 9-cis-beta-carotene by HPLC in ug/g
+def: "Content in 9-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "9-BC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001011 ! 9-cis-beta-carotene
@@ -5219,8 +5224,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001025
-name: 13-cis-beta-carotene by HPLC in μg/g
+name: 13-cis-beta-carotene by HPLC in ug/g
 namespace: BananaTrait
+def: "Content in 13-cis-beta-carotene quantified by HPLC in ug/g" []
 synonym: "13-BC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001010 ! 13-cis-beta-carotene
@@ -5229,8 +5235,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001026
-name: Pro-vitamin A by HPLC in μg/g
+name: Pro-vitamin A by HPLC in ug/g
 namespace: BananaTrait
+def: "pVACs (ug/g)=alpha-carotene+13-cis-BC+9-cis-BC+trans-BC" []
 synonym: "PvitA" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001012 ! pro-vitamine A
@@ -5239,8 +5246,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001027
-name: Lutein by HPLC in μg/g
+name: Lutein by HPLC in ug/g
 namespace: BananaTrait
+def: "Content in lutein  quantified by HPLC in ug/g" []
 synonym: "Lutein" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001014 ! lutein
@@ -5249,8 +5257,9 @@ relationship: variable_of CO_325:0100340 ! μg/g
 
 [Term]
 id: CO_325:0001028
-name: Total carotenoid by HPLC in μg/g
+name: Total carotenoid by HPLC in ug/g
 namespace: BananaTrait
+def: "Total caroteinoids with provitamin A activity: pVACs (ug/g)=α-\ncarotene+13-cis-BC+9-cis-BC+trans-BC and TC computed as TC\n(ug/g)=Total pVACs+lutein" []
 synonym: "TC" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0001008 ! total carotenoids
