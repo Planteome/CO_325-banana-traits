@@ -2608,7 +2608,7 @@ relationship: variable_of CO_325:0100099 ! fusion of pedicel scale (1 to 2)
 
 [Term]
 id: CO_325:0000498
-name: fruit smashed pulp colour
+name: matooke color
 namespace: BananaTrait
 def: "The color of the smashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2620,13 +2620,13 @@ namespace: BananaTrait
 def: "Subjective visual assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpCl_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000498 ! fruit smashed pulp colour
+relationship: variable_of CO_325:0000498 ! matooke color
 relationship: variable_of CO_325:0010198 ! visual appearance - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000500
-name: fruit unsmashed pulp colour
+name: pulp color
 namespace: BananaTrait
 def: "The color of the unsmashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2638,13 +2638,13 @@ namespace: BananaTrait
 def: "Subjective visual assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpCl_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000500 ! fruit unsmashed pulp colour
+relationship: variable_of CO_325:0000500 ! pulp color
 relationship: variable_of CO_325:0010198 ! visual appearance - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000502
-name: fruit smashed pulp taste
+name: matooke taste
 namespace: BananaTrait
 def: "The taste of the smashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2656,13 +2656,13 @@ namespace: BananaTrait
 def: "Subjective taste assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpTst_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000502 ! fruit smashed pulp taste
+relationship: variable_of CO_325:0000502 ! matooke taste
 relationship: variable_of CO_325:0010199 ! taste - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000504
-name: fruit unsmashed pulp taste
+name: pulp taste
 namespace: BananaTrait
 def: "The taste of the unsmashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2674,13 +2674,13 @@ namespace: BananaTrait
 def: "Subjective taste assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpTst_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000504 ! fruit unsmashed pulp taste
+relationship: variable_of CO_325:0000504 ! pulp taste
 relationship: variable_of CO_325:0010199 ! taste - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000506
-name: fruit smashed pulp texture
+name: matooke texture
 namespace: BananaTrait
 def: "The texture of the smashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2692,13 +2692,13 @@ namespace: BananaTrait
 def: "Finger feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpTxt_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000506 ! fruit smashed pulp texture
+relationship: variable_of CO_325:0000506 ! matooke texture
 relationship: variable_of CO_325:0010200 ! finger feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000508
-name: fruit unsmashed pulp texture
+name: pulp texture
 namespace: BananaTrait
 def: "The texture of the unsmashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2710,13 +2710,13 @@ namespace: BananaTrait
 def: "Finger feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpTxt_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000508 ! fruit unsmashed pulp texture
+relationship: variable_of CO_325:0000508 ! pulp texture
 relationship: variable_of CO_325:0010200 ! finger feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000510
-name: fruit smashed pulp smoothness-mouth feel
+name: matooke mouth texture
 namespace: BananaTrait
 def: "The smoothness-mouth feel of the smashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2728,13 +2728,13 @@ namespace: BananaTrait
 def: "Mouth feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpSmth_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000510 ! fruit smashed pulp smoothness-mouth feel
+relationship: variable_of CO_325:0000510 ! matooke mouth texture
 relationship: variable_of CO_325:0010201 ! smoothness-mouth feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000512
-name: fruit unsmashed pulp smoothness-mouth feel
+name: pulp smoothness-mouth feel
 namespace: BananaTrait
 def: "The smoothness-mouth feel of the unsmashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2746,13 +2746,13 @@ namespace: BananaTrait
 def: "Mouth feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngUnSmshdPlpSmth_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000512 ! fruit unsmashed pulp smoothness-mouth feel
+relationship: variable_of CO_325:0000512 ! pulp smoothness-mouth feel
 relationship: variable_of CO_325:0010201 ! smoothness-mouth feel - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0000514
-name: fruit smashed pulp aroma/smell
+name: matooke aroma
 namespace: BananaTrait
 def: "The pulp aroma of the smashed pulp of a mature fruit" []
 is_a: CO_325:1000006 ! Quality_traits
@@ -2764,7 +2764,7 @@ namespace: BananaTrait
 def: "Nosal smell assessment of smashed and unsmashed fruit pulp aromas, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpArm_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000514 ! fruit smashed pulp aroma/smell
+relationship: variable_of CO_325:0000514 ! matooke aroma
 relationship: variable_of CO_325:0010202 ! nosal smell - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
@@ -5299,6 +5299,36 @@ relationship: variable_of CO_325:0001042 ! weeding date - measurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
 
 [Term]
+id: CO_325:0001046
+name: matooke color homogeneity
+namespace: BananaTrait
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0001047
+name: dry matter content
+namespace: BananaTrait
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0001048
+name: total titrable acidity
+namespace: BananaTrait
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0001049
+name: pH
+namespace: BananaTrait
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0001050
+name: total soluble solids
+namespace: BananaTrait
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -6668,8 +6698,8 @@ name: visual appearance - estimation
 namespace: BananaMethod
 def: "Subjective visual assessment of smashed and unsmashed fruit pulp" []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000498 ! fruit smashed pulp colour
-relationship: method_of CO_325:0000500 ! fruit unsmashed pulp colour
+relationship: method_of CO_325:0000498 ! matooke color
+relationship: method_of CO_325:0000500 ! pulp color
 
 [Term]
 id: CO_325:0010199
@@ -6677,8 +6707,8 @@ name: taste - estimation
 namespace: BananaMethod
 def: "Subjective taste assessment of smashed and unsmashed fruit pulp" []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000502 ! fruit smashed pulp taste
-relationship: method_of CO_325:0000504 ! fruit unsmashed pulp taste
+relationship: method_of CO_325:0000502 ! matooke taste
+relationship: method_of CO_325:0000504 ! pulp taste
 
 [Term]
 id: CO_325:0010200
@@ -6686,8 +6716,8 @@ name: finger feel - estimation
 namespace: BananaMethod
 def: "Finger feel assessment of smashed and unsmashed fruit pulp" []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000506 ! fruit smashed pulp texture
-relationship: method_of CO_325:0000508 ! fruit unsmashed pulp texture
+relationship: method_of CO_325:0000506 ! matooke texture
+relationship: method_of CO_325:0000508 ! pulp texture
 
 [Term]
 id: CO_325:0010201
@@ -6695,8 +6725,8 @@ name: smoothness-mouth feel - estimation
 namespace: BananaMethod
 def: "Mouth feel assessment of smashed and unsmashed fruit pulp" []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000510 ! fruit smashed pulp smoothness-mouth feel
-relationship: method_of CO_325:0000512 ! fruit unsmashed pulp smoothness-mouth feel
+relationship: method_of CO_325:0000510 ! matooke mouth texture
+relationship: method_of CO_325:0000512 ! pulp smoothness-mouth feel
 
 [Term]
 id: CO_325:0010202
@@ -6704,7 +6734,7 @@ name: nosal smell - estimation
 namespace: BananaMethod
 def: "Nosal smell assessment of smashed and unsmashed fruit pulp aromas" []
 is_a: CO_325:1000011 ! Estimation
-relationship: method_of CO_325:0000514 ! fruit smashed pulp aroma/smell
+relationship: method_of CO_325:0000514 ! matooke aroma
 
 [Term]
 id: CO_325:0010203
@@ -9692,6 +9722,10 @@ id: CO_325:1000026
 name: Agronomy_management_traits
 namespace: BananaTrait
 is_a: CO_325:0000000 ! CGIAR banana trait ontology
+
+[Term]
+id: CO_325:1001022
+name: color
 
 [Typedef]
 id: method_of
