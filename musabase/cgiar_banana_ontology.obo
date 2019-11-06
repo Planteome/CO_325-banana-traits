@@ -2615,7 +2615,7 @@ is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
 id: CO_325:0000499
-name: Fruit smashed pulp colour 1-5
+name: Matooke colour 1-5
 namespace: BananaTrait
 def: "Subjective visual assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpCl_Est_1to5," EXACT []
@@ -2651,7 +2651,7 @@ is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
 id: CO_325:0000503
-name: Fruit smashed pulp taste 1-5
+name: Matooke pulp taste 1-5
 namespace: BananaTrait
 def: "Subjective taste assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpTst_Est_1to5," EXACT []
@@ -2687,7 +2687,7 @@ is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
 id: CO_325:0000507
-name: Fruit smashed pulp texture 1-5
+name: Matooke pulp texture 1-5
 namespace: BananaTrait
 def: "Finger feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpTxt_Est_1to5," EXACT []
@@ -2723,7 +2723,7 @@ is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
 id: CO_325:0000511
-name: Fruit smashed pulp smoothness-mouth feel 1-5
+name: Matooke pulp smoothness-mouth feel 1-5
 namespace: BananaTrait
 def: "Mouth feel assessment of smashed and unsmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpSmth_Est_1to5," EXACT []
@@ -2759,7 +2759,7 @@ is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
 id: CO_325:0000515
-name: Fruit smashed pulp aroma/smell 1-5
+name: Matooke aroma 1-5
 namespace: BananaTrait
 def: "Nosal smell assessment of smashed and unsmashed fruit pulp aromas, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
 synonym: "FngSmshdPlpArm_Est_1to5," EXACT []
@@ -5324,9 +5324,15 @@ is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
 id: CO_325:0001050
-name: total soluble solids
+name: Total soluble solids
 namespace: BananaTrait
 is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0001051
+name: pH
+is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0010011
