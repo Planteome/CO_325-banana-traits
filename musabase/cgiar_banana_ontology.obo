@@ -5367,6 +5367,7 @@ is_a: CO_325:1000033 ! Sensory descriptive measurement
 [Term]
 id: CO_325:0002029
 name: Matooke yellowness measurement scale 1-10
+def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity.  0= very light yellow ; 10= bright yellow" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012018 ! Appearance method
 relationship: variable_of CO_325:0002056 ! Matooke yellowness
@@ -5375,6 +5376,7 @@ relationship: variable_of CO_325:0120003 ! yellowness scale 0-10
 [Term]
 id: CO_325:0002030
 name: Matooke homogeneity of colour measurement scale 1-10
+def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity. 0= heterogeneous ; 10= homogeneous" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012018 ! Appearance method
 relationship: variable_of CO_325:0002043 ! Matooke homogeneity of colour
@@ -5383,6 +5385,7 @@ relationship: variable_of CO_325:0120004 ! color homogeneity scale 0-10
 [Term]
 id: CO_325:0002031
 name: Matooke firmness measurement scale 1-10
+def: "Put a part of the sample in your mouth, evaluate during the first bite (between molars) how hard is the sample. 0= soft ; 10= firm" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012019 ! Firmness in mouth method
 relationship: variable_of CO_325:0002044 ! Matooke firmness
@@ -5391,6 +5394,7 @@ relationship: variable_of CO_325:0120005 ! firmness scale 1-10
 [Term]
 id: CO_325:0002032
 name: Matooke moisture measurement scale 1-10
+def: "Put a part of the sample in the mouth, chew and evaluate the quantity of water within the sample. 0= Dry  ; 10= Moist" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012020 ! Moisture in mouth method
 relationship: variable_of CO_325:0002045 ! Matooke moisture
@@ -5399,6 +5403,7 @@ relationship: variable_of CO_325:0120006 ! moisture scale 1-10
 [Term]
 id: CO_325:0002033
 name: Matooke smoothness measurement scale 1-10
+def: "Put a part of the sample in mouth, chew it and after 5 chews, evaluate between tongue and palate the number and the size of the particles. 0= lumpy  ; 5= grainy ; 10= smooth" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012021 ! Smoothness in mouth method
 relationship: variable_of CO_325:0002046 ! Matooke smoothness
@@ -5407,6 +5412,7 @@ relationship: variable_of CO_325:0120007 ! smoothness scale 1-10
 [Term]
 id: CO_325:0002034
 name: Matooke hardness measurement scale 1-10
+def: "Take a part of the sample between fingers and evaluate how hard the sample is. 0= soft ; 5= firm ; 10= hard" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012022 ! Hardness in hand methid
 relationship: variable_of CO_325:0002047 ! Matooke hardness
@@ -5415,6 +5421,7 @@ relationship: variable_of CO_325:0120008 ! hardness scale 1-10
 [Term]
 id: CO_325:0002035
 name: Matooke moldability measurement scale 1-10
+def: "Try to make a ball (agglomerate) of the sample and evaluate how easy it is to deform or break the sample. 0= crumbly ; 10= moldable" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012023 ! Moldability in hand method
 relationship: variable_of CO_325:0002048 ! Matooke moldability
@@ -5423,6 +5430,7 @@ relationship: variable_of CO_325:0120009 ! moldability scale 1-10
 [Term]
 id: CO_325:0002036
 name: Matooke stickiness measurement scale 1-10
+def: "Put a part of the sample between thumb and index fingers and using tapping motions,  evaluate the amount of product adhering on them. 0= non sticky ; 10= sticky" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012024 ! Stickiness in hand method
 relationship: variable_of CO_325:0002049 ! Matooke stickiness
@@ -5431,6 +5439,7 @@ relationship: variable_of CO_325:0120010 ! stickiness scale 1-10
 [Term]
 id: CO_325:0002037
 name: Matooke sweetness measurement scale 1-10
+def: "Put a part of the sample in the mouth and evaluate the intensity of taste of sweetness. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012025 ! Sweetness tasting method
 relationship: variable_of CO_325:0002050 ! Matooke sweetness
@@ -5439,6 +5448,7 @@ relationship: variable_of CO_325:0120011 ! sweetness scale 1-10
 [Term]
 id: CO_325:0002038
 name: Matooke astringency measurement scale 1-10
+def: "Put a part of the sample in the mouth and evaluate the intensity of astringency impression due to the sample. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012026 ! Astringency method
 relationship: variable_of CO_325:0002051 ! Matooke astringency
@@ -5447,6 +5457,7 @@ relationship: variable_of CO_325:0120012 ! astringency scale 1-10
 [Term]
 id: CO_325:0002039
 name: Matooke sourness measurement scale 1-10
+def: "Put a part of the sample in the mouth and evaluate the intensity of the sourness. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012027 ! Sourness method
 relationship: variable_of CO_325:0002052 ! Matooke sourness
@@ -5455,6 +5466,7 @@ relationship: variable_of CO_325:0120013 ! sourness scale 1-10
 [Term]
 id: CO_325:0002040
 name: Matooke aroma measurement scale 1-10
+def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. 0= low intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012028 ! Aroma method
 relationship: variable_of CO_325:0002053 ! Matooke aroma
@@ -5463,6 +5475,7 @@ relationship: variable_of CO_325:0120014 ! aroma scale 1-10
 [Term]
 id: CO_325:0002041
 name: Matooke pumpkin aroma measurement 2pt scale
+def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012028 ! Aroma method
 relationship: variable_of CO_325:0002054 ! Matooke pumpkin aroma
@@ -5471,6 +5484,7 @@ relationship: variable_of CO_325:0120015 ! 2 pt scale
 [Term]
 id: CO_325:0002042
 name: Matooke grassy aroma measurement 2pt scale
+def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012028 ! Aroma method
 relationship: variable_of CO_325:0002055 ! Matooke grassy aroma
@@ -10073,4 +10087,3 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
-
