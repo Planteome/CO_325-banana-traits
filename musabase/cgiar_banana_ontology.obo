@@ -5397,7 +5397,7 @@ relationship: variable_of CO_325:0120004 ! color homogeneity scale 0-10
 
 [Term]
 id: CO_325:0002031
-name: Matooke firmness measurement scale 1-10
+name: Matooke firmness in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in your mouth, evaluate during the first bite (between molars) how hard is the sample. 0= soft ; 10= firm" []
 is_a: CO_325:1000024 ! Variable
@@ -5407,7 +5407,7 @@ relationship: variable_of CO_325:0120005 ! firmness scale 1-10
 
 [Term]
 id: CO_325:0002032
-name: Matooke moisture measurement scale 1-10
+name: Matooke moisture in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth, chew and evaluate the quantity of water within the sample. 0= Dry  ; 10= Moist" []
 is_a: CO_325:1000024 ! Variable
@@ -5417,7 +5417,7 @@ relationship: variable_of CO_325:0120006 ! moisture scale 1-10
 
 [Term]
 id: CO_325:0002033
-name: Matooke smoothness measurement scale 1-10
+name: Matooke smoothness in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in mouth, chew it and after 5 chews, evaluate between tongue and palate the number and the size of the particles. 0= lumpy  ; 5= grainy ; 10= smooth" []
 is_a: CO_325:1000024 ! Variable
@@ -5427,7 +5427,7 @@ relationship: variable_of CO_325:0120007 ! smoothness scale 1-10
 
 [Term]
 id: CO_325:0002034
-name: Matooke hardness measurement scale 1-10
+name: Matooke hardness in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Take a part of the sample between fingers and evaluate how hard the sample is. 0= soft ; 5= firm ; 10= hard" []
 is_a: CO_325:1000024 ! Variable
@@ -5437,7 +5437,7 @@ relationship: variable_of CO_325:0120008 ! hardness scale 1-10
 
 [Term]
 id: CO_325:0002035
-name: Matooke moldability measurement scale 1-10
+name: Matooke moldability in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Try to make a ball (agglomerate) of the sample and evaluate how easy it is to deform or break the sample. 0= crumbly ; 10= moldable" []
 is_a: CO_325:1000024 ! Variable
@@ -5447,7 +5447,7 @@ relationship: variable_of CO_325:0120009 ! moldability scale 1-10
 
 [Term]
 id: CO_325:0002036
-name: Matooke stickiness measurement scale 1-10
+name: Matooke stickiness in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample between thumb and index fingers and using tapping motions,  evaluate the amount of product adhering on them. 0= non sticky ; 10= sticky" []
 is_a: CO_325:1000024 ! Variable
@@ -5487,12 +5487,12 @@ relationship: variable_of CO_325:0120013 ! sourness scale 1-10
 
 [Term]
 id: CO_325:0002040
-name: Matooke aroma measurement scale 1-10
+name: Matooke aroma matooke measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. 0= low intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012028 ! Aroma method
-relationship: variable_of CO_325:0002053 ! Matooke aroma
+relationship: variable_of CO_325:0002053 ! Matooke aroma matooke
 relationship: variable_of CO_325:0120014 ! aroma scale 1-10
 
 [Term]
@@ -5502,7 +5502,7 @@ namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012028 ! Aroma method
-relationship: variable_of CO_325:0002054 ! Matooke pumpkin aroma
+relationship: variable_of CO_325:0002054 ! Matooke aroma pumpkin
 relationship: variable_of CO_325:0120015 ! 2 pt scale
 
 [Term]
@@ -5512,7 +5512,7 @@ namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:00012028 ! Aroma method
-relationship: variable_of CO_325:0002055 ! Matooke grassy aroma
+relationship: variable_of CO_325:0002055 ! Matooke aroma grassy
 relationship: variable_of CO_325:0120015 ! 2 pt scale
 
 [Term]
@@ -5587,21 +5587,21 @@ is_a: CO_325:1000031 ! Impression
 
 [Term]
 id: CO_325:0002053
-name: Matooke aroma
+name: Matooke aroma matooke
 namespace: BananaTrait
 def: "Aroma of the local matooke" []
 is_a: CO_325:1000032 ! Aroma
 
 [Term]
 id: CO_325:0002054
-name: Matooke pumpkin aroma
+name: Matooke aroma pumpkin
 namespace: BananaTrait
 def: "Aroma of pumpkin" []
 is_a: CO_325:1000032 ! Aroma
 
 [Term]
 id: CO_325:0002055
-name: Matooke grassy aroma
+name: Matooke aroma grassy
 namespace: BananaTrait
 def: "Aroma of fresh grass" []
 is_a: CO_325:1000032 ! Aroma
@@ -10139,3 +10139,4 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
+
