@@ -5,6 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003000> \"CO_325:0000498\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003001> \"CO_325:0000501\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003002> \"CO_325:0000501\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003003> \"CO_325:0000498\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0103000> \"CO_325:0120015\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0103005> \"CO_325:0120015\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -5614,6 +5615,40 @@ def: "Color of the surface of the sample from light yellow to bright yellow" []
 is_a: CO_325:1000027 ! Appearence
 
 [Term]
+id: CO_325:0003000
+name: raw pulp color
+namespace: BananaTrait
+def: "A quick field evaluation of the raw pulp to determine acceptability based on yellow color using Mbwazirume as a standard control." []
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0003001
+name: Raw pulp color visual estimation 1-3
+namespace: BananaTrait
+def: "A quick field evaluation of the raw pulp to determine acceptability based on yellow color using Mbwazirume as a standard control.	\nScale: 3 = Deep yellow pulp colour same as that of Mbwazirume; 2 =  Yellow colour slightly lighter than that of Mbwazirume; 1 =  White colour." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003000 ! raw pulp color
+relationship: variable_of CO_325:0010198 ! visual appearance - estimation
+relationship: variable_of CO_325:0103000 ! 3 pt color scale
+
+[Term]
+id: CO_325:0003002
+name: Sap amount estimation 1-3
+namespace: BananaTrait
+def: "A quick determination of the amount of sap in the raw pulp on a mature bunch in the EET field. 1= a lot of sap; 2 = a little sap; 3 = no sap." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003003 ! sap amount
+relationship: variable_of CO_325:0010198 ! visual appearance - estimation
+relationship: variable_of CO_325:0103005 ! 3 pt sap amount scale
+
+[Term]
+id: CO_325:0003003
+name: sap amount
+namespace: BananaTrait
+def: "A quick field evaluation of the raw pulp to determine acceptability based on yellow color using Mbwazirume as a standard control." []
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -9889,6 +9924,60 @@ name: black streak leaf 3
 def: "Stage 3 differs from the previous one by its dimensions. The stripe becomes longer, is enlarged and in certain conditions (weak inoculum and unfavourable climatic conditions) can reach 2 or 3 cm" []
 synonym: "3" EXACT []
 is_a: CO_325:0100342 ! black streak leaf scale (1 to 3)
+
+[Term]
+id: CO_325:0103000
+name: 3 pt color scale
+namespace: BananaScale
+is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0103002
+name: deep yellow raw pulp
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0103000 ! 3 pt color scale
+
+[Term]
+id: CO_325:0103003
+name: yellow raw pulp
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0103000 ! 3 pt color scale
+
+[Term]
+id: CO_325:0103004
+name: white raw pulp
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0103000 ! 3 pt color scale
+
+[Term]
+id: CO_325:0103005
+name: 3 pt sap amount scale
+namespace: BananaScale
+is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0103006
+name: A lot of sap
+namespace: BananaScale
+synonym: "1" EXACT []
+is_a: CO_325:0103005 ! 3 pt sap amount scale
+
+[Term]
+id: CO_325:0103007
+name: A little sap
+namespace: BananaScale
+synonym: "2" EXACT []
+is_a: CO_325:0103005 ! 3 pt sap amount scale
+
+[Term]
+id: CO_325:0103008
+name: no sap
+namespace: BananaScale
+synonym: "3" EXACT []
+is_a: CO_325:0103005 ! 3 pt sap amount scale
 
 [Term]
 id: CO_325:0120003
