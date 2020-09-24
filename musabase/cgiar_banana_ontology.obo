@@ -5,7 +5,6 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003000> \"CO_325:0000498\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003001> \"CO_325:0000501\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003002> \"CO_325:0000501\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003003> \"CO_325:0000498\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0103000> \"CO_325:0120015\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0103005> \"CO_325:0120015\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -891,6 +890,14 @@ synonym: "Edge of petiole margin" EXACT []
 is_a: CO_325:1000003 ! Morphological
 
 [Term]
+id: CO_325:0000250
+name: pulp weight
+namespace: BananaTrait
+def: "Peel the fruit and weigh the pulp using a scale (g). Record the pulp weight (g) of the central external finger on the second top cluster." []
+synonym: "pulpweight" EXACT []
+is_a: CO_325:1000001 ! Agronomical
+
+[Term]
 id: CO_325:0000251
 name: Pigmentation of outer surface of cigar leaf on sucker 1-3
 namespace: BananaTrait
@@ -908,6 +915,25 @@ namespace: BananaTrait
 def: "Colour of pigmentation on outer surface of cigar leaf on a developed sucker" []
 synonym: "Colour of cigar leaf dorsal surface" EXACT []
 is_a: CO_325:1000003 ! Morphological
+
+[Term]
+id: CO_325:0000253
+name: pulp weight -measurement
+namespace: BananaMethod
+def: "Peel the fruit and weigh the pulp using a scale (g). Record the pulp weight (g) of the central external finger on the second top cluster." []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0000250 ! pulp weight
+
+[Term]
+id: CO_325:0000254
+name: pulp weight in g
+namespace: BananaTrait
+def: "Peel the fruit and weigh the pulp using a scale (g). Record the pulp weight (g) of the central external finger on the second top cluster." []
+synonym: "pulpweighting" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000250 ! pulp weight
+relationship: variable_of CO_325:0000253 ! pulp weight -measurement
+relationship: variable_of CO_325:0100019 ! g
 
 [Term]
 id: CO_325:0000255
@@ -964,6 +990,33 @@ name: petiole margin colour
 namespace: BananaTrait
 def: "Main colour of the petiole margin. Where the petiole and pseudostem meet at shooting. Margin is the part of the petiole that can be bent outwards/inwards" []
 is_a: CO_325:1000003 ! Morphological
+
+[Term]
+id: CO_325:0000270
+name: peel weight
+namespace: BananaTrait
+def: "Weigh peel, using a scale (g). Record the peel weight (g) of the central external finger on the second top cluster." []
+synonym: "peelweight" EXACT []
+is_a: CO_325:1000001 ! Agronomical
+
+[Term]
+id: CO_325:0000271
+name: peel weight in g
+namespace: BananaTrait
+def: "Weigh peel, using a scale (g). Record the peel weight (g) of the central external finger on the second top cluster." []
+synonym: "peelweighting" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000270 ! peel weight
+relationship: variable_of CO_325:0000272 ! peel weight - measurement
+relationship: variable_of CO_325:0100019 ! g
+
+[Term]
+id: CO_325:0000272
+name: peel weight - measurement
+namespace: BananaMethod
+def: "Weigh peel, using a scale (g). Record the peel weight (g) of the central external finger on the second top cluster." []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0000270 ! peel weight
 
 [Term]
 id: CO_325:0000292
@@ -7648,6 +7701,8 @@ id: CO_325:0100019
 name: g
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0000253 ! pulp weight -measurement
+relationship: scale_of CO_325:0000272 ! peel weight - measurement
 relationship: scale_of CO_325:0010052 ! finger weight - measurement
 relationship: scale_of CO_325:0010053 ! multiple finger weight - measurement
 relationship: scale_of CO_325:0010055 ! average finger weight - computation
