@@ -5668,6 +5668,25 @@ def: "Color of the surface of the sample from light yellow to bright yellow" []
 is_a: CO_325:1000027 ! Appearence
 
 [Term]
+id: CO_325:0002085
+name: Planting Date
+namespace: BananaTrait
+def: "Planting date following the format mm/dd/yyyy" []
+synonym: "plt-date" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0001033 ! planting
+relationship: variable_of CO_325:0002087 ! planting date - computation
+relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
+
+[Term]
+id: CO_325:0002087
+name: planting date - computation
+namespace: BananaMethod
+def: "Planting date following the format mm/dd/yyyy" []
+is_a: CO_325:1000010 ! Computation
+relationship: method_of CO_325:0001033 ! planting
+
+[Term]
 id: CO_325:0003000
 name: raw pulp color
 namespace: BananaTrait
