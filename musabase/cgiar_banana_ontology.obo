@@ -5312,6 +5312,7 @@ name: Harvesting date mm/dd/yyy
 namespace: BananaVariable
 def: "record harvest date in mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
+is_obsolete: true
 relationship: variable_of CO_325:0001030 ! harvesting
 relationship: variable_of CO_325:0010257 ! harvest date - measurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
@@ -5322,6 +5323,7 @@ name: Planting date mm/dd/yyyy
 namespace: BananaVariable
 def: "record planting date in mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
+is_obsolete: true
 relationship: variable_of CO_325:0001033 ! planting
 relationship: variable_of CO_325:0010258 ! planting date - measurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
@@ -5332,6 +5334,7 @@ name: Fertilizing date mm/dd/yyyy
 namespace: BananaVariable
 def: "record fertilizer application date mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
+is_obsolete: true
 relationship: variable_of CO_325:0001035 ! fertilizing
 relationship: variable_of CO_325:0010260 ! fertilizing date -mesurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
@@ -5341,6 +5344,7 @@ id: CO_325:0001042
 name: weeding date - measurement
 namespace: BananaMethod
 is_a: CO_325:1000008 ! Measurement
+is_obsolete: true
 
 [Term]
 id: CO_325:0001044
@@ -5348,6 +5352,7 @@ name: Weeding date mm/dd/yyyy
 namespace: BananaVariable
 def: "record weeding date mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
+is_obsolete: true
 relationship: variable_of CO_325:0001034 ! weeding
 relationship: variable_of CO_325:0001042 ! weeding date - measurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
@@ -9951,6 +9956,7 @@ id: CO_325:0100341
 name: date mm/dd/yyyy
 namespace: BananaScale
 is_a: CO_325:1000018 ! Time
+is_obsolete: true
 relationship: scale_of CO_325:0001036 ! Harvesting date mm/dd/yyy
 relationship: scale_of CO_325:0001038 ! Planting date mm/dd/yyyy
 relationship: scale_of CO_325:0001039 ! Fertilizing date mm/dd/yyyy
