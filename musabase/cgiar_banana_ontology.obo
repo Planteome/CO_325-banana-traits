@@ -290,6 +290,7 @@ namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting and the Date of shooting, e.g. 24/09/2014 - 24/01/2014 = 243 days." []
 synonym: "PlntShtTime_Comp_d, plant2shoot" EXACT []
 is_a: CO_325:1000024 ! Variable
+is_obsolete: true
 relationship: variable_of CO_325:0000958 ! time from planting to shooting
 relationship: variable_of CO_325:0010011 ! time from planting to shooting - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -301,6 +302,7 @@ namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of shooting to the Date of harvest, e.g. 24/12/2014 - 24/09/2014 = 91 days." []
 synonym: "ShtHvstTime_Comp_d, DAYMAT" EXACT []
 is_a: CO_325:1000024 ! Variable
+is_obsolete: true
 relationship: variable_of CO_325:0000003 ! time from shooting to harvest
 relationship: variable_of CO_325:0010013 ! time from shooting to harvest - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -312,6 +314,7 @@ namespace: BananaTrait
 def: "Calculate as: the time elapsed between the Date of planting to the Date of harvest, e.g. 24/12/2014 - 24/01/2014 = 334 days." []
 synonym: "CropCyc_Comp_d, FLWHAV" EXACT []
 is_a: CO_325:1000024 ! Variable
+is_obsolete: true
 relationship: variable_of CO_325:0000006 ! plant crop cycle
 relationship: variable_of CO_325:0010012 ! plant crop cycle - computation
 relationship: variable_of CO_325:0100003 ! day
@@ -7500,6 +7503,7 @@ name: harvest date - measurement
 namespace: BananaMethod
 def: "record date of harvesting" []
 is_a: CO_325:1000008 ! Measurement
+is_obsolete: true
 
 [Term]
 id: CO_325:0010258
@@ -7507,6 +7511,7 @@ name: planting date - measurement
 namespace: BananaMethod
 def: "record date of planting" []
 is_a: CO_325:1000008 ! Measurement
+is_obsolete: true
 
 [Term]
 id: CO_325:0010260
@@ -7514,6 +7519,7 @@ name: fertilizing date -mesurement
 namespace: BananaMethod
 def: "record date of fertilizer application" []
 is_a: CO_325:1000008 ! Measurement
+is_obsolete: true
 
 [Term]
 id: CO_325:0100002
