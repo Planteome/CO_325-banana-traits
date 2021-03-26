@@ -5,6 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003004> \"CO_325:0000843\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003005> \"CO_325:0000842\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003006> \"CO_325:0000842\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003007> \"CO_325:0000842\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003008> \"\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003008> \"CO_325:0000842\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003009> \"\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003009> \"CO_325:0000842\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003010> \"\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003010> \"CO_325:0000842\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003011> \"\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003011> \"CO_325:0000842\"^^xsd:string)\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003012> \"\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003012> \"CO_325:0000842\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -5312,10 +5313,10 @@ name: Harvesting date mm/dd/yyy
 namespace: BananaVariable
 def: "record harvest date in mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
-is_obsolete: true
 relationship: variable_of CO_325:0001030 ! harvesting
 relationship: variable_of CO_325:0010257 ! harvest date - measurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
+is_obsolete: true
 
 [Term]
 id: CO_325:0001038
@@ -5323,10 +5324,10 @@ name: Planting date mm/dd/yyyy
 namespace: BananaVariable
 def: "record planting date in mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
-is_obsolete: true
 relationship: variable_of CO_325:0001033 ! planting
 relationship: variable_of CO_325:0010258 ! planting date - measurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
+is_obsolete: true
 
 [Term]
 id: CO_325:0001039
@@ -5334,10 +5335,10 @@ name: Fertilizing date mm/dd/yyyy
 namespace: BananaVariable
 def: "record fertilizer application date mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
-is_obsolete: true
 relationship: variable_of CO_325:0001035 ! fertilizing
 relationship: variable_of CO_325:0010260 ! fertilizing date -mesurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
+is_obsolete: true
 
 [Term]
 id: CO_325:0001042
@@ -5352,10 +5353,10 @@ name: Weeding date mm/dd/yyyy
 namespace: BananaVariable
 def: "record weeding date mm/dd/yyyy format" []
 is_a: CO_325:1000024 ! Variable
-is_obsolete: true
 relationship: variable_of CO_325:0001034 ! weeding
 relationship: variable_of CO_325:0001042 ! weeding date - measurement
 relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
+is_obsolete: true
 
 [Term]
 id: CO_325:00012018
@@ -5705,6 +5706,96 @@ name: sap amount
 namespace: BananaTrait
 def: "A quick field evaluation of the raw pulp to determine acceptability based on yellow color using Mbwazirume as a standard control." []
 is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0003004
+name: weevil damage assessment
+namespace: BananaTrait
+def: "Weevil damage assesssment" []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0003005
+name: Diameter at the stellar region in cm after weevil introduction
+namespace: BananaTrait
+def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100008 ! cm
+
+[Term]
+id: CO_325:0003006
+name: Diameter at 5 cm from the stellar region after weevil introduction
+namespace: BananaTrait
+def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100008 ! cm
+
+[Term]
+id: CO_325:0003007
+name: Diameter at 10 cm from the stellar region after weevil introduction
+namespace: BananaTrait
+def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100008 ! cm
+
+[Term]
+id: CO_325:0003008
+name: Inner damage percentage at the stellar region after weevil introduction
+namespace: BananaTrait
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003009
+name: Outer damage percentage at 5 cm from the stellar region after weevil introduction
+namespace: BananaTrait
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003010
+name: Outer damage percentage at 10 cm from the stellar region after weevil introduction
+namespace: BananaTrait
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003011
+name: Inner damage percentage at 5 cm from the stellar region after weevil introduction
+namespace: BananaTrait
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003012
+name: Inner damage percentage at 10 cm from the stellar region after weevil introduction
+namespace: BananaTrait
+synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0100046 ! %
 
 [Term]
 id: CO_325:0010011
@@ -9956,11 +10047,11 @@ id: CO_325:0100341
 name: date mm/dd/yyyy
 namespace: BananaScale
 is_a: CO_325:1000018 ! Time
-is_obsolete: true
 relationship: scale_of CO_325:0001036 ! Harvesting date mm/dd/yyy
 relationship: scale_of CO_325:0001038 ! Planting date mm/dd/yyyy
 relationship: scale_of CO_325:0001039 ! Fertilizing date mm/dd/yyyy
 relationship: scale_of CO_325:0001044 ! Weeding date mm/dd/yyyy
+is_obsolete: true
 
 [Term]
 id: CO_325:0100342
