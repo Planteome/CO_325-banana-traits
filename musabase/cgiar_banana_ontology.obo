@@ -5719,7 +5719,6 @@ id: CO_325:0003005
 name: Diameter at the stellar region in cm after weevil introduction
 namespace: BananaTrait
 def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
@@ -5730,7 +5729,6 @@ id: CO_325:0003006
 name: Diameter at 5 cm from the stellar region after weevil introduction
 namespace: BananaTrait
 def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
@@ -5741,7 +5739,6 @@ id: CO_325:0003007
 name: Diameter at 10 cm from the stellar region after weevil introduction
 namespace: BananaTrait
 def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
@@ -5751,7 +5748,6 @@ relationship: variable_of CO_325:0100008 ! cm
 id: CO_325:0003008
 name: Inner damage percentage at the stellar region after weevil introduction
 namespace: BananaTrait
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
@@ -5761,7 +5757,6 @@ relationship: variable_of CO_325:0100046 ! %
 id: CO_325:0003009
 name: Outer damage percentage at 5 cm from the stellar region after weevil introduction
 namespace: BananaTrait
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
@@ -5771,7 +5766,6 @@ relationship: variable_of CO_325:0100046 ! %
 id: CO_325:0003010
 name: Outer damage percentage at 10 cm from the stellar region after weevil introduction
 namespace: BananaTrait
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
@@ -5781,7 +5775,6 @@ relationship: variable_of CO_325:0100046 ! %
 id: CO_325:0003011
 name: Inner damage percentage at 5 cm from the stellar region after weevil introduction
 namespace: BananaTrait
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
@@ -5791,7 +5784,6 @@ relationship: variable_of CO_325:0100046 ! %
 id: CO_325:0003012
 name: Inner damage percentage at 10 cm from the stellar region after weevil introduction
 namespace: BananaTrait
-synonym: "CrmInDiam_M_cm, sizeinnercorm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
