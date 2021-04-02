@@ -2882,7 +2882,7 @@ id: CO_325:0000522
 name: number of radopholus similis per soil sample
 namespace: BananaTrait
 def: "Number of Radopholus similis in soil" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003019 ! Radopholus similis damage
 
 [Term]
 id: CO_325:0000523
@@ -2967,7 +2967,7 @@ id: CO_325:0000533
 name: number of radopholus similis per fresh root weight
 namespace: BananaTrait
 def: "Number of Radopholus similis in roots" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003019 ! Radopholus similis damage
 
 [Term]
 id: CO_325:0000534
