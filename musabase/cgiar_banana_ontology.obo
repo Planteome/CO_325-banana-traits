@@ -5,6 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003017> \"CO_325:0003016\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003018> \"CO_325:0003016\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003019> \"CO_325:0003015\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003020> \"CO_325:0003016\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003021> \"CO_325:0003016\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003022> \"CO_325:0003016\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003023> \"CO_325:0003015\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003024> \"CO_325:0003016\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003025> \"CO_325:0003016\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003026> \"CO_325:0003016\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -5787,6 +5788,132 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
 relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003014
+name: nematode damage
+namespace: BananaTrait
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0003015
+name: Helicotylincus mulicinctus damage
+namespace: BananaTrait
+def: "Weevil damage assesssment" []
+is_a: CO_325:0003014 ! nematode damage
+
+[Term]
+id: CO_325:0003016
+name: Number of female Helicotylincus mulicinctus - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
+relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003017
+name: Number of male Helicotylincus mulicinctus - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
+relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003018
+name: Number of juvenile Helicotylincus mulicinctus - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
+relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003019
+name: Radopholus similis damage
+namespace: BananaTrait
+def: "Weevil damage assesssment" []
+is_a: CO_325:0003014 ! nematode damage
+
+[Term]
+id: CO_325:0003020
+name: Number of female Radopholus similis - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003019 ! Radopholus similis damage
+relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003021
+name: Number of male Radopholus similis - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003019 ! Radopholus similis damage
+relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003022
+name: Number of juvenile Radopholus similis - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003019 ! Radopholus similis damage
+relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003023
+name: Pratylencus goodeyi damage
+namespace: BananaTrait
+def: "Weevil damage assesssment" []
+is_a: CO_325:0003014 ! nematode damage
+
+[Term]
+id: CO_325:0003024
+name: Number of female Pratylencus goodeyi - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
+relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003025
+name: Number of male Pratylencus goodeyi - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
+relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003026
+name: Number of juvenile Pratylencus goodeyi - counting
+namespace: BananaTrait
+def: "Measurement under microscope In ?M" []
+synonym: "WvlAdltBdLgt_M_?M," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
+relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0010011
