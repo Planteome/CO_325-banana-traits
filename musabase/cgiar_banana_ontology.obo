@@ -2665,13 +2665,13 @@ id: CO_325:0000498
 name: fruit mashed pulp colour
 namespace: BananaTrait
 def: "The color of the mashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000499
 name: Fruit mashed pulp colour 1-5
 namespace: BananaTrait
-def: "Subjective visual assessment of mashed and unmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
+def: "Subjective visual assessment of mashed and unmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = neither like nor dislike; 4 = like moderately; 5 = like extremely" []
 synonym: "FngSmshdPlpCl_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000498 ! fruit mashed pulp colour
@@ -2683,7 +2683,7 @@ id: CO_325:0000500
 name: fruit unmashed pulp colour
 namespace: BananaTrait
 def: "The color of the unmashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000501
@@ -2701,13 +2701,13 @@ id: CO_325:0000502
 name: fruit mashed pulp taste
 namespace: BananaTrait
 def: "The taste of the mashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000503
 name: Fruit mashed pulp taste 1-5
 namespace: BananaTrait
-def: "Subjective taste assessment of mashed and unmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
+def: "Subjective taste assessment of mashed and unmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = neither like nor dislike; 4 = like moderately; 5 = like extremely" []
 synonym: "FngSmshdPlpTst_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000502 ! fruit mashed pulp taste
@@ -2719,7 +2719,7 @@ id: CO_325:0000504
 name: fruit unmashed pulp taste
 namespace: BananaTrait
 def: "The taste of the unmashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000505
@@ -2737,7 +2737,7 @@ id: CO_325:0000506
 name: fruit mashed pulp texture
 namespace: BananaTrait
 def: "The texture of the mashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000507
@@ -2755,7 +2755,7 @@ id: CO_325:0000508
 name: fruit unmashed pulp texture
 namespace: BananaTrait
 def: "The texture of the unmashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000509
@@ -2773,13 +2773,13 @@ id: CO_325:0000510
 name: fruit mashed pulp smoothness-mouth feel
 namespace: BananaTrait
 def: "The smoothness-mouth feel of the mashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000511
 name: Fruit mashed pulp smoothness-mouth feel 1-5
 namespace: BananaTrait
-def: "Mouth feel assessment of mashed and unmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
+def: "Mouth feel assessment of mashed and unmashed fruit pulp, 1 = dislike very much; 2 = dislike; 3 = neither like nor dislike; 4 = like moderately; 5 = like extremely" []
 synonym: "FngSmshdPlpSmth_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000510 ! fruit mashed pulp smoothness-mouth feel
@@ -2791,7 +2791,7 @@ id: CO_325:0000512
 name: fruit unmashed pulp smoothness-mouth feel
 namespace: BananaTrait
 def: "The smoothness-mouth feel of the unmashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000513
@@ -2809,13 +2809,13 @@ id: CO_325:0000514
 name: fruit mashed pulp aroma/smell
 namespace: BananaTrait
 def: "The pulp aroma of the mashed pulp of a mature fruit" []
-is_a: CO_325:1000006 ! Quality_traits
+is_a: CO_325:0003027 ! Sensory traits
 
 [Term]
 id: CO_325:0000515
 name: Fruit mashed pulp aroma/smell 1-5
 namespace: BananaTrait
-def: "Nosal smell assessment of mashed and unmashed fruit pulp aromas, 1 = dislike very much; 2 = dislike; 3 = like fairly; 4 = like very much; 5 = like extremely" []
+def: "Nosal smell assessment of mashed and unmashed fruit pulp aromas, 1 = dislike very much; 2 = dislike; 3 = neither like nor dislike; 4 = like moderately; 5 = like extremely" []
 synonym: "FngSmshdPlpArm_Est_1to5," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000514 ! fruit mashed pulp aroma/smell
@@ -5913,6 +5913,30 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003027
+name: Sensory traits
+namespace: BananaTrait
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0003028
+name: fruit acceptability
+namespace: BananaTrait
+def: "A general take of the panelist about the sample after the aroma, colour, taste, and mouth-feel specific tests." []
+is_a: CO_325:0003027 ! Sensory traits
+
+[Term]
+id: CO_325:0003029
+name: Fruit acceptability score 1-5
+namespace: BananaTrait
+def: "Subjective assessment of the fruit after testing fruit aroma, colour, taste, and mouth-feel, 1 = dislike very much; 2 = dislike; 3 = neither like nor dislike; 4 = like moderately; 5 = like extremely" []
+synonym: "FngSmshdPlpTst_Est_1to5," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003028 ! fruit acceptability
+relationship: variable_of CO_325:0010199 ! taste - estimation
+relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
 
 [Term]
 id: CO_325:0010011
