@@ -5805,8 +5805,7 @@ is_a: CO_325:0003014 ! nematode damage
 id: CO_325:0003016
 name: Number of female Helicotylincus mulicinctus - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
 relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
@@ -5816,8 +5815,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003017
 name: Number of male Helicotylincus mulicinctus - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
 relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
@@ -5827,8 +5825,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003018
 name: Number of juvenile Helicotylincus mulicinctus - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
 relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
@@ -5845,8 +5842,7 @@ is_a: CO_325:0003014 ! nematode damage
 id: CO_325:0003020
 name: Number of female Radopholus similis - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003019 ! Radopholus similis damage
 relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
@@ -5856,8 +5852,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003021
 name: Number of male Radopholus similis - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003019 ! Radopholus similis damage
 relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
@@ -5867,8 +5862,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003022
 name: Number of juvenile Radopholus similis - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003019 ! Radopholus similis damage
 relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
@@ -5885,8 +5879,7 @@ is_a: CO_325:0003014 ! nematode damage
 id: CO_325:0003024
 name: Number of female Pratylencus goodeyi - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
@@ -5896,8 +5889,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003025
 name: Number of male Pratylencus goodeyi - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
@@ -5907,8 +5899,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003026
 name: Number of juvenile Pratylencus goodeyi - counting
 namespace: BananaTrait
-def: "Measurement under microscope In ?M" []
-synonym: "WvlAdltBdLgt_M_?M," EXACT []
+def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
