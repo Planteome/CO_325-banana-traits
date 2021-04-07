@@ -5840,31 +5840,31 @@ is_a: CO_325:0003014 ! nematode damage
 
 [Term]
 id: CO_325:0003020
-name: Number of female Radopholus similis - counting
+name: Number of female Radopholus similis per 100 grams of soil sample - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003019 ! Radopholus similis damage
+relationship: variable_of CO_325:0000522 ! number of radopholus similis per soil sample
 relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003021
-name: Number of male Radopholus similis - counting
+name: Number of male Radopholus similis per 100 grams of soil sample - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003019 ! Radopholus similis damage
+relationship: variable_of CO_325:0000522 ! number of radopholus similis per soil sample
 relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003022
-name: Number of juvenile Radopholus similis - counting
+name: Number of juvenile Radopholus similis per 100 grams of soil sample - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003019 ! Radopholus similis damage
+relationship: variable_of CO_325:0000522 ! number of radopholus similis per soil sample
 relationship: variable_of CO_325:0010222 ! number of nematodes (radopholus similis ) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
