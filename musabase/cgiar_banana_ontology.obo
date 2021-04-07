@@ -5730,7 +5730,7 @@ namespace: BananaTrait
 def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
-relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0010261 ! corm size at 5 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
@@ -5740,7 +5740,7 @@ namespace: BananaTrait
 def: "slice the corm measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant) In cm" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
-relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0010262 ! corm size at 10 cm - measurement
 relationship: variable_of CO_325:0100008 ! cm
 
 [Term]
@@ -5758,7 +5758,7 @@ name: Outer damage percentage at 5 cm from the stellar region after weevil intro
 namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
-relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0010264 ! outer damage at 5 cm - measurement
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
@@ -5767,7 +5767,7 @@ name: Outer damage percentage at 10 cm from the stellar region after weevil intr
 namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
-relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0010263 ! outer damage at 10 cm - measurement
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
@@ -5776,7 +5776,7 @@ name: Inner damage percentage at 5 cm from the stellar region after weevil intro
 namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
-relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0010266 ! inner damage at 5 cm - measurement
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
@@ -5785,7 +5785,7 @@ name: Inner damage percentage at 10 cm from the stellar region after weevil intr
 namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
-relationship: variable_of CO_325:0010155 ! corm size - measurement
+relationship: variable_of CO_325:0010265 ! inner damage at 10 cm - measurement
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
@@ -5798,7 +5798,7 @@ is_a: CO_325:1000002 ! Biotic_stress
 id: CO_325:0003015
 name: Helicotylincus mulicinctus damage
 namespace: BananaTrait
-def: "Weevil damage assesssment" []
+def: "Helicotylincus mulicinctus damage assesssment" []
 is_a: CO_325:0003014 ! nematode damage
 
 [Term]
@@ -5835,7 +5835,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003019
 name: Radopholus similis damage
 namespace: BananaTrait
-def: "Weevil damage assesssment" []
+def: "Radopholus similis damage assesssment" []
 is_a: CO_325:0003014 ! nematode damage
 
 [Term]
@@ -5872,7 +5872,7 @@ relationship: variable_of CO_325:0100102 ! unitless
 id: CO_325:0003023
 name: Pratylencus goodeyi damage
 namespace: BananaTrait
-def: "Weevil damage assesssment" []
+def: "Pratylencus goodeyi damage assesssment" []
 is_a: CO_325:0003014 ! nematode damage
 
 [Term]
@@ -7745,6 +7745,54 @@ namespace: BananaMethod
 def: "record date of fertilizer application" []
 is_a: CO_325:1000008 ! Measurement
 is_obsolete: true
+
+[Term]
+id: CO_325:0010261
+name: corm size at 5 cm - measurement
+namespace: BananaMethod
+def: "slice the corm at 5 cm from the stellar region and measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0010262
+name: corm size at 10 cm - measurement
+namespace: BananaMethod
+def: "slice the corm at 1O cm from the stellar region and measure the diameter using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0010263
+name: outer damage at 10 cm - measurement
+namespace: BananaMethod
+def: "slice the corm at 1O cm from the stellar region and measure the outer damage using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0010264
+name: outer damage at 5 cm - measurement
+namespace: BananaMethod
+def: "slice the corm at 5 cm from the stellar region and measure the outer damage using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0010265
+name: inner damage at 10 cm - measurement
+namespace: BananaMethod
+def: "slice the corm at 1O cm from the stellar region and measure the inner damage using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0010266
+name: inner damage at 5 cm - measurement
+namespace: BananaMethod
+def: "slice the corm at 5 cm from the stellar region and measure the inner damage using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0100002
