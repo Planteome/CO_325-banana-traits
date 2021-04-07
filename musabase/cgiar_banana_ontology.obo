@@ -2889,7 +2889,7 @@ id: CO_325:0000523
 name: number of helicotylenchus multicinctus per soil sample
 namespace: BananaTrait
 def: "Number of Helicotylenchus multicinctus in soil" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003015 ! Helicotylincus mulicinctus damage
 
 [Term]
 id: CO_325:0000524
@@ -5803,31 +5803,31 @@ is_a: CO_325:0003014 ! nematode damage
 
 [Term]
 id: CO_325:0003016
-name: Number of female Helicotylincus mulicinctus - counting
+name: Number of female Helicotylincus mulicinctus per 100 grams of soil sample - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
+relationship: variable_of CO_325:0000523 ! number of helicotylenchus multicinctus per soil sample
 relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003017
-name: Number of male Helicotylincus mulicinctus - counting
+name: Number of male Helicotylincus mulicinctus per 100 grams of soil sample - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
+relationship: variable_of CO_325:0000523 ! number of helicotylenchus multicinctus per soil sample
 relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003018
-name: Number of juvenile Helicotylincus mulicinctus - counting
+name: Number of juvenile Helicotylincus mulicinctus per 100 grams of soil sample- counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003015 ! Helicotylincus mulicinctus damage
+relationship: variable_of CO_325:0000523 ! number of helicotylenchus multicinctus per soil sample
 relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
