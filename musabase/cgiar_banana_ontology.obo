@@ -3575,7 +3575,7 @@ id: CO_325:0000614
 name: average number of banana weevil adults per trap
 namespace: BananaTrait
 def: "The average of how many adult banana weevils caught per trap." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000615
@@ -3611,7 +3611,7 @@ id: CO_325:0000618
 name: average number of banana weevil larvae per trap
 namespace: BananaTrait
 def: "The average of how many banana weevil larvae caught per trap." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000619
@@ -3629,7 +3629,7 @@ id: CO_325:0000620
 name: number of banana weevil adults measured
 namespace: BananaTrait
 def: "How many banana weevil adults used to obtain a measurement." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000621
@@ -3647,7 +3647,7 @@ id: CO_325:0000622
 name: number of banana weevil larvae measured
 namespace: BananaTrait
 def: "How many banana weevil larvae used to obtain a measurement." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000623
@@ -3665,7 +3665,7 @@ id: CO_325:0000624
 name: banana weevil adult head capsule width
 namespace: BananaTrait
 def: "The width of a banana weevil adult weevil head." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000625
@@ -3683,7 +3683,7 @@ id: CO_325:0000626
 name: banana weevil adult average head capsule width
 namespace: BananaTrait
 def: "The average width of a banana weevil adult head." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000627
@@ -3701,7 +3701,7 @@ id: CO_325:0000628
 name: banana weevil adult body length
 namespace: BananaTrait
 def: "The length of a banana weevil adult body, from the head to the tip of the abdomen." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000629
@@ -3719,7 +3719,7 @@ id: CO_325:0000630
 name: banana weevil adult average body length
 namespace: BananaTrait
 def: "The average length of a banana weevil adult body, from the head to the tip of the abdomen." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000631
@@ -3737,7 +3737,7 @@ id: CO_325:0000632
 name: banana weevil adult body weight
 namespace: BananaTrait
 def: "The weight of a banana weevil adult weevil body." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000633
@@ -3755,7 +3755,7 @@ id: CO_325:0000634
 name: banana weevil adult average body weight
 namespace: BananaTrait
 def: "The average weight of a banana weevil adult body." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000635
@@ -3773,7 +3773,7 @@ id: CO_325:0000636
 name: banana weevil larvae head capsule width
 namespace: BananaTrait
 def: "The width of a weevil larvae head capsule." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000637
@@ -3791,7 +3791,7 @@ id: CO_325:0000638
 name: banana weevil larvae average head capsule width
 namespace: BananaTrait
 def: "The average width of a banana weevil larvae head capsule." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000639
@@ -3809,7 +3809,7 @@ id: CO_325:0000640
 name: banana weevil larvae body length
 namespace: BananaTrait
 def: "The length of a weevil larvae body, from the weevil larvae head to the tip of the abdomen." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000641
@@ -3827,7 +3827,7 @@ id: CO_325:0000642
 name: banana weevil larvae average body length
 namespace: BananaTrait
 def: "The average length of a weevil larvae body, from the head to the tip of the abdomen." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000643
@@ -3845,7 +3845,7 @@ id: CO_325:0000644
 name: banana weevil larvae body weight
 namespace: BananaTrait
 def: "The weight of a banana weevil larvae body." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000645
@@ -3863,7 +3863,7 @@ id: CO_325:0000646
 name: banana weevil larvae average body weight
 namespace: BananaTrait
 def: "The average weight of a banana weevil larvae body." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
 id: CO_325:0000647
@@ -3882,7 +3882,7 @@ name: percentage damage to upper cross-section outer corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the outer corm (cortex) upper cross-section, assessed by percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-outer" EXACT []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000649
@@ -3901,7 +3901,7 @@ name: percentage damage to upper cross-section inner corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the inner corm (central cylinder) upper cross-section, assessed by the percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-inner" EXACT []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000651
@@ -3931,7 +3931,7 @@ name: percentage damage to lower cross-section inner corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the inner corm (central cylinder) lower cross-section, assessed by percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-inner" EXACT []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000678
@@ -3950,7 +3950,7 @@ name: percentage damage to lower cross-section outer corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the outer corm (cortex) lower cross-section, assessed by percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-outer" EXACT []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000680
@@ -4092,7 +4092,7 @@ name: damage to the corm of the mother plant caused by weevils
 namespace: BananaTrait
 def: "The score of damage to the mother plant corm, assessed by tunnels caused by weevils" []
 synonym: "damagemothercorm" EXACT []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000842
@@ -4111,7 +4111,7 @@ name: size of corm inner diameter after weevils introduction
 namespace: BananaTrait
 def: "The diameter of the inner corm after weevil introduction" []
 synonym: "sizeinnercorm" EXACT []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000844
@@ -4130,7 +4130,7 @@ name: size of corm outter diameter after weevils introduction
 namespace: BananaTrait
 def: "The diameter of the outter corm after weevil introduction" []
 synonym: "sizeouttercorm" EXACT []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000854
@@ -5928,6 +5928,13 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003028 ! fruit acceptability
 relationship: variable_of CO_325:0010199 ! taste - estimation
 relationship: variable_of CO_325:0100100 ! 1 to 5 acceptability score
+
+[Term]
+id: CO_325:0003030
+name: weevil insect assessment
+namespace: BananaTrait
+def: "Weevil insect assesssment" []
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0010011
