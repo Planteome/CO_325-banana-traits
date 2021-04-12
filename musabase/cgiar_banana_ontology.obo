@@ -2846,7 +2846,7 @@ id: CO_325:0000518
 name: nematode reproduction factor (microplot screening)
 namespace: BananaTrait
 def: "Nematode multiplication from single root inoculation of 50 nematodes per 8 cm length after 12 weeks" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003014 ! nematode damage
 
 [Term]
 id: CO_325:0000519
@@ -2864,7 +2864,7 @@ id: CO_325:0000520
 name: nematode population density per soil sample
 namespace: BananaTrait
 def: "Number of nematodes in soil" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003014 ! nematode damage
 
 [Term]
 id: CO_325:0000521
@@ -2896,7 +2896,7 @@ id: CO_325:0000524
 name: number of rotylenchulus spp.per soil sample
 namespace: BananaTrait
 def: "Number of Rotylenchulus spp.in soil" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003014 ! nematode damage
 
 [Term]
 id: CO_325:0000525
@@ -2921,7 +2921,7 @@ id: CO_325:0000527
 name: number of pratylenchus spp. per soil sample
 namespace: BananaTrait
 def: "Number of Pratylenchus spp. in soil" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003037 ! Pratylenchus spp. damage
 
 [Term]
 id: CO_325:0000528
@@ -2935,21 +2935,21 @@ id: CO_325:0000529
 name: number of pratylenchus goodeyi per soil sample
 namespace: BananaTrait
 def: "Number of Pratylenchus goodeyi in soil" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003023 ! Pratylenchus goodeyi damage
 
 [Term]
 id: CO_325:0000530
 name: number of pratylenchus coffeae per soil sample
 namespace: BananaTrait
 def: "Number of Pratylenchus coffeae in soil" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003038 ! Pratylenchus coffeae damage
 
 [Term]
 id: CO_325:0000531
 name: root nematode density
 namespace: BananaTrait
 def: "The number of nematode individuals per unit of fresh root weight." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003014 ! nematode damage
 
 [Term]
 id: CO_325:0000532
@@ -3003,7 +3003,7 @@ id: CO_325:0000537
 name: number of pratylenchus spp. per fresh root weight
 namespace: BananaTrait
 def: "Number of Pratylenchus spp. in roots" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003037 ! Pratylenchus spp. damage
 
 [Term]
 id: CO_325:0000538
@@ -3039,7 +3039,7 @@ id: CO_325:0000541
 name: number of pratylenchus goodeyi per fresh root weight
 namespace: BananaTrait
 def: "Number of Pratylenchus goodeyi in roots" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003023 ! Pratylenchus goodeyi damage
 
 [Term]
 id: CO_325:0000542
@@ -3057,7 +3057,7 @@ id: CO_325:0000543
 name: number of pratylenchus coffeae per fresh root weight
 namespace: BananaTrait
 def: "Number of Pratylenchus coffeae in roots" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003038 ! Pratylenchus coffeae damage
 
 [Term]
 id: CO_325:0000544
@@ -3539,7 +3539,7 @@ id: CO_325:0000610
 name: number of banana weevil adults per trap
 namespace: BananaTrait
 def: "How many banana weevil adults caught per trap." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000611
@@ -3557,7 +3557,7 @@ id: CO_325:0000612
 name: number of banana weevil traps used
 namespace: BananaTrait
 def: "How many banana weevil traps used." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000613
@@ -3593,7 +3593,7 @@ id: CO_325:0000616
 name: number of banana weevil larvae per trap
 namespace: BananaTrait
 def: "How many banana weevil larvae caught per trap." []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000617
@@ -5870,38 +5870,38 @@ relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003023
-name: Pratylencus goodeyi damage
+name: Pratylenchus goodeyi damage
 namespace: BananaTrait
-def: "Pratylencus goodeyi damage assesssment" []
-is_a: CO_325:0003014 ! nematode damage
+def: "Pratylenchus goodeyi damage assesssment" []
+is_a: CO_325:0003037 ! Pratylenchus spp. damage
 
 [Term]
 id: CO_325:0003024
-name: Number of female Pratylencus goodeyi - counting
+name: Number of female Pratylenchus goodeyi - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
+relationship: variable_of CO_325:0000529 ! number of pratylenchus goodeyi per soil sample
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003025
-name: Number of male Pratylencus goodeyi - counting
+name: Number of male Pratylenchus goodeyi - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
+relationship: variable_of CO_325:0000529 ! number of pratylenchus goodeyi per soil sample
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003026
-name: Number of juvenile Pratylencus goodeyi - counting
+name: Number of juvenile Pratylenchus goodeyi - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003023 ! Pratylencus goodeyi damage
+relationship: variable_of CO_325:0000529 ! number of pratylenchus goodeyi per soil sample
 relationship: variable_of CO_325:0010226 ! number of nematodes (pratylenchus spp.) per unit of soil sample - method
 relationship: variable_of CO_325:0100102 ! unitless
 
@@ -5935,6 +5935,57 @@ name: weevil insect assessment
 namespace: BananaTrait
 def: "Weevil insect assesssment" []
 is_a: CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0003031
+name: Number of juvenile Helicotylincus mulicinctus fresh root weight- counting
+namespace: BananaTrait
+def: "Measurement per 100 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
+relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003034
+name: number of helicotylenchus multicinctus per fresh root weight
+namespace: BananaTrait
+def: "Number of Helicotylenchus multicinctus in root" []
+is_a: CO_325:0003015 ! Helicotylincus mulicinctus damage
+
+[Term]
+id: CO_325:0003035
+name: Number of female Helicotylincus mulicinctus fresh root weight- counting
+namespace: BananaTrait
+def: "Measurement per 100 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
+relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003036
+name: Number of male Helicotylincus mulicinctus fresh root weight- counting
+namespace: BananaTrait
+def: "Measurement per 100 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
+relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003037
+name: Pratylenchus spp. damage
+namespace: BananaTrait
+def: "Pratylenchus spp. damage assesssment" []
+is_a: CO_325:0003014 ! nematode damage
+
+[Term]
+id: CO_325:0003038
+name: Pratylenchus coffeae damage
+namespace: BananaTrait
+def: "Pratylenchus coffeae damage assesssment" []
+is_a: CO_325:0003037 ! Pratylenchus spp. damage
 
 [Term]
 id: CO_325:0010011
