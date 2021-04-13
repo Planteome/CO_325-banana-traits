@@ -5877,7 +5877,7 @@ is_a: CO_325:0003037 ! Pratylenchus spp. damage
 
 [Term]
 id: CO_325:0003024
-name: Number of female Pratylenchus goodeyi - counting
+name: Number of female Pratylenchus goodeyi per 100 grams of soil sample - counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of soil sample" []
 is_a: CO_325:1000024 ! Variable
@@ -5986,6 +5986,66 @@ name: Pratylenchus coffeae damage
 namespace: BananaTrait
 def: "Pratylenchus coffeae damage assesssment" []
 is_a: CO_325:0003037 ! Pratylenchus spp. damage
+
+[Term]
+id: CO_325:0003039
+name: Number of male Radopholus similis per fresh root weight - counting
+namespace: BananaTrait
+def: "Measurement per 10 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000533 ! number of radopholus similis per fresh root weight
+relationship: variable_of CO_325:0010230 ! number of nematodes (radopholus similis ) per unit fresh root weight -method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003040
+name: Number of female Radopholus similis per fresh root weight - counting
+namespace: BananaTrait
+def: "Measurement per 10 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000533 ! number of radopholus similis per fresh root weight
+relationship: variable_of CO_325:0010230 ! number of nematodes (radopholus similis ) per unit fresh root weight -method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003041
+name: Number of juvenile Radopholus similis per fresh root weight - counting
+namespace: BananaTrait
+def: "Measurement per 10 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000533 ! number of radopholus similis per fresh root weight
+relationship: variable_of CO_325:0010230 ! number of nematodes (radopholus similis ) per unit fresh root weight -method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003042
+name: Number of female Pratylenchus goodeyi per fresh root weight - counting
+namespace: BananaTrait
+def: "Measurement per 10 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp.) per unit fresh root weight -method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003043
+name: Number of male Pratylenchus goodeyi per fresh root weight - counting
+namespace: BananaTrait
+def: "Measurement per 10 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp.) per unit fresh root weight -method
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
+id: CO_325:0003044
+name: Number of juvenile Pratylenchus goodeyi per fresh root weight - counting
+namespace: BananaTrait
+def: "Measurement per 10 grams of fresh root weight" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp.) per unit fresh root weight -method
+relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0010011
