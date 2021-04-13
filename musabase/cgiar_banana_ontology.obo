@@ -5938,12 +5938,12 @@ is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0003031
-name: Number of juvenile Helicotylincus mulicinctus fresh root weight- counting
+name: Number of juvenile Helicotylincus mulicinctus per fresh root weight- counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
-relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0013001 ! number of nematodes (helicotylenchus multicinctus) per unit of fresh root weight - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
@@ -5955,22 +5955,22 @@ is_a: CO_325:0003015 ! Helicotylincus mulicinctus damage
 
 [Term]
 id: CO_325:0003035
-name: Number of female Helicotylincus mulicinctus fresh root weight- counting
+name: Number of female Helicotylincus mulicinctus per fresh root weight- counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
-relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0013001 ! number of nematodes (helicotylenchus multicinctus) per unit of fresh root weight - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003036
-name: Number of male Helicotylincus mulicinctus fresh root weight- counting
+name: Number of male Helicotylincus mulicinctus per fresh root weight- counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
-relationship: variable_of CO_325:0010223 ! number of nematodes (helicotylenchus multicinctus) per unit of soil sample - method
+relationship: variable_of CO_325:0013001 ! number of nematodes (helicotylenchus multicinctus) per unit of fresh root weight - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
@@ -7911,6 +7911,14 @@ namespace: BananaMethod
 def: "slice the corm at 5 cm from the stellar region and measure the inner damage using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
 is_a: CO_325:1000008 ! Measurement
 relationship: method_of CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0013001
+name: number of nematodes (helicotylenchus multicinctus) per unit of fresh root weight - method
+namespace: BananaMethod
+def: "Count from 10 g of chopped roots from the tested banana plant sample" []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
 
 [Term]
 id: CO_325:0100002
