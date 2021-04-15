@@ -3036,7 +3036,7 @@ relationship: variable_of CO_325:0100110 ! no. per 10g
 
 [Term]
 id: CO_325:0000541
-name: number of pratylenchus goodeyi per fresh root weight
+name: number of pratylenchus goodeyi
 namespace: BananaTrait
 def: "Number of Pratylenchus goodeyi in roots" []
 is_a: CO_325:0003023 ! Pratylenchus goodeyi damage
@@ -3048,7 +3048,7 @@ namespace: BananaTrait
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 synonym: "PratyGooNumRtWt2_Comp_Nema" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi
 relationship: variable_of CO_325:0010234 ! number of nematodes (pratylenchus goodeyi) per unit fresh root weight -method
 relationship: variable_of CO_325:0100110 ! no. per 10g
 
@@ -5942,13 +5942,13 @@ name: Number of juvenile Helicotylincus mulicinctus per fresh root weight- count
 namespace: BananaTrait
 def: "Measurement per 100 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
+relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus
 relationship: variable_of CO_325:0013001 ! number of nematodes (helicotylenchus multicinctus) per unit of fresh root weight - method
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
 id: CO_325:0003034
-name: number of helicotylenchus multicinctus per fresh root weight
+name: number of helicotylenchus multicinctus
 namespace: BananaTrait
 def: "Number of Helicotylenchus multicinctus in root" []
 is_a: CO_325:0003015 ! Helicotylincus mulicinctus damage
@@ -5959,7 +5959,7 @@ name: Number of female Helicotylincus mulicinctus per fresh root weight- countin
 namespace: BananaTrait
 def: "Measurement per 100 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
+relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus
 relationship: variable_of CO_325:0013001 ! number of nematodes (helicotylenchus multicinctus) per unit of fresh root weight - method
 relationship: variable_of CO_325:0100102 ! unitless
 
@@ -5969,7 +5969,7 @@ name: Number of male Helicotylincus mulicinctus per fresh root weight- counting
 namespace: BananaTrait
 def: "Measurement per 100 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
+relationship: variable_of CO_325:0003034 ! number of helicotylenchus multicinctus
 relationship: variable_of CO_325:0013001 ! number of nematodes (helicotylenchus multicinctus) per unit of fresh root weight - method
 relationship: variable_of CO_325:0100102 ! unitless
 
@@ -6023,7 +6023,7 @@ name: Number of female Pratylenchus goodeyi per fresh root weight - counting
 namespace: BananaTrait
 def: "Measurement per 10 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi
 relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp.) per unit fresh root weight -method
 relationship: variable_of CO_325:0100102 ! unitless
 
@@ -6033,7 +6033,7 @@ name: Number of male Pratylenchus goodeyi per fresh root weight - counting
 namespace: BananaTrait
 def: "Measurement per 10 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi
 relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp.) per unit fresh root weight -method
 relationship: variable_of CO_325:0100102 ! unitless
 
@@ -6043,7 +6043,7 @@ name: Number of juvenile Pratylenchus goodeyi per fresh root weight - counting
 namespace: BananaTrait
 def: "Measurement per 10 grams of fresh root weight" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: variable_of CO_325:0000541 ! number of pratylenchus goodeyi
 relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp.) per unit fresh root weight -method
 relationship: variable_of CO_325:0100102 ! unitless
 
@@ -7731,7 +7731,7 @@ name: number of nematodes (pratylenchus goodeyi) per unit fresh root weight -met
 namespace: BananaMethod
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 is_a: CO_325:1000009 ! Counting
-relationship: method_of CO_325:0000541 ! number of pratylenchus goodeyi per fresh root weight
+relationship: method_of CO_325:0000541 ! number of pratylenchus goodeyi
 
 [Term]
 id: CO_325:0010235
@@ -7918,7 +7918,7 @@ name: number of nematodes (helicotylenchus multicinctus) per unit of fresh root 
 namespace: BananaMethod
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 is_a: CO_325:1000009 ! Counting
-relationship: method_of CO_325:0003034 ! number of helicotylenchus multicinctus per fresh root weight
+relationship: method_of CO_325:0003034 ! number of helicotylenchus multicinctus
 
 [Term]
 id: CO_325:0100002
