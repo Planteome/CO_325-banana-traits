@@ -6017,6 +6017,64 @@ relationship: variable_of CO_325:0010232 ! number of nematodes (pratylenchus spp
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
+id: CO_325:0003045
+name: insect damage
+namespace: BananaTrait
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0003046
+name: bacterial damage
+namespace: BananaTrait
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0003047
+name: banana xanthomonas wilt damage
+namespace: BananaTrait
+def: "banana xanthomonas wilt damage assesssment" []
+synonym: "BXW" EXACT []
+is_a: CO_325:0003046 ! bacterial damage
+
+[Term]
+id: CO_325:0003048
+name: Number of functional leaves after banana xanthomonas wilt inoculation: count
+namespace: BananaTrait
+def: "A count of leaves that are still green, clean, and standing after inoculation with BXW inoculum." []
+synonym: "NFLI" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0013003 ! number of functional leaves - counting
+relationship: variable_of CO_325:0100007 ! leaf
+
+[Term]
+id: CO_325:0003049
+name: Number of chlorotic leaves after banana xanthomonas wilt inoculation: count
+namespace: BananaTrait
+def: "A count of leaves showing chlorosis after inoculation with BXW." []
+synonym: "NCLI" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0013002 ! number of chlorotic leaves - counting
+relationship: variable_of CO_325:0100007 ! leaf
+
+[Term]
+id: CO_325:0013002
+name: number of chlorotic leaves - counting
+namespace: BananaMethod
+def: "Count the number of chlorotic leaves after inoculation." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+
+[Term]
+id: CO_325:0013003
+name: number of functional leaves - counting
+namespace: BananaMethod
+def: "Count the number of functional leaves after inoculation." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
