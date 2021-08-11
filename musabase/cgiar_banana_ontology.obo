@@ -5680,7 +5680,7 @@ id: CO_325:0003004
 name: weevil damage assessment
 namespace: BananaTrait
 def: "Weevil damage assesssment" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003045 ! insect damage
 
 [Term]
 id: CO_325:0003005
@@ -6059,20 +6059,22 @@ relationship: variable_of CO_325:0013002 ! number of chlorotic leaves - counting
 relationship: variable_of CO_325:0100007 ! leaf
 
 [Term]
-id: CO_325:0013002
-name: number of chlorotic leaves - counting
-namespace: BananaMethod
-def: "Count the number of chlorotic leaves after inoculation." []
-is_a: CO_325:1000009 ! Counting
-relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+id: CO_325:0003050
+name: number of banana weevil pupae measured
+namespace: BananaTrait
+def: "How many banana weevil larvae used to obtain a measurement." []
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
-id: CO_325:0013003
-name: number of functional leaves - counting
-namespace: BananaMethod
-def: "Count the number of functional leaves after inoculation." []
-is_a: CO_325:1000009 ! Counting
-relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+id: CO_325:0003051
+name: Number of weevil pupae measured - counting
+namespace: BananaTrait
+def: "Visual counting method" []
+synonym: "WvlAdltMsrd_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003050 ! number of banana weevil pupae measured
+relationship: variable_of CO_325:0010147 ! number of adult larvae - counting
+relationship: variable_of CO_325:0100055 ! weevil
 
 [Term]
 id: CO_325:0010011
@@ -7942,6 +7944,30 @@ namespace: BananaMethod
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0003034 ! number of helicotylenchus multicinctus
+
+[Term]
+id: CO_325:0013002
+name: number of chlorotic leaves - counting
+namespace: BananaMethod
+def: "Count the number of chlorotic leaves after inoculation." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+
+[Term]
+id: CO_325:0013003
+name: number of functional leaves - counting
+namespace: BananaMethod
+def: "Count the number of functional leaves after inoculation." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+
+[Term]
+id: CO_325:0013004
+name: number of weevil pupae - counting
+namespace: BananaMethod
+def: "Visual counting method" []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000620 ! number of banana weevil adults measured
 
 [Term]
 id: CO_325:0100002
