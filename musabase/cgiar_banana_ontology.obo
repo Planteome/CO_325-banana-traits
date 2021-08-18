@@ -6078,7 +6078,7 @@ relationship: variable_of CO_325:0100055 ! weevil
 
 [Term]
 id: CO_325:0003052
-name: Weevils damage to outer corm %
+name: outer corm damage % by weevil
 namespace: BananaTrait
 def: "percentage damage to upper cross-section outer corm caused by weevils calculated as the average of \n(CO_325:0000649 Weevils damage to corm cortex cross-section % + CO_325:0000680 Weevils damage to lower cross-section outer corm %) /2" []
 synonym: "OD" EXACT []
@@ -6090,7 +6090,7 @@ relationship: variable_of CO_325:0100046 ! %
 
 [Term]
 id: CO_325:0003053
-name: Weevils damage to inner corm %
+name: inner corm damage % by weevil
 namespace: BananaTrait
 def: "percentage damage to upper cross-section inner corm caused by weevils calculated as the average of \n(CO_325:0000651 Weevils damage to corm outer cylinder cross-section % + CO_325:0000678 Weevils damage to lower cross-section inner corm % ) /2" []
 synonym: "ID" EXACT []
@@ -6102,7 +6102,7 @@ relationship: variable_of CO_325:0100046 ! %
 
 [Term]
 id: CO_325:0003054
-name: Weevils total corm cross-section damage %
+name: Total corm cross-section damage % by weevil
 namespace: BananaTrait
 def: "Total cross-sectional damage is an average of four traits:\n\nWeevils damage to corm cortex cross-section %|CO_325:0000649\nWeevils damage to corm outer cylinder cross-section %|CO_325:0000651\nWeevils damage to lower cross-section outer corm %|CO_325:0000680\nWeevils damage to lower cross-section inner corm %|CO_325:0000678" []
 synonym: "TXD" EXACT []
