@@ -6101,6 +6101,20 @@ relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - 
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
+id: CO_325:0003054
+name: Weevils total corm cross-section damage %
+namespace: BananaTrait
+def: "Total cross-sectional damage is an average of four traits:\n\nWeevils damage to corm cortex cross-section %|CO_325:0000649\nWeevils damage to corm outer cylinder cross-section %|CO_325:0000651\nWeevils damage to lower cross-section outer corm %|CO_325:0000680\nWeevils damage to lower cross-section inner corm %|CO_325:0000678" []
+synonym: "TXD" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000648 ! percentage damage to upper cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0000650 ! percentage damage to upper cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
