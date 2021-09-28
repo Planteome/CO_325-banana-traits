@@ -3851,6 +3851,14 @@ name: percentage damage to upper cross-section outer corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the outer corm (cortex) upper cross-section, assessed by percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-outer" EXACT []
+relationship: variable of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003056
+name: damage to upper cross-section outer corm caused by weevils
+namespace: BananaTrait
+def: "Damage to the outer corm (cortex) upper cross-section caused by weevils." []
 is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
@@ -3860,9 +3868,16 @@ namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at the collar (upper cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "DmgIdxInn_M_%, CORMDG" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000648 ! percentage damage to upper cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003055
+name: damage to upper cross-section inner corm caused by weevils
+namespace: BananaTrait
+def: "Damage to the inner corm (central cylinder) upper cross-section caused by weevils." []
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000650
@@ -3870,7 +3885,8 @@ name: percentage damage to upper cross-section inner corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the inner corm (central cylinder) upper cross-section, assessed by the percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-inner" EXACT []
-is_a: CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
+is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0000651
@@ -3879,7 +3895,7 @@ namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at the collar (upper cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "DmgIdxOut_M_%," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000650 ! percentage damage to upper cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010140 ! damage to upper inner corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
 
@@ -6095,7 +6111,7 @@ namespace: BananaTrait
 def: "percentage damage to upper cross-section inner corm caused by weevils calculated as the average of \n(CO_325:0000651 Weevils damage to corm outer cylinder cross-section % + CO_325:0000678 Weevils damage to lower cross-section inner corm % ) /2" []
 synonym: "ID" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000650 ! percentage damage to upper cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
@@ -10776,4 +10792,3 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
-
