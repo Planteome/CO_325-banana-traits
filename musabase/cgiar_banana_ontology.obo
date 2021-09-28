@@ -3851,8 +3851,8 @@ name: percentage damage to upper cross-section outer corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the outer corm (cortex) upper cross-section, assessed by percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-outer" EXACT []
-relationship: variable of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
 
 [Term]
 id: CO_325:0003056
