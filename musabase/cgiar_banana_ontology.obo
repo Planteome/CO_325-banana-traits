@@ -3851,6 +3851,14 @@ name: percentage damage to upper cross-section outer corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the outer corm (cortex) upper cross-section, assessed by percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-outer" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
+
+[Term]
+id: CO_325:0003056
+name: damage to upper cross-section outer corm caused by weevils
+namespace: BananaTrait
+def: "Damage to the outer corm (cortex) upper cross-section caused by weevils." []
 is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
@@ -3860,9 +3868,16 @@ namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at the collar (upper cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "DmgIdxInn_M_%, CORMDG" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000648 ! percentage damage to upper cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003055
+name: damage to upper cross-section inner corm caused by weevils
+namespace: BananaTrait
+def: "Damage to the inner corm (central cylinder) upper cross-section caused by weevils." []
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0000650
@@ -3870,7 +3885,8 @@ name: percentage damage to upper cross-section inner corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the inner corm (central cylinder) upper cross-section, assessed by the percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-inner" EXACT []
-is_a: CO_325:0003004 ! weevil damage assessment
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
+is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0000651
@@ -3879,7 +3895,7 @@ namespace: BananaTrait
 def: "Cut a transverse cross section of the corm at the collar (upper cross-section). Score weevil damage (galleries) as percentage damage on the side of the cross-section that was facing the ground, downwards. In %" []
 synonym: "DmgIdxOut_M_%," EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000650 ! percentage damage to upper cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010140 ! damage to upper inner corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
 
@@ -5680,7 +5696,7 @@ id: CO_325:0003004
 name: weevil damage assessment
 namespace: BananaTrait
 def: "Weevil damage assesssment" []
-is_a: CO_325:1000002 ! Biotic_stress
+is_a: CO_325:0003045 ! insect damage
 
 [Term]
 id: CO_325:0003005
@@ -6059,20 +6075,60 @@ relationship: variable_of CO_325:0013002 ! number of chlorotic leaves - counting
 relationship: variable_of CO_325:0100007 ! leaf
 
 [Term]
-id: CO_325:0013002
-name: number of chlorotic leaves - counting
-namespace: BananaMethod
-def: "Count the number of chlorotic leaves after inoculation." []
-is_a: CO_325:1000009 ! Counting
-relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+id: CO_325:0003050
+name: number of banana weevil pupae measured
+namespace: BananaTrait
+def: "How many banana weevil larvae used to obtain a measurement." []
+is_a: CO_325:0003030 ! weevil insect assessment
 
 [Term]
-id: CO_325:0013003
-name: number of functional leaves - counting
-namespace: BananaMethod
-def: "Count the number of functional leaves after inoculation." []
-is_a: CO_325:1000009 ! Counting
-relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+id: CO_325:0003051
+name: Number of weevil pupae measured - counting
+namespace: BananaTrait
+def: "Visual counting method" []
+synonym: "WvlAdltMsrd_Ct_weevil," EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003050 ! number of banana weevil pupae measured
+relationship: variable_of CO_325:0010147 ! number of adult larvae - counting
+relationship: variable_of CO_325:0100055 ! weevil
+
+[Term]
+id: CO_325:0003052
+name: outer corm damage % by weevil
+namespace: BananaTrait
+def: "percentage damage to upper cross-section outer corm caused by weevils calculated as the average of \n(CO_325:0000649 Weevils damage to corm cortex cross-section % + CO_325:0000680 Weevils damage to lower cross-section outer corm %) /2" []
+synonym: "OD" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000648 ! percentage damage to upper cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003053
+name: inner corm damage % by weevil
+namespace: BananaTrait
+def: "percentage damage to upper cross-section inner corm caused by weevils calculated as the average of \n(CO_325:0000651 Weevils damage to corm outer cylinder cross-section % + CO_325:0000678 Weevils damage to lower cross-section inner corm % ) /2" []
+synonym: "ID" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
+relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003054
+name: Total corm cross-section damage % by weevil
+namespace: BananaTrait
+def: "Total cross-sectional damage is an average of four traits:\n\nWeevils damage to corm cortex cross-section %|CO_325:0000649\nWeevils damage to corm outer cylinder cross-section %|CO_325:0000651\nWeevils damage to lower cross-section outer corm %|CO_325:0000680\nWeevils damage to lower cross-section inner corm %|CO_325:0000678" []
+synonym: "TXD" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000648 ! percentage damage to upper cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0000650 ! percentage damage to upper cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
+relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
+relationship: variable_of CO_325:0100046 ! %
 
 [Term]
 id: CO_325:0010011
@@ -7942,6 +7998,30 @@ namespace: BananaMethod
 def: "Count from 10 g of chopped roots from the tested banana plant sample" []
 is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0003034 ! number of helicotylenchus multicinctus
+
+[Term]
+id: CO_325:0013002
+name: number of chlorotic leaves - counting
+namespace: BananaMethod
+def: "Count the number of chlorotic leaves after inoculation." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+
+[Term]
+id: CO_325:0013003
+name: number of functional leaves - counting
+namespace: BananaMethod
+def: "Count the number of functional leaves after inoculation." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000478 ! number of hands on whole bunch
+
+[Term]
+id: CO_325:0013004
+name: number of weevil pupae - counting
+namespace: BananaMethod
+def: "Visual counting method" []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0000620 ! number of banana weevil adults measured
 
 [Term]
 id: CO_325:0100002
@@ -10712,4 +10792,3 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
-
