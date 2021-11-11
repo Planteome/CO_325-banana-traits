@@ -3855,13 +3855,6 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
 
 [Term]
-id: CO_325:0003056
-name: damage to upper cross-section outer corm caused by weevils
-namespace: BananaTrait
-def: "Damage to the outer corm (cortex) upper cross-section caused by weevils." []
-is_a: CO_325:0003004 ! weevil damage assessment
-
-[Term]
 id: CO_325:0000649
 name: Weevils damage to corm cortex cross-section %
 namespace: BananaTrait
@@ -3873,20 +3866,13 @@ relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - 
 relationship: variable_of CO_325:0100046 ! %
 
 [Term]
-id: CO_325:0003055
-name: damage to upper cross-section inner corm caused by weevils
-namespace: BananaTrait
-def: "Damage to the inner corm (central cylinder) upper cross-section caused by weevils." []
-is_a: CO_325:0003004 ! weevil damage assessment
-
-[Term]
 id: CO_325:0000650
 name: percentage damage to upper cross-section inner corm caused by weevils
 namespace: BananaTrait
 def: "The amount of damage to the inner corm (central cylinder) upper cross-section, assessed by the percentage of tunnels caused by weevils." []
 synonym: "Damage index-X-inner" EXACT []
-relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 
 [Term]
 id: CO_325:0000651
@@ -5038,7 +5024,7 @@ relationship: variable_of CO_325:0100342 ! black streak leaf scale (1 to 3)
 
 [Term]
 id: CO_325:0000994
-name: Fruit parthenocarpy
+name: Fruit parthenocarpy visual observation 0/1
 namespace: BananaTrait
 def: "Visual evaluation of parthenocarpy on mature fruit: absence (0) or presence (1) of seeds" []
 is_a: CO_325:1000024 ! Variable
@@ -5050,7 +5036,7 @@ relationship: variable_of CO_325:0100053 ! presence absence 0
 id: CO_325:0000995
 name: fruit parthenocarpy
 namespace: BananaTrait
-is_a: CO_325:1000005 ! Physiological
+is_a: CO_325:0003057 ! fertility traits
 
 [Term]
 id: CO_325:0000998
@@ -5668,7 +5654,7 @@ is_a: CO_325:1000006 ! Quality_traits
 id: CO_325:0003001
 name: Raw pulp color visual estimation 1-3
 namespace: BananaTrait
-def: "A quick field evaluation of the raw pulp to determine acceptability based on yellow color using Mbwazirume as a standard control.	\nScale: 3 = Deep yellow pulp colour same as that of Mbwazirume; 2 =  Yellow colour slightly lighter than that of Mbwazirume; 1 =  White colour." []
+def: "A quick field evaluation of the raw pulp to determine acceptability based on yellow color using Mbwazirume as a standard control.	Scale: 3 = Deep yellow pulp colour same as that of Mbwazirume; 2 =  Yellow colour slightly lighter than that of Mbwazirume; 1 =  White colour." []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003000 ! raw pulp color
 relationship: variable_of CO_325:0010198 ! visual appearance - estimation
@@ -6111,8 +6097,8 @@ namespace: BananaTrait
 def: "percentage damage to upper cross-section inner corm caused by weevils calculated as the average of \n(CO_325:0000651 Weevils damage to corm outer cylinder cross-section % + CO_325:0000678 Weevils damage to lower cross-section inner corm % ) /2" []
 synonym: "ID" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
+relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
 
@@ -6129,6 +6115,78 @@ relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-sect
 relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
 relationship: variable_of CO_325:0100046 ! %
+
+[Term]
+id: CO_325:0003055
+name: damage to upper cross-section inner corm caused by weevils
+namespace: BananaTrait
+def: "Damage to the inner corm (central cylinder) upper cross-section caused by weevils." []
+is_a: CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0003056
+name: damage to upper cross-section outer corm caused by weevils
+namespace: BananaTrait
+def: "Damage to the outer corm (cortex) upper cross-section caused by weevils." []
+is_a: CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0003057
+name: fertility traits
+namespace: BananaTrait
+is_a: CO_325:1000005 ! Physiological
+
+[Term]
+id: CO_325:0003058
+name: female fertility
+namespace: BananaTrait
+is_a: CO_325:0003057 ! fertility traits
+
+[Term]
+id: CO_325:0003059
+name: male fertility
+namespace: BananaTrait
+is_a: CO_325:0003057 ! fertility traits
+
+[Term]
+id: CO_325:0003060
+name: female fertility - number of seeds visual estimation 1-3 scale
+namespace: BananaTrait
+def: "Disect fruit longitudinally, observe for seeds in pulp; Presence of  many developed seeds in pulp; 1=many. presence of few developed / undeveloped seeds in pulp 2=few. Absence of seeds in pulp 3 = none" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003058 ! female fertility
+relationship: variable_of CO_325:0013005 ! female fertility seed estimation
+relationship: variable_of CO_325:0103010 ! female fertility seed number 3 pt scale
+
+[Term]
+id: CO_325:0003061
+name: male fertility - pollen quantity on anthers visual estimation 1-3 scale
+namespace: BananaTrait
+def: "Disect fruit longitudinally, observe for seeds in pulp; Presence of  many developed seeds in pulp; 1=many. presence of few developed / undeveloped seeds in pulp 2=few. Absence of seeds in pulp 3 = none" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003059 ! male fertility
+relationship: variable_of CO_325:0013006 ! male fertility pollen quantity estimation
+relationship: variable_of CO_325:0103011 ! male fertility pollen quantity 3 pt scale
+
+[Term]
+id: CO_325:0003062
+name: Fruit parthenocarpy visual observation of ovary development 0/1
+namespace: BananaTrait
+def: "Parthenoarpic (1) - ovary of all fruits in bunch enlarged  to form fruit filled with pulp mostly without seed; Not parthenocarpic (0) - ovary of some or all fruits remain small and lack pulp, or are fully enlarged but have more seed than pulp." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000995 ! fruit parthenocarpy
+relationship: variable_of CO_325:0010245 ! fruit parthenocarpy - estimation
+relationship: variable_of CO_325:0100053 ! presence absence 0
+
+[Term]
+id: CO_325:0003063
+name: Raw plantain pulp color visual estimation 1-3
+namespace: BananaTrait
+def: "Dissect fruit longitudinally, observe out of direct sunlight and record colour of pulp on a 1-3 scale; 3=yellow orange, 2=cream, 1=white." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003000 ! raw pulp color
+relationship: variable_of CO_325:0010198 ! visual appearance - estimation
+relationship: variable_of CO_325:0103000 ! 3 pt color scale
 
 [Term]
 id: CO_325:0010011
@@ -8022,6 +8080,20 @@ namespace: BananaMethod
 def: "Visual counting method" []
 is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0000620 ! number of banana weevil adults measured
+
+[Term]
+id: CO_325:0013005
+name: female fertility seed estimation
+namespace: BananaMethod
+def: "visual observation of seed presence in mature fruits" []
+is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0013006
+name: male fertility pollen quantity estimation
+namespace: BananaMethod
+def: "visual observation of seed presence in mature fruits" []
+is_a: CO_325:1000011 ! Estimation
 
 [Term]
 id: CO_325:0100002
@@ -10542,6 +10614,20 @@ name: no sap
 namespace: BananaScale
 synonym: "3" EXACT []
 is_a: CO_325:0103005 ! 3 pt sap amount scale
+
+[Term]
+id: CO_325:0103010
+name: female fertility seed number 3 pt scale
+namespace: BananaScale
+is_a: CO_325:1000015 ! Nominal
+relationship: scale_of CO_325:0013005 ! female fertility seed estimation
+
+[Term]
+id: CO_325:0103011
+name: male fertility pollen quantity 3 pt scale
+namespace: BananaScale
+is_a: CO_325:1000015 ! Nominal
+relationship: scale_of CO_325:0013006 ! male fertility pollen quantity estimation
 
 [Term]
 id: CO_325:0120003
