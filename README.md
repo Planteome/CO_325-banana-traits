@@ -1,6 +1,6 @@
 [![NSF-1340112](https://img.shields.io/badge/NSF-1340112-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1340112)
 
-# ibp-banana-traits
+# CO_325-banana-traits
 Banana Trait Ontology is maintained by http://www.cropontology.org and https://musabase.org
 
 Request new traits/variables by submitting a new issue in this github repo, or by filling the trait request form http://submit.rtbbase.org
