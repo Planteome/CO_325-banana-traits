@@ -21,6 +21,13 @@ synonym: "Time of fruit-filling, Fruit-filling period, Bunch maturity period, Le
 is_a: CO_325:1000004 ! Phenological
 
 [Term]
+id: CO_325:0000004
+name: flowering
+namespace: BananaTrait
+def: "whole-plant flowering related trait" []
+is_a: CO_325:1000004 ! Phenological
+
+[Term]
 id: CO_325:0000006
 name: plant crop cycle
 namespace: BananaTrait
