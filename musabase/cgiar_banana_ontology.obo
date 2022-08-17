@@ -6196,6 +6196,23 @@ relationship: variable_of CO_325:0010198 ! visual appearance - estimation
 relationship: variable_of CO_325:0103000 ! 3 pt color scale
 
 [Term]
+id: CO_325:0003064
+name: number of dead leaves
+namespace: BananaTrait
+def: "The number of dead leaves on the plant." []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0003065
+name: Number of dead leaves: counting
+namespace: BananaTrait
+def: "Count the number of dead leaves on the plant." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003064 ! number of dead leaves
+relationship: variable_of CO_325:0013007 ! number of dead leaves - counting
+relationship: variable_of CO_325:0103012 ! dead leaves scale
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -8101,6 +8118,14 @@ name: male fertility pollen quantity estimation
 namespace: BananaMethod
 def: "visual observation of seed presence in mature fruits" []
 is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0013007
+name: number of dead leaves - counting
+namespace: BananaMethod
+def: "Count the number of dead leaves." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0003064 ! number of dead leaves
 
 [Term]
 id: CO_325:0100002
@@ -10637,6 +10662,13 @@ is_a: CO_325:1000015 ! Nominal
 relationship: scale_of CO_325:0013006 ! male fertility pollen quantity estimation
 
 [Term]
+id: CO_325:0103012
+name: dead leaves scale
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0013007 ! number of dead leaves - counting
+
+[Term]
 id: CO_325:0120003
 name: yellowness scale 0-10
 namespace: BananaScale
@@ -10885,3 +10917,4 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
+
