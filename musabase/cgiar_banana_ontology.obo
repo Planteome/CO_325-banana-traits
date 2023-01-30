@@ -5,6 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003066> \"CO_325:0000270\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003067> \"CO_325:0000271\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003068> \"CO_325:0000272\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6196,6 +6197,33 @@ relationship: variable_of CO_325:0010198 ! visual appearance - estimation
 relationship: variable_of CO_325:0103000 ! 3 pt color scale
 
 [Term]
+id: CO_325:0003066
+name: corm weight
+namespace: BananaTrait
+def: "corm weigh" []
+is_a: CO_325:1000001 ! Agronomical
+
+[Term]
+id: CO_325:0003067
+name: corm weight in g
+namespace: BananaTrait
+def: "Weigh the entire corm in grams using a scale." []
+synonym: "Corm_wt" EXACT []
+synonym: "CW" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003066 ! corm weight
+relationship: variable_of CO_325:0003068 ! corm weight - measurement
+relationship: variable_of CO_325:0100019 ! g
+
+[Term]
+id: CO_325:0003068
+name: corm weight - measurement
+namespace: BananaMethod
+def: "Weigh the entire corm in grams using a scale." []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0000270 ! peel weight
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -10885,3 +10913,4 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
+
