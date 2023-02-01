@@ -6198,20 +6198,22 @@ relationship: variable_of CO_325:0103000 ! 3 pt color scale
 
 [Term]
 id: CO_325:0003066
-name: corm weight
+name: Rhizome weight
 namespace: BananaTrait
 def: "corm weigh" []
+synonym: "corm weight" EXACT []
 is_a: CO_325:1000001 ! Agronomical
 
 [Term]
 id: CO_325:0003067
-name: corm weight in g
+name: rhizome weight in g
 namespace: BananaTrait
 def: "Weigh the entire corm in grams using a scale." []
+synonym: "corm weight" EXACT []
 synonym: "Corm_wt" EXACT []
 synonym: "CW" EXACT []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0003066 ! corm weight
+relationship: variable_of CO_325:0003066 ! Rhizome weight
 relationship: variable_of CO_325:0003068 ! corm weight - measurement
 relationship: variable_of CO_325:0100019 ! g
 
