@@ -170,6 +170,7 @@ name: number of functional leaves
 namespace: BananaTrait
 def: "The number of leaves on the plant that have 50% or more of the leaf surface area as green, healthy, photosynthetic tissue." []
 synonym: "functleaves" EXACT []
+synonym: "numFuncLeaves" EXACT []
 is_a: CO_325:1000001 ! Agronomical
 
 [Term]
@@ -3137,7 +3138,7 @@ id: CO_325:0000569
 name: Number of functional leaves: count
 namespace: BananaTrait
 def: "Count how many functional leaves (leaves that have 50% or more of their surface as green, healthy, photosynthetic tissue) are on the plant." []
-synonym: "FnctLeav_Ct_Leaf, NUMFFH, functleaves" EXACT []
+synonym: "FnctLeav_Ct_Leaf, NUMFFH, functleaves,numFuncLeaves_Count_unitless, numFuncLeaf, totalNumFunctionalLeaves" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000066 ! number of functional leaves
 relationship: variable_of CO_325:0010022 ! number of functional leaves - counting
@@ -4370,17 +4371,6 @@ relationship: variable_of CO_325:0010213 ! leaf number - counting
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
-id: CO_325:0000901
-name: Functional leaf number: count
-namespace: BananaTrait
-def: "Count the number of leaves (functional only > 50% estimated green area) in unitless" []
-synonym: "numFuncLeaves_Count_unitless, numFuncLeaf, totalNumFunctionalLeaves" EXACT []
-is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000939 ! functional leaf number
-relationship: variable_of CO_325:0010213 ! leaf number - counting
-relationship: variable_of CO_325:0100102 ! unitless
-
-[Term]
 id: CO_325:0000902
 name: System water loss in mL
 namespace: BananaTrait
@@ -4720,14 +4710,6 @@ name: leaf number
 namespace: BananaTrait
 def: "The number of all leaves (including dried/dead/wilted/yellow) in a shoot system" []
 synonym: "numLeaves" EXACT []
-is_a: CO_325:1000004 ! Phenological
-
-[Term]
-id: CO_325:0000939
-name: functional leaf number
-namespace: BananaTrait
-def: "The number of functional leaves (greenness>50%) in a shoot system" []
-synonym: "numFuncLeaves" EXACT []
 is_a: CO_325:1000004 ! Phenological
 
 [Term]
@@ -7731,7 +7713,6 @@ namespace: BananaMethod
 def: "count the number of leaves" []
 is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0000938 ! leaf number
-relationship: method_of CO_325:0000939 ! functional leaf number
 
 [Term]
 id: CO_325:0010214
