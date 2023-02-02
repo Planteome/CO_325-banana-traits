@@ -5,7 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003066> \"CO_325:0000270\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003067> \"CO_325:0000271\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003068> \"CO_325:0000272\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003069> \"CO_325:0100150\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003070> \"CO_325:0010249\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003071> \"CO_325:0001004\"^^xsd:string)\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003066> \"CO_325:0000270\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003067> \"CO_325:0000271\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003068> \"CO_325:0000272\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003069> \"CO_325:0100150\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003070> \"CO_325:0010249\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003071> \"CO_325:0001004\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003072> \"CO_325:0000840\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003073> \"CO_325:0100154\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003074> \"CO_325:0000841\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6230,6 +6230,30 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000012 ! plant circumference from the collar
 relationship: variable_of CO_325:0003070 ! Pseudostem circumference at soil level measurement in cm
 relationship: variable_of CO_325:0100008 ! cm
+
+[Term]
+id: CO_325:0003072
+name: Damage in pseudostem by weevils. Boolean observation (true/false)
+namespace: BananaTrait
+def: "Does weevil damage extend into the pseudostem, boolean value (True/False)" []
+synonym: "Pseudestem damage-weevils" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003069 ! Boolean
+relationship: variable_of CO_325:0003074 ! damage to the pseudostem caused by weevils
+relationship: variable_of CO_325:0010154 ! weevil damage -estimation
+
+[Term]
+id: CO_325:0003073
+name: weevil damage- boolean scale
+namespace: BananaScale
+is_a: CO_325:0100058 ! weevil damage
+
+[Term]
+id: CO_325:0003074
+name: damage to the pseudostem caused by weevils
+namespace: BananaTrait
+def: "Does weevil damage extend into the pseudostem" []
+is_a: CO_325:0003004 ! weevil damage assessment
 
 [Term]
 id: CO_325:0010011
