@@ -5,6 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003080> \"CO_325:0003077\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003081> \"CO_325:0003077\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6299,13 +6300,13 @@ synonym: "BXW Symptoms present" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
 relationship: variable_of CO_325:0003069 ! Boolean
-relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt on the leaves - estimation
+relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt - estimation
 
 [Term]
 id: CO_325:0003078
-name: visible symptoms of banana xanthomonas wilt on the leaves - estimation
+name: visible symptoms of banana xanthomonas wilt - estimation
 namespace: BananaMethod
-def: "Visual estimation of presence or absence of visible symptoms of banana xanthomonas wilt on the leaves." []
+def: "Visual estimation of presence or absence of visible symptoms of banana xanthomonas wilt." []
 is_a: CO_325:1000011 ! Estimation
 relationship: method_of CO_325:0003047 ! banana xanthomonas wilt damage
 
@@ -6317,7 +6318,27 @@ def: "Presence or absence of visible symptoms of banana xanthomonas wilt on an u
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
 relationship: variable_of CO_325:0003069 ! Boolean
-relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt on the leaves - estimation
+relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt - estimation
+
+[Term]
+id: CO_325:0003080
+name: death of the entire plant due to BXW infection
+namespace: BananaTrait
+def: "is the entire plant dead due to symptoms of banana xanthomonas wilt." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003069 ! Boolean
+relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt - estimation
+
+[Term]
+id: CO_325:0003081
+name: Lesions at point of BXW inoculation
+namespace: BananaTrait
+def: "Lesions present at point of banana xanthomonas wilt inoculation" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003069 ! Boolean
+relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt - estimation
 
 [Term]
 id: CO_325:0010011
