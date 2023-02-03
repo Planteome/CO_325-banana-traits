@@ -49,8 +49,7 @@ is_a: CO_325:1000001 ! Agronomical
 id: CO_325:0000012
 name: plant circumference from the collar
 namespace: BananaTrait
-def: "The circumference of the pseudostem of the plant at 100 cm from the collar." []
-synonym: "plantcircumf100cm" EXACT []
+def: "The circumference of the pseudostem of the plant." []
 synonym: "Pseudostem girth, Plant circumference, Pseudostem circumference, Plant girth" EXACT []
 is_a: CO_325:1000001 ! Agronomical
 
@@ -169,6 +168,7 @@ name: number of functional leaves
 namespace: BananaTrait
 def: "The number of leaves on the plant that have 50% or more of the leaf surface area as green, healthy, photosynthetic tissue." []
 synonym: "functleaves" EXACT []
+synonym: "numFuncLeaves" EXACT []
 is_a: CO_325:1000001 ! Agronomical
 
 [Term]
@@ -3136,7 +3136,7 @@ id: CO_325:0000569
 name: Number of functional leaves: count
 namespace: BananaTrait
 def: "Count how many functional leaves (leaves that have 50% or more of their surface as green, healthy, photosynthetic tissue) are on the plant." []
-synonym: "FnctLeav_Ct_Leaf, NUMFFH, functleaves" EXACT []
+synonym: "FnctLeav_Ct_Leaf, NUMFFH, functleaves,numFuncLeaves_Count_unitless, numFuncLeaf, totalNumFunctionalLeaves" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000066 ! number of functional leaves
 relationship: variable_of CO_325:0010022 ! number of functional leaves - counting
@@ -4369,17 +4369,6 @@ relationship: variable_of CO_325:0010213 ! leaf number - counting
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
-id: CO_325:0000901
-name: Functional leaf number: count
-namespace: BananaTrait
-def: "Count the number of leaves (functional only > 50% estimated green area) in unitless" []
-synonym: "numFuncLeaves_Count_unitless, numFuncLeaf, totalNumFunctionalLeaves" EXACT []
-is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0000939 ! functional leaf number
-relationship: variable_of CO_325:0010213 ! leaf number - counting
-relationship: variable_of CO_325:0100102 ! unitless
-
-[Term]
 id: CO_325:0000902
 name: System water loss in mL
 namespace: BananaTrait
@@ -4719,14 +4708,6 @@ name: leaf number
 namespace: BananaTrait
 def: "The number of all leaves (including dried/dead/wilted/yellow) in a shoot system" []
 synonym: "numLeaves" EXACT []
-is_a: CO_325:1000004 ! Phenological
-
-[Term]
-id: CO_325:0000939
-name: functional leaf number
-namespace: BananaTrait
-def: "The number of functional leaves (greenness>50%) in a shoot system" []
-synonym: "numFuncLeaves" EXACT []
 is_a: CO_325:1000004 ! Phenological
 
 [Term]
@@ -6211,6 +6192,132 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003064 ! number of dead leaves
 relationship: variable_of CO_325:0013007 ! number of dead leaves - counting
 relationship: variable_of CO_325:0103012 ! dead leaves scale
+
+[Term]
+id: CO_325:0003066
+name: Rhizome weight
+namespace: BananaTrait
+def: "corm weigh" []
+synonym: "corm weight" EXACT []
+is_a: CO_325:1000001 ! Agronomical
+
+[Term]
+id: CO_325:0003067
+name: rhizome weight in g
+namespace: BananaTrait
+def: "Weigh the entire corm in grams using a scale." []
+synonym: "corm weight" EXACT []
+synonym: "Corm_wt" EXACT []
+synonym: "CW" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003066 ! Rhizome weight
+relationship: variable_of CO_325:0003068 ! corm weight - measurement
+relationship: variable_of CO_325:0100019 ! g
+
+[Term]
+id: CO_325:0003068
+name: corm weight - measurement
+namespace: BananaMethod
+def: "Weigh the entire corm in grams using a scale." []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0000270 ! peel weight
+
+[Term]
+id: CO_325:0003069
+name: Boolean
+namespace: BananaScale
+synonym: "0/1,yes/no,present/absent" EXACT []
+is_a: CO_325:1000015 ! Nominal
+
+[Term]
+id: CO_325:0003070
+name: Pseudostem circumference at soil level measurement in cm
+namespace: BananaMethod
+def: "Measure the distance from the collar, or from the pseudostem base at the ground if the collar is not visible." []
+is_a: CO_325:0010025 ! plant circumference - measurement
+
+[Term]
+id: CO_325:0003071
+name: Pseudostem circumference at soil level in cm
+namespace: BananaTrait
+def: "Measure the distance from the collar, or from the pseudostem base at the ground if the collar is not visible" []
+synonym: "PC at soil level" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
+relationship: variable_of CO_325:0003070 ! Pseudostem circumference at soil level measurement in cm
+relationship: variable_of CO_325:0100008 ! cm
+
+[Term]
+id: CO_325:0003072
+name: Damage in pseudostem by weevils. Boolean observation (true/false)
+namespace: BananaTrait
+def: "Does weevil damage extend into the pseudostem, boolean value (True/False)" []
+synonym: "Pseudestem damage-weevils" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003069 ! Boolean
+relationship: variable_of CO_325:0003074 ! damage to the pseudostem caused by weevils
+relationship: variable_of CO_325:0010154 ! weevil damage -estimation
+
+[Term]
+id: CO_325:0003073
+name: weevil damage- boolean scale
+namespace: BananaScale
+is_a: CO_325:0100058 ! weevil damage
+
+[Term]
+id: CO_325:0003074
+name: damage to the pseudostem caused by weevils
+namespace: BananaTrait
+def: "Does weevil damage extend into the pseudostem" []
+is_a: CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0003075
+name: Number of senescing leaves after banana xanthomonas wilt inoculation: count
+namespace: BananaTrait
+def: "A count of leaves showing senescence after inoculation with BXW." []
+synonym: "NCLI" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003076 ! number of senescing leaves - counting
+relationship: variable_of CO_325:0100007 ! leaf
+
+[Term]
+id: CO_325:0003076
+name: number of senescing leaves - counting
+namespace: BananaMethod
+def: "Count the number of senescing leaves after inoculation." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0003047 ! banana xanthomonas wilt damage
+
+[Term]
+id: CO_325:0003077
+name: Presence or absence of visible symptoms of BXW infection on leaves
+namespace: BananaTrait
+def: "Presence or absence of visible symptoms of banana xanthomonas wilt on the leaves." []
+synonym: "BXW Symptoms present" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003069 ! Boolean
+relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt on the leaves - estimation
+
+[Term]
+id: CO_325:0003078
+name: visible symptoms of banana xanthomonas wilt on the leaves - estimation
+namespace: BananaMethod
+def: "Visual estimation of presence or absence of visible symptoms of banana xanthomonas wilt on the leaves." []
+is_a: CO_325:1000011 ! Estimation
+relationship: method_of CO_325:0003047 ! banana xanthomonas wilt damage
+
+[Term]
+id: CO_325:0003079
+name: Presence or absence of visible symptoms of BXW infection on uninoculated leaves
+namespace: BananaTrait
+def: "Presence or absence of visible symptoms of banana xanthomonas wilt on an uninoculated leaf next to an inoculated leaf of the same plant." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003069 ! Boolean
+relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt on the leaves - estimation
 
 [Term]
 id: CO_325:0010011
@@ -7718,7 +7825,6 @@ namespace: BananaMethod
 def: "count the number of leaves" []
 is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0000938 ! leaf number
-relationship: method_of CO_325:0000939 ! functional leaf number
 
 [Term]
 id: CO_325:0010214
