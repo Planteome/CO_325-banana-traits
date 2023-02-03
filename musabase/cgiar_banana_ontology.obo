@@ -5,7 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003075> \"CO_325:0003049\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003076> \"CO_325:0013002\"^^xsd:string)\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003075> \"CO_325:0003049\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003076> \"CO_325:0013002\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003077> \"CO_325:0003049\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003078> \"CO_325:0010087\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6272,6 +6272,25 @@ name: number of senescing leaves - counting
 namespace: BananaMethod
 def: "Count the number of senescing leaves after inoculation." []
 is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0003047 ! banana xanthomonas wilt damage
+
+[Term]
+id: CO_325:0003077
+name: Presence or absence of visible symptoms of BXW infection on leaves
+namespace: BananaTrait
+def: "Presence or absence of visible symptoms of banana xanthomonas wilt on the leaves." []
+synonym: "BXW Symptoms present" EXACT []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003069 ! Boolean
+relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt on the leaves - estimation
+
+[Term]
+id: CO_325:0003078
+name: visible symptoms of banana xanthomonas wilt on the leaves - estimation
+namespace: BananaMethod
+def: "Visual estimation of presence or absence of visible symptoms of banana xanthomonas wilt on the leaves." []
+is_a: CO_325:1000011 ! Estimation
 relationship: method_of CO_325:0003047 ! banana xanthomonas wilt damage
 
 [Term]
