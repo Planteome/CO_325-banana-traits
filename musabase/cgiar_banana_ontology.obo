@@ -5,7 +5,6 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003075> \"CO_325:0003049\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003076> \"CO_325:0013002\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003077> \"CO_325:0003049\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003078> \"CO_325:0010087\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003079> \"CO_325:0003049\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6178,6 +6177,23 @@ relationship: variable_of CO_325:0010198 ! visual appearance - estimation
 relationship: variable_of CO_325:0103000 ! 3 pt color scale
 
 [Term]
+id: CO_325:0003064
+name: number of dead leaves
+namespace: BananaTrait
+def: "The number of dead leaves on the plant." []
+is_a: CO_325:1000002 ! Biotic_stress
+
+[Term]
+id: CO_325:0003065
+name: Number of dead leaves: counting
+namespace: BananaTrait
+def: "Count the number of dead leaves on the plant." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003064 ! number of dead leaves
+relationship: variable_of CO_325:0013007 ! number of dead leaves - counting
+relationship: variable_of CO_325:0103012 ! dead leaves scale
+
+[Term]
 id: CO_325:0003066
 name: Rhizome weight
 namespace: BananaTrait
@@ -8208,6 +8224,14 @@ name: male fertility pollen quantity estimation
 namespace: BananaMethod
 def: "visual observation of seed presence in mature fruits" []
 is_a: CO_325:1000011 ! Estimation
+
+[Term]
+id: CO_325:0013007
+name: number of dead leaves - counting
+namespace: BananaMethod
+def: "Count the number of dead leaves." []
+is_a: CO_325:1000009 ! Counting
+relationship: method_of CO_325:0003064 ! number of dead leaves
 
 [Term]
 id: CO_325:0100002
@@ -10742,6 +10766,13 @@ name: male fertility pollen quantity 3 pt scale
 namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
 relationship: scale_of CO_325:0013006 ! male fertility pollen quantity estimation
+
+[Term]
+id: CO_325:0103012
+name: dead leaves scale
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0013007 ! number of dead leaves - counting
 
 [Term]
 id: CO_325:0120003
