@@ -5,7 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003080> \"CO_325:0003077\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003081> \"CO_325:0003077\"^^xsd:string)\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003082> \"CO_325:0000009\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003083> \"CO_325:0000894\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6341,6 +6341,24 @@ relationship: variable_of CO_325:0003069 ! Boolean
 relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt - estimation
 
 [Term]
+id: CO_325:0003082
+name: plant stature
+namespace: BananaTrait
+def: "A ratio of plant circumference to plant height." []
+is_a: CO_325:1000003 ! Morphological
+
+[Term]
+id: CO_325:0003083
+name: Plant stature ratio: circumference at 100cm from collar divided by plan height
+namespace: BananaTrait
+def: "A ratio of plant circumference at 100 cm from the collar to plant height in cm.\nDerived trait CO_325:0000160/CO_325:0000159" []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0000009 ! plant height
+relationship: variable_of CO_325:0000012 ! plant circumference from the collar
+relationship: variable_of CO_325:0010210 ! ratio - computation
+relationship: variable_of CO_325:0100102 ! unitless
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -7813,12 +7831,13 @@ relationship: method_of CO_325:0000931 ! plant dry weight
 id: CO_325:0010210
 name: ratio - computation
 namespace: BananaMethod
-def: "ratio of belowground (root) to aboveground (shoot) dry mass" []
+def: "ratio of 2 measurements of the same scale" []
 is_a: CO_325:1000010 ! Computation
 relationship: method_of CO_325:0000932 ! ratio root to shoot
 relationship: method_of CO_325:0000947 ! leaf to whole plant mass ratio
 relationship: method_of CO_325:0000948 ! pseudostem to whole plant mass ratio
 relationship: method_of CO_325:0000949 ! root to whole plant mass ratio
+relationship: method_of CO_325:0003083 ! Plant stature ratio: circumference at 100cm from collar divided by plan height
 
 [Term]
 id: CO_325:0010211
