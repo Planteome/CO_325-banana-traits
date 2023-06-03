@@ -5,7 +5,7 @@ auto-generated-by: OBO-Edit 2.3.1
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003080> \"CO_325:0003077\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003081> \"CO_325:0003077\"^^xsd:string)\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003085> \"CO_325:0003080\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003086> \"CO_325:0003078\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003087> \"CO_325:0003069\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6339,6 +6339,32 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
 relationship: variable_of CO_325:0003069 ! Boolean
 relationship: variable_of CO_325:0003078 ! visible symptoms of banana xanthomonas wilt - estimation
+
+[Term]
+id: CO_325:0003085
+name: BXW evaluation Disease severity Index (DSI)
+namespace: BananaTrait
+def: "banana xanthomonas wilt disease severity index scored using a scale of 0–3, adopted from Winstead & Kelman (1952), and modified in Nakato et al. (2019) as follows: 0, no disease symptoms; 1, necrosis of inoculated leaf; 2, wilting of uninoculated leaves; and 3, death of entire plant." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003086 ! banana xanthomonas wilt disease severity index - estimation
+relationship: variable_of CO_325:0003087 ! banana xanthomonas wilt severity index 0-3 scale
+
+[Term]
+id: CO_325:0003086
+name: banana xanthomonas wilt disease severity index - estimation
+namespace: BananaMethod
+def: "Visual estimation of banana xanthomonas wilt symptoms." []
+is_a: CO_325:1000011 ! Estimation
+relationship: method_of CO_325:0003085 ! BXW evaluation Disease severity Index (DSI)
+
+[Term]
+id: CO_325:0003087
+name: banana xanthomonas wilt severity index 0-3 scale
+namespace: BananaScale
+synonym: "0/1,yes/no,present/absent" EXACT []
+is_a: CO_325:1000015 ! Nominal
+relationship: scale_of CO_325:0003086 ! banana xanthomonas wilt disease severity index - estimation
 
 [Term]
 id: CO_325:0010011
