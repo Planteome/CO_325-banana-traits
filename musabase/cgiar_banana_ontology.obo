@@ -6359,6 +6359,32 @@ relationship: variable_of CO_325:0010210 ! ratio - computation
 relationship: variable_of CO_325:0100102 ! unitless
 
 [Term]
+id: CO_325:0003085
+name: BXW evaluation Disease severity Index (DSI)
+namespace: BananaTrait
+def: "banana xanthomonas wilt disease severity index scored using a scale of 0–3, adopted from Winstead & Kelman (1952), and modified in Nakato et al. (2019) as follows: 0, no disease symptoms; 1, necrosis of inoculated leaf; 2, wilting of uninoculated leaves; and 3, death of entire plant." []
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003047 ! banana xanthomonas wilt damage
+relationship: variable_of CO_325:0003086 ! banana xanthomonas wilt disease severity index - estimation
+relationship: variable_of CO_325:0003087 ! banana xanthomonas wilt severity index 0-3 scale
+
+[Term]
+id: CO_325:0003086
+name: banana xanthomonas wilt disease severity index - estimation
+namespace: BananaMethod
+def: "Visual estimation of banana xanthomonas wilt symptoms." []
+is_a: CO_325:1000011 ! Estimation
+relationship: method_of CO_325:0003085 ! BXW evaluation Disease severity Index (DSI)
+
+[Term]
+id: CO_325:0003087
+name: banana xanthomonas wilt severity index 0-3 scale
+namespace: BananaScale
+synonym: "0/1,yes/no,present/absent" EXACT []
+is_a: CO_325:1000015 ! Nominal
+relationship: scale_of CO_325:0003086 ! banana xanthomonas wilt disease severity index - estimation
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
