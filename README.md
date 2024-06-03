@@ -1,6 +1,10 @@
 [![NSF-1340112](https://img.shields.io/badge/NSF-1340112-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1340112)
 
 # CO_325-banana-traits
+10.5281/zenodo.11451662
+
+Citation: Crichton, R., Menda, N., Laporte, M.-A., Channelière, S., Simoes, C., Asiimwe, A., Valette, L., Akech, V., Arnaud, E., Marimo, P., Carpentier, S., Uwimana, B., Cooper, L., Elser, J., Chris Mungall, & Nowakunda,, K. (2024). Planteome/CO_325-banana-traits: Banana trait Ontology (v1.0). Zenodo. https://doi.org/10.5281/zenodo.11451663
+
 Banana Trait Ontology is maintained by http://www.cropontology.org and https://musabase.org
 
 Request new traits/variables by submitting a new issue in this github repo, or by filling the trait request form http://submit.rtbbase.org
