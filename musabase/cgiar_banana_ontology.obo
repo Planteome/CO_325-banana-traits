@@ -10936,6 +10936,186 @@ namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
 
 [Term]
+id: CO_325:0120046
+name: Boiled plantain Firmness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnFirm_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120047 ! Boiled plantain Firmness
+relationship: variable_of CO_325:0120048 ! Firmness Sensory Texture method
+relationship: variable_of CO_325:0120049 ! Firmness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120047
+name: Boiled plantain Firmness
+namespace: BananaTrait
+def: "Force required to obtain deformation, penetration or rupture of the banana"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120048
+name: Firmness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120049
+name: Firmness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Soft, 10: Firm"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120050
+name: Boiled plantain Chewiness by number of chews
+namespace: BananaTrait
+synonym: "BoiPlantnChew_Meas_number of chews" EXACT []
+relationship: variable_of CO_325:0120051 ! Boiled plantain Chewiness
+relationship: variable_of CO_325:0120052 ! Chewiness Sensory Texture method
+relationship: variable_of CO_325:0120053 ! Chewiness
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120051
+name: Boiled plantain Chewiness
+namespace: BananaTrait
+def: "Energy or number of chews necessary to chew the banana to make it ready to be swallowed"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120052
+name: Chewiness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120053
+name: Chewiness
+namespace: BananaScale
+def: "categories: Number of chews"
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0120054
+name: Boiled plantain Mealiness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnMeal_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120055 ! Boiled plantain Mealiness
+relationship: variable_of CO_325:0120056 ! Mealiness Sensory Texture method
+relationship: variable_of CO_325:0120057 ! Mealiness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120055
+name: Boiled plantain Mealiness
+namespace: BananaTrait
+def: "Mechanical property linked to cohesion and the presence of fine particles in the product during chewing"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120056
+name: Mealiness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120057
+name: Mealiness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Low, 10: Strong"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120058
+name: Boiled plantain Stickiness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnStic_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120059 ! Boiled plantain Stickiness
+relationship: variable_of CO_325:0120060 ! Stickiness Sensory Texture method
+relationship: variable_of CO_325:0120061 ! Stickiness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120059
+name: Boiled plantain Stickiness
+namespace: BananaTrait
+def: "Force required to peel off the fraction of product adhering to the interior of the oral cavity"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120060
+name: Stickiness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120061
+name: Stickiness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Low, 10: Strong"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120062
+name: Boiled plantain Sweetness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnSwt_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120063 ! Boiled plantain Sweetness
+relationship: variable_of CO_325:0120064 ! Taste method Sweetness
+relationship: variable_of CO_325:0120065 ! Sweetness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120063
+name: Boiled plantain Sweetness
+namespace: BananaTrait
+def: "Elemental flavor caused by dilute aqueous solutions of various substances such as sucrose or aspartame"
+is_a: CO_325:1000030 ! Quality/Taste
+
+[Term]
+id: CO_325:0120064
+name: Taste method Sweetness
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120065
+name: Sweetness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Low, 10: Strong"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120066
+name: Boiled plantain Moistness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnMois_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120067 ! Boiled plantain Moistness
+relationship: variable_of CO_325:0120068 ! Moistness Mouth impression method
+relationship: variable_of CO_325:0120069 ! Moistness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120067
+name: Boiled plantain Moistness
+namespace: BananaTrait
+def: "Perception of the amount of water absorbed or released by the product"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120068
+name: Moistness Mouth impression method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120069
+name: Moistness scale 0-10
+namespace: BananaScale
+def: "categories: 0 : Dry, 10: Moist"
+relationship: scale_of CO_325:1000012 ! Ordinal
+
+[Term]
 id: CO_325:1000001
 name: Agronomical
 namespace: BananaTrait
