@@ -5317,77 +5317,77 @@ relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
 is_obsolete: true
 
 [Term]
-id: CO_325:00012018
+id: CO_325:0012018
 name: Appearance method
 namespace: BananaMethod
 def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity" []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012019
+id: CO_325:0012019
 name: Firmness in mouth method
 namespace: BananaMethod
 def: "Put a part of the sample in your mouth, evaluate during the first bite (between molars) how hard is the sample." []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012020
+id: CO_325:0012020
 name: Moisture in mouth method
 namespace: BananaMethod
 def: "Put a part of the sample in the mouth, chew and evaluate the quantity of water within the sample." []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012021
+id: CO_325:0012021
 name: Smoothness in mouth method
 namespace: BananaMethod
 def: "Put a part of the sample in mouth, chew it and after 5 chews, evaluate between tongue and palate the number and the size of the particles." []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012022
+id: CO_325:0012022
 name: Hardness in hand method
 namespace: BananaMethod
 def: "Take a part of the sample between fingers and evaluate how hard the sample is" []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012023
+id: CO_325:0012023
 name: Moldability in hand method
 namespace: BananaMethod
 def: "Try to make a ball (agglomerate) of the sample and evaluate how easy it is to deform or break the sample" []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012024
+id: CO_325:0012024
 name: Stickiness in hand method
 namespace: BananaMethod
 def: "Put a part of the sample between thumb and index fingers and using tapping motions,  evaluate the amount of product adhering on them" []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012025
+id: CO_325:0012025
 name: Sweetness tasting method
 namespace: BananaMethod
 def: "Put a part of the sample in the mouth and evaluate the intensity of taste of sweetness" []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012026
+id: CO_325:0012026
 name: Astringency method
 namespace: BananaMethod
 def: "Put a part of the sample in the mouth and evaluate the intensity of astringency impression due to the sample" []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012027
+id: CO_325:0012027
 name: Sourness method
 namespace: BananaMethod
 def: "Put a part of the sample in the mouth and evaluate the intensity of the sourness" []
 is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
-id: CO_325:00012028
+id: CO_325:0012028
 name: Aroma method
 namespace: BananaMethod
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas" []
@@ -5399,7 +5399,7 @@ name: Matooke yellowness measurement scale 1-10
 namespace: BananaTrait
 def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity.  0= very light yellow ; 10= bright yellow" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012018 ! Appearance method
+relationship: variable_of CO_325:0012018 ! Appearance method
 relationship: variable_of CO_325:0002056 ! Matooke yellowness
 relationship: variable_of CO_325:0120003 ! yellowness scale 0-10
 
@@ -5409,7 +5409,7 @@ name: Matooke homogeneity of colour measurement scale 1-10
 namespace: BananaTrait
 def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity. 0= heterogeneous ; 10= homogeneous" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012018 ! Appearance method
+relationship: variable_of CO_325:0012018 ! Appearance method
 relationship: variable_of CO_325:0002043 ! Matooke homogeneity of colour
 relationship: variable_of CO_325:0120004 ! color homogeneity scale 0-10
 
@@ -5419,7 +5419,7 @@ name: Matooke firmness in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in your mouth, evaluate during the first bite (between molars) how hard is the sample. 0= soft ; 10= firm" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012019 ! Firmness in mouth method
+relationship: variable_of CO_325:0012019 ! Firmness in mouth method
 relationship: variable_of CO_325:0002044 ! Matooke firmness
 relationship: variable_of CO_325:0120005 ! firmness scale 1-10
 
@@ -5429,7 +5429,7 @@ name: Matooke moisture in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth, chew and evaluate the quantity of water within the sample. 0= Dry  ; 10= Moist" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012020 ! Moisture in mouth method
+relationship: variable_of CO_325:0012020 ! Moisture in mouth method
 relationship: variable_of CO_325:0002045 ! Matooke moisture
 relationship: variable_of CO_325:0120006 ! moisture scale 1-10
 
@@ -5439,7 +5439,7 @@ name: Matooke smoothness in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in mouth, chew it and after 5 chews, evaluate between tongue and palate the number and the size of the particles. 0= lumpy  ; 5= grainy ; 10= smooth" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012021 ! Smoothness in mouth method
+relationship: variable_of CO_325:0012021 ! Smoothness in mouth method
 relationship: variable_of CO_325:0002046 ! Matooke smoothness
 relationship: variable_of CO_325:0120007 ! smoothness scale 1-10
 
@@ -5449,7 +5449,7 @@ name: Matooke hardness in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Take a part of the sample between fingers and evaluate how hard the sample is. 0= soft ; 5= firm ; 10= hard" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012022 ! Hardness in hand method
+relationship: variable_of CO_325:0012022 ! Hardness in hand method
 relationship: variable_of CO_325:0002047 ! Matooke hardness
 relationship: variable_of CO_325:0120008 ! hardness scale 1-10
 
@@ -5459,7 +5459,7 @@ name: Matooke moldability in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Try to make a ball (agglomerate) of the sample and evaluate how easy it is to deform or break the sample. 0= crumbly ; 10= moldable" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012023 ! Moldability in hand method
+relationship: variable_of CO_325:0012023 ! Moldability in hand method
 relationship: variable_of CO_325:0002048 ! Matooke moldability
 relationship: variable_of CO_325:0120009 ! moldability scale 1-10
 
@@ -5469,7 +5469,7 @@ name: Matooke stickiness in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample between thumb and index fingers and using tapping motions,  evaluate the amount of product adhering on them. 0= non sticky ; 10= sticky" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012024 ! Stickiness in hand method
+relationship: variable_of CO_325:0012024 ! Stickiness in hand method
 relationship: variable_of CO_325:0002049 ! Matooke stickiness
 relationship: variable_of CO_325:0120010 ! stickiness scale 1-10
 
@@ -5479,7 +5479,7 @@ name: Matooke sweetness measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth and evaluate the intensity of taste of sweetness. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012025 ! Sweetness tasting method
+relationship: variable_of CO_325:0012025 ! Sweetness tasting method
 relationship: variable_of CO_325:0002050 ! Matooke sweetness
 relationship: variable_of CO_325:0120011 ! sweetness scale 1-10
 
@@ -5489,7 +5489,7 @@ name: Matooke astringency measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth and evaluate the intensity of astringency impression due to the sample. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012026 ! Astringency method
+relationship: variable_of CO_325:0012026 ! Astringency method
 relationship: variable_of CO_325:0002051 ! Matooke astringency
 relationship: variable_of CO_325:0120012 ! astringency scale 1-10
 
@@ -5499,7 +5499,7 @@ name: Matooke sourness measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth and evaluate the intensity of the sourness. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012027 ! Sourness method
+relationship: variable_of CO_325:0012027 ! Sourness method
 relationship: variable_of CO_325:0002052 ! Matooke sourness
 relationship: variable_of CO_325:0120013 ! sourness scale 1-10
 
@@ -5509,7 +5509,7 @@ name: Matooke aroma matooke measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. 0= low intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012028 ! Aroma method
+relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0002053 ! Matooke aroma matooke
 relationship: variable_of CO_325:0120014 ! aroma scale 1-10
 
@@ -5519,7 +5519,7 @@ name: Matooke pumpkin aroma measurement 2pt scale
 namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012028 ! Aroma method
+relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0002054 ! Matooke aroma pumpkin
 relationship: variable_of CO_325:0120015 ! 2 pt scale
 
@@ -5529,7 +5529,7 @@ name: Matooke grassy aroma measurement 2pt scale
 namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:00012028 ! Aroma method
+relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0002055 ! Matooke aroma grassy
 relationship: variable_of CO_325:0120015 ! 2 pt scale
 
@@ -10936,6 +10936,186 @@ namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
 
 [Term]
+id: CO_325:0120046
+name: Boiled plantain Firmness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnFirm_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120047 ! Boiled plantain Firmness
+relationship: variable_of CO_325:0120048 ! Firmness Sensory Texture method
+relationship: variable_of CO_325:0120049 ! Firmness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120047
+name: Boiled plantain Firmness
+namespace: BananaTrait
+def: "Force required to obtain deformation, penetration or rupture of the banana"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120048
+name: Firmness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120049
+name: Firmness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Soft, 10: Firm"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120050
+name: Boiled plantain Chewiness by number of chews
+namespace: BananaTrait
+synonym: "BoiPlantnChew_Meas_number of chews" EXACT []
+relationship: variable_of CO_325:0120051 ! Boiled plantain Chewiness
+relationship: variable_of CO_325:0120052 ! Chewiness Sensory Texture method
+relationship: variable_of CO_325:0120053 ! Chewiness
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120051
+name: Boiled plantain Chewiness
+namespace: BananaTrait
+def: "Energy or number of chews necessary to chew the banana to make it ready to be swallowed"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120052
+name: Chewiness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120053
+name: Chewiness
+namespace: BananaScale
+def: "categories: Number of chews"
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0120054
+name: Boiled plantain Mealiness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnMeal_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120055 ! Boiled plantain Mealiness
+relationship: variable_of CO_325:0120056 ! Mealiness Sensory Texture method
+relationship: variable_of CO_325:0120057 ! Mealiness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120055
+name: Boiled plantain Mealiness
+namespace: BananaTrait
+def: "Mechanical property linked to cohesion and the presence of fine particles in the product during chewing"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120056
+name: Mealiness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120057
+name: Mealiness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Low, 10: Strong"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120058
+name: Boiled plantain Stickiness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnStic_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120059 ! Boiled plantain Stickiness
+relationship: variable_of CO_325:0120060 ! Stickiness Sensory Texture method
+relationship: variable_of CO_325:0120061 ! Stickiness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120059
+name: Boiled plantain Stickiness
+namespace: BananaTrait
+def: "Force required to peel off the fraction of product adhering to the interior of the oral cavity"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120060
+name: Stickiness Sensory Texture method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120061
+name: Stickiness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Low, 10: Strong"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120062
+name: Boiled plantain Sweetness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnSwt_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120063 ! Boiled plantain Sweetness
+relationship: variable_of CO_325:0120064 ! Taste method Sweetness
+relationship: variable_of CO_325:0120065 ! Sweetness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120063
+name: Boiled plantain Sweetness
+namespace: BananaTrait
+def: "Elemental flavor caused by dilute aqueous solutions of various substances such as sucrose or aspartame"
+is_a: CO_325:1000030 ! Quality/Taste
+
+[Term]
+id: CO_325:0120064
+name: Taste method Sweetness
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120065
+name: Sweetness scale 0-10
+namespace: BananaScale
+def: "categories: 0: Low, 10: Strong"
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0120066
+name: Boiled plantain Moistness scale 0-10
+namespace: BananaTrait
+synonym: "BoiPlantnMois_Meas_0to10" EXACT []
+relationship: variable_of CO_325:0120067 ! Boiled plantain Moistness
+relationship: variable_of CO_325:0120068 ! Moistness Mouth impression method
+relationship: variable_of CO_325:0120069 ! Moistness scale 0-10
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0120067
+name: Boiled plantain Moistness
+namespace: BananaTrait
+def: "Perception of the amount of water absorbed or released by the product"
+is_a: CO_325:1000028 ! Quality/Texture in mouth
+
+[Term]
+id: CO_325:0120068
+name: Moistness Mouth impression method
+namespace: BananaMethod
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0120069
+name: Moistness scale 0-10
+namespace: BananaScale
+def: "categories: 0 : Dry, 10: Moist"
+relationship: scale_of CO_325:1000012 ! Ordinal
+
+[Term]
 id: CO_325:1000001
 name: Agronomical
 namespace: BananaTrait
@@ -11106,4 +11286,3 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
-
