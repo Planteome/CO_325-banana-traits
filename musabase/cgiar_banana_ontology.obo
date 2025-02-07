@@ -11130,8 +11130,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003106
 name: Boiled plantain textural characteristic hardness
 namespace: BananaTrait
-def: "It is the amount of force required to deform or to overcome resistance to puncture of the food material."
-synonym: "Hardness is determined as the highest peak force in g measured during the first TPA compression " EXACT []
+def: "The amount of force required to deform or to overcome resistance to puncture of the food material. Hardness is determined as the highest peak force in g measured during the first TPA compression."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11157,8 +11156,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003106
 name: Boiled plantain textural characteristic hardness
 namespace: BananaTrait
-def: "It is the amount of force required to deform or to overcome resistance to puncture of the food material."
-synonym: "The maximum force registered when boiled plantain sample is punctured." EXACT []
+def: "It is the amount of force required to deform or to overcome resistance to puncture of the food material. The maximum force registered when boiled plantain sample is punctured."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11184,8 +11182,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003108
 name: Boiled plantain textural characteristic distance at Fmax
 namespace: BananaTrait
-def: "The depth at which the hardness of boiled plantain is registered. It represents the the distance into the sample where hardness is the highest. High distances mean the sample has softer pulp."
-synonym: "A  proxy for firmness which is the property of a food material being unyielding to touch. " EXACT []
+def: "The depth at which the hardness of boiled plantain is registered. It represents the the distance into the sample where hardness is the highest. High distances mean the sample has softer pulp. A  proxy for firmness which is the property of a food material being unyielding to touch."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11203,8 +11200,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003109
 name: Boiled plantain textural characteristic penetration area
 namespace: BananaTrait
-def: "Work done or energy required to penetrate the boiled plantain sample. It represents the amount of energy that must be expended to penetrate the sample"
-synonym: "Work done to penetrate sample in g.mm determined as total area under the curve  " EXACT []
+def: "Work done or energy required to penetrate the boiled plantain sample. It represents the amount of energy that must be expended to penetrate the sample. Work done to penetrate sample in g.mm determined as total area under the curve."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11223,8 +11219,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003110
 name: Boiled plantain textural characteristic distance to max force first TPA compression
 namespace: BananaTrait
-def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on first compression cycle"
-synonym: "Textural parameter used to calculate cheweness and springness" EXACT []
+def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on first compression cycle. Textural parameter used to calculate cheweness and springness."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11250,8 +11245,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003111
 name: Boiled plantain textural characteristic distance to max force second TPA compression
 namespace: BananaTrait
-def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on second compression cycle"
-synonym: "The distance in mm between the beginning of the second compression and the highest peak force of the second compression" EXACT []
+def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on second compression cycle. The distance in mm between the beginning of the second compression and the highest peak force of the second compression."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11277,8 +11271,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003112
 name: Boiled plantain textural characteristic area under curve first compression
 namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to compress sample on first compression cycle"
-synonym: "The area underneath the curve in g.mm between beginning of first compression and highest peak force of first compression" EXACT []
+def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to compress sample on first compression cycle. The area underneath the curve in g.mm between beginning of first compression and highest peak force of first compression."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11303,8 +11296,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003113
 name: Boiled plantain textural characteristic area under curve first withdrawal
 namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to decompress sample on first withdrawal cycle"
-synonym: "The area underneath the curve in g.mm between highest peak force of first compression and end of first withdrawal" EXACT []
+def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to decompress sample on first withdrawal cycle. The area underneath the curve in g.mm between highest peak force of first compression and end of first withdrawal."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11323,8 +11315,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003114
 name: Boiled plantain textural characteristic area under curve second compression
 namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness. It represents the work done to compress sample on second compression cycle"
-synonym: "The area underneath the curve in g.mm between beginning of second compression and highest peak force of second compression " EXACT []
+def: "Textural parameter used to calculate cohesiveness. It represents the work done to compress sample on second compression cycle. The area underneath the curve in g.mm between beginning of second compression and highest peak force of second compression."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11343,8 +11334,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003115
 name: Boiled plantain textural characteristic area under curve second withdrawal
 namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness. It represents the work done to decompress sample on second withdrawal cycle"
-synonym: "The area underneath the curve in g.mm between highest peak force of second compression and end of second withdrawal" EXACT []
+def: "Textural parameter used to calculate cohesiveness. It represents the work done to decompress sample on second withdrawal cycle. The area underneath the curve in g.mm between highest peak force of second compression and end of second withdrawal."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11363,8 +11353,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003116
 name: Boiled plantain textural characteristic adhesiveness/stickness
 namespace: BananaTrait
-def: "The work required in overcoming the attractive force between a product and the contact surface.  It represents how sticky the boiled plantain sample is."
-synonym: "Adhesiveness is represented by the area in g.s covered by the first negative peak (c)." EXACT []
+def: "The work required in overcoming the attractive force between a product and the contact surface.  It represents how sticky the boiled plantain sample is. Adhesiveness is represented by the area in g.s covered by the first negative peak (c)."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11382,8 +11371,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003117
 name: Boiled plantain textural characteristic cohesiveness
 namespace: BananaTrait
-def: "It is the work required to overcome the internal bonds of a material. It represents the ability of the boiled plantain sample to remain compact and not fracture or disintegrate into bits"
-synonym: " Cohesiveness is calculated as area underneath the second compression and withdrawal curves divided by the area underneath the first compression and withdrawal curves [(d+e)/(a+b)]." EXACT []
+def: "The work required to overcome the internal bonds of a material. It represents the ability of the boiled plantain sample to remain compact and not fracture or disintegrate into bits. Cohesiveness is calculated as area underneath the second compression and withdrawal curves divided by the area underneath the first compression and withdrawal curves [(d+e)/(a+b)]."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11409,8 +11397,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003118
 name: Boiled plantain textural characteristic springiness
 namespace: BananaTrait
-def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth. Springiness represents the ability of boiled plantain to regain its ''elastic'' nature after compression."
-synonym: " Springness is calculated as a ratio or percentage of a product’s recovery to its original height [(Distance 2)/(Distance 1)]*100 or (Time 2/Time 1)*100." EXACT []
+def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth. Springiness represents the ability of boiled plantain to regain its ''elastic'' nature after compression. Springness is calculated as a ratio or percentage of a product’s recovery to its original height [(Distance 2)/(Distance 1)]*100 or (Time 2/Time 1)*100."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11429,8 +11416,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003119
 name: Boiled plantain textural characteristic gumminess
 namespace: BananaTrait
-def: "Mechanical textural attribute related to the cohesiveness of a tender product. It is the product of cohesiveness and hardness"
-synonym: " It is calculated from Hardness x Cohesiveness F1*[(d+e)/(a+b)]." EXACT []
+def: "Mechanical textural attribute related to the cohesiveness of a tender product. The product of cohesiveness and hardness calculated from Hardness x Cohesiveness F1*[(d+e)/(a+b)]."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11449,8 +11435,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003120
 name: Boiled plantain textural characteristic chewiness
 namespace: BananaTrait
-def: "The mechanical textural attribute related to the amount of work required to masticate a solid. It is the product of gumminess and springiness"
-synonym: " Cheweness is calculated from Hardness x Cohesiveness x Springiness (F1*((d+e)/(a+b))*(Distance 2/Distance 1))." EXACT []
+def: "The mechanical textural attribute related to the amount of work required to masticate a solid. It is the product of gumminess and springiness. Cheweness is calculated from Hardness x Cohesiveness x Springiness (F1*((d+e)/(a+b))*(Distance 2/Distance 1))."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
@@ -11468,8 +11453,7 @@ is_a: CO_325:1000024 ! Variable
 id: CO_325:0003121
 name: Boiled plantain textural characteristic resilience
 namespace: BananaTrait
-def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed."
-synonym: "The textural attribute representing the ability of boiled plantain to recover to its original size after compression." EXACT []
+def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed. The textural attribute representing the ability of boiled plantain to recover to its original size after compression."
 is_a: CO_325:1000006 ! Quality
 xref: https://doi.org/10.18167/agritrop/00685
 
