@@ -8499,7 +8499,7 @@ relationship: scale_of CO_325:0010041 ! hand rank - counting
 
 [Term]
 id: CO_325:0100019
-name: g
+name: gram (g)
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0000253 ! pulp weight -measurement
@@ -8514,7 +8514,7 @@ relationship: scale_of CO_325:0010218 ! growth - computation
 
 [Term]
 id: CO_325:0100020
-name: mm
+name: millimiter (mm)
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010056 ! finger external length - measurement
@@ -8628,7 +8628,7 @@ relationship: scale_of CO_325:0010109 ! index of non-spotted leaves - computatio
 
 [Term]
 id: CO_325:0100046
-name: %
+name: percentage %
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0010110 ! black leaf streak disease severity - estimation
@@ -11113,7 +11113,349 @@ id: CO_325:0120069
 name: Moistness scale 0-10
 namespace: BananaScale
 def: "categories: 0 : Dry, 10: Moist"
-relationship: scale_of CO_325:1000012 ! Ordinal
+is_a: CO_325:1000012 ! Ordinal
+
+[Term]
+id: CO_325:0003090
+name: Textural profile analysis by double compression of boiled plantain hardness
+namespace: BananaTrait
+def: "The amount of force required to deform or to overcome resistance to puncture of the food material measured by TPA."
+relationship: variable_of CO_325:0003106 ! Boiled plantain textural characteristic hardness
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0100019 ! g
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003106
+name: Boiled plantain textural characteristic hardness
+namespace: BananaTrait
+def: "The amount of force required to deform or to overcome resistance to puncture of the food material. Hardness is determined as the highest peak force in g measured during the first TPA compression."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003122
+name: Textural profile analysis by double compression
+namespace: BananaMethod
+def: "F1"
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0003091
+name: Penotrometry for boiled plantain hardness
+namespace: BananaTrait
+def: "The amount of force required to deform or to overcome resistance to puncture of the food material measured by penotrometry."
+relationship: variable_of CO_325:0003106 ! Boiled plantain textural characteristic hardness
+relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
+relationship: variable_of CO_325:0100019 !  g
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003106
+name: Boiled plantain textural characteristic hardness
+namespace: BananaTrait
+def: "It is the amount of force required to deform or to overcome resistance to puncture of the food material. The maximum force registered when boiled plantain sample is punctured."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003123
+name: Penetrometry puncture test
+namespace: BananaMethod
+def: "Fmax"
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0003092
+name: Penotrometry test for boiled plantain textural characteristic distance at Fmax
+namespace: BananaTrait
+def: "The depth at which the hardness of boiled plantain is registered measured by penetrometry"
+relationship: variable_of CO_325:0003108 ! Boiled plantain textural characteristic distance at Fmax
+relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
+relationship: variable_of CO_325:0100020 ! mm
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003108
+name: Boiled plantain textural characteristic distance at Fmax
+namespace: BananaTrait
+def: "The depth at which the hardness of boiled plantain is registered. It represents the the distance into the sample where hardness is the highest. High distances mean the sample has softer pulp. A  proxy for firmness which is the property of a food material being unyielding to touch."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003093
+name: Penetrometry for boiled plantain textural characteristic penetration area
+namespace: BananaTrait
+def: "Work done or energy required to penetrate the boiled plantain sample measured by penetrometry"
+relationship: variable_of CO_325:0003109 ! Boiled plantain textural characteristic penetration area
+relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003109
+name: Boiled plantain textural characteristic penetration area
+namespace: BananaTrait
+def: "Work done or energy required to penetrate the boiled plantain sample. It represents the amount of energy that must be expended to penetrate the sample. Work done to penetrate sample in g.mm determined as total area under the curve."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003094
+name: Textural profile analysis by double compression of boiled plantain textural characteristic distance to max force at first compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness measured by TPA double compression"
+relationship: variable_of CO_325:0003110 ! Boiled plantain textural characteristic distance to max force first TPA compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0100020 ! mm
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003110
+name: Boiled plantain textural characteristic distance to max force first TPA compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on first compression cycle. Textural parameter used to calculate cheweness and springness."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003124
+name: Textural profile analysis by double compression
+namespace: BananaMethod
+def: "Distance 1"
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0003095
+name: Textural profile analysis by double compression of boiled plantain textural characteristic distance to max force at second compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness measured by TPA double compression"
+relationship: variable_of CO_325:0003111 ! Boiled plantain textural characteristic distance to max force second TPA compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0100020 ! mm
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003111
+name: Boiled plantain textural characteristic distance to max force second TPA compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on second compression cycle. The distance in mm between the beginning of the second compression and the highest peak force of the second compression."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003124
+name: Textural profile analysis by double compression
+namespace: BananaMethod
+def: "Distance 2"
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0003096
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at first compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience measured by TPA double compression"
+relationship: variable_of CO_325:0003112 ! Boiled plantain textural characteristic area under curve first compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003112
+name: Boiled plantain textural characteristic area under curve first compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to compress sample on first compression cycle. The area underneath the curve in g.mm between beginning of first compression and highest peak force of first compression."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003126
+name: gram/millimeter (g/mm)
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0003097
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at first withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience measured by TPA double compression"
+relationship: variable_of CO_325:0003113 ! Boiled plantain textural characteristic area under curve first withdrawal
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003113
+name: Boiled plantain textural characteristic area under curve first withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to decompress sample on first withdrawal cycle. The area underneath the curve in g.mm between highest peak force of first compression and end of first withdrawal."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003098
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at second compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression"
+relationship: variable_of CO_325:0003114 ! Boiled plantain textural characteristic area under curve second compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003114
+name: Boiled plantain textural characteristic area under curve second compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness. It represents the work done to compress sample on second compression cycle. The area underneath the curve in g.mm between beginning of second compression and highest peak force of second compression."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003099
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at second withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression"
+relationship: variable_of CO_325:0003115 ! Boiled plantain textural characteristic area under curve second withdrawal
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003115
+name: Boiled plantain textural characteristic area under curve second withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness. It represents the work done to decompress sample on second withdrawal cycle. The area underneath the curve in g.mm between highest peak force of second compression and end of second withdrawal."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003100
+name: Textural profile analysis by double compression of boiled plantain textural characteristic adhesiveness
+namespace: BananaTrait
+def: "The work required in overcoming the attractive force between a product and the contact surface measured by TPA double compression"
+relationship: variable_of CO_325:0003116 ! Boiled plantain textural characteristic adhesiveness/stickness
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003116
+name: Boiled plantain textural characteristic adhesiveness/stickness
+namespace: BananaTrait
+def: "The work required in overcoming the attractive force between a product and the contact surface.  It represents how sticky the boiled plantain sample is. Adhesiveness is represented by the area in g.s covered by the first negative peak (c)."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003101
+name: Textural profile analysis by double compression of boiled plantain textural characteristic cohesiveness
+namespace: BananaTrait
+def: "It is the work required to overcome the internal bonds of a material measured by TPA double compression"
+relationship: variable_of CO_325:0003117 ! Boiled plantain textural characteristic cohesiveness
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003117
+name: Boiled plantain textural characteristic cohesiveness
+namespace: BananaTrait
+def: "The work required to overcome the internal bonds of a material. It represents the ability of the boiled plantain sample to remain compact and not fracture or disintegrate into bits. Cohesiveness is calculated as area underneath the second compression and withdrawal curves divided by the area underneath the first compression and withdrawal curves [(d+e)/(a+b)]."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003125
+name: Textural profile analysis by double compression_Computation
+namespace: BananaMethod
+def: "((d+e)/(a+b))"
+is_a: CO_325:1000010 ! Computation
+
+[Term]
+id: CO_325:0003102
+name: Textural profile analysis by double compression of boiled plantain textural characteristic springness
+namespace: BananaTrait
+def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth measured by TPA double compression"
+relationship: variable_of CO_325:0003118 ! Boiled plantain textural characteristic springiness
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+relationship: variable_of CO_325:0100046 ! %
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003118
+name: Boiled plantain textural characteristic springiness
+namespace: BananaTrait
+def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth. Springiness represents the ability of boiled plantain to regain its ''elastic'' nature after compression. Springness is calculated as a ratio or percentage of a product’s recovery to its original height [(Distance 2)/(Distance 1)]*100 or (Time 2/Time 1)*100."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003103
+name: Textural profile analysis by double compression of boiled plantain textural characteristic gumminess
+namespace: BananaTrait
+def: "Mechanical textural attribute related to the cohesiveness of a tender product measured by TPA double compression"
+relationship: variable_of CO_325:0003119 ! Boiled plantain textural characteristic gumminess
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+relationship: variable_of CO_325:0100019 ! g
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003119
+name: Boiled plantain textural characteristic gumminess
+namespace: BananaTrait
+def: "Mechanical textural attribute related to the cohesiveness of a tender product. The product of cohesiveness and hardness calculated from Hardness x Cohesiveness F1*[(d+e)/(a+b)]."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003104
+name: Textural profile analysis by double compression of boiled plantain textural characteristic chewiness
+namespace: BananaTrait
+def: "The mechanical textural attribute related to the amount of work required to masticate a solid measured by TPA double compression"
+relationship: variable_of CO_325:0003120 ! Boiled plantain textural characteristic chewiness
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+relationship: variable_of CO_325:0100019 ! g
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003120
+name: Boiled plantain textural characteristic chewiness
+namespace: BananaTrait
+def: "The mechanical textural attribute related to the amount of work required to masticate a solid. It is the product of gumminess and springiness. Cheweness is calculated from Hardness x Cohesiveness x Springiness (F1*((d+e)/(a+b))*(Distance 2/Distance 1))."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
+
+[Term]
+id: CO_325:0003105
+name: Textural profile analysis by double compression of boiled plantain textural characteristic resilience
+namespace: BananaTrait
+def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed measured by TPA double compression"
+relationship: variable_of CO_325:0003121 ! Boiled plantain textural characteristic resilience
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+
+[Term]
+id: CO_325:0003121
+name: Boiled plantain textural characteristic resilience
+namespace: BananaTrait
+def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed. The textural attribute representing the ability of boiled plantain to recover to its original size after compression."
+is_a: CO_325:1000006 ! Quality
+xref: https://doi.org/10.18167/agritrop/00685
 
 [Term]
 id: CO_325:1000001
