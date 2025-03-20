@@ -4,7 +4,6 @@ saved-by: Naama
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CO_325.owl#CO_325:0003127> \"CO_325:1000029\"^^xsd:string)\n)
 
 [Term]
 id: CO_325:0000000
@@ -6659,6 +6658,185 @@ def: "Texture traits measured with an instrument" []
 is_a: CO_325:1000006 ! Quality_traits
 
 [Term]
+id: CO_325:0003128
+name: Textural profile analysis by double compression of matooke hardness
+namespace: BananaTrait
+def: "The highest peak force measured during first TPA cycle" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003137 ! Matooke textural characteristic hardness
+relationship: variable_of CO_325:0103013 ! Newtons (N)
+
+[Term]
+id: CO_325:0003129
+name: Textural profile analysis by double compression of matooke  textural characteristic area underneath the first compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003138 ! Matooke textural characteristic area underneath the first compression and withdrawal curve
+relationship: variable_of CO_325:0103014 ! Newton/second N/s
+
+[Term]
+id: CO_325:0003130
+name: Textural profile analysis by double compression of matooke  textural characteristic area underneath the second compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003139 ! Matooke textural characteristic area underneath the second compression and withdrawal curve
+relationship: variable_of CO_325:0103014 ! Newton/second N/s
+
+[Term]
+id: CO_325:0003131
+name: Textural profile analysis by double compression of matooke  textural characteristic distance to first compression peak
+namespace: BananaTrait
+def: "Distance in to first compression peak measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003140 ! Matooke textural characteristic distance to first compression peak
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
+
+[Term]
+id: CO_325:0003132
+name: Textural profile analysis by double compression of matooke  textural characteristic distance to second compression peak
+namespace: BananaTrait
+def: "Distance to second compression peak measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003141 ! Matooke textural characteristic distance to second compression peak.
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
+
+[Term]
+id: CO_325:0003133
+name: Textural profile analysis by double compression of matooke  textural characteristic wait period
+namespace: BananaTrait
+def: "The time between when a sample is allowed to recover after first cycle ends and when the second cycle begins measured by TPA" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003142 ! Matooke textural characteristic wait period
+relationship: variable_of CO_325:0103015 ! seconds
+
+[Term]
+id: CO_325:0003134
+name: Textural profile analysis by double compression of matooke  textural characteristic fracturability
+namespace: BananaTrait
+def: "The first significant peak force in first compression cycle measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003143 ! Matooke textural characteristic fracturability
+relationship: variable_of CO_325:0103013 ! Newtons (N)
+
+[Term]
+id: CO_325:0003135
+name: Textural profile analysis by double compression of matooke  textural characteristic adhesiveness
+namespace: BananaTrait
+def: "The negative area in under the curve for the first cycle measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003144 ! Matooke textural characteristic adhesiveness
+relationship: variable_of CO_325:0103014 ! Newton/second N/s
+
+[Term]
+id: CO_325:0003136
+name: Textural profile analysis by double compression of matooke  textural characteristic cohesiveness
+namespace: BananaTrait
+def: "The ratio of positive area underneath the second cycle divided by the positive area underneath the first cycle measured by TPA" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003145 ! Matooke textural characteristic cohesiveness
+
+[Term]
+id: CO_325:0003137
+name: Matooke textural characteristic hardness
+namespace: BananaTrait
+def: "The highest peak force measured during first cycle" []
+synonym: "MatHard" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003138
+name: Matooke textural characteristic area underneath the first compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression. It is the area in underneath the first compression and withdrawal curve." []
+synonym: "MatArea_1" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003139
+name: Matooke textural characteristic area underneath the second compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression. It is the area in N.s underneath the second compression and withdrawal curve measured by TPA" []
+synonym: "MatArea_2" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003140
+name: Matooke textural characteristic distance to first compression peak
+namespace: BananaTrait
+def: "A textural parameter defined by the distance measured when a probe descends onto the sample, and when once contact is detected measurement begins and the probe descends at a defined speed, for a set distance or a set time." []
+synonym: "MatDist_1" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003141
+name: Matooke textural characteristic distance to second compression peak.
+namespace: BananaTrait
+def: "A textural parameter determined as the distance to second compression peak" []
+synonym: "MatDist_2" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003142
+name: Matooke textural characteristic wait period
+namespace: BananaTrait
+def: "A textural parameter determined as the  time between when a sample is allowed to recover after first cycle ends and when the second cycle begins" []
+synonym: "MatWaitPrd" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003143
+name: Matooke textural characteristic fracturability
+namespace: BananaTrait
+def: "The first significant peak in first compression cycle" []
+synonym: "MatFract" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003144
+name: Matooke textural characteristic adhesiveness
+namespace: BananaTrait
+def: "A textural parameter determined as the negative area under the curve for the first cycle." []
+synonym: "MatAdh" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003145
+name: Matooke textural characteristic cohesiveness
+namespace: BananaTrait
+def: "A textural attribute calculated as a ratio of positive area underneath the second cycle divided by the positive area underneath the first cycle" []
+synonym: "MatCoh" EXACT []
+xref: https://doi.org/10.18167/ag
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -11190,6 +11368,24 @@ name: dead leaves scale
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0013007 ! number of dead leaves - counting
+
+[Term]
+id: CO_325:0103013
+name: Newtons (N)
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0103014
+name: Newton/second N/s
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0103015
+name: seconds
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
 
 [Term]
 id: CO_325:0120003
