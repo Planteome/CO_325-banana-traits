@@ -1,7 +1,6 @@
 format-version: 1.2
-date: 11:04:2018 16:34
-saved-by: guillaume
-auto-generated-by: OBO-Edit 2.3.1
+date: 03:06:2026 10:50
+saved-by: Naama
 default-namespace: banana_trait_ontology
 namespace-id-rule: * CO_325:$sequence(7,0000000,0009999)$
 ontology: CO_325
@@ -442,7 +441,7 @@ synonym: "FrtWt_M_gFruit, fingerweight" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000048 ! finger weight
 relationship: variable_of CO_325:0010052 ! finger weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000175
@@ -453,7 +452,7 @@ synonym: "FrtExtLng_M_mm, FINCUM, fingerextlength" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000051 ! finger external length
 relationship: variable_of CO_325:0010056 ! finger external length - measurement
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000176
@@ -530,7 +529,7 @@ synonym: "ExtDisProp_Comp_pct," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000078 ! percentage of plants with external disease symptoms caused by fusarium wilt
 relationship: variable_of CO_325:0010138 ! percentage of plants with external disease symptoms caused by fusarium wilt - computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000185
@@ -541,7 +540,7 @@ synonym: "IntDisProp_Comp_pct," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000081 ! percentage of plants with internal disease symptoms caused by fusarium wilt
 relationship: variable_of CO_325:0010139 ! percentage of plants with internal disease symptoms caused by fusarium wilt - computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000186
@@ -662,7 +661,7 @@ synonym: "rtNcr_M_%, RTNCRS" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000123 ! root necrosis caused by nematodes
 relationship: variable_of CO_325:0010219 ! root necrosis caused by nematodes - estimation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000202
@@ -824,7 +823,7 @@ synonym: "PeelThck_M_mm, FPEELT, peelthickness" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000236 ! finger peel thickness
 relationship: variable_of CO_325:0010066 ! finger peel thickness - measurement
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000236
@@ -937,7 +936,7 @@ synonym: "pulpweighting" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000250 ! pulp weight
 relationship: variable_of CO_325:0000253 ! pulp weight -measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000255
@@ -1012,7 +1011,7 @@ synonym: "peelweighting" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000270 ! peel weight
 relationship: variable_of CO_325:0000272 ! peel weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000272
@@ -1341,7 +1340,7 @@ synonym: "MltFrtWt_M_gFruit, multfingerweight" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000331 ! multiple finger weight
 relationship: variable_of CO_325:0010053 ! multiple finger weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000333
@@ -1379,7 +1378,7 @@ synonym: "FrtWtAvg_M_g, WGTFRU, avefingerweight" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000335 ! average finger weight
 relationship: variable_of CO_325:0010055 ! average finger weight - computation
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000337
@@ -1419,7 +1418,7 @@ synonym: "FrtIntLng_M_cm, fingerintlength_cm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000339 ! finger internal length
 relationship: variable_of CO_325:0010058 ! finger internal length - measurement
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000341
@@ -1450,7 +1449,7 @@ synonym: "FrtGrth_M_mm, fingercircumf_mm" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000054 ! finger circumference
 relationship: variable_of CO_325:0010060 ! finger circumference - measurement
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000344
@@ -1481,7 +1480,7 @@ synonym: "FrtDiam_M_mm, fingerlatdiam" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000233 ! finger lateral diameter
 relationship: variable_of CO_325:0010062 ! finger lateral diameter - measurement
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000348
@@ -1512,7 +1511,7 @@ synonym: "PulpDiam_M_mm, pulpdiam" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000240 ! fruit pulp lateral diameter
 relationship: variable_of CO_325:0010064 ! fruit pulp lateral diameter - measurement
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000352
@@ -1552,7 +1551,7 @@ synonym: "AvgPeelThck_M_mm, avepeelthickness" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000355 ! average finger peel thickness
 relationship: variable_of CO_325:0010067 ! average finger peel thickness - computation
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000357
@@ -2633,7 +2632,7 @@ synonym: "FrtftPdclLgth_M_mm," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000493 ! fruit pedicel length
 relationship: variable_of CO_325:0010195 ! fruit pedicel length - exact value - measurement
-relationship: variable_of CO_325:0100020 ! mm
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
 
 [Term]
 id: CO_325:0000495
@@ -2843,7 +2842,7 @@ synonym: "DmgPrphl_M_%," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000516 ! damage to periphery of peeled corm caused by weevils
 relationship: variable_of CO_325:0010153 ! peripheral damage - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000518
@@ -3197,7 +3196,7 @@ synonym: "BlkLfStrkSvrt_Est_pct, BLS_pct" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000574 ! black leaf streak disease severity and stage
 relationship: variable_of CO_325:0010110 ! black leaf streak disease severity - estimation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000576
@@ -3454,7 +3453,7 @@ synonym: "YlLfPercFW_Comp_pct," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000600 ! percentage of plants with yellowing leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010134 ! percentage of plants with yellowing leaves caused by fusarium wilt - computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000602
@@ -3472,7 +3471,7 @@ synonym: "SptPsdStmPercFW_Comp_pct," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000602 ! percentage of plants with a splitting pseudostem base caused by fusarium wilt
 relationship: variable_of CO_325:0010135 ! percentage of plants with a splitting pseudostem base caused by fusarium wilt - computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000604
@@ -3490,7 +3489,7 @@ synonym: "ChgNwLfPercFW_Comp_pct," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000604 ! percentage of plants with changes in new leaves caused by fusarium wilt
 relationship: variable_of CO_325:0010136 ! percentage of plants with changes in new leaves caused by fusarium wilt - computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000606
@@ -3508,7 +3507,7 @@ synonym: "PtlClpFW_Comp_pct," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000606 ! percentage of plants with petiole collapse caused by fusarium wilt
 relationship: variable_of CO_325:0010137 ! percentage of plants with petiole collapse caused by fusarium wilt - computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000610
@@ -3870,7 +3869,7 @@ synonym: "DmgIdxInn_M_%, CORMDG" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003056 ! damage to upper cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000650
@@ -3890,7 +3889,7 @@ synonym: "DmgIdxOut_M_%," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010140 ! damage to upper inner corm weevils - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000662
@@ -3920,7 +3919,7 @@ synonym: "InrCrmDmg_M_%," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010142 ! damage to lower inner corm weevils - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000679
@@ -3939,7 +3938,7 @@ synonym: "OutCrmDmg_M_%," EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010143 ! damage to lower outer corm weevils - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000726
@@ -4149,7 +4148,7 @@ synonym: "FrtDryMtCt_M_mg, DMC, drymattercontent" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000859 ! fruit dry matter content
 relationship: variable_of CO_325:0010203 ! dry matter content- calculation
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000859
@@ -4256,7 +4255,7 @@ synonym: "leafDryMass_Meas_g, leaf_dry, massDryLeaf" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000928 ! leaf dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000891
@@ -4267,7 +4266,7 @@ synonym: "pseudostemDryMass_Meas_g, ps_dry, massDryPseudostem" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000929 ! pseudostem dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000892
@@ -4278,7 +4277,7 @@ synonym: "rootDryMass_Meas_g, root_dry, massDryRoot" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000930 ! root dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000893
@@ -4289,7 +4288,7 @@ synonym: "plantDryMass_Meas_g, plant_dry, massDryPlant" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000931 ! plant dry weight
 relationship: variable_of CO_325:0010209 ! dry weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000894
@@ -4410,7 +4409,7 @@ synonym: "leafFreshMass_Meas_g, leaf_fresh, massFreshLeaf" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000943 ! leaf fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000906
@@ -4421,7 +4420,7 @@ synonym: "pseudostemFreshMass_Meas_g, pseudostem_fresh, massFreshPseudostem" EXA
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000944 ! pseudostem fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000907
@@ -4432,7 +4431,7 @@ synonym: "rootFreshMass_Meas_g, root_fresh, massFreshRoot" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000945 ! root fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000908
@@ -4443,7 +4442,7 @@ synonym: "plantFreshMass_Meas_g, plant_fresh, massFreshPlant" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000946 ! plant fresh weight
 relationship: variable_of CO_325:0010216 ! fresh weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000909
@@ -4509,7 +4508,7 @@ synonym: "growthDry_Comp_g, plantGrowth_dry, growthDry" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000952 ! dry plant growth
 relationship: variable_of CO_325:0010218 ! growth - computation
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000915
@@ -4520,7 +4519,7 @@ synonym: "growthFresh_Comp_g, plantGrowth_fresh, growthFresh" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000953 ! fresh plant growth
 relationship: variable_of CO_325:0010218 ! growth - computation
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0000916
@@ -4878,7 +4877,7 @@ def: "Pollen viability percentage calculated as (number of viable pollen/total n
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000970 ! pollen viability
 relationship: variable_of CO_325:0010238 ! percentage of pollen grain viable- computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000969
@@ -4889,7 +4888,7 @@ synonym: "pollenGermProp" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000967 ! pollen germination
 relationship: variable_of CO_325:0010237 ! percentage of pollen grain germinating - computation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000970
@@ -4950,7 +4949,7 @@ synonym: "BlksgtkLfNc_LfDsk_Est" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000973 ! black sigatoka leaf necrosis
 relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000980
@@ -4961,7 +4960,7 @@ synonym: "YlsgtkLfNc_LfDsk_Est" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000974 ! yellow sigatoka leaf necrosis
 relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000981
@@ -4972,7 +4971,7 @@ synonym: "EumuLfSpt_LfDisk_Est" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000975 ! emusacea leaf spot necrosis
 relationship: variable_of CO_325:0010241 ! percentage of leaf necrosis - estimation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000983
@@ -4983,7 +4982,7 @@ synonym: "LfChlr_LfDisk_Est" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000927 ! leaf chlorosis
 relationship: variable_of CO_325:0010240 ! percentage of leaf chlorosis - estimation
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0000984
@@ -5317,90 +5316,13 @@ relationship: variable_of CO_325:0100341 ! date mm/dd/yyyy
 is_obsolete: true
 
 [Term]
-id: CO_325:0012018
-name: Appearance method
-namespace: BananaMethod
-def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012019
-name: Firmness in mouth method
-namespace: BananaMethod
-def: "Put a part of the sample in your mouth, evaluate during the first bite (between molars) how hard is the sample." []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012020
-name: Moisture in mouth method
-namespace: BananaMethod
-def: "Put a part of the sample in the mouth, chew and evaluate the quantity of water within the sample." []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012021
-name: Smoothness in mouth method
-namespace: BananaMethod
-def: "Put a part of the sample in mouth, chew it and after 5 chews, evaluate between tongue and palate the number and the size of the particles." []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012022
-name: Hardness in hand method
-namespace: BananaMethod
-def: "Take a part of the sample between fingers and evaluate how hard the sample is" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012023
-name: Moldability in hand method
-namespace: BananaMethod
-def: "Try to make a ball (agglomerate) of the sample and evaluate how easy it is to deform or break the sample" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012024
-name: Stickiness in hand method
-namespace: BananaMethod
-def: "Put a part of the sample between thumb and index fingers and using tapping motions,  evaluate the amount of product adhering on them" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012025
-name: Sweetness tasting method
-namespace: BananaMethod
-def: "Put a part of the sample in the mouth and evaluate the intensity of taste of sweetness" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012026
-name: Astringency method
-namespace: BananaMethod
-def: "Put a part of the sample in the mouth and evaluate the intensity of astringency impression due to the sample" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012027
-name: Sourness method
-namespace: BananaMethod
-def: "Put a part of the sample in the mouth and evaluate the intensity of the sourness" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
-id: CO_325:0012028
-name: Aroma method
-namespace: BananaMethod
-def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas" []
-is_a: CO_325:1000033 ! Sensory descriptive measurement
-
-[Term]
 id: CO_325:0002029
 name: Matooke yellowness measurement scale 1-10
 namespace: BananaTrait
 def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity.  0= very light yellow ; 10= bright yellow" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012018 ! Appearance method
 relationship: variable_of CO_325:0002056 ! Matooke yellowness
+relationship: variable_of CO_325:0012018 ! Appearance method
 relationship: variable_of CO_325:0120003 ! yellowness scale 0-10
 
 [Term]
@@ -5409,8 +5331,8 @@ name: Matooke homogeneity of colour measurement scale 1-10
 namespace: BananaTrait
 def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity. 0= heterogeneous ; 10= homogeneous" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012018 ! Appearance method
 relationship: variable_of CO_325:0002043 ! Matooke homogeneity of colour
+relationship: variable_of CO_325:0012018 ! Appearance method
 relationship: variable_of CO_325:0120004 ! color homogeneity scale 0-10
 
 [Term]
@@ -5419,8 +5341,8 @@ name: Matooke firmness in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in your mouth, evaluate during the first bite (between molars) how hard is the sample. 0= soft ; 10= firm" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012019 ! Firmness in mouth method
 relationship: variable_of CO_325:0002044 ! Matooke firmness
+relationship: variable_of CO_325:0012019 ! Firmness in mouth method
 relationship: variable_of CO_325:0120005 ! firmness scale 1-10
 
 [Term]
@@ -5429,8 +5351,8 @@ name: Matooke moisture in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth, chew and evaluate the quantity of water within the sample. 0= Dry  ; 10= Moist" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012020 ! Moisture in mouth method
 relationship: variable_of CO_325:0002045 ! Matooke moisture
+relationship: variable_of CO_325:0012020 ! Moisture in mouth method
 relationship: variable_of CO_325:0120006 ! moisture scale 1-10
 
 [Term]
@@ -5439,8 +5361,8 @@ name: Matooke smoothness in mouth measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in mouth, chew it and after 5 chews, evaluate between tongue and palate the number and the size of the particles. 0= lumpy  ; 5= grainy ; 10= smooth" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012021 ! Smoothness in mouth method
 relationship: variable_of CO_325:0002046 ! Matooke smoothness
+relationship: variable_of CO_325:0012021 ! Smoothness in mouth method
 relationship: variable_of CO_325:0120007 ! smoothness scale 1-10
 
 [Term]
@@ -5449,8 +5371,8 @@ name: Matooke hardness in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Take a part of the sample between fingers and evaluate how hard the sample is. 0= soft ; 5= firm ; 10= hard" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012022 ! Hardness in hand method
 relationship: variable_of CO_325:0002047 ! Matooke hardness
+relationship: variable_of CO_325:0012022 ! Hardness in hand method
 relationship: variable_of CO_325:0120008 ! hardness scale 1-10
 
 [Term]
@@ -5459,8 +5381,8 @@ name: Matooke moldability in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Try to make a ball (agglomerate) of the sample and evaluate how easy it is to deform or break the sample. 0= crumbly ; 10= moldable" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012023 ! Moldability in hand method
 relationship: variable_of CO_325:0002048 ! Matooke moldability
+relationship: variable_of CO_325:0012023 ! Moldability in hand method
 relationship: variable_of CO_325:0120009 ! moldability scale 1-10
 
 [Term]
@@ -5469,8 +5391,8 @@ name: Matooke stickiness in hand measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample between thumb and index fingers and using tapping motions,  evaluate the amount of product adhering on them. 0= non sticky ; 10= sticky" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012024 ! Stickiness in hand method
 relationship: variable_of CO_325:0002049 ! Matooke stickiness
+relationship: variable_of CO_325:0012024 ! Stickiness in hand method
 relationship: variable_of CO_325:0120010 ! stickiness scale 1-10
 
 [Term]
@@ -5479,8 +5401,8 @@ name: Matooke sweetness measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth and evaluate the intensity of taste of sweetness. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012025 ! Sweetness tasting method
 relationship: variable_of CO_325:0002050 ! Matooke sweetness
+relationship: variable_of CO_325:0012025 ! Sweetness tasting method
 relationship: variable_of CO_325:0120011 ! sweetness scale 1-10
 
 [Term]
@@ -5489,8 +5411,8 @@ name: Matooke astringency measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth and evaluate the intensity of astringency impression due to the sample. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012026 ! Astringency method
 relationship: variable_of CO_325:0002051 ! Matooke astringency
+relationship: variable_of CO_325:0012026 ! Astringency method
 relationship: variable_of CO_325:0120012 ! astringency scale 1-10
 
 [Term]
@@ -5499,8 +5421,8 @@ name: Matooke sourness measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the sample in the mouth and evaluate the intensity of the sourness. 0= no intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012027 ! Sourness method
 relationship: variable_of CO_325:0002052 ! Matooke sourness
+relationship: variable_of CO_325:0012027 ! Sourness method
 relationship: variable_of CO_325:0120013 ! sourness scale 1-10
 
 [Term]
@@ -5509,8 +5431,8 @@ name: Matooke aroma matooke measurement scale 1-10
 namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. 0= low intensity ; 5= medium intensity ; 10= high intensity" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0002053 ! Matooke aroma matooke
+relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0120014 ! aroma scale 1-10
 
 [Term]
@@ -5519,8 +5441,8 @@ name: Matooke pumpkin aroma measurement 2pt scale
 namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0002054 ! Matooke aroma pumpkin
+relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0120015 ! 2 pt scale
 
 [Term]
@@ -5529,8 +5451,8 @@ name: Matooke grassy aroma measurement 2pt scale
 namespace: BananaTrait
 def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas. YES ; NO" []
 is_a: CO_325:1000024 ! Variable
-relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0002055 ! Matooke aroma grassy
+relationship: variable_of CO_325:0012028 ! Aroma method
 relationship: variable_of CO_325:0120015 ! 2 pt scale
 
 [Term]
@@ -5709,7 +5631,7 @@ namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010155 ! corm size - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003009
@@ -5718,7 +5640,7 @@ namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010264 ! outer damage at 5 cm - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003010
@@ -5727,7 +5649,7 @@ namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010263 ! outer damage at 10 cm - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003011
@@ -5736,7 +5658,7 @@ namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010266 ! inner damage at 5 cm - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003012
@@ -5745,7 +5667,7 @@ namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003004 ! weevil damage assessment
 relationship: variable_of CO_325:0010265 ! inner damage at 10 cm - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003014
@@ -6076,7 +5998,7 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000648 ! percentage damage to upper cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003053
@@ -6088,7 +6010,7 @@ is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0003055 ! damage to upper cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003054
@@ -6102,7 +6024,7 @@ relationship: variable_of CO_325:0000650 ! percentage damage to upper cross-sect
 relationship: variable_of CO_325:0000677 ! percentage damage to lower cross-section inner corm caused by weevils
 relationship: variable_of CO_325:0000679 ! percentage damage to lower cross-section outer corm caused by weevils
 relationship: variable_of CO_325:0010141 ! damage to upper outer corm weevils - measurement
-relationship: variable_of CO_325:0100046 ! %
+relationship: variable_of CO_325:0100046 ! percentage %
 
 [Term]
 id: CO_325:0003055
@@ -6212,7 +6134,7 @@ synonym: "CW" EXACT []
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003066 ! Rhizome weight
 relationship: variable_of CO_325:0003068 ! corm weight - measurement
-relationship: variable_of CO_325:0100019 ! g
+relationship: variable_of CO_325:0100019 ! gram (g)
 
 [Term]
 id: CO_325:0003068
@@ -6400,6 +6322,519 @@ name: internal corm discoloration scale 1-6
 namespace: BananaScale
 is_a: CO_325:1000015 ! Nominal
 relationship: scale_of CO_325:0003088 ! Internal corm discolouration from Fusarium wilt. 1-6 scale.
+
+[Term]
+id: CO_325:0003090
+name: Textural profile analysis by double compression of boiled plantain hardness
+namespace: BananaTrait
+def: "The amount of force required to deform or to overcome resistance to puncture of the food material measured by TPA." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003106 ! Boiled plantain textural characteristic hardness
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0100019 ! gram (g)
+
+[Term]
+id: CO_325:0003091
+name: Penotrometry for boiled plantain hardness
+namespace: BananaTrait
+def: "The amount of force required to deform or to overcome resistance to puncture of the food material measured by penotrometry." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003106 ! Boiled plantain textural characteristic hardness
+relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
+relationship: variable_of CO_325:0100019 ! gram (g)
+
+[Term]
+id: CO_325:0003092
+name: Penotrometry test for boiled plantain textural characteristic distance at Fmax
+namespace: BananaTrait
+def: "The depth at which the hardness of boiled plantain is registered measured by penetrometry" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003108 ! Boiled plantain textural characteristic distance at Fmax
+relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
+
+[Term]
+id: CO_325:0003093
+name: Penetrometry for boiled plantain textural characteristic penetration area
+namespace: BananaTrait
+def: "Work done or energy required to penetrate the boiled plantain sample measured by penetrometry" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003109 ! Boiled plantain textural characteristic penetration area
+relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
+
+[Term]
+id: CO_325:0003094
+name: Textural profile analysis by double compression of boiled plantain textural characteristic distance to max force at first compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003110 ! Boiled plantain textural characteristic distance to max force first TPA compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
+
+[Term]
+id: CO_325:0003095
+name: Textural profile analysis by double compression of boiled plantain textural characteristic distance to max force at second compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003111 ! Boiled plantain textural characteristic distance to max force second TPA compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
+
+[Term]
+id: CO_325:0003096
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at first compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003112 ! Boiled plantain textural characteristic area under curve first compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+
+[Term]
+id: CO_325:0003097
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at first withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003113 ! Boiled plantain textural characteristic area under curve first withdrawal
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+
+[Term]
+id: CO_325:0003098
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at second compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003114 ! Boiled plantain textural characteristic area under curve second compression
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+
+[Term]
+id: CO_325:0003099
+name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at second withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003115 ! Boiled plantain textural characteristic area under curve second withdrawal
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+
+[Term]
+id: CO_325:0003100
+name: Textural profile analysis by double compression of boiled plantain textural characteristic adhesiveness
+namespace: BananaTrait
+def: "The work required in overcoming the attractive force between a product and the contact surface measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003116 ! Boiled plantain textural characteristic adhesiveness/stickness
+relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
+
+[Term]
+id: CO_325:0003101
+name: Textural profile analysis by double compression of boiled plantain textural characteristic cohesiveness
+namespace: BananaTrait
+def: "It is the work required to overcome the internal bonds of a material measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003117 ! Boiled plantain textural characteristic cohesiveness
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+
+[Term]
+id: CO_325:0003102
+name: Textural profile analysis by double compression of boiled plantain textural characteristic springness
+namespace: BananaTrait
+def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003118 ! Boiled plantain textural characteristic springiness
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+relationship: variable_of CO_325:0100046 ! percentage %
+
+[Term]
+id: CO_325:0003103
+name: Textural profile analysis by double compression of boiled plantain textural characteristic gumminess
+namespace: BananaTrait
+def: "Mechanical textural attribute related to the cohesiveness of a tender product measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003119 ! Boiled plantain textural characteristic gumminess
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+relationship: variable_of CO_325:0100019 ! gram (g)
+
+[Term]
+id: CO_325:0003104
+name: Textural profile analysis by double compression of boiled plantain textural characteristic chewiness
+namespace: BananaTrait
+def: "The mechanical textural attribute related to the amount of work required to masticate a solid measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003120 ! Boiled plantain textural characteristic chewiness
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+relationship: variable_of CO_325:0100019 ! gram (g)
+
+[Term]
+id: CO_325:0003105
+name: Textural profile analysis by double compression of boiled plantain textural characteristic resilience
+namespace: BananaTrait
+def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003121 ! Boiled plantain textural characteristic resilience
+relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
+
+[Term]
+id: CO_325:0003106
+name: Boiled plantain textural characteristic hardness
+namespace: BananaTrait
+def: "The amount of force required to deform or to overcome resistance to puncture of the food material. Hardness is determined as the highest peak force in g measured during the first TPA compression." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003108
+name: Boiled plantain textural characteristic distance at Fmax
+namespace: BananaTrait
+def: "The depth at which the hardness of boiled plantain is registered. It represents the the distance into the sample where hardness is the highest. High distances mean the sample has softer pulp. A  proxy for firmness which is the property of a food material being unyielding to touch." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003109
+name: Boiled plantain textural characteristic penetration area
+namespace: BananaTrait
+def: "Work done or energy required to penetrate the boiled plantain sample. It represents the amount of energy that must be expended to penetrate the sample. Work done to penetrate sample in g.mm determined as total area under the curve." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003110
+name: Boiled plantain textural characteristic distance to max force first TPA compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on first compression cycle. Textural parameter used to calculate cheweness and springness." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003111
+name: Boiled plantain textural characteristic distance to max force second TPA compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on second compression cycle. The distance in mm between the beginning of the second compression and the highest peak force of the second compression." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003112
+name: Boiled plantain textural characteristic area under curve first compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to compress sample on first compression cycle. The area underneath the curve in g.mm between beginning of first compression and highest peak force of first compression." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003113
+name: Boiled plantain textural characteristic area under curve first withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to decompress sample on first withdrawal cycle. The area underneath the curve in g.mm between highest peak force of first compression and end of first withdrawal." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003114
+name: Boiled plantain textural characteristic area under curve second compression
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness. It represents the work done to compress sample on second compression cycle. The area underneath the curve in g.mm between beginning of second compression and highest peak force of second compression." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003115
+name: Boiled plantain textural characteristic area under curve second withdrawal
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness. It represents the work done to decompress sample on second withdrawal cycle. The area underneath the curve in g.mm between highest peak force of second compression and end of second withdrawal." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003116
+name: Boiled plantain textural characteristic adhesiveness/stickness
+namespace: BananaTrait
+def: "The work required in overcoming the attractive force between a product and the contact surface.  It represents how sticky the boiled plantain sample is. Adhesiveness is represented by the area in g.s covered by the first negative peak (c)." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003117
+name: Boiled plantain textural characteristic cohesiveness
+namespace: BananaTrait
+def: "The work required to overcome the internal bonds of a material. It represents the ability of the boiled plantain sample to remain compact and not fracture or disintegrate into bits. Cohesiveness is calculated as area underneath the second compression and withdrawal curves divided by the area underneath the first compression and withdrawal curves [(d+e)/(a+b)]." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003118
+name: Boiled plantain textural characteristic springiness
+namespace: BananaTrait
+def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth. Springiness represents the ability of boiled plantain to regain its ''elastic'' nature after compression. Springness is calculated as a ratio or percentage of a product’s recovery to its original height [(Distance 2)/(Distance 1)]*100 or (Time 2/Time 1)*100." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003119
+name: Boiled plantain textural characteristic gumminess
+namespace: BananaTrait
+def: "Mechanical textural attribute related to the cohesiveness of a tender product. The product of cohesiveness and hardness calculated from Hardness x Cohesiveness F1*[(d+e)/(a+b)]." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003120
+name: Boiled plantain textural characteristic chewiness
+namespace: BananaTrait
+def: "The mechanical textural attribute related to the amount of work required to masticate a solid. It is the product of gumminess and springiness. Cheweness is calculated from Hardness x Cohesiveness x Springiness (F1*((d+e)/(a+b))*(Distance 2/Distance 1))." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003121
+name: Boiled plantain textural characteristic resilience
+namespace: BananaTrait
+def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed. The textural attribute representing the ability of boiled plantain to recover to its original size after compression." []
+xref: https://doi.org/10.18167/agritrop/00685
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003122
+name: Textural profile analysis by double compression
+namespace: BananaMethod
+def: "F1" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0003123
+name: Penetrometry puncture test
+namespace: BananaMethod
+def: "Fmax" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0003124
+name: Textural profile analysis by double compression
+namespace: BananaMethod
+def: "Distance 1" []
+is_a: CO_325:1000008 ! Measurement
+
+[Term]
+id: CO_325:0003125
+name: Textural profile analysis by double compression_Computation
+namespace: BananaMethod
+def: "((d+e)/(a+b))" []
+is_a: CO_325:1000010 ! Computation
+
+[Term]
+id: CO_325:0003126
+name: gram/millimeter (g/mm)
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0003127
+name: Texture trait - instrumental
+namespace: BananaTrait
+def: "Texture traits measured with an instrument" []
+is_a: CO_325:1000006 ! Quality_traits
+
+[Term]
+id: CO_325:0003128
+name: Textural profile analysis by double compression of matooke hardness
+namespace: BananaTrait
+def: "The highest peak force measured during first TPA cycle" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003137 ! Matooke textural characteristic hardness
+relationship: variable_of CO_325:0103013 ! Newtons (N)
+
+[Term]
+id: CO_325:0003129
+name: Textural profile analysis by double compression of matooke  textural characteristic area underneath the first compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003138 ! Matooke textural characteristic area underneath the first compression and withdrawal curve
+relationship: variable_of CO_325:0103014 ! Newton/second N/s
+
+[Term]
+id: CO_325:0003130
+name: Textural profile analysis by double compression of matooke  textural characteristic area underneath the second compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003139 ! Matooke textural characteristic area underneath the second compression and withdrawal curve
+relationship: variable_of CO_325:0103014 ! Newton/second N/s
+
+[Term]
+id: CO_325:0003131
+name: Textural profile analysis by double compression of matooke  textural characteristic distance to first compression peak
+namespace: BananaTrait
+def: "Distance in to first compression peak measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003140 ! Matooke textural characteristic distance to first compression peak
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
+
+[Term]
+id: CO_325:0003132
+name: Textural profile analysis by double compression of matooke  textural characteristic distance to second compression peak
+namespace: BananaTrait
+def: "Distance to second compression peak measured by TPA double compression." []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003141 ! Matooke textural characteristic distance to second compression peak.
+relationship: variable_of CO_325:0100020 ! millimiter (mm)
+
+[Term]
+id: CO_325:0003133
+name: Textural profile analysis by double compression of matooke  textural characteristic wait period
+namespace: BananaTrait
+def: "The time between when a sample is allowed to recover after first cycle ends and when the second cycle begins measured by TPA" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003142 ! Matooke textural characteristic wait period
+relationship: variable_of CO_325:0103015 ! seconds
+
+[Term]
+id: CO_325:0003134
+name: Textural profile analysis by double compression of matooke  textural characteristic fracturability
+namespace: BananaTrait
+def: "The first significant peak force in first compression cycle measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003143 ! Matooke textural characteristic fracturability
+relationship: variable_of CO_325:0103013 ! Newtons (N)
+
+[Term]
+id: CO_325:0003135
+name: Textural profile analysis by double compression of matooke  textural characteristic adhesiveness
+namespace: BananaTrait
+def: "The negative area in under the curve for the first cycle measured by TPA double compression" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003144 ! Matooke textural characteristic adhesiveness
+relationship: variable_of CO_325:0103014 ! Newton/second N/s
+
+[Term]
+id: CO_325:0003136
+name: Textural profile analysis by double compression of matooke  textural characteristic cohesiveness
+namespace: BananaTrait
+def: "The ratio of positive area underneath the second cycle divided by the positive area underneath the first cycle measured by TPA" []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
+relationship: variable_of CO_325:0003145 ! Matooke textural characteristic cohesiveness
+
+[Term]
+id: CO_325:0003137
+name: Matooke textural characteristic hardness
+namespace: BananaTrait
+def: "The highest peak force measured during first cycle" []
+synonym: "MatHard" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003138
+name: Matooke textural characteristic area underneath the first compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression. It is the area in underneath the first compression and withdrawal curve." []
+synonym: "MatArea_1" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003139
+name: Matooke textural characteristic area underneath the second compression and withdrawal curve
+namespace: BananaTrait
+def: "Textural parameter used to calculate cohesiveness measured by TPA double compression. It is the area in N.s underneath the second compression and withdrawal curve measured by TPA" []
+synonym: "MatArea_2" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003140
+name: Matooke textural characteristic distance to first compression peak
+namespace: BananaTrait
+def: "A textural parameter defined by the distance measured when a probe descends onto the sample, and when once contact is detected measurement begins and the probe descends at a defined speed, for a set distance or a set time." []
+synonym: "MatDist_1" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003141
+name: Matooke textural characteristic distance to second compression peak.
+namespace: BananaTrait
+def: "A textural parameter determined as the distance to second compression peak" []
+synonym: "MatDist_2" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003142
+name: Matooke textural characteristic wait period
+namespace: BananaTrait
+def: "A textural parameter determined as the  time between when a sample is allowed to recover after first cycle ends and when the second cycle begins" []
+synonym: "MatWaitPrd" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003143
+name: Matooke textural characteristic fracturability
+namespace: BananaTrait
+def: "The first significant peak in first compression cycle" []
+synonym: "MatFract" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003144
+name: Matooke textural characteristic adhesiveness
+namespace: BananaTrait
+def: "A textural parameter determined as the negative area under the curve for the first cycle." []
+synonym: "MatAdh" EXACT []
+xref: https://doi.org/10.18167/agritrop/00602
+is_a: CO_325:0003127 ! Texture trait - instrumental
+
+[Term]
+id: CO_325:0003145
+name: Matooke textural characteristic cohesiveness
+namespace: BananaTrait
+def: "A textural attribute calculated as a ratio of positive area underneath the second cycle divided by the positive area underneath the first cycle" []
+synonym: "MatCoh" EXACT []
+xref: https://doi.org/10.18167/ag
+is_a: CO_325:0003127 ! Texture trait - instrumental
 
 [Term]
 id: CO_325:0010011
@@ -8261,6 +8696,83 @@ namespace: BananaMethod
 def: "slice the corm at 5 cm from the stellar region and measure the inner damage using a tape (cm) 35 and 66 days after weevil introduction (experiement done in potted plant)" []
 is_a: CO_325:1000008 ! Measurement
 relationship: method_of CO_325:0003004 ! weevil damage assessment
+
+[Term]
+id: CO_325:0012018
+name: Appearance method
+namespace: BananaMethod
+def: "When you receive the sample, observe the surface and evaluate the intensity of the color and its homogeneity" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012019
+name: Firmness in mouth method
+namespace: BananaMethod
+def: "Put a part of the sample in your mouth, evaluate during the first bite (between molars) how hard is the sample." []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012020
+name: Moisture in mouth method
+namespace: BananaMethod
+def: "Put a part of the sample in the mouth, chew and evaluate the quantity of water within the sample." []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012021
+name: Smoothness in mouth method
+namespace: BananaMethod
+def: "Put a part of the sample in mouth, chew it and after 5 chews, evaluate between tongue and palate the number and the size of the particles." []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012022
+name: Hardness in hand method
+namespace: BananaMethod
+def: "Take a part of the sample between fingers and evaluate how hard the sample is" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012023
+name: Moldability in hand method
+namespace: BananaMethod
+def: "Try to make a ball (agglomerate) of the sample and evaluate how easy it is to deform or break the sample" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012024
+name: Stickiness in hand method
+namespace: BananaMethod
+def: "Put a part of the sample between thumb and index fingers and using tapping motions,  evaluate the amount of product adhering on them" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012025
+name: Sweetness tasting method
+namespace: BananaMethod
+def: "Put a part of the sample in the mouth and evaluate the intensity of taste of sweetness" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012026
+name: Astringency method
+namespace: BananaMethod
+def: "Put a part of the sample in the mouth and evaluate the intensity of astringency impression due to the sample" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012027
+name: Sourness method
+namespace: BananaMethod
+def: "Put a part of the sample in the mouth and evaluate the intensity of the sourness" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
+
+[Term]
+id: CO_325:0012028
+name: Aroma method
+namespace: BananaMethod
+def: "Put a part of the product and by retro-olfaction evaluate the presence and the intensity of this specific aromas" []
+is_a: CO_325:1000033 ! Sensory descriptive measurement
 
 [Term]
 id: CO_325:0013001
@@ -10858,6 +11370,24 @@ is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0013007 ! number of dead leaves - counting
 
 [Term]
+id: CO_325:0103013
+name: Newtons (N)
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0103014
+name: Newton/second N/s
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0103015
+name: seconds
+namespace: BananaScale
+is_a: CO_325:1000017 ! Numerical
+
+[Term]
 id: CO_325:0120003
 name: yellowness scale 0-10
 namespace: BananaScale
@@ -10940,17 +11470,17 @@ id: CO_325:0120046
 name: Boiled plantain Firmness scale 0-10
 namespace: BananaTrait
 synonym: "BoiPlantnFirm_Meas_0to10" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0120047 ! Boiled plantain Firmness
 relationship: variable_of CO_325:0120048 ! Firmness Sensory Texture method
 relationship: variable_of CO_325:0120049 ! Firmness scale 0-10
-is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0120047
 name: Boiled plantain Firmness
 namespace: BananaTrait
-def: "Force required to obtain deformation, penetration or rupture of the banana"
-is_a: CO_325:1000028 ! Quality/Texture in mouth
+def: "Force required to obtain deformation, penetration or rupture of the banana" []
+is_a: CO_325:1000028 ! Texture in mouth
 
 [Term]
 id: CO_325:0120048
@@ -10962,7 +11492,7 @@ is_a: CO_325:1000033 ! Sensory descriptive measurement
 id: CO_325:0120049
 name: Firmness scale 0-10
 namespace: BananaScale
-def: "categories: 0: Soft, 10: Firm"
+def: "categories: 0: Soft, 10: Firm" []
 is_a: CO_325:1000012 ! Ordinal
 
 [Term]
@@ -10970,17 +11500,17 @@ id: CO_325:0120050
 name: Boiled plantain Chewiness by number of chews
 namespace: BananaTrait
 synonym: "BoiPlantnChew_Meas_number of chews" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0120051 ! Boiled plantain Chewiness
 relationship: variable_of CO_325:0120052 ! Chewiness Sensory Texture method
 relationship: variable_of CO_325:0120053 ! Chewiness
-is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0120051
 name: Boiled plantain Chewiness
 namespace: BananaTrait
-def: "Energy or number of chews necessary to chew the banana to make it ready to be swallowed"
-is_a: CO_325:1000028 ! Quality/Texture in mouth
+def: "Energy or number of chews necessary to chew the banana to make it ready to be swallowed" []
+is_a: CO_325:1000028 ! Texture in mouth
 
 [Term]
 id: CO_325:0120052
@@ -10992,7 +11522,7 @@ is_a: CO_325:1000033 ! Sensory descriptive measurement
 id: CO_325:0120053
 name: Chewiness
 namespace: BananaScale
-def: "categories: Number of chews"
+def: "categories: Number of chews" []
 is_a: CO_325:1000017 ! Numerical
 
 [Term]
@@ -11000,17 +11530,17 @@ id: CO_325:0120054
 name: Boiled plantain Mealiness scale 0-10
 namespace: BananaTrait
 synonym: "BoiPlantnMeal_Meas_0to10" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0120055 ! Boiled plantain Mealiness
 relationship: variable_of CO_325:0120056 ! Mealiness Sensory Texture method
 relationship: variable_of CO_325:0120057 ! Mealiness scale 0-10
-is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0120055
 name: Boiled plantain Mealiness
 namespace: BananaTrait
-def: "Mechanical property linked to cohesion and the presence of fine particles in the product during chewing"
-is_a: CO_325:1000028 ! Quality/Texture in mouth
+def: "Mechanical property linked to cohesion and the presence of fine particles in the product during chewing" []
+is_a: CO_325:1000028 ! Texture in mouth
 
 [Term]
 id: CO_325:0120056
@@ -11022,7 +11552,7 @@ is_a: CO_325:1000033 ! Sensory descriptive measurement
 id: CO_325:0120057
 name: Mealiness scale 0-10
 namespace: BananaScale
-def: "categories: 0: Low, 10: Strong"
+def: "categories: 0: Low, 10: Strong" []
 is_a: CO_325:1000012 ! Ordinal
 
 [Term]
@@ -11030,17 +11560,17 @@ id: CO_325:0120058
 name: Boiled plantain Stickiness scale 0-10
 namespace: BananaTrait
 synonym: "BoiPlantnStic_Meas_0to10" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0120059 ! Boiled plantain Stickiness
 relationship: variable_of CO_325:0120060 ! Stickiness Sensory Texture method
 relationship: variable_of CO_325:0120061 ! Stickiness scale 0-10
-is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0120059
 name: Boiled plantain Stickiness
 namespace: BananaTrait
-def: "Force required to peel off the fraction of product adhering to the interior of the oral cavity"
-is_a: CO_325:1000028 ! Quality/Texture in mouth
+def: "Force required to peel off the fraction of product adhering to the interior of the oral cavity" []
+is_a: CO_325:1000028 ! Texture in mouth
 
 [Term]
 id: CO_325:0120060
@@ -11052,7 +11582,7 @@ is_a: CO_325:1000033 ! Sensory descriptive measurement
 id: CO_325:0120061
 name: Stickiness scale 0-10
 namespace: BananaScale
-def: "categories: 0: Low, 10: Strong"
+def: "categories: 0: Low, 10: Strong" []
 is_a: CO_325:1000012 ! Ordinal
 
 [Term]
@@ -11060,17 +11590,17 @@ id: CO_325:0120062
 name: Boiled plantain Sweetness scale 0-10
 namespace: BananaTrait
 synonym: "BoiPlantnSwt_Meas_0to10" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0120063 ! Boiled plantain Sweetness
 relationship: variable_of CO_325:0120064 ! Taste method Sweetness
 relationship: variable_of CO_325:0120065 ! Sweetness scale 0-10
-is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0120063
 name: Boiled plantain Sweetness
 namespace: BananaTrait
-def: "Elemental flavor caused by dilute aqueous solutions of various substances such as sucrose or aspartame"
-is_a: CO_325:1000030 ! Quality/Taste
+def: "Elemental flavor caused by dilute aqueous solutions of various substances such as sucrose or aspartame" []
+is_a: CO_325:1000030 ! Taste
 
 [Term]
 id: CO_325:0120064
@@ -11082,7 +11612,7 @@ is_a: CO_325:1000033 ! Sensory descriptive measurement
 id: CO_325:0120065
 name: Sweetness scale 0-10
 namespace: BananaScale
-def: "categories: 0: Low, 10: Strong"
+def: "categories: 0: Low, 10: Strong" []
 is_a: CO_325:1000012 ! Ordinal
 
 [Term]
@@ -11090,17 +11620,17 @@ id: CO_325:0120066
 name: Boiled plantain Moistness scale 0-10
 namespace: BananaTrait
 synonym: "BoiPlantnMois_Meas_0to10" EXACT []
+is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0120067 ! Boiled plantain Moistness
 relationship: variable_of CO_325:0120068 ! Moistness Mouth impression method
 relationship: variable_of CO_325:0120069 ! Moistness scale 0-10
-is_a: CO_325:1000024 ! Variable
 
 [Term]
 id: CO_325:0120067
 name: Boiled plantain Moistness
 namespace: BananaTrait
-def: "Perception of the amount of water absorbed or released by the product"
-is_a: CO_325:1000028 ! Quality/Texture in mouth
+def: "Perception of the amount of water absorbed or released by the product" []
+is_a: CO_325:1000028 ! Texture in mouth
 
 [Term]
 id: CO_325:0120068
@@ -11112,350 +11642,8 @@ is_a: CO_325:1000033 ! Sensory descriptive measurement
 id: CO_325:0120069
 name: Moistness scale 0-10
 namespace: BananaScale
-def: "categories: 0 : Dry, 10: Moist"
+def: "categories: 0 : Dry, 10: Moist" []
 is_a: CO_325:1000012 ! Ordinal
-
-[Term]
-id: CO_325:0003090
-name: Textural profile analysis by double compression of boiled plantain hardness
-namespace: BananaTrait
-def: "The amount of force required to deform or to overcome resistance to puncture of the food material measured by TPA."
-relationship: variable_of CO_325:0003106 ! Boiled plantain textural characteristic hardness
-relationship: variable_of CO_325:0003122 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0100019 ! g
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003106
-name: Boiled plantain textural characteristic hardness
-namespace: BananaTrait
-def: "The amount of force required to deform or to overcome resistance to puncture of the food material. Hardness is determined as the highest peak force in g measured during the first TPA compression."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003122
-name: Textural profile analysis by double compression
-namespace: BananaMethod
-def: "F1"
-is_a: CO_325:1000008 ! Measurement
-
-[Term]
-id: CO_325:0003091
-name: Penotrometry for boiled plantain hardness
-namespace: BananaTrait
-def: "The amount of force required to deform or to overcome resistance to puncture of the food material measured by penotrometry."
-relationship: variable_of CO_325:0003106 ! Boiled plantain textural characteristic hardness
-relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
-relationship: variable_of CO_325:0100019 !  g
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003106
-name: Boiled plantain textural characteristic hardness
-namespace: BananaTrait
-def: "It is the amount of force required to deform or to overcome resistance to puncture of the food material. The maximum force registered when boiled plantain sample is punctured."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003123
-name: Penetrometry puncture test
-namespace: BananaMethod
-def: "Fmax"
-is_a: CO_325:1000008 ! Measurement
-
-[Term]
-id: CO_325:0003092
-name: Penotrometry test for boiled plantain textural characteristic distance at Fmax
-namespace: BananaTrait
-def: "The depth at which the hardness of boiled plantain is registered measured by penetrometry"
-relationship: variable_of CO_325:0003108 ! Boiled plantain textural characteristic distance at Fmax
-relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
-relationship: variable_of CO_325:0100020 ! mm
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003108
-name: Boiled plantain textural characteristic distance at Fmax
-namespace: BananaTrait
-def: "The depth at which the hardness of boiled plantain is registered. It represents the the distance into the sample where hardness is the highest. High distances mean the sample has softer pulp. A  proxy for firmness which is the property of a food material being unyielding to touch."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003093
-name: Penetrometry for boiled plantain textural characteristic penetration area
-namespace: BananaTrait
-def: "Work done or energy required to penetrate the boiled plantain sample measured by penetrometry"
-relationship: variable_of CO_325:0003109 ! Boiled plantain textural characteristic penetration area
-relationship: variable_of CO_325:0003123 ! Penetrometry puncture test
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003109
-name: Boiled plantain textural characteristic penetration area
-namespace: BananaTrait
-def: "Work done or energy required to penetrate the boiled plantain sample. It represents the amount of energy that must be expended to penetrate the sample. Work done to penetrate sample in g.mm determined as total area under the curve."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003094
-name: Textural profile analysis by double compression of boiled plantain textural characteristic distance to max force at first compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate springness measured by TPA double compression"
-relationship: variable_of CO_325:0003110 ! Boiled plantain textural characteristic distance to max force first TPA compression
-relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0100020 ! mm
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003110
-name: Boiled plantain textural characteristic distance to max force first TPA compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on first compression cycle. Textural parameter used to calculate cheweness and springness."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003124
-name: Textural profile analysis by double compression
-namespace: BananaMethod
-def: "Distance 1"
-is_a: CO_325:1000008 ! Measurement
-
-[Term]
-id: CO_325:0003095
-name: Textural profile analysis by double compression of boiled plantain textural characteristic distance to max force at second compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate springness measured by TPA double compression"
-relationship: variable_of CO_325:0003111 ! Boiled plantain textural characteristic distance to max force second TPA compression
-relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0100020 ! mm
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003111
-name: Boiled plantain textural characteristic distance to max force second TPA compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate springness. It represents the depth of the sample where hardness is registered on second compression cycle. The distance in mm between the beginning of the second compression and the highest peak force of the second compression."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003124
-name: Textural profile analysis by double compression
-namespace: BananaMethod
-def: "Distance 2"
-is_a: CO_325:1000008 ! Measurement
-
-[Term]
-id: CO_325:0003096
-name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at first compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness and resilience measured by TPA double compression"
-relationship: variable_of CO_325:0003112 ! Boiled plantain textural characteristic area under curve first compression
-relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003112
-name: Boiled plantain textural characteristic area under curve first compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to compress sample on first compression cycle. The area underneath the curve in g.mm between beginning of first compression and highest peak force of first compression."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003126
-name: gram/millimeter (g/mm)
-namespace: BananaScale
-is_a: CO_325:1000017 ! Numerical
-
-[Term]
-id: CO_325:0003097
-name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at first withdrawal
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness and resilience measured by TPA double compression"
-relationship: variable_of CO_325:0003113 ! Boiled plantain textural characteristic area under curve first withdrawal
-relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003113
-name: Boiled plantain textural characteristic area under curve first withdrawal
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness and resilience. It represents the work done to decompress sample on first withdrawal cycle. The area underneath the curve in g.mm between highest peak force of first compression and end of first withdrawal."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003098
-name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at second compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness measured by TPA double compression"
-relationship: variable_of CO_325:0003114 ! Boiled plantain textural characteristic area under curve second compression
-relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003114
-name: Boiled plantain textural characteristic area under curve second compression
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness. It represents the work done to compress sample on second compression cycle. The area underneath the curve in g.mm between beginning of second compression and highest peak force of second compression."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003099
-name: Textural profile analysis by double compression of boiled plantain textural characteristic area under curve at second withdrawal
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness measured by TPA double compression"
-relationship: variable_of CO_325:0003115 ! Boiled plantain textural characteristic area under curve second withdrawal
-relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003115
-name: Boiled plantain textural characteristic area under curve second withdrawal
-namespace: BananaTrait
-def: "Textural parameter used to calculate cohesiveness. It represents the work done to decompress sample on second withdrawal cycle. The area underneath the curve in g.mm between highest peak force of second compression and end of second withdrawal."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003100
-name: Textural profile analysis by double compression of boiled plantain textural characteristic adhesiveness
-namespace: BananaTrait
-def: "The work required in overcoming the attractive force between a product and the contact surface measured by TPA double compression"
-relationship: variable_of CO_325:0003116 ! Boiled plantain textural characteristic adhesiveness/stickness
-relationship: variable_of CO_325:0003124 ! Textural profile analysis by double compression
-relationship: variable_of CO_325:0003126 ! gram/millimeter (g/mm)
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003116
-name: Boiled plantain textural characteristic adhesiveness/stickness
-namespace: BananaTrait
-def: "The work required in overcoming the attractive force between a product and the contact surface.  It represents how sticky the boiled plantain sample is. Adhesiveness is represented by the area in g.s covered by the first negative peak (c)."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003101
-name: Textural profile analysis by double compression of boiled plantain textural characteristic cohesiveness
-namespace: BananaTrait
-def: "It is the work required to overcome the internal bonds of a material measured by TPA double compression"
-relationship: variable_of CO_325:0003117 ! Boiled plantain textural characteristic cohesiveness
-relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003117
-name: Boiled plantain textural characteristic cohesiveness
-namespace: BananaTrait
-def: "The work required to overcome the internal bonds of a material. It represents the ability of the boiled plantain sample to remain compact and not fracture or disintegrate into bits. Cohesiveness is calculated as area underneath the second compression and withdrawal curves divided by the area underneath the first compression and withdrawal curves [(d+e)/(a+b)]."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003125
-name: Textural profile analysis by double compression_Computation
-namespace: BananaMethod
-def: "((d+e)/(a+b))"
-is_a: CO_325:1000010 ! Computation
-
-[Term]
-id: CO_325:0003102
-name: Textural profile analysis by double compression of boiled plantain textural characteristic springness
-namespace: BananaTrait
-def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth measured by TPA double compression"
-relationship: variable_of CO_325:0003118 ! Boiled plantain textural characteristic springiness
-relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
-relationship: variable_of CO_325:0100046 ! %
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003118
-name: Boiled plantain textural characteristic springiness
-namespace: BananaTrait
-def: "The degree to which food can recover between the end of the first bite and the beginning of the second bite in the mouth. Springiness represents the ability of boiled plantain to regain its ''elastic'' nature after compression. Springness is calculated as a ratio or percentage of a product’s recovery to its original height [(Distance 2)/(Distance 1)]*100 or (Time 2/Time 1)*100."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003103
-name: Textural profile analysis by double compression of boiled plantain textural characteristic gumminess
-namespace: BananaTrait
-def: "Mechanical textural attribute related to the cohesiveness of a tender product measured by TPA double compression"
-relationship: variable_of CO_325:0003119 ! Boiled plantain textural characteristic gumminess
-relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
-relationship: variable_of CO_325:0100019 ! g
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003119
-name: Boiled plantain textural characteristic gumminess
-namespace: BananaTrait
-def: "Mechanical textural attribute related to the cohesiveness of a tender product. The product of cohesiveness and hardness calculated from Hardness x Cohesiveness F1*[(d+e)/(a+b)]."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003104
-name: Textural profile analysis by double compression of boiled plantain textural characteristic chewiness
-namespace: BananaTrait
-def: "The mechanical textural attribute related to the amount of work required to masticate a solid measured by TPA double compression"
-relationship: variable_of CO_325:0003120 ! Boiled plantain textural characteristic chewiness
-relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
-relationship: variable_of CO_325:0100019 ! g
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003120
-name: Boiled plantain textural characteristic chewiness
-namespace: BananaTrait
-def: "The mechanical textural attribute related to the amount of work required to masticate a solid. It is the product of gumminess and springiness. Cheweness is calculated from Hardness x Cohesiveness x Springiness (F1*((d+e)/(a+b))*(Distance 2/Distance 1))."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
-
-[Term]
-id: CO_325:0003105
-name: Textural profile analysis by double compression of boiled plantain textural characteristic resilience
-namespace: BananaTrait
-def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed measured by TPA double compression"
-relationship: variable_of CO_325:0003121 ! Boiled plantain textural characteristic resilience
-relationship: variable_of CO_325:0003125 ! Textural profile analysis by double compression_Computation
-xref: https://doi.org/10.18167/agritrop/00685
-is_a: CO_325:1000024 ! Variable
-
-[Term]
-id: CO_325:0003121
-name: Boiled plantain textural characteristic resilience
-namespace: BananaTrait
-def: "The mechanical textural attribute relating to the rapidity of recovery from a deforming force or the degree to which a deformed material returns to its original condition after the deforming force is removed. The textural attribute representing the ability of boiled plantain to recover to its original size after compression."
-is_a: CO_325:1000006 ! Quality
-xref: https://doi.org/10.18167/agritrop/00685
 
 [Term]
 id: CO_325:1000001
@@ -11628,3 +11816,4 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
+
