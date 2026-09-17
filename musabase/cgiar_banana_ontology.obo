@@ -6871,6 +6871,23 @@ relationship: variable_of CO_325:0013008 ! CIELAB instrumental colorimetry
 relationship: variable_of CO_325:0103017 ! L* value
 
 [Term]
+id: CO_325:0003150
+name: Yellowness to blueness
+namespace: BananaTrait
+def: "Also known as the yellow-blue axis. Represents the chromatic position between yellow and blue along a horizontal axis perpendicular to a*" []
+synonym: "yellowness-blueness index (CIELAB b-star)" EXACT []
+is_a: CO_325:1000027 ! Appearence
+
+[Term]
+id: CO_325:0003151
+name: Yellowness to blueness - b*
+namespace: BananaTrait
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003150 ! Yellowness to blueness
+relationship: variable_of CO_325:0013008 ! CIELAB instrumental colorimetry
+relationship: variable_of CO_325:0103018 ! b* value
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -8870,6 +8887,7 @@ def: "Instrumental measurement of the sample's absolute numerical coordinates wi
 is_a: CO_325:1000008 ! Measurement
 relationship: method_of CO_325:0003146 ! Redness to green region
 relationship: method_of CO_325:0003148 ! Lightness
+relationship: method_of CO_325:0003150 ! Yellowness to blueness
 
 [Term]
 id: CO_325:0100002
@@ -11447,6 +11465,14 @@ is_a: CO_325:1000017 ! Numerical
 relationship: scale_of CO_325:0013008 ! CIELAB instrumental colorimetry
 
 [Term]
+id: CO_325:0103018
+name: b* value
+namespace: BananaScale
+def: "Dimensionless absolute numerical coordinate within the CIELAB colour space. Positive (+) = yellower; negative (-) = bluer." []
+is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0013008 ! CIELAB instrumental colorimetry
+
+[Term]
 id: CO_325:0120003
 name: yellowness scale 0-10
 namespace: BananaScale
@@ -11875,3 +11901,4 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
+
