@@ -6850,8 +6850,25 @@ name: Redness to green region - a*
 namespace: BananaTrait
 is_a: CO_325:1000024 ! Variable
 relationship: variable_of CO_325:0003146 ! Redness to green region
-relationship: variable_of CO_325:0013008 ! Redness to green region - instrumental colorimetry
+relationship: variable_of CO_325:0013008 ! CIELAB instrumental colorimetry
 relationship: variable_of CO_325:0103016 ! a* value
+
+[Term]
+id: CO_325:0003148
+name: Lightness
+namespace: BananaTrait
+def: "Represents the vertical axis of the CIELAB colour space. Indicates the perceptual lightness of a sample, from pure black to pure white, regardless of its chromatic hue" []
+synonym: "lightness index (CIELAB L-star)" EXACT []
+is_a: CO_325:1000027 ! Appearence
+
+[Term]
+id: CO_325:0003149
+name: Lightness - L*
+namespace: BananaTrait
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003148 ! Lightness
+relationship: variable_of CO_325:0013008 ! CIELAB instrumental colorimetry
+relationship: variable_of CO_325:0103017 ! L* value
 
 [Term]
 id: CO_325:0010011
@@ -8847,11 +8864,12 @@ relationship: method_of CO_325:0003064 ! number of dead leaves
 
 [Term]
 id: CO_325:0013008
-name: Redness to green region - instrumental colorimetry
+name: CIELAB instrumental colorimetry
 namespace: BananaMethod
-def: "Instrumental measurement of the sample's absolute numerical coordinate along the red-green (a*) axis of the CIELAB (Commission internationale de l'Eclairage) colour space using a colorimeter/spectrophotometer." []
+def: "Instrumental measurement of the sample's absolute numerical coordinates within the CIELAB (Commission internationale de l'Eclairage) colour space using a colorimeter/spectrophotometer." []
 is_a: CO_325:1000008 ! Measurement
 relationship: method_of CO_325:0003146 ! Redness to green region
+relationship: method_of CO_325:0003148 ! Lightness
 
 [Term]
 id: CO_325:0100002
@@ -11418,7 +11436,15 @@ name: a* value
 namespace: BananaScale
 def: "Dimensionless absolute numerical coordinate within the CIELAB colour space. Positive (+) = redder; negative (-) = greener." []
 is_a: CO_325:1000017 ! Numerical
-relationship: scale_of CO_325:0013008 ! Redness to green region - instrumental colorimetry
+relationship: scale_of CO_325:0013008 ! CIELAB instrumental colorimetry
+
+[Term]
+id: CO_325:0103017
+name: L* value
+namespace: BananaScale
+def: "Dimensionless absolute numerical coordinate within the CIELAB colour space, ranging from 0 (pure black, no reflection) to 100 (pure white, perfect diffuse reflection)." []
+is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0013008 ! CIELAB instrumental colorimetry
 
 [Term]
 id: CO_325:0120003
@@ -11849,4 +11875,3 @@ name: scale_of
 [Typedef]
 id: variable_of
 name: variable_of
-
