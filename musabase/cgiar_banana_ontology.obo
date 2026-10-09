@@ -6837,6 +6837,57 @@ xref: https://doi.org/10.18167/ag
 is_a: CO_325:0003127 ! Texture trait - instrumental
 
 [Term]
+id: CO_325:0003146
+name: Redness to green region
+namespace: BananaTrait
+def: "Also known as the red-greenness axis. Represents the chromatic position between green and red along a horizontal axis" []
+synonym: "redness-greenness index (CIELAB a-star)" EXACT []
+is_a: CO_325:1000027 ! Appearence
+
+[Term]
+id: CO_325:0003147
+name: Redness to green region - a*
+namespace: BananaTrait
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003146 ! Redness to green region
+relationship: variable_of CO_325:0013008 ! CIELAB instrumental colorimetry
+relationship: variable_of CO_325:0103016 ! a* value
+
+[Term]
+id: CO_325:0003148
+name: Lightness
+namespace: BananaTrait
+def: "Represents the vertical axis of the CIELAB colour space. Indicates the perceptual lightness of a sample, from pure black to pure white, regardless of its chromatic hue" []
+synonym: "lightness index (CIELAB L-star)" EXACT []
+is_a: CO_325:1000027 ! Appearence
+
+[Term]
+id: CO_325:0003149
+name: Lightness - L*
+namespace: BananaTrait
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003148 ! Lightness
+relationship: variable_of CO_325:0013008 ! CIELAB instrumental colorimetry
+relationship: variable_of CO_325:0103017 ! L* value
+
+[Term]
+id: CO_325:0003150
+name: Yellowness to blueness
+namespace: BananaTrait
+def: "Also known as the yellow-blue axis. Represents the chromatic position between yellow and blue along a horizontal axis perpendicular to a*" []
+synonym: "yellowness-blueness index (CIELAB b-star)" EXACT []
+is_a: CO_325:1000027 ! Appearence
+
+[Term]
+id: CO_325:0003151
+name: Yellowness to blueness - b*
+namespace: BananaTrait
+is_a: CO_325:1000024 ! Variable
+relationship: variable_of CO_325:0003150 ! Yellowness to blueness
+relationship: variable_of CO_325:0013008 ! CIELAB instrumental colorimetry
+relationship: variable_of CO_325:0103018 ! b* value
+
+[Term]
 id: CO_325:0010011
 name: time from planting to shooting - computation
 namespace: BananaMethod
@@ -8827,6 +8878,16 @@ namespace: BananaMethod
 def: "Count the number of dead leaves." []
 is_a: CO_325:1000009 ! Counting
 relationship: method_of CO_325:0003064 ! number of dead leaves
+
+[Term]
+id: CO_325:0013008
+name: CIELAB instrumental colorimetry
+namespace: BananaMethod
+def: "Instrumental measurement of the sample's absolute numerical coordinates within the CIELAB (Commission internationale de l'Eclairage) colour space using a colorimeter/spectrophotometer." []
+is_a: CO_325:1000008 ! Measurement
+relationship: method_of CO_325:0003146 ! Redness to green region
+relationship: method_of CO_325:0003148 ! Lightness
+relationship: method_of CO_325:0003150 ! Yellowness to blueness
 
 [Term]
 id: CO_325:0100002
@@ -11386,6 +11447,30 @@ id: CO_325:0103015
 name: seconds
 namespace: BananaScale
 is_a: CO_325:1000017 ! Numerical
+
+[Term]
+id: CO_325:0103016
+name: a* value
+namespace: BananaScale
+def: "Dimensionless absolute numerical coordinate within the CIELAB colour space. Positive (+) = redder; negative (-) = greener." []
+is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0013008 ! CIELAB instrumental colorimetry
+
+[Term]
+id: CO_325:0103017
+name: L* value
+namespace: BananaScale
+def: "Dimensionless absolute numerical coordinate within the CIELAB colour space, ranging from 0 (pure black, no reflection) to 100 (pure white, perfect diffuse reflection)." []
+is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0013008 ! CIELAB instrumental colorimetry
+
+[Term]
+id: CO_325:0103018
+name: b* value
+namespace: BananaScale
+def: "Dimensionless absolute numerical coordinate within the CIELAB colour space. Positive (+) = yellower; negative (-) = bluer." []
+is_a: CO_325:1000017 ! Numerical
+relationship: scale_of CO_325:0013008 ! CIELAB instrumental colorimetry
 
 [Term]
 id: CO_325:0120003
